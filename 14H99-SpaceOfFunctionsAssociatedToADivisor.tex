@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SpaceOfFunctionsAssociatedToADivisor}
+\pmcreated{2013-03-22 14:12:25}
+\pmmodified{2013-03-22 14:12:25}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{space of functions associated to a divisor}
+\pmrecord{4}{35640}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H99}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+\begin{document}
+Let $C/K$ be a curve defined over the field $K$, and $D$ a divisor for that curve.  We define the \emph{space of functions associated to a divisor} by 
+
+\begin{align*}
+\mathcal{L}(D)=\{f\in \ol{K}(C)^*:\text{div}(f)\geq -D\}\cup\{0\},
+\end{align*}
+
+where $\ol{K}(C)^*$ denotes the dual to the function field of $C$.
+
+For any $D$, $\mc{L}(D)$ is a finite-dimensional vector space over $\ol{K}$, the algebraic closure of $K$, and we denote its dimension by $\ell(D)$, a somewhat ubiquitous number that, for example, appears in the Riemann-Roch theorem for curves.
+%%%%%
+%%%%%
+\end{document}

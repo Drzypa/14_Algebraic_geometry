@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NagellLutzTheorem}
+\pmcreated{2013-03-22 13:52:02}
+\pmmodified{2013-03-22 13:52:02}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Nagell-Lutz theorem}
+\pmrecord{4}{34608}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H52}
+%\pmkeywords{torsion}
+%\pmkeywords{elliptic curve}
+%\pmkeywords{Mazur's theorem}
+\pmrelated{EllipticCurve}
+\pmrelated{MordellWeilTheorem}
+\pmrelated{RankOfAnEllipticCurve}
+\pmrelated{TorsionSubgroupOfAnEllipticCurveInjectsInTheReductionOfTheCurve}
+\pmrelated{ArithmeticOfEllipticCurves}
+\pmdefines{Nagell-Lutz theorem}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+The following theorem, proved independently by E. Lutz and T.
+Nagell, gives a very efficient method to compute the torsion
+subgroup of an elliptic curve defined over $\Rats$.
+
+\begin{thm}[Nagell-Lutz Theorem]
+Let $E/\Rats$ be an elliptic curve with Weierstrass equation:
+$$y^2=x^3+Ax+B,\quad A,B\in \Ints$$
+Then for all non-zero torsion points $P$ we have:
+\begin{enumerate}
+\item The coordinates of $P$ are in $\Ints$, i.e. $$x(P),y(P)\in
+\Ints$$
+
+\item If $P$ is of order greater than $2$, then $$y(P)^2\quad
+divides\quad 4A^3+27B^2 $$
+
+\item If $P$ is of order $2$ then $$y(P)=0\quad and\quad
+x(P)^3+Ax(P)+B=0$$
+\end{enumerate}
+\end{thm}
+
+\begin{thebibliography}{9}
+\bibitem{lutz} E. Lutz, {\em Sur l'equation $y^2=x^3-Ax-B$ dans
+les corps p-adic}, J. Reine Angew. Math. 177 (1937), 431-466.
+\bibitem{nagell} T. Nagell, {\em Solution de quelque problemes
+dans la theorie arithmetique des cubiques planes du premier
+genre}, Wid. Akad. Skrifter Oslo I, 1935, Nr. 1.
+\bibitem{milne} James Milne, {\em Elliptic Curves}, \PMlinkexternal{online course
+notes}{http://www.jmilne.org/math/CourseNotes/math679.html}.
+\bibitem{silverman} Joseph H. Silverman, {\em The Arithmetic of Elliptic Curves}. Springer-Verlag, New York, 1986.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

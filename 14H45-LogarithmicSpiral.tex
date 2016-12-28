@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LogarithmicSpiral}
+\pmcreated{2013-03-22 19:02:26}
+\pmmodified{2013-03-22 19:02:26}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{logarithmic spiral}
+\pmrecord{26}{41917}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H45}
+\pmsynonym{Bernoulli spiral}{LogarithmicSpiral}
+\pmrelated{AngleBetweenTwoCurves}
+\pmrelated{EvoluteOfCycloid}
+\pmrelated{PolarTangentialAngle2}
+\pmrelated{AngleBetweenTwoLines}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+
+\begin{document}
+The equation of the \emph{logarithmic spiral} in polar coordinates $r,\,\varphi$ is
+\begin{align}
+r \;=\; Ce^{k\varphi}
+\end{align}
+where $C$ and $k$ are constants ($C > 0$).\, Thus the position vector of the point of this curve as the coordinate vector is written as
+$$\vec{r} \;=\; (Ce^{k\varphi}\cos\varphi,\;Ce^{k\varphi}\sin\varphi)$$
+which is a parametric form of the curve.\\
+
+\begin{figure}[htp]
+\centering
+\includegraphics[scale=0.80]{log_spiral.eps}
+\end{figure}
+
+Perhaps the most known \PMlinkescapetext{characteristic} of the logarithmic spiral is that any line emanating from the origin \PMlinkescapetext{cuts} the curve under a constant angle $\psi$.\, This is seen e.g. by using the vector $\vec{r}$ and its derivative \,$\frac{d\vec{r}}{d\varphi} = \vec{r}\,'$,\, the latter of which gives the direction of the tangent line (see vector-valued function):
+$$\vec{r}\,' \;=\; 
+\left(Ce^{k\varphi}k\cos\varphi-Ce^{k\varphi}\sin\varphi,\; Ce^{k\varphi}k\sin\varphi+Ce^{k\varphi}\cos\varphi\right).$$
+One obtains
+$$\vec{r}\cdot\vec{r}\,' \;=\; kr^2, \quad |\vec{r}| \;=\; r, \quad |\vec{r}\,'| \;=\; r\sqrt{1\!+\!k^2},$$
+whence
+$$\cos\psi \;=\; \frac{\vec{r}\cdot\vec{r}\,'}{|\vec{r}||\vec{r}\,'|} \;=\; \frac{k}{\sqrt{1\!+\!k^2}} 
+\;=\; \mbox{constant.}$$ 
+It follows that \,$k = \cot\psi$.\, The angle $\psi$ is called the polar tangential angle.\\
+
+The logarithmic spiral (1) goes infinitely many times round the origin without to reach it; in the case \,$k > 0$\, one
+may state that
+$$\lim_{\varphi\to-\infty}Ce^{k\varphi} \;=\; 0 \quad\mbox{but}\quad Ce^{k\varphi} \;\neq\; 0 \;\;
+\forall \varphi \in \mathbb{R}$$
+(the exponential function never vanishes).\\
+
+
+The arc length $s$ of the logarithmic spiral is expressible in closed form; if we take it for the interval 
+\,$[\varphi_1,\,\varphi_2]$,\, we can calculate in the case \,$k > 0$\, that
+$$ s \;=\; \int_{\varphi_1}^{\varphi_2}\!\sqrt{r^2+\left(\frac{dr}{d\varphi}\right)^2}\,d\varphi \;=\;
+\int_{\varphi_1}^{\varphi_2}\!\sqrt{C^2e^{2k\varphi}+C^2e^{2k\varphi}k^2}\,d\varphi \;=\; 
+\frac{\sqrt{1\!+\!k^2}}{k}C(e^{k\varphi_2}-e^{k\varphi_1}),$$
+thus
+$$s \;=\; \frac{\sqrt{1\!+\!k^2}}{k}(r_2\!-\!r_1) \;=\; \frac{r_2\!-\!r_1}{\cos\psi}.$$
+Letting\, $\varphi_1 \to -\infty$\, one sees that the arc length from the origin to a point of the spiral is finite.\\
+
+
+\textbf{Other properties}
+\begin{itemize}
+\item Any curve with constant polar tangential angle is a logarithmic spiral.
+\item All logarithmic spirals with equal polar tangential angle are similar.
+\item A logarithmic spiral rotated about the origin is a spiral homothetic to the original one.
+\item The inversion \,$z \mapsto \frac{1}{z}$\, causes for the logarithmic spiral a reflexion against the imaginary axis and a rotation around the origin, but the image is congruent to the original one.
+\item The evolute of the logarithmic spiral is a congruent logarithmic spiral.
+\item The catacaustic of the logarithmic spiral is a logarithmic spiral.
+\item The families \,$r = C_1e^{\varphi}$\, and \,$r = C_2e^{-\varphi}$\, are orthogonal curves to each other.
+\end{itemize}
+
+%%%%%
+%%%%%
+\end{document}

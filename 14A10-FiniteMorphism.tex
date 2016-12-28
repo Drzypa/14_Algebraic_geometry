@@ -1,0 +1,90 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FiniteMorphism}
+\pmcreated{2013-03-22 12:51:47}
+\pmmodified{2013-03-22 12:51:47}
+\pmowner{rmilson}{146}
+\pmmodifier{rmilson}{146}
+\pmtitle{finite morphism}
+\pmrecord{9}{33199}
+\pmprivacy{1}
+\pmauthor{rmilson}{146}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A10}
+\pmclassification{msc}{14-00}
+\pmclassification{msc}{14A15}
+\pmdefines{affine morphism}
+\pmdefines{finite type}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\DeclareMathOperator{\Spec}{Spec}
+\begin{document}
+\section*{Affine schemes}
+Let $X$ and $Y$ be affine schemes, so that $X=\Spec A$ and $Y=\Spec
+B$. Let $f\colon X\to Y$ be a morphism, so that it induces a
+homomorphism of rings $g\colon B\to A$.
+
+The homomorphism $g$ makes $A$ into a $B$-algebra. If $A$ is
+finitely-generated as a $B$-algebra, then $f$ is said to be a morphism
+of \emph{finite type}.
+
+If $A$ is in fact finitely generated as a $B$-module, then $f$ is said
+to be a \emph{finite} morphism.
+
+For example, if $k$ is a field, the scheme $\mathbb{A}^n(k)$ has a
+natural morphism to $\Spec k$ induced by the ring homomorphism $k \to
+k[X_1,\ldots,X_n]$. This is a morphism of finite type, but if $n>0$
+then it is not a finite morphism.
+
+On the other hand, if we take the affine scheme $\Spec
+k[X,Y]/\left<Y^2-X^3-X\right>$, it has a natural morphism to
+$\mathbb{A}^1$ given by the ring homomorphism $k[X]\to
+k[X,Y]/\left<Y^2-X^3-X\right>$. Then this morphism is a finite
+morphism. As a morphism of schemes, we see that every fiber is finite.
+
+\section*{General schemes}
+Now, let $X$ and $Y$ be arbitrary schemes, and let $f \colon X\to Y$
+be a morphism.  We say that $f$ is of \emph{finite type} if there exist an
+open cover of $Y$ by affine schemes  $\{U_i\}$ and a finite open cover
+of each $U_i$ by affine schemes $\{V_{ij}\}$ such that $f|_{V_{ij}}$
+is a morphism of finite type for every $i$ and $j$.  We say that $f$
+is \emph{finite} if there exists an open cover of $Y$ by affine
+schemes $\{U_i\}$ such that each inverse image, $V_i=f^{-1}(U_i)$ is
+itself affine, and such that $f|_{V_i}$ is a finite morphism of affine
+schemes. 
+
+
+\paragraph{Example.} Let $X=\mathbb{P}^1(k)$ and $Y=\Spec k$. 
+We cover $X$ by two copies of $\mathbb{A}^1$ and consider the natural
+morphisms from each of these copies to $\Spec k$.  Both of these
+affine morphisms are of finite type, but are not finite. The covering
+morphisms patch together to give a morphism from $\mathbb{P}^1$ to
+$\Spec k$. The overall morphism is of finite type, but again is not
+finite.
+
+\section*{References.}
+D. Eisenbud and J. Harris, \textit{The Geometry of Schemes}, Springer.
+%%%%%
+%%%%%
+\end{document}

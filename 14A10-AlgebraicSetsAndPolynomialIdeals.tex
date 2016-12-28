@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AlgebraicSetsAndPolynomialIdeals}
+\pmcreated{2013-03-22 13:05:40}
+\pmmodified{2013-03-22 13:05:40}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{algebraic sets and polynomial ideals}
+\pmrecord{16}{33513}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A10}
+\pmsynonym{vanishing set}{AlgebraicSetsAndPolynomialIdeals}
+\pmrelated{Ideal}
+\pmrelated{HilbertsNullstellensatz}
+\pmrelated{RadicalOfAnIdeal}
+\pmdefines{zero set}
+\pmdefines{algebraic set}
+\pmdefines{ideal of an algebraic set}
+\pmdefines{affine algebraic set}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\A}{\mathbb{A}}
+\begin{document}
+Suppose $k$ is a field.  Let $\A^n_k$ denote affine $n$-space over $k$.\\
+%
+For $S \subseteq k[x_1,\ldots,x_n]$, define $V(S)$, the {\em zero set of $S$}, by
+\[ V(S) = \{(a_1,\ldots,a_n) \in k^n \mid f(a_1,\ldots,a_n)=0 \text{ for all } f \in S\}\]
+%
+We say that $Y \subseteq \A^n_k$ is an (affine) {\em algebraic set} if there exists $T \subseteq k[x_1,\ldots,x_n]$ such that $Y=V(T)$.  Taking these subsets of $\A^n_k$ as a definition of the closed sets of a topology induces the Zariski topology over $\A^n_k$.\\
+%
+For $Y \subseteq \A^n_k$, define the {\em {\PMlinkescapetext ideal} of $Y$ in $k[x_1,\ldots,x_n]$} by \[ I(Y)=\{f \in k[x_1,\ldots,x_n] \mid f(P)=0 \text{ for all } P \in Y\}. \]
+%
+It is easily shown that $I(Y)$ is an ideal of $k[x_1,\ldots,x_n]$.\\
+%
+Thus we have defined a function $V$ mapping from subsets of $k[x_1,\ldots,x_n]$ to algebraic sets in $\A^n_k$, and a function $I$ mapping from subsets of $\A^n$ to ideals of $k[x_1,\ldots,x_n]$.\\
+%
+We remark that the theory of algebraic sets presented herein is most cleanly stated over an algebraically closed field.  For example, over such a field, the above have the following properties:
+\begin{enumerate}
+\item $S_1 \subseteq S_2 \subseteq k[x_1,\ldots,x_n]$ implies 
+      $V(S_1) \supseteq V(S_2)$.
+\item $Y_1 \subseteq Y_2 \subseteq \A_k^n$ implies 
+      $I(Y_1) \supseteq I(Y_2)$.
+\item For any ideal $\mathfrak{a} \subset k[x_1,\ldots,x_n]$, 
+      $I(V(\mathfrak{a}))=\operatorname{Rad}(\mathfrak{a})$.
+\item For any $Y \subset \A^n_k$, $V(I(Y))=\overline{Y}$, the closure
+      of $Y$ in the Zariski topology.
+\end{enumerate}
+
+From the above, we see that there is a 1-1 correspondence between algebraic sets in $\A^n_k$ and radical ideals of $k[x_1,\ldots,x_n]$.  Furthermore, an algebraic set $Y \subseteq \A^n_k$ is an affine variety if and only if $I(Y)$ is a prime ideal.  As an example of how things can go wrong, the radical ideals $(1)$ and $(x^2+1)$ in $\mathbb{R}[x]$ define the same zero locus (the empty set) inside of $\mathbb{R}$, but are not the same ideal, and hence there is no such 1-1 correspondence.
+%%%%%
+%%%%%
+\end{document}

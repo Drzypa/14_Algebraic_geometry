@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GroupVariety}
+\pmcreated{2013-03-22 14:09:37}
+\pmmodified{2013-03-22 14:09:37}
+\pmowner{archibal}{4430}
+\pmmodifier{archibal}{4430}
+\pmtitle{group variety}
+\pmrecord{4}{35582}
+\pmprivacy{1}
+\pmauthor{archibal}{4430}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14L10}
+\pmclassification{msc}{14K99}
+\pmclassification{msc}{20G15}
+%\pmkeywords{variety}
+\pmrelated{AffineAlgebraicGroup}
+\pmrelated{GroupScheme}
+\pmrelated{VarietyOfGroups}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+\PMlinkescapeword{theory}
+Let $G$ be a variety (an \PMlinkname{affine}{AffineVariety}, \PMlinkname{projective}{ProjectiveVariety}, or quasi-projective variety).  We say $G$ is a \emph{group variety} if $G$ is provided with morphisms of varieties:
+\begin{align*}
+\mu:G\times G &\to G \\
+ (g_1,g_2) & \mapsto g_1g_2,
+\end{align*}
+\begin{align*}
+\iota: G &\to G \\
+g & \mapsto g^{-1},
+\end{align*}
+and
+\begin{align*}
+\epsilon: \{*\} & \to G\\
+* & \mapsto e,
+\end{align*}
+and if these morphisms make the elements of $G$ into a group. 
+
+In short, $G$ should be a group object in the category of varieties.  Examples include the general linear group of dimension $n$ on $k$ and elliptic curves. 
+
+Group varieties that are actually projective are in fact abelian groups (although this is not obvious) and are called abelian varieties; their study is of interest to number theorists (among others).
+
+Just as schemes generalize varieties, group schemes generalize group varieties.  When dealing with situations in positive characteristic, or with families of group varieties, often they are more appropriate.
+
+There is also a (not very closely related) concept in group theory of a ``\PMlinkname{variety of groups}{VarietyOfGroups}''.
+%%%%%
+%%%%%
+\end{document}

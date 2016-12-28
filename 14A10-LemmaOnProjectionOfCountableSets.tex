@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LemmaOnProjectionOfCountableSets}
+\pmcreated{2013-03-22 15:44:53}
+\pmmodified{2013-03-22 15:44:53}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{lemma on projection of countable sets}
+\pmrecord{10}{37700}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A10}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Suppose $\mathbb{F}$ is an infinite field and $S$ is an infinite subset of 
+$\mathbb{F}^n$.  Then there exists a line $L$ such that the projection of $S$ 
+on $L$ is infinite.
+
+Proof:  This proof will proceed by an induction on $n$.  The case
+$n=1$ is trivial since a one-dimensional linear space is a line.
+
+Consider two cases:
+
+Case I: There exists a proper subspace of $\mathbb{F}^n$
+which contains an infinite number of points of $S$.
+
+In this case, we can restrict attention to this subspace.  By the
+induction hypothesis, there exists a line in the subspace such that
+the projection of points in the subspace to this line is already
+infinite.
+
+Case II: Every proper subspace of $\mathbb{F}^n$ contains at most a
+finite number of points of $S$.
+
+In this case, any line will do.  By definition, one constructs a
+projection by dropping hyperplanes perpendicular to the line passing
+through the points of the set.  Since each of these hyperplanes will
+contain a finite number of elements of $S$, an infinite number of
+hyperplanes will be needed to contain all the points of $S$, hence the
+projection will be infinite.
+%%%%%
+%%%%%
+\end{document}

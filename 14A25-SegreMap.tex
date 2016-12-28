@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SegreMap}
+\pmcreated{2013-03-22 14:24:45}
+\pmmodified{2013-03-22 14:24:45}
+\pmowner{halu}{5781}
+\pmmodifier{halu}{5781}
+\pmtitle{Segre map}
+\pmrecord{4}{35917}
+\pmprivacy{1}
+\pmauthor{halu}{5781}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A25}
+\pmclassification{msc}{14M12}
+\pmsynonym{Segre embedding}{SegreMap}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\def\N{\mathbb{N}} 
+\def\Z{\mathbb{Z}} 
+\def\Q{\mathbb{Q}} 
+\def\R{\mathbb{R}} 
+\def\C{\mathbb{C}} 
+
+\def\d{\mathrm{d}}
+\def\pd{\partial}
+\def\P{\mathbb{P}}
+\def\A{\mathbb{A}}
+\def\Gr{\mathrm{Gr}}
+
+\def\GL{\mathrm{GL}}
+\def\SL{\mathrm{SL}}
+\def\U{\mathrm{U}}
+\def\SU{\mathrm{SU}}
+\def\O{\mathrm{O}}
+\def\SO{\mathrm{SO}}
+\begin{document}
+The \emph{Segre map} is an embedding $s:\P^n\times\P^m\to\P^{nm+n+m}$ of the product of
+two projective spaces into a larger projective space. It is important since it makes the
+product of two projective varieties into a projective variety again.
+Invariantly, it can described as follows. Let $V,W$ be (finite dimensional) vector spaces; then
+\[ \begin{array}{rrclcc}
+s: & \P V & \times & \P W & \longrightarrow & \P(V\otimes W) \\
+   & [x]  & ,      & [y]  & \longmapsto     & [x\otimes y]
+\end{array} \]
+In homogeneous coordinates, the pair of points $[x_0:x_1:\cdots:x_n]$, 
+$[y_0:y_1:\cdots:y_m]$ maps to 
+\[ [x_0y_0:x_1y_0:\cdots:x_ny_0:x_0y_1:x_1y_1:\cdots:x_ny_m]. \]
+If we imagine the target space as the projectivized version of the space
+of $(n+1)\times (m+1)$ matrices, then the image is exactly the set of matrices
+which have rank 1; thus it is the common zero locus of the equations
+\[ \left|\begin{array}{cc} a_{ij} & a_{il} \\ a_{kj} & a_{kl} \end{array}\right| 
+= a_{ij}a_{kl}-a_{il}a_{kj} = 0 \]
+for all $0\le i<k\le n$, $0\le j<l \le m$. Varieties of this form (defined by vanishing
+of minors in some space of matrices) are usually called \emph{determinantal varieties}.
+%%%%%
+%%%%%
+\end{document}

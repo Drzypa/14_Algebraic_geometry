@@ -1,0 +1,218 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LegendreTransform}
+\pmcreated{2013-03-22 17:45:58}
+\pmmodified{2013-03-22 17:45:58}
+\pmowner{fernsanz}{8869}
+\pmmodifier{fernsanz}{8869}
+\pmtitle{Legendre Transform}
+\pmrecord{11}{40221}
+\pmprivacy{1}
+\pmauthor{fernsanz}{8869}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14R99}
+\pmclassification{msc}{26B10}
+%\pmkeywords{Legendre transform}
+%\pmkeywords{Pluecker}
+%\pmkeywords{Hamiltonian}
+%\pmkeywords{Lagrange}
+\pmrelated{InverseFunctionTheorem}
+\pmdefines{Legendre Transform}
+\pmdefines{Legendre transformation}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+% THEOREMS -------------------------------------------------------
+\newtheorem{thm}{Theorem}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+%\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newtheorem{ej}{Example}
+\numberwithin{equation}{section}
+% MATH -----------------------------------------------------------
+\newcommand{\R}{\mathbb R}
+\newcommand{\To}{\longrightarrow}
+% ----------------------------------------------------------------
+\begin{document}
+\begin{defn}[Legendre Transformation]
+Let $f:\R^n \To \R$ be a $C^1$ function and consider the
+transformation $x=\left(x_1,\cdots, x_n \right) \To
+y=\left(y_1,\cdots, y_n \right)=\left(
+\partial_1 f(x), x_2, \cdots, x_n \right)$. Provided it is
+possible to invert \footnote{The Inverse Mapping Theorem and its
+implications must be used here; in order to be possible to invert
+for $x$, the Jacobian must be different from zero. The Jacobian
+being $\frac{\partial^2 f(x)}{\partial x^2}$ in this case indicates
+that $\frac{\partial^2 f(x)}{\partial x^2} \neq 0$, which means that
+$f(x)$ must be strictly concave or strictly convex; this seems clear
+graphically } for $x$, $x=\varphi(y)$, we define the \emph{Legendre
+Transform} of $f$, $\mathcal L f$, as the function
+\begin{eqnarray}
+\nonumber \mathcal L f=g: & \R^n & \To \R  \\ \nonumber &y& \To
+g(y)=\varphi(y) \cdot y - f(\varphi(y))
+\end{eqnarray}(here '$\cdot$' denotes the usual scalar product on $\R^n$).
+$\mathcal L$ is called the Legendre Transformation.
+
+\end{defn}
+
+\medskip
+
+\begin{rem}
+\noindent As $x=\varphi(y)$, the defining relation is often written
+as $g(y)=x \cdot y - f(x)$, without explicitly indicating that $x$
+must be a function of $y$
+\end{rem}
+
+\medskip
+
+\begin{rem}
+\noindent Note that, in inverting for $x$, $x=\varphi(y)$, we are
+making $y=(y_1, \cdots, y_n)$ the \textbf{independent} variables.
+This is more an issue related to the Inverse Mapping Theorem, but it
+is well worth to state it explicitly.
+\end{rem}
+
+\medskip
+
+\begin{rem}
+\noindent From the definition we see that the Legendre
+Transformation allows us to pass from a function $f$ of $(x_1,
+\cdots x_n)$ to a function in which we have substituted the first
+coordinate by the derivative of $\partial_1 f$. We will deal here
+with the case in which just one coordinate is changed but proceeding
+by induction it is easy to prove the following facts for any number
+of variables.
+\end{rem}
+
+\medskip
+
+\noindent The rationale behind the Legendre transformation is the
+following. Let's begin by considering the unidimensional case.
+Suppose we have the function $x \to f(x)$. We could be interested in
+expressing the values of $f$ as function of the derivative
+$m=f_x(x)$ instead of as function of $x$ itself without losing any
+information about $f$ (some examples of this situation will be given
+below). At first glance one could think of just inverting the
+relation $m=f_x(x)$ for $x$ to write $f(x)=f(f_x^{-1}(m))\equiv
+g(m)$. However, this would result in a loss of information because
+there would be infinite functions $f$ which will give rise to the
+same $g$; namely the family of translated functions $f(x-a)$ for any
+$a \in \R$ will result in the same $g$. This can be easily
+visualized in the figure.
+
+\begin{figure}[h]
+\begin{center}
+\scalebox{.7}{\includegraphics{Legendre01.EPS}} \caption{Translated
+versions of the same function have the same relation
+$f(f_x^{-1}(m))$} \label{fig1}
+\end{center}
+\end{figure}
+
+\medskip
+
+This is because we can not entirely determine a curve by knowing its
+slope at every point. The key point is that we can, nevertheless,
+determine a curve by knowing its slope \textbf{and} its origin
+ordinate at every point.
+
+\noindent Take a point P on the curve with abscise $x$ -see figure
+2-.
+
+\begin{figure}[h]
+\begin{center}
+\scalebox{.7}{\includegraphics{Legendre02.EPS}} \caption{Meaning of
+Legendre Transformation} \label{fig1}
+\end{center}
+\end{figure}
+
+Call the origin ordinate of its tangent $\psi$ and its slope $m$
+which is given by $$m=\frac{f(x)-\psi}{x-0}$$ Then $\psi=f-x\cdot
+m$. So, intuitively we see that  \emph{the Legendre transform is
+nothing but the origin ordinate of the slope of $f$ at x}. It is
+obvious -at least graphically- that we can recover $f$ knowing
+$\psi(m)$. We now prove it rigourously.
+
+\begin{thm}[Invertibility and duality of Legendre Transformation]
+The Legendre Transformation is invertible and the Inverse Legendre
+Transformation is the Legendre Transformation itself, that is,
+$\mathcal L \mathcal L^{-1} f = f$ or $\mathcal L=\mathcal L^{-1}$.
+\end{thm}
+
+\begin{proof}
+Evaluate the function $g$ at point $y=\varphi^{-1}(x)$ to get
+$$g(\varphi^{-1}(x))=x \cdot \varphi^{-1}(x)-f(x)$$ this is
+$$f(x)=x \cdot \varphi^{-1}(x) - g(\varphi^{-1}(x))$$ Now, it is easy to show that
+$x=\left(x_1,\cdots, x_n \right)=\left(\partial_1 g(y), y_2, \cdots,
+y_n \right)$. So, according to the definition, this is the Legendre
+transform of $g$ induced by the transformation $y \To x$,
+$y=\varphi^{-1}(x)$.
+
+\end{proof}
+
+\begin{ej}
+In thermodynamics, a thermodynamic system is completely described by
+knowing its \emph{fundamental equation in energetic form}: $\mathcal
+U=U(S,V)$ where $\mathcal U$ is the energy, $S$ is entropy and $V$
+is volume. This relation, although of great theoretical value, has a
+major drawback, namely that entropy is not a measurable quantity.
+However, it happens that $\frac{\partial U}{\partial S}=T$,
+temperature. So, we would like to being able to swap $S$ for $T$
+which is an easily measurable quantity. We just take the Legendre
+transform $F$ of $U$ induced by the transformation $(S,V) \To
+(T,V)=\left(\frac{\partial U}{\partial S}, V \right)$:
+$$F=U-TS$$ which is called the \emph{Helmholtz Potential} and hence
+is a function of the independent variables $T,V$ Analogously, as it
+happens that $\frac{\partial U}{\partial V}=-P$, pressure, we can
+swap $V$ and $P$ and consider the Legendre Transformation $H$ of $U$
+induced by the transformation $(S,V) \To (S,P)$: $$H=U+PV$$ which is
+called \emph{Enthaply} and hence is a function of the independent
+variables $S,P$.
+\end{ej}
+
+\begin{ej}
+The Lagrangian formalism in Mechanics allows to completely determine
+the evolution of a general mechanical system by knowledge of the so
+called Lagrangian, $\mathcal L$ which is a function of generalized
+coordinates $q$, generalized velocities \footnote{The customary
+notation for generalized velocities is $\dot{q}$; however this
+notation is somehow obscure because it is prone to establish a
+functional relation between $q$ and $\dot{q}$ as variables of L. As
+variables of L they are just points in $\R^n$} $v$ and time $t$:
+$\mathcal L=L(q,v,t$). The generalized moments are defined as
+$p=\frac{\partial L}{\partial v}$ and they play the role of usual
+linear momentum. Generalized moments are conserved in time under
+certain circumstances, so we would like to swap the role of $v$ and
+$p$. Thus we consider the Legendre transform $H$ of $L$ induced by
+the transformation $(q,v,t) \To (q,p,t)=\left(q,\frac{\partial
+L}{\partial v}, t \right)$:
+$$H=L-p \cdot v$$ which is called the Hamiltonian. As pointed out in Remark 2, $q, p$ and $t$ are
+independent variables, as we have inverted the mentioned
+transformation $(q,v,t) \To (q,p,t)$
+\end{ej}
+%%%%%
+%%%%%
+\end{document}

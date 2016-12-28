@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RadicalOfAnIdeal}
+\pmcreated{2013-03-22 12:35:54}
+\pmmodified{2013-03-22 12:35:54}
+\pmowner{CWoo}{3771}
+\pmmodifier{CWoo}{3771}
+\pmtitle{radical of an ideal}
+\pmrecord{17}{32850}
+\pmprivacy{1}
+\pmauthor{CWoo}{3771}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A05}
+\pmclassification{msc}{16N40}
+\pmclassification{msc}{13-00}
+%\pmkeywords{radical}
+%\pmkeywords{ideal}
+\pmrelated{PrimeRadical}
+\pmrelated{RadicalOfAnInteger}
+\pmrelated{JacobsonRadical}
+\pmrelated{HilbertsNullstellensatz}
+\pmrelated{AlgebraicSetsAndPolynomialIdeals}
+\pmdefines{radical ideal}
+\pmdefines{radical}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $R$ be a commutative ring.  For any ideal $I$ of $R$, the {\em radical} of $I$, written $\sqrt{I}$ or $\operatorname{Rad}(I)$, is the set 
+\[ \{a \in R \mid a^n \in I \text{ for some integer } n>0 \}\]
+
+The radical of an ideal $I$ is always an ideal of $R$.
+
+If $I = \sqrt{I}$, then $I$ is called a {\em radical ideal}.
+
+Every prime ideal is a radical ideal.  If $I$ is a radical ideal, the quotient ring $R/I$ is a ring with no nonzero nilpotent elements.
+
+More generally, the radical of an ideal in can be defined over an arbitrary ring.  Let $I$ be an ideal of a ring $R$, the radical of $I$ is the set of $a\in R$ such that every m-system containing $a$ has a non-empty intersection with $I$: $$\sqrt{I}:=\lbrace a\in R\mid \mbox{if }S\mbox{ is an $m$-system, and }a\in S,\mbox{ then }S\cap I\ne \varnothing\rbrace.$$
+
+Under this definition, we see that $\sqrt{I}$ is again an ideal (two-sided) and it is a subset of $\lbrace a\in R\mid a^n\in I \mbox{ for some integer }n>0\rbrace$.  Furthermore, if $R$ is commutative, the two sets coincide.  In other words, this definition of a radical of an ideal is indeed a ``generalization'' of the radical of an ideal in a commutative ring.
+%%%%%
+%%%%%
+\end{document}

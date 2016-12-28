@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PresheafOfATopologicalBasis}
+\pmcreated{2013-03-22 16:22:36}
+\pmmodified{2013-03-22 16:22:36}
+\pmowner{jocaps}{12118}
+\pmmodifier{jocaps}{12118}
+\pmtitle{presheaf of a topological basis}
+\pmrecord{14}{38519}
+\pmprivacy{1}
+\pmauthor{jocaps}{12118}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14F05}
+\pmclassification{msc}{54B40}
+\pmclassification{msc}{18F20}
+\pmrelated{site}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand\Ccal{\mathcal{C}}
+\renewcommand\P{\mathcal{P}}
+\begin{document}
+Let $X$ be a topological space and let $\mathcal B$ be a basis of its topology. We can regard $\mathcal B$ as a category
+with objects being the open sets in $\mathcal B$ and arrows/morphisms between $U,V\in\mathcal B$ to exists only if $U\subset V$, and 
+where the \emph{only} element of $\mathcal B(U,V)$ is the injection map $U\hookrightarrow V$. Let now $\Ccal$ be a complete 
+ category, we now define the 
+\emph{presheaf of $\Ccal$-objects over the basis $\mathcal B$ of the topology of $X$} to be a contravariant functor
+$$\P:\mathcal B\rightarrow \Ccal$$
+
+%%%%%
+%%%%%
+\end{document}

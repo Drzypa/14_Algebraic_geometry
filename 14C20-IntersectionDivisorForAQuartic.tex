@@ -1,0 +1,82 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IntersectionDivisorForAQuartic}
+\pmcreated{2013-03-22 15:44:59}
+\pmmodified{2013-03-22 15:44:59}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{intersection divisor for a quartic}
+\pmrecord{5}{37702}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14C20}
+\pmdefines{hyperflex}
+\pmdefines{flex}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+Let $C$ be a non-singular curve in the plane, defined over an algebraically closed field $K$, and given by a polynomial $f(x,y)=0$ of degree $4$ (i.e. $C$ is a quartic). Let $L$ be a (rational) line in the plane $K^2$. The intersection divisor of $C$ and $L$ is of the form:
+
+$$(L\cdot C)=P_1+P_2+P_3+P_4$$
+where $P_i$, $i=1,2,3,4$, are points in $C(K)$. There are five possibilities:
+
+\begin{enumerate}
+\item The generic position: all the points $P_i$ are distinct.
+
+\item $L$ is tangent to $C$: there exist indices $1\leq i\neq j\leq 4$ such that $P_i=P_j$. Without loss of generality we may assume $P_1=P_2$ and $(L\cdot C)=2P_1 + P_3+P_4$, and $P_3\neq P_4$.
+
+\item $L$ is bitangent to $C$ when $P_1=P_2$ and $P_3=P_4$ but $P_1\neq P_3$. It may be shown that if $\operatorname{char}(K)\neq 2$ then $C$ has exactly $28$ bitangent lines.
+
+\item $L$ intersects $C$ at exactly two points, thus $P_1=P_2=P_3\neq P_4$. The point $P_1$ is called a {\it flex}.
+
+\item $L$ intersects $C$ at exactly one point and $P_1=P_2=P_3=P_4$. This point is called a {\it hyperflex}. A quartic $C$ may not have any hyperflex.
+
+\end{enumerate}
+
+\begin{thebibliography}{00}
+\bibitem{paper1} S. Flon, R. Oyono, C. Ritzenthaler, {\em Fast addition on non-hyperelliptic genus 3 curves}, can be found \PMlinkexternal{here}{http://eprint.iacr.org/2004/118.ps}.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

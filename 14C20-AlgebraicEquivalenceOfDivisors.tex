@@ -1,0 +1,68 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AlgebraicEquivalenceOfDivisors}
+\pmcreated{2013-03-22 15:34:10}
+\pmmodified{2013-03-22 15:34:10}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{algebraic equivalence of divisors}
+\pmrecord{4}{37474}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14C20}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+Let $X$ be a surface (a two-dimensional algebraic variety).
+
+\begin{defn}
+\begin{enumerate}
+\item An algebraic family of effective divisors on $X$ parametrized by a non-singular curve $T$ is defined to be an effective Cartier divisor $\mathcal{D}$ on $X\times T$ which is flat over $T$.
+\item If $\mathcal{F}$ is an algebraic family of effective divisors on $X$, parametrized by a non-singular curve $T$, and $P,Q\in T$ are any two closed points on $T$, then we say that the corresponding divisors in $\mathcal{F}$, $D_P,D_Q$, are prealgebraically equivalent.
+\item Two (Weil) divisors $D,D'$ on $X$ are algebraically equivalent if there is a finite sequence $D=D_0, D_1, \ldots, D_n=D'$ with $D_i$ and $D_{i+1}$ prealgebraically equivalent for all $0\leq i < n$. 
+\end{enumerate}
+\end{defn}
+%%%%%
+%%%%%
+\end{document}

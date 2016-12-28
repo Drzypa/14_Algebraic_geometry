@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CategoryOfQuiversIsConcrete}
+\pmcreated{2013-03-22 19:17:28}
+\pmmodified{2013-03-22 19:17:28}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{category of quivers is concrete}
+\pmrecord{4}{42225}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14L24}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $\mathcal{Q}$ denote the category of all quivers and quiver morphisms with standard composition. If $Q=(Q_0,Q_1,s,t)$ is a quiver, then we can associate with $Q$ the set
+$$S(Q)=Q_0\sqcup Q_1$$
+where ,,$\sqcup$'' denotes the disjoint union of sets.
+
+Furthermore, if $F:Q\to Q'$ is a morphism of quivers, then $F$ induces function
+$$S(F):S(Q)\to S(Q')$$
+by putting $S(F)(a)=F_0(a)$ if $a\in Q_0$ and $S(F)(\alpha)=F_1(\alpha)$ if $\alpha\in Q_1$.
+
+\textbf{Proposition.} The category $\mathcal{Q}$ together with $S:\mathcal{Q}\to\mathcal{SET}$ is a concrete category over the category of all sets $\mathcal{SET}$.
+
+\textit{Proof.} The fact that $S$ is a functor we leave as a simple exercise. Now assume, that $F,G:Q\to Q'$ are morphisms of quivers such that $S(F)=S(G)$. It follows, that for any vertex $a\in Q_0$ and any arrow $\alpha\in Q_1$ we have
+$$F_0(a)=S(F)(a)=S(G)(a)=G_0(a);$$
+$$F_1(\alpha)=S(F)(\alpha)=S(G)(\alpha)=G_1(\alpha)$$
+which clearly proves that $F=G$. This completes the proof. $\square$
+
+\textbf{Remark.} Note, that if $F:Q\to Q'$ is a morphism of quivers, then $F$ is injective in $(\mathcal{Q}, S)$ (see \PMlinkname{this entry}{InjectiveAndSurjectiveMorphismsInConcreteCategories} for details) if and only if both $F_0$, $F_1$ are injective. The same holds if we replace word ,,injective'' with ,,surjective''.
+%%%%%
+%%%%%
+\end{document}

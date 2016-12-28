@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NormalComplexAnalyticVariety}
+\pmcreated{2013-03-22 17:41:48}
+\pmmodified{2013-03-22 17:41:48}
+\pmowner{jirka}{4157}
+\pmmodifier{jirka}{4157}
+\pmtitle{normal complex analytic variety}
+\pmrecord{5}{40138}
+\pmprivacy{1}
+\pmauthor{jirka}{4157}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14M05}
+\pmclassification{msc}{32C20}
+\pmsynonym{normal analytic variety}{NormalComplexAnalyticVariety}
+\pmrelated{WeaklyHolomorphic}
+\pmdefines{normal complex analytic space}
+\pmdefines{normal complex analytic subvariety}
+\pmdefines{normal analytic space}
+\pmdefines{normal analytic subvariety}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{theorem}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{conj}{Conjecture}
+\newtheorem*{cor}{Corollary}
+\newtheorem*{example}{Example}
+\newtheorem*{prop}{Proposition}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+
+\begin{document}
+Let $V$ be a local complex analytic variety (or a complex analytic space).  A point $p \in V$
+is \PMlinkescapetext{{\em normal}} if and only if every weakly holomorphic function through $V$ extends to be 
+holomorphic in $V$ near $p.$
+
+In particular, if $V \subset {\mathbb{C}}^n$ is a complex analytic subvariety, it is normal at $p$ if and only if every weakly holomorphic function through $V$ extends to be holomorphic in a neighbourhood of $p$ in ${\mathbb{C}}^n$.
+
+To see that this definition is equivalent to the usual one, that is, that $V$ is normal
+at $p$ if and only if ${\mathcal{O}}_p$ (the ring of germs of holomorphic functions at $p$)
+is integrally closed, we need the following theorem.  Let ${\mathcal{M}}_p$ be the total quotient ring of ${\mathcal{O}}_p$, that is, the ring of germs of meromorphic functions.
+
+\begin{thm}
+Let $V$ be a local complex analytic variety.  Then ${\mathcal{O}}_p^w(V)$ is the integral
+closure of ${\mathcal{O}}_p(V)$ in ${\mathcal{M}}_p.$
+\end{thm}
+
+\begin{thebibliography}{9}
+\bibitem{Whitney:varieties}
+Hassler Whitney.
+{\em \PMlinkescapetext{Complex Analytic Varieties}}.
+Addison-Wesley, Philippines, 1972.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RelationsInQuiver}
+\pmcreated{2013-03-22 19:16:45}
+\pmmodified{2013-03-22 19:16:45}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{relations in quiver}
+\pmrecord{4}{42211}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14L24}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $Q$ be a quiver and $k$ a field.
+
+\textbf{Definition.} A \textbf{relation} in $Q$ is a linear combination (over $k$) of paths of length at least $2$ such that all paths have the same source and target. Thus a relation is an element of the path algebra $kQ$ of the form
+$$\rho=\sum_{i=1}^m\lambda_i\cdot w_i$$
+such that there exist $x,y\in Q_0$ with $s(w_i)=x$ and $t(w_i)=y$ for all $i$, all $w_i$ are of length at least $2$ and not all $\lambda_i$ are zero.
+
+If a relation $\rho$ is of the form $\rho=w$ for some path $w$, then it is called a \textbf{zero relation} and if $\rho=w_1-w_2$ for some paths $w_1,w_2$, then $\rho$ is called a \textbf{commutativity relation}.
+%%%%%
+%%%%%
+\end{document}

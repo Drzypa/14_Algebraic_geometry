@@ -1,0 +1,112 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LseriesOfAnEllipticCurve}
+\pmcreated{2013-03-22 13:49:43}
+\pmmodified{2013-03-22 13:49:43}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{L-series of an elliptic curve}
+\pmrecord{8}{34560}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H52}
+\pmsynonym{L-function of an elliptic curve}{LseriesOfAnEllipticCurve}
+%\pmkeywords{L-function}
+%\pmkeywords{L-series}
+%\pmkeywords{elliptic curve}
+\pmrelated{EllipticCurve}
+\pmrelated{DirichletLSeries}
+\pmrelated{ConductorOfAnEllipticCurve}
+\pmrelated{HassesBoundForEllipticCurvesOverFiniteFields}
+\pmrelated{ArithmeticOfEllipticCurves}
+\pmdefines{L-series of an elliptic curve}
+\pmdefines{local part of the L-series}
+\pmdefines{root number}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem*{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+Let $E$ be an elliptic curve over $\mathbb{Q}$ with Weierstrass
+equation:
+$$y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6$$
+with coefficients $a_i\in\mathbb{Z}$. For $p$ a prime in
+$\mathbb{Z}$, define $N_p$ as the number of points in the
+reduction of the curve modulo $p$, this is, the number of points in:
+$$\{O\}\cup\{(x,y)\in{\mathbb{F}_p}^2\colon y^2+a_1xy+a_3y-x^3-a_2x^2-a_4x-a_6\equiv 0\ mod\ p\}$$
+where $O$ is the point at infinity. Also, let $a_p=p+1-N_p$. We define the \emph{local part at $p$ of
+the L-series} to be:
+$$ L_p(T) = \begin{cases} 1-a_pT+pT^2  \text{, if $E$ has good reduction at $p$}, \\
+ 1-T  \text{, if $E$ has split multiplicative reduction at $p$},\\
+ 1+T  \text{, if $E$ has non-split multiplicative reduction at $p$},\\
+ 1  \text{, if $E$ has additive reduction at $p$}. \end{cases} $$
+
+\begin{defn} The L-series of the elliptic curve $E$ is defined to
+be:
+$$ L(E,s) = \prod_{p}\frac{1}{L_p(p^{-s})} $$
+where the product is over all primes.
+\end{defn}
+
+Note: The product converges and gives an analytic function for all
+$Re(s)>3/2$. This follows from the fact that $\mid a_p \mid \leq
+2\sqrt{p}$. However, far more is true:
+
+\begin{thm}[Taylor, Wiles]
+The L-series $L(E,s)$ has an analytic continuation to the entire
+complex plane, and it satisfies  the following functional equation.
+Define
+$$\Lambda(E,s)=({N_{E/\mathbb{Q}}})^{s/2}(2\pi)^{-s}\Gamma(s)L(E,s)$$
+where ${N_E/\mathbb{Q}}$ is the conductor of $E$ and $\Gamma$ is
+the Gamma function. Then:
+$$\Lambda(E,s)=w\Lambda(E,2-s)\quad with\ w=\pm 1$$
+\end{thm}
+
+The number $w$ above is usually called the \emph{root number} of
+$E$, and it has an important conjectural meaning (see Birch and
+Swinnerton-Dyer conjecture).
+
+This result was known for elliptic curves having complex
+multiplication (Deuring, Weil) until the general result was
+finally proven.
+
+\begin{thebibliography}{9}
+\bibitem{milne} James Milne, {\em Elliptic Curves}, \PMlinkexternal{online course
+notes}{http://www.jmilne.org/math/CourseNotes/math679.html}.
+\bibitem{silverman} Joseph H. Silverman, {\em The Arithmetic of Elliptic Curves}. Springer-Verlag, New York, 1986.
+\bibitem{silverman2} Joseph H. Silverman, {\em Advanced Topics in
+the Arithmetic of Elliptic Curves}. Springer-Verlag, New York,
+1994.
+\bibitem{shimura} Goro Shimura, {\em Introduction to the
+Arithmetic Theory of Automorphic Functions}. Princeton University
+Press, Princeton, New Jersey, 1971.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

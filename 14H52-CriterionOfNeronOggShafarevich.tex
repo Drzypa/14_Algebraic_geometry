@@ -1,0 +1,146 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CriterionOfNeronOggShafarevich}
+\pmcreated{2013-03-22 17:14:58}
+\pmmodified{2013-03-22 17:14:58}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{criterion of N\'eron-Ogg-Shafarevich}
+\pmrecord{4}{39582}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H52}
+\pmsynonym{criterion of Neron-Ogg-Shafarevich}{CriterionOfNeronOggShafarevich}
+%\pmkeywords{bad reduction}
+\pmrelated{EllipticCurve}
+\pmrelated{ArithmeticOfEllipticCurves}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem*{defn}{Definition}
+\newtheorem*{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem*{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\newcommand{\M}{\mathcal{M}}
+\newcommand{\ka}{\mathbb{F}}
+\newcommand{\cara}{\operatorname{char}}
+\begin{document}
+In this entry, we use the following notation. $K$ is a local field, complete with respect to a
+discrete valuation $\nu$, $R$ is the ring of integers of $K$, $\M$ is the maximal ideal of $R$ and $\ka$ is the residue field of $R$.
+\begin{defn}
+Let $\Xi$ be a set on which $\Gal(\overline{K}/K)$
+acts. We say that $\Xi$ is unramified at $\nu$ if the action of the inertia group
+${I_{\nu}}$ on $\Xi$ is trivial, i.e. ${\zeta}^{\sigma}=\zeta$
+for all $\sigma \in I_{\nu}$ and for all $\zeta \in \Xi$.
+\end{defn}
+\begin{thm}[Criterion of N${\bf {\acute{e}}}$ron-Ogg-Shafarevich] Let $E/K$ be an elliptic curve defined over $K$. The following are
+equivalent:
+\begin{enumerate}
+\item $E$ has good reduction over $K$;
+\item $E[m]$ is unramified at $\nu$ for all $m\geq1$,
+ $\gcd(m,\cara(\ka))=1$;
+\item The Tate module $T_l(E)$ is unramified at $\nu$ for
+some (all) l, $l\neq \cara(\ka)$;
+\item $E[m]$ is unramified at $\nu$ for infinitely many
+integers $m\geq 1$, $\gcd(m,\cara(\ka))=1$.
+\end{enumerate}
+\end{thm}
+\begin{cor}
+Let $E/K$ be an elliptic curve. Then $E$ has
+potential good reduction if and only if the inertia group
+$I_{\nu}$ acts on $T_l(E)$ through a finite quotient for some
+prime $l\neq \cara(\ka)$.
+\end{cor}
+\begin{proof}[Proof of Corollary] ($\Rightarrow$) Assume that $E$ has potential good
+reduction. By definition, there exists a finite extension of $K$, call it $K'$, such that $E/K'$ has good reduction. We
+can extend 
+$K'$ (if necessary) so $K'/K$ is a Galois finite extension.
+
+Let $\nu'$ and $I_{\nu '}$ be the corresponding valuation
+and inertia group for $K'$. Then the theorem above (
+(1)$\Rightarrow$(3) ) implies that $T_l(E)$ is unramified at
+$\nu'$ for all $l$, $l\neq \cara(\ka)=\cara(\ka')$ (since
+$\ka'$ is a finite extension of $\ka$). So $I_{\nu '}$ acts
+trivially on $T_l(E)$ for all $l\neq \cara(\ka')$. Thus
+$I_{\nu}\hookrightarrow T_l(E)$ factors through the finite
+quotient $I_{\nu}/I_{{\nu}'}$.
+
+
+($\Leftarrow$) Let $l\neq \cara(\ka)$, and assume
+$I_{\nu}\hookrightarrow T_l(E)$ factors through a finite quotient,
+say $I_{\nu}/J$. Let ${\overline{K}}^J$ be the fixed field of
+$J$, then ${\overline{K}}^J/{\overline{K}}^{I_{\nu}}$ is a finite extension, so we can find a finite
+extension $K'/K$ so that ${\overline{K}}^J={K'}{\overline{K}}^{I_{\nu}}$. So 
+the inertia group of $K'$ is equal to $J$, and
+$J$ acts trivially on $T_l(E)$. Hence the criterion (
+(3)$\Rightarrow$(1) ) implies that $E$ has good reduction over
+$K'$, and since $K'/K$ is finite, $E$ has
+potential good reduction.
+\end{proof}
+\begin{prop}
+Let $E/K$ be an elliptic curve. Then $E$ has
+potential good reduction if and only if its $j$-invariant is
+integral ( i.e. $j(E)\in R$ ).
+\end{prop}
+\begin{proof}
+($\Leftarrow$) Assume $\cara(\ka)\neq 2$, it is easy to prove
+that we can extend $K$ to a finite extension $K'$ so that
+$E$ has a Weierstrass equation:
+\begin{equation}
+E:y^2=x(x-1)(x-\lambda)\quad \lambda\neq 0,1
+\end{equation}
+Since we are assuming $j(E)\in R$, and:
+\begin{equation}
+(1-\lambda(1-\lambda))^3-j{\lambda}^2(1-\lambda)^2=0
+\end{equation}
+then $\lambda\in R$ and $\lambda\neq 0,1 \mod \M'$ (
+$\Rightarrow$ $\Delta '\in (R')^*$ ). Hence $E/K'$ has
+good reduction, i.e. $E$ has potential good
+reduction.
+
+($\Rightarrow$) Assume that $E$ has potential good reduction,
+so there exists $K'$ so that $E/K'$ has good
+reduction. Let $\Delta'$, $c_4'$ the usual quantities associated
+to the Weierstrass equation over $K'$. Since $E/K'$ has good reduction, $\Delta '\in
+(R')^*$, and so $j(E)={{({c_4}')^3}\over {\Delta '}}\in
+R'$. But since $E$ is defined over $K$, $j(E)\in K$, so $j(E)\in K\bigcap{R'}=R$.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

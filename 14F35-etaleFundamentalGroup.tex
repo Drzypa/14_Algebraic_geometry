@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{etaleFundamentalGroup}
+\pmcreated{2013-03-22 14:11:46}
+\pmmodified{2013-03-22 14:11:46}
+\pmowner{archibal}{4430}
+\pmmodifier{archibal}{4430}
+\pmtitle{\'etale fundamental group}
+\pmrecord{5}{35627}
+\pmprivacy{1}
+\pmauthor{archibal}{4430}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14F35}
+\pmrelated{EtaleMorphism}
+\pmrelated{TopologicalSpace}
+\pmrelated{FundamentalGroup}
+\pmrelated{ClassificationOfCoveringSpaces}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\DeclareMathOperator{\Aut}{Aut}
+\begin{document}
+Recall that in topology, the fundamental group $\pi_1(T)$ of a connected topological space $T$ is defined to be the group of loops based at a point modulo homotopy.  When one wants to obtain something similar in the algebraic category, this definition encounters problems.  One cannot simply attempt to use the same definition, since the result will be wrong if one is working in positive characteristic.  More to the point, the topology on a scheme fails to capture much of the stucture of the scheme.  Simply choosing the ``loop'' to be an algebraic curve is not appropriate either, since in the most familiar case (over the complex numbers) such a ``loop'' has two real dimensions rather than one. 
+
+In the classification of covering spaces, it is shown that the fundamental group is exactly the group of deck transformations of the universal covering space.  This is more promising: surjective \'etale morphisms are the appropriate generalization of covering spaces.  Unfortunately, the universal covering space is often an infinite covering of the orignal space, which is unlikely to yield anything manageable in the algebraic category.  Finite coverings, on the other hand are tractable, so one can define the algebraic fundamental group as an inverse limit of automorphism groups.  Note also that finite \'etale morphisms are closed maps as well as open maps.
+
+\begin{defn}
+Let $X$ be a scheme, and let $x$ be a geometric point of $X$.  Then let $C$ be the category of pairs $(Y,\pi)$ such that $\pi\colon Y \to X$ is a finite \'etale morphism.  Morphisms $(Y,\pi)\to (Y',\pi')$ in this category are morphisms $Y\to Y'$ as schemes over $X$.  If $Y'$ factors through $Y$ as $Y'\to Y\to X$ then we obtain a morphism from $\Aut_C(Y)\to\Aut_C(Y')$.  This allows us to construct the \emph{\'etale fundamental group}
+\[
+\pi_1(X,x) = \varprojlim_{Y\in C} \Aut_C(Y).
+\]
+\end{defn}
+
+This explanation follows \cite{milne}.
+\begin{thebibliography}{9}
+\bibitem{milne} James Milne, {\em Lectures on \'Etale Cohomology}, \PMlinkexternal{online course notes}{http://www.jmilne.org/math/CourseNotes/math732.html}.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

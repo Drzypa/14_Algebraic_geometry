@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Indvariety}
+\pmcreated{2013-03-22 15:30:56}
+\pmmodified{2013-03-22 15:30:56}
+\pmowner{benjaminfjones}{879}
+\pmmodifier{benjaminfjones}{879}
+\pmtitle{ind-variety}
+\pmrecord{7}{37383}
+\pmprivacy{1}
+\pmauthor{benjaminfjones}{879}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A10}
+\pmclassification{msc}{14L15}
+%\pmkeywords{ind}
+%\pmkeywords{variety}
+%\pmkeywords{infinite dimensional variety}
+\pmdefines{ind-variety}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\DeclareMathOperator{\K}{\mathbb{K}}
+\begin{document}
+Let $\K$ be a field. An \emph{ind-variety} over $\K$ is a set $X$ along with a
+filtration:
+
+\[ X_0 \subset X_1 \subset \cdots X_n \subset \cdots \]
+
+such that
+
+\begin{enumerate}
+\item $X = \bigcup\limits_{j \ge 0} X_j$
+\item Each $X_i$ is a finite dimensional algebraic variety over $\K$
+\item The inclusions $i_j \colon X_j \to X_{j+1}$ are closed
+embeddings of algebraic varieties
+\end{enumerate}
+
+The ring of regular functions on an ind-variety $X$ is defined to be
+$\K [X] := \varprojlim \K [X_j]$ where the limit is taken
+with respect to the family of maps $\left\{ i_j^* \colon
+\K [X_{j+1}] \to \K [X_j] \right\}_{j \ge 0}$. 
+
+This ring is given the structure of a topological ring by letting each
+$\K [X_j]$ have the discrete topology and $\K [X]$ have the induced
+inverse limit topology, i.e. the topology induced from the canonical
+inclusion $\varprojlim \K [X_j] \subset \prod_j \K [X_j]$ and the
+product topology on $\prod_j \K [X_j]$.
+
+An ind-variety is called \emph{affine} (resp. \emph{projective}) if each
+$X_j$ is affine (resp. projective).
+
+The notion of an ind-variety goes back to Igor Shafarevich in \cite{S1} and \cite{S2}.
+
+\section*{Examples}
+
+Let $\mathcal{K} := \K ((t))$ be the ring of formal Laurant
+series over $\K$ and $\mathcal{O} := \K [[t]]$ be its
+ring of integers, the formal Taylor series. Let $V =
+\K^n$. Then the set $X$ of $\mathcal{O}$-lattices ($\mathcal{O}$-submodules of maximal rank) in $V \otimes_{\K} \mathcal{K}$ is an example of a (non-finite
+dimensional) projective ind-variety using the filtration
+
+\[ X_i := \left\{ L \in X \mid t^i L_0 \subset L \subset t^{-i} L_0,
+\dim_{\K} L/t^i L_0 = i n \right\} \]
+
+where $L_0 := V \otimes_{\K} \mathcal{O}$.
+
+(cf. \cite{L} section 11, or \cite{K} appendix C part 7)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{thebibliography}{1}
+\bibitem{L} George Lusztig, \emph{Singularities, character formulas,
+    and a q-analog of weight multiplicities}, Ast\'erisque 101-102 (1983), pp. 208-229.
+\bibitem{K} Shrawan Kumar, \emph{Kac-Moody Groups, their Flag Varieties and Representation Theory}. Progress in Mathematics Vol. 204. Birkhauser, 2002.
+\bibitem{S1} Igor Shafarevich, \emph{On some infinite-dimensional groups. II} Math USSR Izvestija 18 (1982), pp. 185 - 194.
+\bibitem{S2} Igor Shafarevich, \emph{Letter to the editors: ''On some infinite-dimensional groups. II``} Izv. Ross. Akad. Nauk. Ser. Mat. 59 (1995), pp. 224 - 224.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HassePrinciple}
+\pmcreated{2013-03-22 13:50:39}
+\pmmodified{2013-03-22 13:50:39}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Hasse principle}
+\pmrecord{7}{34581}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14G05}
+%\pmkeywords{Hasse principle}
+\pmrelated{HasseMinkowskiTheorem}
+\pmdefines{Hasse principle}
+\pmdefines{Hasse condition}
+\pmdefines{locally soluble}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+Let $V$ be an algebraic variety defined over a field $K$. By
+$V(K)$ we denote the set of points on $V$ defined over $K$. Let
+$\bar{K}$ be an algebraic closure of $K$. For a valuation $\nu$ of
+$K$, we write $K_{\nu}$ for the completion of $K$ at $\nu$. In
+this case, we can also consider $V$ defined over $K_{\nu}$ and
+talk about $V(K_{\nu})$.
+
+\begin{defn}\quad
+\begin{enumerate}
+\item If $V(K)$ is not empty we say that $V$ is \emph{soluble} in
+$K$.
+
+\item If $V(K_{\nu})$ is not empty then we say that $V$ is
+\emph{locally soluble} at $\nu$.
+
+\item If $V$ is locally soluble for all $\nu$ then we say that $V$
+satisfies the \emph{Hasse condition}, or we say that $V/K$ is
+\emph{everywhere locally soluble}.
+\end{enumerate}
+\end{defn}
+
+The \emph{Hasse Principle} is the idea (or desire) that an
+everywhere locally soluble variety $V$ must have a rational point,
+i.e. a point defined over $K$. Unfortunately this is not true,
+there are examples of varieties that satisfy the Hasse condition
+but have no rational points.
+
+{\bf Example}: A quadric (of any dimension) satisfies the Hasse
+condition. This was proved by Minkowski for quadrics over
+$\mathbb{Q}$ and by Hasse for quadrics over a number field.
+
+\begin{thebibliography}{9}
+\bibitem{milne} Swinnerton-Dyer, {\em Diophantine Equations: Progress and Problems}, \PMlinkexternal{online notes}{http://swc.math.arizona.edu/notes/files/DLSSw-Dyer1.pdf}.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{KodairaItakaDimension}
+\pmcreated{2013-03-22 16:12:43}
+\pmmodified{2013-03-22 16:12:43}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{Kodaira-Itaka dimension}
+\pmrecord{17}{38308}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14E05}
+\pmdefines{Kodaira dimension}
+\pmdefines{bigness}
+\pmdefines{general type}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+Given a projective algebraic variety $X$ and a line bundle $L\to X$,
+the \emph{Kodaira-Itaka dimension} of $L$
+is defined to be the supremum of the dimensions of the image of $X$
+by the map $\varphi_{|mL|}$ associated to the linear system $|mL|$,
+when $m$ is a positive integer, namely
+\[
+  \kappa(L)=\sup_{m\in\mathbb N}\{\dim\varphi_{|mL|}(X)\}.
+\]
+
+It is a standard fact that if we consider the graded ring
+\[
+  R(X,L)=\bigoplus_{m\in\mathbb N}H^0(X,mL), 
+\]
+then $\text{tr.deg} R(X,L)=\kappa(L)+1$.
+
+When the line bundle we have is the canonical bundle $K_X$ of $X$,
+then its Kodaira-Itaka dimension is called \emph{Kodaira dimension} of $X$.
+
+In paticular, if for some $m$ we have $\dim\varphi_{|mL|}(X)=\dim X$
+then $\kappa(L)=\dim X$ and $L$ is called \emph{big}.
+
+If $\kappa(X)=\kappa(K_X)=\dim X$,
+then $X$ is said to be of \emph{general type}.
+%%%%%
+%%%%%
+\end{document}

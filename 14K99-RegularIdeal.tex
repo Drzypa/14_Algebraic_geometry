@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RegularIdeal}
+\pmcreated{2013-03-22 15:43:05}
+\pmmodified{2013-03-22 15:43:05}
+\pmowner{pahio}{2872}
+\pmmodifier{pahio}{2872}
+\pmtitle{regular ideal}
+\pmrecord{12}{37666}
+\pmprivacy{1}
+\pmauthor{pahio}{2872}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14K99}
+\pmclassification{msc}{16D25}
+\pmclassification{msc}{11N80}
+\pmclassification{msc}{13A15}
+\pmrelated{QuasiRegularIdeal}
+\pmrelated{QuasiRegularity}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+ \usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\theoremstyle{definition}
+\newtheorem*{thmplain}{Theorem}
+\begin{document}
+An ideal $\mathfrak{a}$ of a ring $R$ is called a \PMlinkescapetext{{\em regular}}, iff $\mathfrak{a}$ \PMlinkescapetext{contains} a regular element of $R$.\\
+
+\textbf{Proposition.}\, If $m$ is a positive integer, then the only regular ideal in the residue class ring $\mathbb{Z}_m$ is the unit ideal $(1)$.
+
+{\em Proof.}\, The ring $\mathbb{Z}_m$ is a principal ideal ring.\, Let $(n)$ be any regular ideal of the ring $\mathbb{Z}_m$.\, Then $n$ can not be zero divisor, since otherwise there would be a non-zero element $r$ of $\mathbb{Z}_m$ such that\, $nr = 0$\, and thus every element $sn$ of the principal ideal would satisfy\, $(sn)r = s(nr)= s0 = 0$.\, So, $n$ is a regular element of $\mathbb{Z}_m$ and therefore we have\, $\gcd(m,\,n) = 1$.\, Then, according to \PMlinkname{B\'ezout's lemma}{BezoutsLemma}, there are such integers $x$ and $y$ that\, $1 = xm\!+\!yn$.\, This equation gives the congruence\, $1 \equiv yn \pmod{m}$,\, i.e.\, $1 = yn$\, in the ring $\mathbb{Z}_m$.\, With\, $1$ the principal ideal $(n)$ contains all elements of $\mathbb{Z}_m$, which means that\, $(n) = \mathbb{Z}_m = (1)$.\\
+
+\textbf{Note.}\, The above notion of ``regular ideal'' is used in most books concerning ideals of commutative rings, e.g. [1].\, There is also a different notion of ``regular ideal'' mentioned in [2] (p. 179):\, Let $I$ be an ideal of the commutative ring $R$ with non-zero unity.\, This ideal is called {\em regular}, if the quotient ring $R/I$ is a regular ring, in other words, if for each\, $a \in R$\, there exists an element\, $b \in R$\, such that\,
+$a^2b\!-\!a \in I$.
+
+\begin{thebibliography}{9}
+\bibitem{LM}{\sc M. Larsen and P. McCarthy:} ``{\em Multiplicative theory of ideals}''.\, Academic Press. New York (1971).
+\bibitem{B}{\sc D. M. Burton:} ``{\em A first course in rings and ideals}''.\, Addison-Wesley.  Reading, Massachusetts (1970).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

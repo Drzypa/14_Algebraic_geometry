@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AbelianVariety}
+\pmcreated{2013-03-22 14:17:17}
+\pmmodified{2013-03-22 14:17:17}
+\pmowner{archibal}{4430}
+\pmmodifier{archibal}{4430}
+\pmtitle{abelian variety}
+\pmrecord{6}{35742}
+\pmprivacy{1}
+\pmauthor{archibal}{4430}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14K99}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\PMlinkescapeword{theory}
+\PMlinkescapeword{properties}
+\begin{defn}
+An \emph{abelian variety} over a field $k$ is a proper group scheme over $\operatorname{Spec} k$ that is a variety. 
+\end{defn}
+
+This extremely terse definition needs some further explanation.
+
+\begin{prop}
+The group law on an abelian variety is commutative.
+\end{prop}
+This implies that for every ring $R$, the $R$-points of an abelian variety form an abelian group. 
+\begin{prop}
+An abelian variety is projective. 
+\end{prop}
+
+If $C$ is a curve, then the Jacobian of $C$ is an abelian variety.  This example motivated the development of the theory of abelian varieties, and many properties of curves are best understood by looking at the Jacobian. 
+
+If $E$ is an elliptic curve, then $E$ is an abelian variety (and in fact $E$ is naturally isomorphic to its Jacobian).
+
+See Mumford's excellent book \emph{Abelian Varieties}.  The bibliography for algebraic geometry has details and other books.
+%%%%%
+%%%%%
+\end{document}

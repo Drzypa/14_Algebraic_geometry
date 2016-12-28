@@ -1,0 +1,156 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SheafOfMeromorphicFunctions}
+\pmcreated{2013-03-22 13:52:17}
+\pmmodified{2013-03-22 13:52:17}
+\pmowner{archibal}{4430}
+\pmmodifier{archibal}{4430}
+\pmtitle{sheaf of meromorphic functions}
+\pmrecord{6}{34614}
+\pmprivacy{1}
+\pmauthor{archibal}{4430}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A99}
+\pmdefines{meromorphic}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{thm}{Theorem}
+\newtheorem{prop}{Proposition}
+
+\newcommand{\ab}[1]{{#1}_{\mathrm{ab}}}
+\newcommand{\Ad}{\mathrm{Ad}}
+\newcommand{\ad}{\mathrm{ad}}
+\newcommand{\Aut}{\mathrm{Aut}\,}
+\newcommand{\Aff}[2]{\mathrm{Aff}_{#1} #2}
+\newcommand{\aff}[2]{\mathfrak{aff}_{#1} #2}
+\newcommand{\mcB}{\mathcal{B}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\newcommand{\bfrac}[2]{\left[\frac{#1}{#2}\\right]}
+\newcommand{\bkh}{\backslash}
+\newcommand{\Cyc}[2]{\mathcal{C}^{#1}_{#2}}
+\newcommand{\Cbar}[2]{\overline{\C{#1}{#2}}}
+%\newcommand{\CD}{\R[\Delta]}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\CF}[2]{\ensuremath{\mathfrak{C}(#1,#2)}}
+\newcommand{\Cinf}{\EuScript{C}^{\infty}}
+\newcommand{\cmp}{cyclic mod $p$\xspace}
+\newcommand{\cp}{\mathrm{c.p.}}
+\newcommand{\CS}{\EuScript{CS}}
+\newcommand{\deck}{\EuScript{D}}
+\newcommand{\defl}[1]{\mathfrak{def}_{#1}}
+\newcommand{\Der}{\mathrm{Der}\,}
+\newcommand{\eH}{[X_H]-[Y_H]}
+\newcommand{\EL}{\mathcal{EL}}
+\newcommand{\End}{\mathrm{End}}
+\newcommand{\ES}[1]{\EuScript{#1}}
+\newcommand{\Ext}{\mathrm{Ext}}
+\newcommand{\Fix}{\mathrm{Fix}}
+\newcommand{\fr}[1]{\mathfrak{#1}}
+\newcommand{\Frat}{\mathrm{Frat}\,}
+\newcommand{\Gal}[1]{\Gamma(#1 |\Q)}
+\newcommand{\GL}[2]{\mathrm{GL}_{#1} #2}
+\newcommand{\gl}[2]{\mathfrak{gl}_{#1} #2}
+\newcommand{\GrR}[1]{a(#1 G)}
+\newcommand{\Gr}{\mathrm{Gr}\,}
+\newcommand{\mcH}{\mathcal{H}}
+\renewcommand{\H}{\mathbb{H}}
+\newcommand{\Hom}[2]{\mathrm{Hom}(#1,#2)}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\im}{\mathrm{im}}
+\newcommand{\ind}[2]{\mathrm{ind}^{#1}_{#2}}
+\newcommand{\indp}[2]{\mathfrak{ind}^{#1}_{#2}}
+\renewcommand{\inf}[1]{\mathfrak{inf}_{#1}}
+\newcommand{\inn}[1]{\langle #1\rangle}
+\renewcommand{\int}{\mathrm{int}}
+\newcommand{\Iso}{\mathrm{Iso}}
+\newcommand{\K}{\mathcal{K}}
+\renewcommand{\ker}{\mathrm{ker}\,}
+\renewcommand{\L}[1]{\mathfrak{L}(#1)}
+\newcommand{\lap}[1]{\Delta_{#1}}
+\newcommand{\lapM}{\Delta_M}
+\newcommand{\Lie}{\mathrm{Lie}}
+\newcommand{\lineq}{linearly equivalent\xspace}
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\mG}{m_G}
+\newcommand{\mK}{m_{\K}}
+\newcommand{\mindeg}[1]{\fr{md}(#1)}
+\newcommand{\N}{\mathbb{N}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\Om}{\Omega}
+\newcommand{\om}{\omega}
+\newcommand{\Orb}{\mathrm{Orb}}
+\newcommand{\pad}{\hat{\Z}_p}
+\newcommand{\pder}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pderw}[1]{\frac{\partial}{\partial #1}}
+\newcommand{\pdersec}[2]{\frac{\partial^2 #1}{\partial {#2}^2}} 
+\newcommand{\perm}[1]{\pi_{#1}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\rad}{\mathrm{rad}\,}
+\newcommand{\res}[2]{\mathrm{res}^{#1}_{#2}}
+\newcommand{\resp}[2]{\mathfrak{res}^{#1}_{#2}}
+\newcommand{\RG}{\EuScript{R}_G}
+\newcommand{\rk}{\mathrm{rk}\,}
+\newcommand{\V}[1]{\mathbf{#1}}
+\newcommand{\vp}{\varphi}
+\newcommand{\Stab}{\mathrm{Stab}}
+\newcommand{\SL}[2]{\mathrm{SL}_{#1} #2}
+\renewcommand{\sl}[2]{\fr{sl}_{#1} #2}
+\newcommand{\SO}[2]{\mathrm{SO}_{#1} #2}
+\newcommand{\Sp}[2]{\mathrm{Sp}_{#1} #2}
+\renewcommand{\sp}[2]{\fr{sp}_{#1} #2}
+\newcommand{\SU}[1]{\mathrm{SU}( #1)}
+\newcommand{\su}[1]{\fr{su}_{#1}}
+\newcommand{\Sym}{\mathrm{Sym}}
+\newcommand{\sym}{\mathrm{sym}}
+\newcommand{\Tg}{\mc{T}(\fr g)}
+\newcommand{\tom}{\tilde{\omega}}
+\newcommand{\ghtghp}{\fr g/\fr h\oplus(\fr g/\fr h^\perp)^*}
+\newcommand{\ghps}{(\fr g/\fr h^\perp)^*}
+\newcommand{\Tr}{\mathrm{Tr}}
+\newcommand{\tr}{\mathrm{tr}}
+%\renewcommand{\thechapter}{\Roman{chapter}}
+%\renewcommand{\thesection}{\thechapter.\arabic{section}}
+%\renewcommand{\thethm}{\thechapter.\arabic{thm}}
+\newcommand{\Ug}{\mc{U}(\fr g)}
+\newcommand{\Uh}{\mc{U}(\fr h)}
+\renewcommand{\V}[1]{\mathbf{#1}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Zp}{\Z/p}
+\begin{document}
+Let $(X,\O_X)$ be a ringed space.  By definition, for every $U$ we have a ring $\O_X(U)$.  If $S_U$ is the set of elements that are not zero divisors, we can construct the localization $K_U = S_U^{-1}\O_X(U)$.  If $\O_X(U)$ is actually an integral domain, then $K$ will be its field of fractions.  It is easy to verify that the restriction maps of the sheaf $\O_X(U)$ yield restriction maps on the rings $K_U$, so that we can define a presheaf $U\mapsto K_U$.  Let $\mathcal{K}_X$ be the sheafification of this presheaf.  Then $\mathcal{K}_X$ is called the \emph{sheaf of meromorphic functions}.
+
+If $X$ is a connected complex manifold, then $X$ has a sheaf $\O_X$ of holomorphic functions making it into a ringed space.  These rings are always integral domains, and their quotients are all the same, so $\mathcal{K}_X$ is a constant sheaf; in fact it always takes the same value, a field $K$.  We recognize $K$ as precisely the field of meromorphic functions on $X$.
+
+If $X$ is a scheme, then $X$ has an associated sheaf $\O_X$ making it into a ringed space.  If $X$ is arbitrary, then $\mathcal{K}_X$ will simply be a sheaf of rings.  If, however, $X$ is integral and quasicompact, then the situation is very similar to the situation of complex manifolds; the ring of regular functions on every Zariski open set is an integral domain, and all the restriction maps are injective.  As a result, the sheaf of meromorphic functions is again a constant sheaf that always yields the same value, and this value is called the function field of $X$.  This function field is an essential object of study in birational geometry.
+
+If $X$ is not reduced, its structure sheaf contains nilpotents.  Thus $\mathcal{K}$ is not a sheaf of fields, even locally.  Such schemes arise when discussing infinitesimal deformations.
+
+If $X$ is reduced but not irreducible, then each irreducible component
+(if it is quasicompact) has a function field, and $\mathcal{K}_X(X)$ is in fact the direct sum of these function fields. 
+
+If $X$ is a differential manifold, the differentiable functions on it form a sheaf of rings making $X$ into a ringed space.  Here the structure of $\mathcal{K}_X$ is much more complicated; a function on $U$ has an inverse if and only if its support on $U$ has empty interior.  So globally, this amounts to allowing functions to have poles provided the support of these poles has empty interior.  This complicated structure makes the sheaf of meromorphic functions much less useful in the differentiable category than it is for schemes or complex manifolds.
+%%%%%
+%%%%%
+\end{document}

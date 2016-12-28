@@ -1,0 +1,143 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SelmerGroup}
+\pmcreated{2013-03-22 13:50:55}
+\pmmodified{2013-03-22 13:50:55}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Selmer group}
+\pmrecord{6}{34586}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H52}
+%\pmkeywords{selmer}
+%\pmkeywords{tate}
+%\pmkeywords{shafarevich}
+\pmrelated{GroupCohomology}
+\pmrelated{RankOfAnEllipticCurve}
+\pmrelated{ArithmeticOfEllipticCurves}
+\pmdefines{Selmer group}
+\pmdefines{Tate-Shafarevich group}
+
+% this is the default PlanetMath preamble. 
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+Given an elliptic curve $E$ we can define two very interesting and
+important groups, the \emph{Selmer group} and the
+\emph{Tate-Shafarevich group}, which together provide a measure of
+the failure of the Hasse principle for elliptic curves, by
+measuring whether the curve is everywhere locally soluble. Here we
+present the construction of these groups.
+
+Let $E, E'$ be elliptic curves defined over $\mathbb{Q}$ and let
+$\bar{\mathbb{Q}}$ be an algebraic closure of $\mathbb{Q}$. Let
+$\phi\colon E \to E'$ be an non-constant isogeny (for example, we
+can let $E=E'$ and think of $\phi$ as being the ``multiplication
+by $n$'' map, $[n]\colon E\to E$). The following standard result
+asserts that $\phi$ is surjective over $\bar{\mathbb{Q}}$:
+\begin{thm}
+Let $C_1,C_2$ be curves defined over an algebraically closed field
+$K$ and let $$\psi \colon C_1 \to C_2$$ be a morphism (or
+algebraic map) of curves. Then $\psi$ is either constant or
+surjective.
+\end{thm}
+\begin{proof}
+See $\cite{hart}$, Chapter II.6.8.
+\end{proof}
+Since $\phi \colon E(\bar{\mathbb{Q}})\to E'(\bar{\mathbb{Q}})$ is
+non-constant, it must be surjective and we obtain the following
+exact sequence: 
+
+$$ 0\to E(\bar{\mathbb{Q}})[\phi]\to E(\bar{\mathbb{Q}})\to E'(\bar{\mathbb{Q}})\to 0 \quad\quad (1) $$
+
+where $E(\bar{\mathbb{Q}})[\phi]=\operatorname{Ker}\phi$. Let
+$G=\operatorname{Gal}({\bar{\mathbb{Q}}/\mathbb{Q}})$, the
+absolute Galois group of $\mathbb{Q}$, and consider the
+$i^{th}$-cohomology group $H^i(G,E(\bar{\mathbb{Q}}))$ (we
+abbreviate by $H^i(G,E)$). Using equation $(1)$ we obtain the
+following long exact sequence (see Proposition 1 in group
+cohomology):
+$$
+0 \to H^0(G,E(\bar{\mathbb{Q}})[\phi]) \to
+H^0(G,E)\to H^0(G,E') \to H^1(G,E(\bar{\mathbb{Q}})[\phi])\to H^1(G,E)\to
+H^1(G,E') \quad\quad (2)$$
+
+Note that
+$$H^0(G,E(\bar{\mathbb{Q}})[\phi])={(E(\bar{\mathbb{Q}})[\phi])}^G=E(\mathbb{Q})[\phi]$$
+and similarly
+$$H^0(G,E)=E(\mathbb{Q}),\quad H^0(G,E')=E'(\mathbb{Q})$$
+
+From $(2)$ we can obtain an exact sequence:
+$$0\to E'(\mathbb{Q})/\phi(E(\mathbb{Q})) \to
+H^1(G,E(\bar{\mathbb{Q}})[\phi]) \to H^1(G,E)[\phi]\to 0$$
+
+We could repeat the same procedure but this time for $E,E'$
+defined over $\mathbb{Q}_p$,for some prime number $p$, and obtain
+a similar exact sequence but with coefficients in $\mathbb{Q}_p$
+which relates to the original in the following commutative diagram
+(here $G_p=\operatorname{Gal}({\bar{\mathbb{Q}_p}/\mathbb{Q}_p})$):
+\begin{eqnarray*}
+0\to  E'(\mathbb{Q})/\phi(E(\mathbb{Q}))  \to
+ &H^1(G,E(\bar{\mathbb{Q}})[\phi])& \to H^1(G,E)[\phi]\to 0\\
+\downarrow \quad\quad\quad\quad  &\downarrow& \quad\quad\quad \downarrow \\
+0\to E'(\mathbb{Q}_p)/\phi(E(\mathbb{Q}_p)) \to
+&H^1(G_p,E(\bar{\mathbb{Q}_p})[\phi])& \to H^1(G_p,E)[\phi]\to 0
+\end{eqnarray*}
+The goal here is to find a {\bf finite} group containing
+$E'(\mathbb{Q})/\phi(E(\mathbb{Q}))$. Unfortunately
+$H^1(G,E(\bar{\mathbb{Q}})[\phi])$ is not necessarily finite. With
+this purpose in mind, we define the $\phi$-\emph{Selmer group}:
+$$S^{\phi}(E/\mathbb{Q})=\operatorname{Ker}\left(H^1(G,E(\bar{\mathbb{Q}})[\phi])\to \prod_p H^1(G_p,E)\right)$$
+Equivalently, the $\phi$-\emph{Selmer group} is the set of
+elements $\gamma$ of $H^1(G,E(\bar{\mathbb{Q}})[\phi])$ whose
+image $\gamma_p$ in $H^1(G_p,E(\bar{\mathbb{Q_p}})[\phi])$ comes
+from some element in $E(\mathbb{Q}_p)$.
+
+Finally, by imitation of the definition of the Selmer group, we
+define the \emph{Tate-Shafarevich group}:
+$$TS(E/\mathbb{Q})=\operatorname{Ker}\left(H^1(G,E)\to \prod_p H^1(G_p,E)\right)$$
+
+The Tate-Shafarevich group is precisely the group that measures
+the Hasse principle in the elliptic curve $E$. It is unknown if
+this group is finite.
+
+\begin{thebibliography}{9}
+\bibitem{serre} J.P. Serre, {\em Galois Cohomology},
+Springer-Verlag, New York.
+\bibitem{milne} James Milne, {\em Elliptic Curves}, \PMlinkexternal{online course
+notes}{http://www.jmilne.org/math/CourseNotes/math679.html}.
+\bibitem{silverman} Joseph H. Silverman, {\em The Arithmetic of Elliptic Curves}. Springer-Verlag, New York, 1986.
+\bibitem{hart} R. Hartshorne, {\em Algebraic Geometry},
+Springer-Verlag, 1977.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

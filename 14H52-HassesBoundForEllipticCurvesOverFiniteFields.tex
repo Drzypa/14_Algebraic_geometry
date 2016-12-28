@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HassesBoundForEllipticCurvesOverFiniteFields}
+\pmcreated{2013-03-22 13:55:41}
+\pmmodified{2013-03-22 13:55:41}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Hasse's bound for elliptic curves over finite fields}
+\pmrecord{5}{34686}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H52}
+\pmsynonym{Hasse's bound}{HassesBoundForEllipticCurvesOverFiniteFields}
+%\pmkeywords{number of points}
+%\pmkeywords{finite field}
+\pmrelated{LSeriesOfAnEllipticCurve}
+\pmrelated{EllipticCurve}
+\pmrelated{BadReduction}
+\pmrelated{ArithmeticOfEllipticCurves}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+Let $E$ be an elliptic curve defined over a finite field
+$\mathbb{F}_q$ with $q=p^r$ elements ($p\in\Ints$ is a prime). The
+following theorem gives a bound of the size of $E(\mathbb{F}_q)$,
+$N_q$, i.e. the number points of $E$ defined over $\mathbb{F}_q$.
+This was first conjectured by Emil Artin (in his thesis!) and
+proved by Helmut Hasse in the 1930's.
+
+\begin{thm}[Hasse]
+$$\mid N_q -q -1 \mid \leq 2\sqrt{q} $$
+\end{thm}
+
+{\bf Remark}: Let $a_p=p+1-N_p$ as in the definition of the
+L-series of an ellitpic curve. Then Hasse's bound reads:
+
+$$\mid a_p \mid \leq 2\sqrt{p}$$
+
+This fact is key for the convergence of the L-series of $E$.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PathAlgebraOfAQuiver}
+\pmcreated{2013-03-22 19:16:19}
+\pmmodified{2013-03-22 19:16:19}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{path algebra of a quiver}
+\pmrecord{4}{42203}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14L24}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $Q=(Q_0,Q_1,s,t)$ be a quiver, i.e. $Q_0$ is a set of vertices, $Q_1$ is a set of arrows, $s:Q_1\to Q_0$ is a source function and $t:Q_1\to Q_0$ is a target function.
+
+Recall that a \textbf{path} of length $l\geqslant 1$ from $x$ to $y$ in $Q$ is a sequence of arrows $(a_1,\ldots,a_l)$ such that 
+$$s(a_1)=x;\ \ \ t(a_l)=y;$$
+$$t(a_i)=s(a_{i+1})$$
+for any $i=1,2,\ldots,l-1,l$.
+
+Also we allow paths of length $0$, i.e. stationary paths.
+
+If $a=(a_1,\ldots,a_l)$ and $b=(b_1,\ldots, b_k)$ are two paths such that $t(a_l)=s(b_1)$ then we say that $a$ and $b$ are \textbf{compatibile} and in this case we can form another path from $a$ and $b$, namely
+$$a\circ b=(a_1,\ldots,a_l,b_1,\ldots, b_k).$$
+
+Note, that the length of $a\circ b$ is a sum of lengths of $a$ and $b$. Also a path $a=(a_1,\ldots,a_l)$ of positive length is called a \textbf{cycle} if $t(a_l)=s(a_1)$. In this case we can compose $a$ with itself to produce new path.
+
+Also if $a$ is a path from $x$ to $y$ and $e_x, e_y$ are stationary paths in $x$ and $y$ respectively, then we define $a\circ e_y=a$ and $e_x\circ a=a$.
+
+Let $kQ$ be a vector space with a basis consisting of all paths (including stationary paths). For paths $a$ and $b$ define multiplication as follows:
+
+If $a$ and $b$ are compatible, then put $ab=a\circ b$ and put $ab=0$ otherwise. This operation extendes bilinearly to entire $kQ$ and it can be easily checked that $kQ$ becomes an associative algebra in this manner called the \textbf{path algebra} of $Q$ over $k$.
+%%%%%
+%%%%%
+\end{document}

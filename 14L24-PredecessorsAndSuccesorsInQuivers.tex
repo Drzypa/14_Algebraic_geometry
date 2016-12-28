@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PredecessorsAndSuccesorsInQuivers}
+\pmcreated{2013-03-22 19:17:47}
+\pmmodified{2013-03-22 19:17:47}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{predecessors and succesors in quivers}
+\pmrecord{4}{42231}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14L24}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $Q=(Q_0,Q_1,s,t)$ be a quiver, i.e. $Q_0$ is a set of vertices, $Q_1$ is a set of arrows and $s,t:Q_1\to Q_0$ are functions called source and target respectively. Recall, that 
+$$\omega=(\alpha_1,\ldots,\alpha_n)$$
+is a path in $Q$, if each $\alpha_i\in Q_1$ and $t(\alpha_i)=s(\alpha_{i+1})$ for all $i=1,\ldots,n-1$. The length of $\omega$ is defined as $n$.
+
+\textbf{Definition.} If $a,b\in Q_0$ are vertices such that there exists a path
+$$\omega=(\alpha_1,\ldots,\alpha_n)$$
+with $s(\alpha_1)=a$ and $t(\alpha_n)=b$, then $a$ is said to be a \textbf{predecessor} of $b$ and $b$ is said to be a \textbf{successor} of $a$. Additionally if there is such path of length $1$, i.e. there exists an arrow from $a$ to $b$, then $a$ is a \textbf{direct predecessor} of $b$ and $b$ is a \textbf{direct succesor} of $a$.
+
+For a given vertex $a\in Q_0$ we define the following sets:
+$$a^{-}=\{b\in Q_0\ |\ b\mbox{ is a direct predecessor of }a\};$$
+$$a^{+}=\{b\in Q_0\ |\ b\mbox{ is a direct successor of }a\}.$$
+
+The elements in $a^{-}\cup a^{+}$ are called \textbf{neighbours} of $a$.
+
+\textbf{Example.} Consider the following quiver:
+$$\xymatrix{
+& & & 3 \\
+0\ar[r]& 1\ar[r] & 2\ar[ru]\ar[rd]\\
+ & & & 4
+}$$
+Then
+$$2^{-}=\{1\};\ \ 2^{+}=\{3,4\};$$
+and $1,3,4$ are all neighbours of $2$. Also $0$ is a predecessor of $2$, but not direct.
+%%%%%
+%%%%%
+\end{document}

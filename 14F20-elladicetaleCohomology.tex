@@ -1,0 +1,86 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{elladicetaleCohomology}
+\pmcreated{2013-03-22 14:13:39}
+\pmmodified{2013-03-22 14:13:39}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{$\ell$-adic \'etale cohomology}
+\pmrecord{9}{35666}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14F20}
+\pmrelated{DerivedFunctor}
+\pmrelated{Site}
+\pmrelated{EtaleMorphism}
+\pmrelated{SmallSiteOnAScheme}
+\pmrelated{SheafCohomology}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\PMlinkescapeword{fixed}
+\PMlinkescapeword{small}
+\PMlinkescapeword{order}
+Let $X$ be a scheme over a field $k$ having algebraic closure $\overline{k}$.
+Let $(X\otimes_k \overline{k})_\text{\'et}$ be the small \'etale site on $X\otimes_k \overline{k}$, 
+and let $\mathbb{Z}/l^n\mathbb{Z}$ denote the sheaf on $(X\otimes_k \overline{k})_\text{\'et}$ associated to the group scheme $\mathbb{Z}/l^n\mathbb{Z}$ for some fixed prime $l$.  
+Finally, let $\Gamma$ be the global sections functor on the category of \'etale sheaves on $(X\otimes_k \overline{k})_\text{\'et}$.
+
+The $l$-adic \emph{\'etale cohomology} of $X$ is
+\[
+H^i_\text{\'et}(X,\mathbb{Q}_l) = \mathbb{Q}_l \otimes_{\mathbb{Z}_l} \varprojlim_n (R^i\Gamma)(\mathbb{Z}/l^n\mathbb{Z}),.
+\]
+where $R^i$ denotes taking the $i$-th right-derived functor.
+
+This apparently appalling definition is necessary to ensure that (for $l$ not equal to the characteristic of $k$) \'etale cohomology is the appropriate generalization of de Rham cohomology on a complex manifold.  
+For example, on a scheme of dimension $n$, the cohomology groups $H^i$ vanish for $i>2n$ and we have a version of Poincar\'e duality.
+Grothendieck introduced \'etale cohomology as a tool to prove the Weil conjectures, and indeed it is what Deligne used to prove them.
+
+
+
+These references are approximately in order of difficulty and of generality and precision.
+
+\begin{thebibliography}{9}
+
+\bibitem{milne:notes}{J. S. Milne, \emph{Lectures on \'Etale Cohomology}, 1998, available on the web at \PMlinkexternal{http://www.jmilne.org/math/}{http://www.jmilne.org/math/}}
+
+\bibitem{milne:book}{James S. Milne, \emph{\'Etale cohomology}, volume 33 of \emph{Princeton Mathematical Series}.  Princeton University Press, Princeton N.J., 1980}
+
+\bibitem{sga4h}{Deligne et al., \emph{S\'eminaires en G\`eometrie Alg\`ebrique 4$\frac{1}{2}$}, available on the web at 
+\PMlinkexternal{http://www.math.mcgill.ca/~archibal/SGA/SGA.html}{http://www.math.mcgill.ca/~archibal/SGA/SGA.html}}
+
+\bibitem{sga4}{Grothendieck et al., \emph{S\'eminaires en G\`eometrie Alg\`ebrique 4}, tomes 1, 2, and 3, available on the web at 
+\PMlinkexternal{http://www.math.mcgill.ca/~archibal/SGA/SGA.html}{http://www.math.mcgill.ca/~archibal/SGA/SGA.html}}
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

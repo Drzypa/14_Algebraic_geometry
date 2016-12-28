@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ZariskiTopology}
+\pmcreated{2013-03-22 12:38:11}
+\pmmodified{2013-03-22 12:38:11}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{Zariski topology}
+\pmrecord{4}{32899}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A10}
+\pmrelated{PrimeSpectrum}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\A}{\mathbb{A}}
+\renewcommand{\P}{\mathbb{P}}
+\begin{document}
+Let $\A_k^n$ denote the affine space $k^n$ over a field $k$. The {\em Zariski topology} on $\A_k^n$ is defined to be the topology whose closed sets are the sets
+$$
+V(I) := \{ x \in \A_k^n \mid f(x) = 0 \text{ for all } f \in I\} \subset \A_k^n,
+$$
+where $I \subset k[X_1, \ldots, X_n]$ is any ideal in the polynomial ring $k[X_1, \ldots, X_n]$. For any affine variety $V \subset \A_k^n$, the {\em Zariski topology} on $V$ is defined to be the subspace topology induced on $V$ as a subset of $\A_k^n$.
+
+Let $\P_k^n$ denote $n$--dimensional projective space over $k$. The {\em Zariski topology} on $\P_k^n$ is defined to be the topology whose closed sets are the sets
+$$
+V(I) := \{ x \in \P_k^n \mid f(x) = 0 \text{ for all } f \in I\} \subset \P_k^n,
+$$
+where $I \subset k[X_0, \ldots, X_n]$ is any homogeneous ideal in the graded $k$--algebra $k[X_0, \ldots, X_n]$. For any projective variety $V \subset \P_k^n$, the {\em Zariski topology} on $V$ is defined to be the subspace topology induced on $V$ as a subset of $\P_k^n$.
+
+The Zariski topology is the predominant topology used in the study of algebraic geometry. Every regular morphism of varieties is continuous in the Zariski topology (but not every continuous map in the Zariski topology is a regular morphism). In fact, the Zariski topology is the weakest topology on varieties making points in $\A_k^1$ closed and regular morphisms continuous.
+%%%%%
+%%%%%
+\end{document}

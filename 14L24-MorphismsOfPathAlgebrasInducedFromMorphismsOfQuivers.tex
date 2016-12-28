@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MorphismsOfPathAlgebrasInducedFromMorphismsOfQuivers}
+\pmcreated{2013-03-22 19:17:03}
+\pmmodified{2013-03-22 19:17:03}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{morphisms of path algebras induced from morphisms of quivers}
+\pmrecord{6}{42217}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14L24}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $Q=(Q_0,Q_1,s,t)$, $Q'=(Q_0',Q_1',s',t')$ be quivers and let $F:Q\to Q'$ be a morphism of quivers.
+
+\textbf{Proposition 1.} If $w=(\alpha_1,\ldots,\alpha_n)$ is a path in $Q$, then $$F(w)=\big(F_1(\alpha_1),\ldots,F_1(\alpha_n)\big)$$ is a path in $Q'$.
+
+\textit{Proof.} Indeed, for any $i=1,\ldots,n-1$ we calculate
+$$t'\big(F_1(\alpha_i)\big)=F_0\big(t(\alpha_i)\big)=F_0\big(s(\alpha_{i+1})\big)=t'\big(F_1(\alpha_{i+1})\big),$$
+which completes the proof. $\square$
+
+\textbf{Proposition 2.} Let $w,u$ be paths in $Q$. If $w$ is \PMlinkname{compatible}{PathAlgebraOfAQuiver} with $u$ then $F(w)$ is \PMlinkname{compatible}{PathAlgebraOfAQuiver} with $F(u)$. The inverse implication holds if and only if $F_0$ is an injective function.
+
+\textit{Proof.} Assume that we have the following presentations:
+$$w=(w_1,\ldots,w_n);$$
+$$u=(u_1,\ldots,u_n).$$
+If $t(w_n)=s(u_1)$, then
+$$t'\big(F_1(w_n)\big)=F_0\big(t(w_n)\big)=F_0\big(s(u_1)\big)=s'\big(F_1(u_1))$$
+which shows the first part of the thesis.
+
+For the second part note, that if $F_0$ is injective, then the above equalities can be reversed to obtain that $t(w_n)=s(u_1)$.
+
+On the other hand assume that $F_0$ is not injective, i.e. $F_0(a)=F_0(b)$ for some distinct vertices $a,b\in Q_0$. Then for stationary paths $e_a$ and $e_b$ we have that 
+$$t'(F_1(e_a))=F_0(t(e_a))=F_0(a)=F_0(b)=F_0(s(e_b))=s'(F_1(e_b))$$
+so paths $(F_1(e_a))$ and $(F_1(e_b))$ are \PMlinkname{compatible}{PathAlgebraOfAQuiver}, although $(e_a)$, $(e_b)$ are not. $\square$
+
+\textbf{Definition.} Let $k$ be a field. The linear map $$\overline{F}:kQ\to kQ'$$ defined on a basis of $kQ$ by
+$$\overline{F}(w)=F(w)$$
+is said to be \textbf{induced from $F$}.
+
+\textbf{Proposition 3.} The linear map $\overline{F}:kQ\to kQ'$ induced from $F:Q\to Q'$ is a homomorphism of algebras if and only if $F_0$ is injective.
+
+\textit{Proof.} Indeed, we will show that $\overline{F}$ preservers multiplication of \PMlinkname{compatible paths}{PathAlgebraOfAQuiver}. If
+$$w=(w_1,\ldots,w_n);$$
+$$u=(u_1,\ldots,u_m)$$
+are \PMlinkname{compatible paths}{PathAlgebraOfAQuiver} in $Q$, then
+$$\overline{F}(w\cdot u)=\overline{F}\big((w_1,\ldots,w_n,u_1,\ldots,u_m)\big)=\big(F_1(w_1),\ldots,F_1(w_n),F_1(u_1),\ldots F_1(u_m)\big)=\overline{F}(w)\cdot\overline{F}(u),$$
+which completes this part.
+
+Now assume that $w$, $u$ are paths, which are not \PMlinkname{compatible}{PathAlgebraOfAQuiver}. If $F_0$ is injective, then by proposition 2 $F(w)$ and $F(u)$ are also not \PMlinkname{compatible}{PathAlgebraOfAQuiver} and thus
+$$\overline{F}(w\cdot u)=\overline{F}(0)=0=\overline{F}(w)\cdot \overline{F}(u).$$
+
+On the other hand, if $F_0$ is not injective, then there are paths $w$, $u$ which are not \PMlinkname{compatible}{PathAlgebraOfAQuiver}, but $F(w)$, $F(u)$ are. Assume, that $\overline{F}$ is a homomorphism of algebras. Then
+$$0=\overline{F}(0)=\overline{F}(w\cdot u)=\overline{F}(w)\cdot \overline{F}(u)\neq 0$$
+because of the \PMlinkname{compatibility}{PathAlgebraOfAQuiver}. The contradiction shows that $\overline{F}$ is not a homomorphism of algebras. This completes the proof. $\square$
+%%%%%
+%%%%%
+\end{document}

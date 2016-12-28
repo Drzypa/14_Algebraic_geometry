@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LocallyFiniteQuiver}
+\pmcreated{2013-03-22 19:17:51}
+\pmmodified{2013-03-22 19:17:51}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{locally finite quiver}
+\pmrecord{4}{42232}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14L24}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $Q=(Q_0,Q_1,s,t)$ be a quiver, i.e. $Q_0$ is a set of vertices, $Q_1$ is a set of arrows and $s,t:Q_1\to Q_0$ are source and target functions.
+
+\textbf{Definition.} We will say that $Q$ is \textbf{locally finite} iff for any vertex $a\in Q_0$ there is a finite number of \PMlinkname{neighbours}{PredecessorsAndSuccesorsInQuivers} of $a$. Equivalently if there is a finite number of arrows ending in $a$ and finite number of arrows starting from $a$.
+
+Note that even when $Q$ has a finite number of vertices, then $Q$ is not necessarily locally finite. Consider the following example:
+$$Q=(\{*\},\mathbb{N},s,t)$$
+such that $s(n)=t(n)=*$ for any $n\in\mathbb{N}$. In other words $Q$ has one vertex and countably many arrows starting and ending at it. This quiver is not locally finite.
+
+Every finite quiver, i.e. quiver with finite number of vertices and arrows is locally finite.
+%%%%%
+%%%%%
+\end{document}

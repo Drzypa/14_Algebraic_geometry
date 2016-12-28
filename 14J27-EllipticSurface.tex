@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{EllipticSurface}
+\pmcreated{2013-03-22 15:34:16}
+\pmmodified{2013-03-22 15:34:16}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{elliptic surface}
+\pmrecord{5}{37476}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14J27}
+\pmrelated{EllipticCurve}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\newcommand{\E}{\mathcal{E}}
+\begin{document}
+\begin{defn}Let $k$ be a
+field and let $C/k$ be a smooth projective curve defined over the
+field $k$ and has genus $g$. The function field of $C/k$ will be
+denoted by $K=k(C)$. An elliptic surface $\E$ over the curve $C$
+is, by definition, a two-dimensional projective variety together
+with:
+
+\begin{enumerate}
+\item A morphism $\pi: \E \to C$ such that for all but
+finitely many points $t\in C(\overline{k})$, the fiber
+$\E_t=\pi^{-1}(t)$ is a non-singular curve of genus $1$,
+\item A section to $\pi$ (the {\it zero section}) $\sigma_0: C \to
+\E$.
+\end{enumerate}
+With this definition, $\E/K$ may be regarded as an elliptic curve over the
+field $K$.
+\end{defn}
+
+\begin{exa}
+The surface $y^2=x^3+t$ is an elliptic surface over the curve $\mathbb{P}^1(\Rats)$. It may be regarded as an elliptic curve over the function field $\Rats(t)$.
+\end{exa}
+
+\begin{thebibliography}{00}
+
+\bibitem{miranda} R. Miranda, {\em The basic theory of elliptic surfaces},
+Dottorato di Ricerca in Matematica, Dipartimento di Mathematica dell' UniversitÃ  di Pisa, ETS Editrice Pisa, 1989.
+
+\bibitem{sil2} J. Silverman, {\em Advanced Topics in the
+Arithmetic of Elliptic Curves}, Graduate Texts in Mathematics 151,
+Springer-Verlag, New York.
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

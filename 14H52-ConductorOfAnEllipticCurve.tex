@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ConductorOfAnEllipticCurve}
+\pmcreated{2013-03-22 13:49:51}
+\pmmodified{2013-03-22 13:49:51}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{conductor of an elliptic curve}
+\pmrecord{9}{34563}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H52}
+\pmsynonym{conductor}{ConductorOfAnEllipticCurve}
+%\pmkeywords{conductor}
+%\pmkeywords{elliptic curve}
+%\pmkeywords{L-series}
+\pmrelated{EllipticCurve}
+\pmrelated{LSeriesOfAnEllipticCurve}
+\pmrelated{ArithmeticOfEllipticCurves}
+\pmdefines{conductor of an elliptic curve}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem*{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem*{exa}{Example}
+\begin{document}
+Let $E$ be an elliptic curve over $\mathbb{Q}$. For each prime
+$p\in \mathbb{Z}$ define the quantity $f_p$ as follows:
+$$f_p =
+\begin{cases}
+0 \text{, if $E$ has good reduction at $p$,}\\
+1 \text{, if $E$ has multiplicative reduction at $p$,}\\
+2 \text{, if $E$ has additive reduction at $p$, and $p\neq
+2,3$,}\\
+2+\delta_p \text{, if $E$ has additive reduction at $p=2\ or\ 3$.}
+\end{cases}
+$$
+where $\delta_p$ depends on wild ramification in the action of the
+inertia group at $p$ of
+$\operatorname{Gal}(\bar{\mathbb{Q}}/\mathbb{Q})$ on the Tate
+module $T_p(E)$.
+
+\begin{defn}
+The conductor $N_{E/\mathbb{Q}}$ of ${E/\mathbb{Q}}$ is defined to
+be:
+$$N_{E/\mathbb{Q}}=\prod_p p^{f_p}$$
+where the product is over all primes and the exponent $f_p$ is
+defined as above.
+\end{defn}
+
+\begin{exa}
+Let $E/\mathbb{Q}\colon y^2+y=x^3-x^2+2x-2$. The primes of bad
+reduction for $E$ are $p=5$ and $7$. The reduction at $p=5$ is
+additive, while the reduction at $p=7$ is multiplicative. Hence
+$N_{E/\mathbb{Q}}=25\cdot 7 = 175$.
+\end{exa}
+
+\begin{thebibliography}{9}
+\bibitem{milne} James Milne, {\em Elliptic Curves}, \PMlinkexternal{online course
+notes}{http://www.jmilne.org/math/CourseNotes/math679.html}.
+\bibitem{silverman} Joseph H. Silverman, {\em The Arithmetic of Elliptic Curves}. Springer-Verlag, New York, 1986.
+\bibitem{silverman2} Joseph H. Silverman, {\em Advanced Topics in
+the Arithmetic of Elliptic Curves}. Springer-Verlag, New York,
+1994.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,87 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExamplesOfTorsionSubgroupsOfEllipticCurves}
+\pmcreated{2013-03-22 14:22:44}
+\pmmodified{2013-03-22 14:22:44}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{examples of torsion subgroups of elliptic curves}
+\pmrecord{5}{35871}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H52}
+\pmrelated{ArithmeticOfEllipticCurves}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+Mazur's theorem shows that given an elliptic curve defined over the rationals, the only possible torsion subgroups are the following:
+
+$$\Ints/N\Ints \quad \text{ with } 1<N<11 \text{ or } N=12$$
+
+$$\Ints/2\Ints \oplus \Ints/2N\Ints \text{ with } 0<N<5$$
+
+Here we show examples of curves with the torsion subgroups mentioned above:
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+  \hline
+  % after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+  {\bf CURVE} & {\bf TORSION SUBGROUP} & {\bf GENERATORS} \\
+  \hline
+  $y^2=x^3-2$ & trivial & $\mathcal{O}$ \\
+  $y^2=x^3+8$ & $\Ints/2\Ints$ & $[[-2,0]]$ \\
+  $y^2=x^3+4$ & $\Ints/3\Ints$ & $[[0,2]]$ \\
+  $y^2=x^3+4x$ & $\Ints/4\Ints$ & $[[2,4]]$ \\
+  $y^2-y=x^3-x^2$ & $\Ints/5\Ints$ & $[[0,1]]$ \\
+  $y^2=x^3+1$ & $\Ints/6\Ints$ & $[[2,3]]$ \\
+  $y^2=x^3-43x+166$ & $\Ints/7\Ints$ & $[[3,8]]$ \\
+  $y^2+7xy=x^3+16x$ & $\Ints/8\Ints$ & $[[-2,10]]$ \\
+  $y^2+xy+y=x^3-x^2-14x+29$ & $\Ints/9\Ints$ & $[[3,1]]$ \\
+  $y^2+xy=x^3-45x+81$ & $\Ints/10\Ints$ & $[[0,9]]$ \\
+  $y^2+43xy-210y=x^3-210x^2$ & $\Ints/12\Ints$ & $[[0,210]]$ \\
+  $y^2=x^3-4x$ & $\Ints/2\Ints \oplus \Ints/2\Ints$ & $[[2, 0], [0, 0]]$ \\
+  $y^2=x^3+2x^2-3x$ & $\Ints/4\Ints \oplus \Ints/2\Ints$ & $[[3,6],[0,0]]$ \\
+  $y^2+5xy-6y=x^3-3x^2$ & $\Ints/6\Ints \oplus \Ints/2\Ints$ & $[[-3, 18], [2, -2]]$ \\
+  $y^2 +17xy -120y=x^3 -60x^2$ & $\Ints/8\Ints \oplus \Ints/2\Ints$ & $[[30, -90], [-40, 400]]$ \\
+  \hline
+\end{tabular}
+\end{center}
+%%%%%
+%%%%%
+\end{document}

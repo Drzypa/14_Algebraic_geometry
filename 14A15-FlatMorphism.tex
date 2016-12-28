@@ -1,0 +1,60 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FlatMorphism}
+\pmcreated{2013-03-22 14:11:10}
+\pmmodified{2013-03-22 14:11:10}
+\pmowner{archibal}{4430}
+\pmmodifier{archibal}{4430}
+\pmtitle{flat morphism}
+\pmrecord{4}{35614}
+\pmprivacy{1}
+\pmauthor{archibal}{4430}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A15}
+\pmsynonym{flat}{FlatMorphism}
+\pmrelated{Scheme}
+\pmrelated{EtaleMorphism}
+\pmdefines{flat sheaf}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+Let $f\colon X\to Y$ be a morphism of schemes.  Then a sheaf $\mathcal{F}$ of $\mathcal{O}_X$-modules is \emph{flat over $Y$ at a point $x\in X$} if $\mathcal{F}_x$ is a \PMlinkname{flat}{FlatModule} $\mathcal{O}_{Y,f(x)}$-module by way of the map $f^\sharp\colon \mathcal{O}_Y\to\mathcal{O}_X$ associated to $f$.
+
+The morphism $f$ itself is said to be \emph{flat} if $\mathcal{O}_X$ is flat over $Y$ at every point of $X$.
+
+This is the natural condition for $X$ to form a ``continuous family'' over $Y$.  That is, for each $y\in Y$, the fiber $X_y$ of $f$ over $y$ is a scheme.  We can consider $X$ as a family of schemes parameterized by $Y$.  If the morphism $f$ is flat, then this family should be thought of as a ``continuous family''.  In particular, this means that certain cohomological invariants remain constant on the fibers of $X$. 
+
+\begin{thebibliography}{9}
+\bibitem{hartshorne} Robin Hartshorne, {\em Algebraic
+Geometry}, Springer--Verlag, 1977 (GTM {\bf 52}).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

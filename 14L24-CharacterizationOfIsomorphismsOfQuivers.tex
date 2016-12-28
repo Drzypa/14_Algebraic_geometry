@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CharacterizationOfIsomorphismsOfQuivers}
+\pmcreated{2013-03-22 19:17:31}
+\pmmodified{2013-03-22 19:17:31}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{characterization of isomorphisms of quivers}
+\pmrecord{4}{42226}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14L24}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\Id}{\mathrm{Id}}
+
+\begin{document}
+Let $Q=(Q_0,Q_1,s,t)$ and $Q'=(Q'_0,Q'_1,s',t')$ be quivers. Recall, that a morphism $F:Q\to Q'$ is an isomorphism if and only if there is a morphism $G:Q'\to Q$ such that $FG=\Id(Q')$ and $GF=\Id(Q)$, where
+$$\Id(Q):Q\to Q$$
+is given by $\Id(Q)=(\Id(Q)_0,\Id(Q)_1)$, where both $\Id(Q)_0$ and $\Id(Q)_1$ are the identities on $Q_0$, $Q_1$ respectively.
+
+\textbf{Proposition.} A morphism of quivers $F:Q\to Q'$ is an isomorphism if and only if both $F_0$ and $F_1$ are bijctions.
+
+\textit{Proof.} ,,$\Rightarrow$'' It follows from the definition of isomorphism that $F_0G_0=\Id(Q')_0$ and $G_0F_0=\Id(Q)_0$ for some $G_0:Q'_0\to Q_0$. Thus $F_0$ is a bijection. The same argument is valid for $F_1$.
+
+,,$\Leftarrow$'' Assume that both $F_0$ and $F_1$ are bijections and define $G:Q'_0\to Q_0$ and $H:Q'_1\to Q_1$ by
+$$G=F_0^{-1},\ \ H=F_1^{-1}.$$
+Obviously $(G,H)$ is ,,the inverse'' of $F$ in the sense, that the equalites for compositions hold. What is remain to prove is that $(G,H)$ is a morphism of quivers. Let $\alpha\in Q'_1$. Then there exists an arrow $\beta\in Q_1$ such that
+$$F_1(\beta)=\alpha.$$
+Thus
+$$H(\alpha)=\beta.$$
+Since $F$ is a morphism of quivers, then
+$$s'(\alpha)=s'(F_1(\beta))=F_0(s(\beta)),$$
+which implies that
+$$G(s'(\alpha))=s(\beta)=s(H(\alpha)).$$
+The same arguments hold for the target function $t$, which completes the proof. $\square$
+%%%%%
+%%%%%
+\end{document}

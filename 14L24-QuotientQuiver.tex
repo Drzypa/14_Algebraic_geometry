@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{QuotientQuiver}
+\pmcreated{2013-03-22 19:17:22}
+\pmmodified{2013-03-22 19:17:22}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{quotient quiver}
+\pmrecord{4}{42223}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14L24}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $Q=(Q_0,Q_1,s,t)$ be a quiver.
+
+\textbf{Definition.} An \textbf{equivalence relation} on $Q$ is a pair
+$$\sim=(\sim_0,\sim_1)$$
+such that $\sim_0$ is an equivalence relation on $Q_0$, $\sim_1$ is an equivalence relation on $Q_1$ and if
+$$\alpha\sim_1 \beta$$
+for some arrows $\alpha,\beta\in Q_1$, then
+$$s(\alpha)\sim_0 s(\beta)\ \mbox{ and }\ t(\alpha)\sim_1 t(\beta).$$
+
+If $\sim$ is an equivalence relation on $Q$, then $(Q_0/\sim_0,Q_1/\sim_1,s',t')$ is a quiver, where
+$$s'([\alpha])=[s(\alpha)]\ \ \ t'([\alpha])=[t(\alpha)].$$
+This quiver is called \textbf{the quotient quiver} of $Q$ by $\sim$ and is denoted by $Q/\sim$.
+
+It can be easily seen, that if $Q$ is a quiver and $\sim$ is an equivalence relation on $Q$, then
+$$\pi:Q\to Q/\sim$$
+given by $\pi=(\pi_0,\pi_1)$, where $\pi_0$ and $\pi_1$ are quotient maps is a morphism of quivers. It will be called \textbf{the quotient morphism}.
+
+\textbf{Example.} Consider the following quiver
+$$\xymatrix{
+& 2\ar[dr]^{c} & \\
+1\ar[ur]^{a}\ar[dr]_{b} & & 3 \\
+ & 4\ar[ur]_{d} &
+}$$
+ If we take $\sim$ by putting $2\sim_0 4$ and $a\sim_1 b$, $c\sim_1 d$, then the corresponding quotient quiver is isomorphic to
+$$\xymatrix{
+1\ar[r] & 2\ar[r] & 3
+}$$
+ 
+%%%%%
+%%%%%
+\end{document}

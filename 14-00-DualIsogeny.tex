@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DualIsogeny}
+\pmcreated{2013-03-22 12:52:58}
+\pmmodified{2013-03-22 12:52:58}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{dual isogeny}
+\pmrecord{9}{33226}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14-00}
+\pmrelated{ArithmeticOfEllipticCurves}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\mc}{\mathcal}
+\newcommand{\mb}{\mathbb}
+\newcommand{\mf}{\mathfrak}
+\newcommand{\ol}{\overline}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\la}{\leftarrow}
+\newcommand{\La}{\Leftarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\nor}{\vartriangleleft}
+\newcommand{\Gal}{\text{Gal}}
+\newcommand{\GL}{\text{GL}}
+\newcommand{\Z}{\mb{Z}}
+\newcommand{\R}{\mb{R}}
+\newcommand{\Q}{\mb{Q}}
+\newcommand{\C}{\mb{C}}
+\newcommand{\<}{\langle}
+\renewcommand{\>}{\rangle}
+
+\DeclareMathOperator{\Div}{Div}
+\DeclareMathOperator{\Pic}{Pic}
+\begin{document}
+Given an isogeny $f : E \ra E'$ of elliptic curves of degree $n$, the \emph{dual isogeny} is an isogeny $\hat{f} : E' \ra E$ of the same degree such that $f \circ \hat{f} = [n]$.  Here $[n]$ denotes the multiplication-by-$n$ isogeny $e\mapsto ne$ which has degree $n^2$.
+
+Often only the existence of a dual isogeny is needed, but the construction is explicit as
+$$E'\ra \Div^0(E')\stackrel{f^*}{\ra}\Div^0(E)\ra E$$
+where $\Div^0$ is the group of divisors of degree 0.
+To do this, we need maps $E \ra \Div^0(E)$ given by $P\mapsto P - O$ where $O$ is the neutral point of $E$ and $\Div^0(E) \ra E$ given by $\sum n_P P \mapsto \sum n_P P$.
+
+To see that $f \circ \hat{f} = [n]$, note that the original isogeny $f$ can be written as a composite
+$$E \ra \Div^0(E)\stackrel{f_*}{\ra} \Div^0(E')\ra E'$$
+and that since $f$ is finite of degree $n$, $f_* f^*$ is multiplication by $n$ on $\Div^0(E')$.
+
+Alternatively, we can use the smaller Picard group $\Pic^0$, a quotient of $\Div^0$.  The map $E\ra \Div^0(E)$ descends to an isomorphism, $E\stackrel{\sim}{\ra}\Pic^0(E)$.  The dual isogeny is
+$$E' \stackrel{\sim}{\ra} \Pic^0(E')\stackrel{f^*}{\ra}\Pic^0(E)\stackrel{\sim}{\ra} E$$
+
+Note that the relation $f \circ \hat{f} = [n]$ also implies the conjugate relation $\hat{f} \circ f = [n]$.  Indeed, let $\phi = \hat{f} \circ f$.  Then $\phi \circ \hat{f} = \hat{f} \circ [n] = [n] \circ \hat{f}$.  But $\hat{f}$ is surjective, so we must have $\phi = [n]$.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{QuiverRepresentationsAndRepresentationMorphisms}
+\pmcreated{2013-03-22 19:16:15}
+\pmmodified{2013-03-22 19:16:15}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{quiver representations and representation morphisms}
+\pmrecord{5}{42202}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14L24}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $Q=(Q_0, Q_1, s, t)$ be a quiver, i.e. $Q_0$ is a set of vertices, $Q_1$ is a set of arrows and $s,t:Q_1\to Q_0$ are functions such that $s$ maps each arrow to its source and $t$ maps each arrow to its target.
+
+A \textbf{representation} $\mathbb{V}$ of $Q$ over a field $k$ is a family of vector spaces $\{V_i\}_{i\in Q_0}$ over $k$ together with a family of $k$-linear maps $\{f_a:V_{s(a)}\to V_{t(a)}\}_{a\in Q_1}$.
+
+A \textbf{morphism} $F:\mathbb{V}\to\mathbb{W}$ between representations $\mathbb{V}=(V_i,g_a)$ and $\mathbb{W}=(W_i,h_a)$ is a family of $k$-linear maps $\{F_i:V_i\to W_i\}_{i\in Q_0}$ such that for each arrow $a\in Q_1$ the following relation holds:
+$$F_{t(a)}\circ g_{a} = h_{a}\circ F_{s(a)}.$$
+
+Obviously we can compose morphisms of representations and in this the case class of all representations and representation morphisms together with the standard composition is a category. This category is abelian. 
+
+It can be shown that for each finite quiver $Q$ (i.e. with $Q_0$ finite) and field $k$ there exists an algebra $A$ over $k$ such that the category of representations of $Q$ is equivalent to the category of modules over $A$.
+
+A representation $\mathbb{V}$ of $Q$ is called \textbf{trivial} iff $V_i=0$ for each vertex $i\in Q_0$.
+
+A representation $\mathbb{V}$ of $Q$ is called \textbf{locally finite-dimensional} iff $\mathrm{dim}_k V_i<\infty$ for each vertex $i\in Q_0$ and \textbf{finite-dimensional} iff $\mathbb{V}$ is locally finite-dimensional and $V_i=0$ for almost all vertices $i\in Q_0$.
+%%%%%
+%%%%%
+\end{document}

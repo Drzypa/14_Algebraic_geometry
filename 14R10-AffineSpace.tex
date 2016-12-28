@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AffineSpace}
+\pmcreated{2013-03-22 15:14:21}
+\pmmodified{2013-03-22 15:14:21}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{affine space}
+\pmrecord{8}{37013}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14R10}
+\pmclassification{msc}{14-00}
+\pmrelated{ProjectiveSpace}
+\pmrelated{AffineVariety}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem*{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem*{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+\begin{defn}
+Let $K$ be a field and let $n$ be  a positive integer. In algebraic geometry we define affine space (or affine $n$-space) to be the set
+$$\{ (k_1,\ldots,k_n): k_i \in K\}.$$
+Affine space is usually denoted by $K^n$ or $\mathbb{A}^n$ (or $\mathbb{A}^n(K)$ if we want to emphasize the field of definition).
+\end{defn}
+
+In Algebraic Geometry, we consider affine space as a topological space, with the usual Zariski topology (see also algebraic set, affine variety). The polynomials in the ring $K[x_1,\ldots,x_n]$ are regarded as functions (algebraic functions) on $\mathbb{A}^n(K)$. ``Gluing'' several copies of affine space one obtains a projective space.
+
+\begin{lemma}  
+If $K$ is algebraically closed, affine space $\mathbb{A}^n(K)$ is an irreducible algebraic variety.
+\end{lemma} 
+
+\begin{thebibliography}{9}
+\bibitem{hart} R. Hartshorne, {\em Algebraic Geometry},
+Springer-Verlag, New York.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

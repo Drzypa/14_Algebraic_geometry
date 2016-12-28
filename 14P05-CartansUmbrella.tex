@@ -1,0 +1,78 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CartansUmbrella}
+\pmcreated{2013-03-22 17:41:11}
+\pmmodified{2013-03-22 17:41:11}
+\pmowner{jirka}{4157}
+\pmmodifier{jirka}{4157}
+\pmtitle{Cartan's umbrella}
+\pmrecord{4}{40126}
+\pmprivacy{1}
+\pmauthor{jirka}{4157}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14P05}
+\pmclassification{msc}{14P15}
+\pmsynonym{Cartan umbrella}{CartansUmbrella}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{theorem}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{conj}{Conjecture}
+\newtheorem*{cor}{Corollary}
+\newtheorem*{example}{Example}
+\newtheorem*{prop}{Proposition}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+
+\begin{document}
+The \PMlinkescapetext{term} {\em Cartan's umbrella} refers to a certain class of examples of real analytic sets (in fact real algebraic usually) in ${\mathbb{R}}^3$,
+which are irreducible (not written as a union of proper subsets that are also subvarieties), and where
+there are regular points both of dimension 1 and of dimension 2.  Sometimes higher dimensional examples with similar behavior are also called the same.  A fairly common equation for a Cartan umbrella is $z (x^2 + y^2) - y^3 = 0.$  Solving for $z$
+we get $z = \frac{y^3}{x^2+y^2}$.  The graph of this function is shown in the following figure.
+
+\begin{center}
+% Graph done with Genius, http://www.jirka.org/genius.html
+\includegraphics{cartanumbrella.eps}
+\vspace*{0.1in}
+
+{\tiny Figure 1: Graph of $z = \frac{y^3}{x^2+y^2}$}
+\end{center}
+
+The umbrella itself also includes the $z$ axis, since all points of the form $(0,0,z)$ satisfy the equation.  \PMlinkescapetext{The $z$ axis is therefore the ``handle'' of the umbrella}.  It is impossible to write an equation (real analytic or real algebraic) whose solution set contains the graph in Figure 1, and such that the $z$ axis is not included.
+
+This pathological behavior does not happen for complex analytic subvarieties.
+
+\begin{thebibliography}{9}
+\bibitem{Whitney:varieties}
+Jacek Bochnak, Michel Coste, Marie-Francoise Roy.
+{\em \PMlinkescapetext{Real Algebraic Geometry}}.
+Springer, 1998.
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

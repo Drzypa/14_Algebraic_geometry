@@ -1,0 +1,160 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TheArithmeticOfEllipticCurves}
+\pmcreated{2013-03-22 15:06:19}
+\pmmodified{2013-03-22 15:06:19}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{the arithmetic of elliptic curves}
+\pmrecord{15}{36837}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H52}
+\pmclassification{msc}{11G05}
+\pmsynonym{concepts in the theory of elliptic curves}{TheArithmeticOfEllipticCurves}
+\pmrelated{EllipticCurve}
+\pmrelated{CriterionOfNeronOggShafarevich}
+\pmrelated{HassesBoundForEllipticCurvesOverFiniteFields}
+\pmrelated{BirchAndSwinnertonDyerConjecture2}
+\pmrelated{RankOfAnEllipticCurve}
+\pmrelated{MazursTheoremOnTorsionOfEllipticCurves}
+\pmrelated{TorsionSubgroupOfAnEllipticCurveInjectsInTheReductionOfTheCurve}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+\section*{The Arithmetic of Elliptic Curves}
+An {\it elliptic curve} over a field $K$ is a projective nonsingular curve $E$ defined over $K$ of genus $1$ together with a point $O\in E$ defined over $K$. In the simple case $K=\Rats$ every elliptic curve is isomorphic (over $\Rats$) to a curve defined by an equation of the form:
+$$y^2=x^3+Ax+B$$
+where $A,B$ are integers. The most remarkable feature of an elliptic curve is the fact that the group of points can be given the structure of a group.\\
+
+The theory of elliptic curves is a very rich mix of algebraic geometry and number theory (arithmetic geometry). As in many other areas of number theory, the concepts are simple to state but the theory is extremely deep and beautiful. The intrinsic arithmetic of the points on an elliptic curve is absolutely compelling. The most prominent mathematicians of our time have contributed in the development of the theory. The ultimate goal of the theory is to completely  understand the structure of the points on the elliptic curve over any field $F$ and being able to find them.   
+
+\addtocounter{section}{1}
+\subsection{Basic Definitions}
+\begin{enumerate}
+\item For a basic exposition of the subject the reader should start with the entry \PMlinkname{elliptic curve}{EllipticCurve} (defines elliptic curve, the group law and gives some examples with graphs, also treats elliptic curves over the complex numbers).
+
+\item Some basic objects attached to an elliptic curve: \PMlinkname{$j$-invariant}{JInvariant}, discriminant and invariant differential. The $j$-invariant \PMlinkname{classifies elliptic curves up to isomorphism}{JInvariantClassifiesEllipticCurvesUpToIsomorphism}.
+
+\item Isogeny, the dual isogeny and the Frobenius morphism.
+
+\item Elliptic curves over finite fields: good reduction, bad reduction, multiplicative reduction, additive reduction, cusp, node.
+
+\item One of the most important objects that one can associate to an elliptic curve is the \PMlinkname{$L$-series}{LSeriesOfAnEllipticCurve} (the entry defines the \PMlinkname{$L$-series of an elliptic curve}{LSeriesOfAnEllipticCurve} and also talks about analytic continuation).
+
+\item The conductor of an elliptic curve is an integer quantity that measures the arithmetic complexity of the curve (the entry contains examples).
+
+\item The Tate module of an elliptic curve (it is also defined in the entry inverse limit).
+
+\item The canonical height on an elliptic curve (over $\Rats$).
+
+\item The height matrix and the elliptic regulator of an elliptic curve.
+
+\end{enumerate}
+\subsection{Elliptic Curves over Finite Fields}
+\begin{enumerate}
+\item See \PMlinkname{bad reduction}{BadReduction2}.
+
+\item The criterion of N\'eron-Ogg-Shafarevich.
+\item Supersingular reduction.
+\item Hasse's bound for elliptic curves over finite fields.
+\end{enumerate}
+\subsection{The Mordell-Weil Group $E(K)$}
+\begin{enumerate}
+\item The structure of $E(K)$ is given by the Mordell-Weil theorem (see also \PMlinkname{this entry}{RankOfAnEllipticCurve}). The main two ingredients of the proof of the theorem are the concept of height function and the so-called descent theorem.
+
+\item The free rank of the abelian group $E(K)$ is called the \PMlinkname{rank of an elliptic curve}{RankOfAnEllipticCurve} (the entry contains examples).
+
+\item Together with the Mordell-Weil group, one defines two other rather important groups: the Selmer groups and the Tate-Shafarevich group. The Tate-Shafarevich group (or ``Sha'') measures the failure of the Hasse principle on the elliptic curve.
+
+\item Some examples: Mordell curves.
+\end{enumerate}
+
+\subsection{The Torsion Subgroup of $E(K)$}
+\begin{enumerate}
+\item The Nagell-Lutz Theorem.
+\item Mazur's theorem on torsion of elliptic curves (a classification of all possible torsion subgroups).
+\item Examples of torsion subgroups of elliptic curves (includes examples of all possible subgroups).
+\item A way to determine the torsion group: the torsion subgroup of an elliptic curve injects in the reduction of the curve.
+\end{enumerate}
+
+\subsection{Computing the Rank}
+\begin{enumerate}
+\item Read about the \PMlinkname{rank}{RankOfAnEllipticCurve}.
+\item A bound for the rank of an elliptic curve.
+\end{enumerate}
+
+\subsection{Complex Multiplication}
+\begin{enumerate}
+\item Definition of the \PMlinkname{endomorphism ring}{EndomorphismRing} and complex multiplication.
+\item Examples of elliptic curves with complex multiplication.
+\item A connection between complex multiplication and class field theory: abelian extensions of quadratic imaginary number fields.
+\item Definition of Gr\"ossencharacters, in general.
+\end{enumerate}
+
+\subsection{Famous Problems and Conjectures}
+\begin{enumerate}
+\item Fermat's Last Theorem was finally solved using the theory of elliptic curves and modular forms.
+\item The Birch and Swinnerton-Dyer conjecture (relating the $L$-series of an elliptic curve with the algebraic rank).
+\item The Taniyama-Shimura-Weil Conjecture (now a theorem!).
+\end{enumerate}
+
+\subsection{Cryptography}
+
+\begin{enumerate}
+\item Cryptography and Number Theory.
+\item The elliptic curve discrete logarithm problem.
+\item The Diffie-Hellman key exchange.
+\end{enumerate}
+
+\begin{thebibliography}{9}
+\bibitem{milne} James Milne, {\em Elliptic Curves}, online course notes. \PMlinkexternal{http://www.jmilne.org/math/CourseNotes/math679.html}{http://www.jmilne.org/math/CourseNotes/math679.html}
+\bibitem{silverman} Joseph H. Silverman, {\em The Arithmetic of Elliptic Curves}. Springer-Verlag, New York, 1986.
+\bibitem{silverman2} Joseph H. Silverman, {\em Advanced Topics in
+the Arithmetic of Elliptic Curves}. Springer-Verlag, New York,
+1994.
+\bibitem{shimura} Goro Shimura, {\em Introduction to the
+Arithmetic Theory of Automorphic Functions}. Princeton University
+Press, Princeton, New Jersey, 1971.
+\end{thebibliography}
+
+{\it Note: If you want to contribute to this entry, please send an email to the author (alozano).}
+%%%%%
+%%%%%
+\end{document}

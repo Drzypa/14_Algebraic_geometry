@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UnitalPathAlgebras}
+\pmcreated{2013-03-22 19:16:23}
+\pmmodified{2013-03-22 19:16:23}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{unital path algebras}
+\pmrecord{4}{42204}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14L24}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $Q$ be a quiver and $k$ an arbitrary field.
+
+\textbf{Proposition.} The path algebra $kQ$ is unitary if and only if $Q$ has a finite number of vertices.
+
+\textit{Proof.}
+,,$\Rightarrow$'' Assume, that $Q$ has an infinite number of vertices and let $1\in kQ$ be an identity. Then we can express $1$ as
+$$1=\sum_{i=1}^{n}\lambda_n\cdot w_n$$
+where $\lambda_n\in k$ and $w_n$ are paths (they form a basis of $kQ$ as a vector space). Since $Q$ has an infinite number of vertices, then we can take a stationary path $e_x$ for some vertex $x$ such that there is no path among ${w_1,\ldots,w_n}$ ending in $x$. By definition of $kQ$ and by the fact that $1$ is an identity we have:
+$$e_x = 1\cdot e_x=\left(\sum_{i=1}^{n}\lambda_n\cdot w_n\right)\cdot e_x=\sum_{i=1}^{n}\lambda_n\cdot (w_n\cdot e_x)=\sum_{i=1}^{n}\lambda_n\cdot 0 = 0.$$
+Contradiction. $\square$
+
+,,$\Leftarrow$'' If the set $Q_0$ of vertices of $Q$ is finite, then put
+$$1=\sum_{q\in Q_0}e_q$$
+where $e_q$ denotes the stationary path (note that $1$ is well-defined, since the sum is finite). If $w$ is a path in $Q$ from $x$ to $y$, then $e_x\cdot w=w$ and $w\cdot e_y=w$. All other combinations of $w$ with $e_q$ yield $0$ and thus we obtain that
+$$1\cdot w = w = w\cdot 1.$$
+This completes the proof. $\square$
+%%%%%
+%%%%%
+\end{document}

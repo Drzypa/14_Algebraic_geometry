@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{IsomorphismOfVarieties}
+\pmcreated{2013-03-22 15:06:22}
+\pmmodified{2013-03-22 15:06:22}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{isomorphism of varieties}
+\pmrecord{4}{36838}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A10}
+\pmrelated{JInvariantClassifiesEllipticCurvesUpToIsomorphism}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+\begin{defn}
+Let $V_1$ and $V_2$ be algebraic varieties. We say that $V_1$ and $V_2$ are isomorphic, and write $V_1 \cong V_2$, if there are regular maps $$\phi \colon V_1 \to V_2, \quad \psi\colon V_2 \to V_1$$
+such that the compositions $\psi \circ \phi$ and $\phi \circ \psi$ are the identity maps on $V_1$ and $V_2$ respectively.
+\end{defn}
+
+\begin{defn}
+Let $V_1$ and $V_2$ be varieties defined over a field $K$. We say that $V_1/K$ and $V_2/K$  are isomorphic over $K$ if $V_1$ and $V_2$ are isomorphic as in Definition 1 and the regular maps $\phi$ and $\psi$ can be defined over $K$.
+\end{defn}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,48 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HodgeTheory}
+\pmcreated{2013-03-22 15:21:39}
+\pmmodified{2013-03-22 15:21:39}
+\pmowner{bwebste}{988}
+\pmmodifier{bwebste}{988}
+\pmtitle{Hodge theory}
+\pmrecord{12}{37184}
+\pmprivacy{1}
+\pmauthor{bwebste}{988}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14N05}
+\pmclassification{msc}{58A14}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+Hodge theory is a branch of algebraic geometry and complex manifold theory that deals with the decomposition of the cohomology groups of an complex projective algebraic variety.
+
+Let $\Omega^k(M)$ denote the space of differential $k$-forms. We know that there is a map, called the exterior derivative $$ d\colon\Omega^k \rightarrow \Omega^{k+1} $$ and that $d^2 = 0$. This forms a complex and the cohomology of this complex, $H_{DR}^* (M)$ is called the de Rham cohomology of $M$. It is isomorphic to the singular cohomology of $M$.
+
+For a complex manifold, it is more natural to have complex coordinates for our differential forms. Writing $z_j = x_j + iy_j$ we obtain two 1-forms, $dz_j$ and $d\bar{z_j}$. These forms serve as a basis for all $k$-forms, $dz_{i_1} \wedge dz_{i_2} \wedge \dots\wedge dz_{i_p} \wedge d\bar{z_{j_1}} \wedge \dots \wedge d\bar{z_{j_q}}$, where $p+q = k$. We call forms written like this to be $(p,q)$-forms. Let $\Omega^{p,q}$ be the space of $(p,q)$-forms. Then we have a natural decomposition $$ \Omega^k (M) = \bigoplus _{p+q =k} \Omega^{p,q}(M).$$
+
+The question then becomes , does this decomposition pass to the level of cohomology? The answer in general is no. If it were true in general, it would force all manifolds to have even first cohomology, which is obviously not true. But fortunately there are some nice classes of manifolds for which is does hold. 
+
+The Laplacian opererator $\Delta = d \phi + \phi d$ where $\phi$ is the adjoint operator (with respect to the Riemannian metric) to $d$. A form is called harmonic if its Laplacian is 0. The motivation for considering the Laplacian comes from looking for differential forms of minimal length. Because a basis on $TM$ induces a basis on $T^*M$ then we have an metric on $\bigwedge^kT^*M$ Due to this, we can define a norm on $\Omega^k$. It turns out that for $\lVert \omega \rVert$ to be minimal, then $(\omega , d\gamma) = 0$ for all $\gamma \in \Omega^{k-1}$. This is equivalent to $(\phi \omega , \gamma ) = 0$. So a closed form with minimal norm is harmonic.
+
+The most fundamental theorem of Hodge theory states that the space of harmonic $k$-forms, $H_{\Delta}^k(M) \cong H_{DR}^k (M)$.
+
+Now for local coordinates, a $1$-form is written as $ \omega = \sum f_i dz_i + \sum g_j d\bar{z_j}$. We define two new operators $\partial$ and $\bar{\partial}$ such that $$ \partial \omega = \sum \frac{\partial f_i}{\partial z_k}dz_k \wedge dz_i + \sum \frac{\partial g_j}{\partial z_k}dz_k \wedge d\bar{z_j}$$
+$$ \bar{\partial} \omega = \sum \frac{\partial f_i}{\partial \bar{z_k}}d\bar{z_k} \wedge dz_i + \sum \frac{\partial g_j}{\partial \bar{z_k}}dz_k \wedge d\bar{z_j}$$
+These operators also satisfy the relations $\partial^2 = \bar{\partial^2} = 0$ and $\partial \bar{\partial} + \bar{\partial}\partial = 0$. These operators also have adjoints and they as well have the relation that $d = \partial^* + \bar{\partial}^*$. Writing these in terms of the laplacian we obtain that $$ \Delta = (\partial \partial^* + \partial^* \partial ) + (\bar{\partial}\bar{\partial}^* + \bar{\partial}^*\bar{\partial}) + \mathbb{O} $$
+where $\mathbb{O}$ denotes some cross terms. 
+For this to be of any interest to us in terms on Hodge theory, these cross terms must vanish. Assuming they do, then if a form is harmonic, then each of the components of the $(p,q)$-form are harmonic. Therefore, we obtain a decomposition of the space of harmonic forms $$H_{\Delta}^k = \bigoplus _{p+q = k} H_{\Delta}^{p,q}$$.
+This gives us a Hodge decomposition on the level of cohomology due to the isomorphism between the space of harmonic forms and the de Rham cohomology groups.
+
+This has some immediate and interesting consequences. It tells us that any smooth complex projective variety has an even first betti number. With some work, one could also show that the second cohomology group is non-empty.
+
+We worked under the assumption that the cross terms in the above expression vanished. A example of a class of manifolds where this holds true is Kahler Manifolds, which are complex manifolds with a Riemannian metric that is compatible with the complex structure.
+
+This is just a small portion of the large topic of Hodge theory.
+%%%%%
+%%%%%
+\end{document}

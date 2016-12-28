@@ -1,0 +1,97 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{etaleMorphism}
+\pmcreated{2013-03-22 14:08:40}
+\pmmodified{2013-03-22 14:08:40}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{\'etale morphism}
+\pmrecord{14}{35559}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14F20}
+\pmclassification{msc}{14A15}
+\pmsynonym{\'etale}{etaleMorphism}
+%\pmkeywords{\'etale morphism}
+\pmrelated{site}
+\pmrelated{Site}
+\pmrelated{FlatMorphism}
+\pmrelated{EtaleFundamentalGroup}
+\pmrelated{EtaleCohomology}
+\pmrelated{CoveringSpace}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\PMlinkescapephrase{one way}
+\begin{defn}
+A morphism of schemes $f:X\to Y$ is \emph{\'etale} if it is flat and unramified. 
+\end{defn}
+This is the appropriate generalization of ``local homeomorphism'' from topology or ``local isomorphism'' from real differential geometry.
+Equivalently, $f$ is \'etale if and only if any of the following conditions hold:
+\begin{itemize}
+\item
+$f$ is locally of finite type and formally \'etale.
+\item
+$f$ is flat and the relative sheaf of differentials vanishes.
+\item
+$f$ is smooth of relative dimension zero.
+\item
+$f$ locally looks like $A[x_1,\ldots,x_n]/(p_1,\ldots,p_n)$ where the
+Jacobian vanishes.
+\end{itemize}
+
+A morphism $f:X\to Y$ of varieties over an algebraically 
+closed field is \'etale at a point $x\in X$ if it induces an 
+isomorphism between the completed local rings $\widehat{\mathcal{O}}_x$
+and $\widehat{\mathcal{O}}_{f(x)}$.  If $X$ and
+$Y$ are over an arbitrary field $k$, then the required
+condition becomes that $k(x)$ is a separable algebraic extension 
+of $k(y)$, where $y=f(x)$, and $f$ induces an isomorphism between
+%$\widehat{\mathcal{O}}_y$
+$\widehat{\mathcal{O}}_y \otimes_{k(y)} k(x)$ and $\widehat{\mathcal{O}}_x$.
+
+A morphism $f$ of nonsingular varieties over an algebraically closed 
+field is \'etale if and only if $f$ induces an isomorphism on the tangent spaces. In the differentiable category, the implicit function theorem 
+implies that such a function is actually an isomorphism on some small 
+neighborhood.  On schemes, of course, the Zariski topology is too 
+coarse for this to be the case.  One way to define a finer ``topology'', 
+making the scheme into a site, is by using \'etale maps.
+
+The word \'etale comes from French, where it can be used to describe a calm or slack sea.
+
+\begin{thebibliography}{9}
+\bibitem{dieudonne} Jean Dieudonn\'{e}, {\em A Panorama of Pure Mathematics}, Academic Press, 1982.
+\bibitem{hartshorne} Robin Hartshorne, {\em Algebraic
+Geometry}, Springer--Verlag, 1977 (GTM {\bf 52}).
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RealAnalyticSubvariety}
+\pmcreated{2013-03-22 17:41:07}
+\pmmodified{2013-03-22 17:41:07}
+\pmowner{jirka}{4157}
+\pmmodifier{jirka}{4157}
+\pmtitle{real analytic subvariety}
+\pmrecord{4}{40125}
+\pmprivacy{1}
+\pmauthor{jirka}{4157}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14P05}
+\pmclassification{msc}{14P15}
+\pmsynonym{real analytic variety}{RealAnalyticSubvariety}
+\pmsynonym{real analytic set}{RealAnalyticSubvariety}
+\pmrelated{SmoothSubmanifoldContainedInASubvarietyOfSameDimensionIsRealAnalytic}
+\pmdefines{real algebraic variety}
+\pmdefines{real algebraic subvariety}
+\pmdefines{local real analytic subvariety}
+\pmdefines{regular point}
+\pmdefines{singular point}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{theorem}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{conj}{Conjecture}
+\newtheorem*{cor}{Corollary}
+\newtheorem*{example}{Example}
+\newtheorem*{prop}{Proposition}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+
+\begin{document}
+Let $U \subset {\mathbb{R}}^N$ be an open set.
+
+\begin{defn}
+A closed set $X \subset U$ is called a {\em real analytic subvariety}
+of $U$ such that for each point $p \in X$, there exists a neigbourhood
+$V$ and a set $\mathcal{F}$ of real analytic functions defined in $V$, such that 
+\begin{equation*}
+X \cap V = \{ p \in V \mid f(p) = 0 \text{ for all } f \in \mathcal{F} \}.
+\end{equation*}
+If $U = {\mathbb{R}}^N$ and all the $f \in \mathcal{F}$ are real polynomials, then
+$X$ is said to be a {\em real algebraic subvariety}.
+\end{defn}
+
+If $X$ is not required to be closed, then it is said to be a {\em local real analytic subvariety}.
+Sometimes $X$ is called a real analytic set or real analytic variety.  Similarly as for complex
+analytic sets we can also define the regular and singular points.
+
+\begin{defn}
+A point $p \in X$ is called a {\em regular point} if there is a neighbourhood
+$V$ of $p$ such that $X \cap V$ is a submanifold. Any other
+point is called a {\em singular point}.
+\end{defn}
+
+The set of regular points of $X$ is denoted by $X^-$ or sometimes $X^*.$  The set of singular points
+is no longer a subvariety as in the complex case, though it can be sown to be semianalytic.  In general, real subvarieties is far worse behaved than their complex counterparts.
+
+\begin{thebibliography}{9}
+\bibitem{Whitney:varieties}
+Jacek Bochnak, Michel Coste, Marie-Francoise Roy.
+{\em \PMlinkescapetext{Real Algebraic Geometry}}.
+Springer, 1998.
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

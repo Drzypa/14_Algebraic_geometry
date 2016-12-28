@@ -1,0 +1,146 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TheTorsionSubgroupOfAnEllipticCurveInjectsInTheReductionOfTheCurve}
+\pmcreated{2013-03-22 13:55:47}
+\pmmodified{2013-03-22 13:55:47}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{the torsion subgroup of an elliptic curve injects in the reduction of the curve}
+\pmrecord{7}{34688}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H52}
+%\pmkeywords{torsion}
+%\pmkeywords{compute torsion subgroup}
+%\pmkeywords{elliptic curve}
+\pmrelated{EllipticCurve}
+\pmrelated{BadReduction}
+\pmrelated{MazursTheoremOnTorsionOfEllipticCurves}
+\pmrelated{NagellLutzTheorem}
+\pmrelated{ArithmeticOfEllipticCurves}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+Let $E$ be an elliptic curve defined over $\Rats$ and let
+$p\in\Ints$ be a prime. Let
+$$y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6$$
+be a minimal Weierstrass equation for $E/\Rats$, 
+with coefficients $a_i\in\Ints$. Let $\widetilde{E}$ be the reduction
+of $E$ modulo $p$ (see bad reduction) which is a curve defined
+over $\mathbb{F}_p=\Ints/p\Ints$. The curve $E/\Rats$ can also be considered as a curve over the $p$-adics, $E/\Rats_p$,  and, in fact, the group of rational points $E(\Rats)$ injects into $E(\Rats_p)$. Also, the groups $E(\Rats_p)$ and $E(\mathbb{F}_p)$ are related via the reduction
+map:
+$$\pi_p \colon E(\Rats_p) \to \widetilde{E}(\mathbb{F}_p)$$
+$$\pi_p(P)=\pi_p([x_0,y_0,z_0])=[x_0 \operatorname{mod} p,y_0 \operatorname{mod} p,z_0\operatorname{mod} p]=\widetilde{P}$$
+
+Recall that $\widetilde{E}$ might be a singular curve at some
+points. We denote
+$\widetilde{E}_{\operatorname{ns}}(\mathbb{F}_p)$ the set of
+non-singular points of $\widetilde{E}$. We also define
+$$E_0(\Rats_p)=\{ P\in E(\Rats_p) \mid \pi_p(P)=\widetilde{P}\in
+\widetilde{E}_{\operatorname{ns}}(\mathbb{F}_p)\}$$
+$$E_1(\Rats_p)=\{ P\in E(\Rats_p) \mid
+\pi_p(P)=\widetilde{P}=\widetilde{O}\}=
+\operatorname{Ker}(\pi_p).$$
+
+\begin{prop}
+There is an exact sequence of abelian groups
+$$0\longrightarrow
+E_1(\Rats_p)\longrightarrow E_0(\Rats_p)\longrightarrow
+\widetilde{E}_{\operatorname{ns}}(\mathbb{F}_p)\longrightarrow 0
+$$
+where the right-hand side map is $\pi_p$ restricted to
+$E_0(\Rats_p)$.
+\end{prop}
+
+Notation: Given an abelian group $G$, we denote by $G[m]$ the $m$-torsion
+of $G$, i.e. the points of order $m$.
+
+\begin{prop}
+Let $E/\Rats$ be an elliptic curve (as above) and let $m$ be a
+positive integer such that $\gcd(p,m)=1$. Then:
+\begin{enumerate}
+\item $$E_1(\Rats_p)[m]=\{ O \}$$ \item If
+$\widetilde{E}(\mathbb{F}_p)$ is a non-singular curve, then the
+reduction map, restricted to $E(\Rats_p)[m]$, is injective. This is
+$$E(\Rats_p)[m] \longrightarrow \widetilde{E}(\mathbb{F}_p)$$
+is injective.
+\end{enumerate}
+\end{prop}
+
+{\bf Remark}: Part $2$ of the proposition is quite useful when
+trying to compute the torsion subgroup of $E/\Rats$. As we mentioned above, $E(\Rats)$ injects into $E(\Rats_p)$. The proposition can be reworded as follows: for all primes $p$ which do not
+divide $m$, $E(\Rats)[m] \longrightarrow
+\widetilde{E}(\mathbb{F}_p)$ must be injective and therefore the
+number of $m$-torsion points divides the number of points defined
+over $\mathbb{F}_p$.
+
+{\bf Example}:\quad\\ Let $E/\Rats$ be given by $$ y^2=x^3+3$$ The
+discriminant of this curve is $\Delta=-3888=-2^43^5$. Recall that
+if $p$ is a prime of bad reduction, then $p\mid \Delta$. Thus the
+only primes of bad reduction are $2,3$, so $\widetilde{E}$ is
+non-singular for all $p\geq 5$.
+
+Let $p=5$ and consider the reduction of $E$ modulo $5$,
+$\widetilde{E}$. Then we have
+$$\widetilde{E}(\Ints/5\Ints)=\{ \widetilde{O}, (1,2), (1,3),
+(2,1), (2,4),(3,0) \}$$ where all the coordinates are to be
+considered modulo $5$ (remember the point at infinity!). Hence
+$N_5=\mid \widetilde{E}(\Ints/5\Ints)\mid=6$. Similarly, we can
+prove that $N_7=13$.
+
+Now let $q\neq 5,7$ be a prime number. Then we claim that
+$E(\Rats)[q]$ is trivial. Indeed, by the remark above we have
+$$\mid E(\Rats)[q] \mid \text{divides}\ N_5=6,N_7=13$$
+so $\mid E(\Rats)[q] \mid$ must be 1.
+
+For the case $q=5$ be know that $\mid E(\Rats)[5] \mid$ divides
+$N_7=13$. But it is easy to see that if $E(\Rats)[p]$ is
+non-trivial, then $p$ divides its order. Since $5$ does not divide
+$13$, we conclude that $E(\Rats)[5]$ must be trivial. Similarly
+$E(\Rats)[7]$ is trivial as well. Therefore $E(\Rats)$ has trivial
+torsion subgroup.
+
+Notice that $(1,2)\in E(\Rats)$ is an obvious point in the curve.
+Since we have proved that there is no non-trivial torsion, this
+point must be of infinite order! In fact
+$$E(\Rats)\cong \Ints$$
+and the group is generated by $(1,2)$.
+%%%%%
+%%%%%
+\end{document}

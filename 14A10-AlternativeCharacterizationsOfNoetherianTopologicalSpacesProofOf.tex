@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AlternativeCharacterizationsOfNoetherianTopologicalSpacesProofOf}
+\pmcreated{2013-03-22 15:25:39}
+\pmmodified{2013-03-22 15:25:39}
+\pmowner{yark}{2760}
+\pmmodifier{yark}{2760}
+\pmtitle{alternative characterizations of Noetherian topological spaces, proof of}
+\pmrecord{12}{37274}
+\pmprivacy{1}
+\pmauthor{yark}{2760}
+\pmtype{Proof}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A10}
+
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\newcommand{\N}{\mathbb{N}}
+
+\begin{document}
+\PMlinkescapeword{acc}
+\PMlinkescapeword{dcc}
+\PMlinkescapeword{between}
+\PMlinkescapeword{bound}
+\PMlinkescapeword{chain}
+\PMlinkescapeword{chains}
+\PMlinkescapeword{complement}
+\PMlinkescapeword{equivalence}
+\PMlinkescapeword{equivalent}
+\PMlinkescapeword{obvious}
+\PMlinkescapeword{satisfies}
+\PMlinkescapeword{theorem}
+
+We prove the equivalence of the following five conditions for a topological space $X$:
+
+\begin{itemize}
+\item (DCC) $X$ satisfies the \PMlinkname{descending chain condition}{DescendingChainCondition} for closed subsets.
+\item (ACC) $X$ satisfies the \PMlinkname{ascending chain condition}{AscendingChainCondition} for open subsets.
+\item (Min) Every nonempty family of closed subsets has a minimal element.
+\item (Max) Every nonempty family of open subsets has a maximal element.
+\item (HC) Every subset of $X$ is compact.
+\end{itemize}
+
+{\bf Proof}.
+
+Let $f\colon P(X) \to P(X)$ be the complement map,
+i.e., $f(A) = X \setminus A$ for any subset $A$ of $X$.
+Then $f$ induces an order-reversing bijective map
+between the open subsets of $X$ and the closed subsets of $X$.
+Sending arbitrary \PMlinkname{chains}{TotalOrder}/sets
+of open/closed subsets of $X$ through $f$
+then immediately yields the equivalence of conditions \PMlinkescapetext{(DCC) and (ACC)} of the theorem, and also the equivalence of (Min) and (Max).
+
+(Min) $\Rightarrow$ (DCC) is obvious, since the elements of
+an infinite strictly descending chain of closed subsets of $X$
+would form a set of closed subsets of $X$ without minimal element.
+Likewise, given a non-empty set $S$
+consisting of closed subsets of $X$ without minimal element,
+one can construct an infinite strictly descending chain in $S$
+simply by starting with any $A_0 \in S$ and choosing for $A_{n+1}$
+any proper subset of $A_n$ satisfying $A_{n+1} \in S$.
+Hence, we have proven conditions (ACC), (DCC), (Min) and (Max) of the theorem
+to be equivalent,
+and will be done if we can prove equivalence of statement (HC) to the others.
+
+To this end, first assume statement (HC),
+and let $(U_i)_{i \in \N}$ be an ascending sequence of open subsets of $X$.
+Then obviously, the $U_i$ form an open cover of $U = \bigcup_{i \in \N} U_i$,
+which by assumption is bound to have a finite subcover.
+Hence, there exists $n \in \N$
+such that $\bigcup_{i=0}^n U_i = \bigcup_{i \in \N} U_i$,
+so our ascending sequence is in fact stationary.
+Conversely, assume statement (Max) of the theorem,
+let $A \subseteq X$ be any subset of $X$
+and let $(U_i)_ {i \in I}$ be a family of open sets in $X$
+such that the $U_i \cap A$ form an open cover of $A$
+with respect to the subspace topology.
+Then, by the assumption,
+the set of finite unions of the $U_i$ has at least one maximal element,
+say $U$,
+and with any $i \in I$ we obtain $U_i \cup U = U$
+because of maximality of $U$.
+Hence, we have $U_i \subseteq U$  for all $i \in I$,
+so in fact $\bigcup_{i \in I} U_i = U$.
+But, $U$ was a union of a finite number of $U_i$ by construction;
+hence, a finite subcovering of $U$ and thereby of $A$ has been found. \qed
+
+%%%%%
+%%%%%
+\end{document}

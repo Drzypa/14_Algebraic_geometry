@@ -1,0 +1,94 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Jinvariant}
+\pmcreated{2013-03-22 13:49:54}
+\pmmodified{2013-03-22 13:49:54}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{j-invariant}
+\pmrecord{9}{34565}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H52}
+\pmsynonym{discriminant}{Jinvariant}
+\pmsynonym{$j$-invariant}{Jinvariant}
+\pmsynonym{j invariant}{Jinvariant}
+%\pmkeywords{j-invariant}
+%\pmkeywords{discriminant}
+%\pmkeywords{differential}
+%\pmkeywords{elliptic curve}
+\pmrelated{EllipticCurve}
+\pmrelated{BadReduction}
+\pmrelated{ModularDiscriminant}
+\pmrelated{Discriminant}
+\pmrelated{ArithmeticOfEllipticCurves}
+\pmdefines{j-invariant}
+\pmdefines{discriminant of an elliptic curve}
+\pmdefines{invariant differential}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+Let $E$ be an elliptic curve over $\mathbb{Q}$ with Weierstrass
+equation:
+$$y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6$$
+with coefficients $a_i\in\mathbb{Q}$. Let:
+\begin{eqnarray}
+\nonumber b_2 &=& a_1^2+4a_2,\\
+\nonumber b_4 &=& 2a_4+a_1a_3,\\
+\nonumber b_6 &=& a_3^2+4a_6,\\
+\nonumber b_8 &=& a_1^2a_6+4a_2a_6-a_1a_3a_4+a_3^2a_2-a_4^2,\\
+\nonumber c_4 &=& b_2^2-24b_4,\\
+\nonumber c_6 &=& -b_2^3+36b_2b_4-216b_6
+\end{eqnarray}
+\begin{defn}\quad
+\begin{enumerate}
+\item The \emph{discriminant} of $E$ is defined to be
+$$\Delta=-b_2^2b_8-8b_4^3-27b_6^2+9b_2b_4b_6$$
+
+\item The \emph{j-invariant} of $E$ is
+$$j=\frac{c_4^3}{\Delta}$$
+
+\item The \emph{invariant differential} is
+$$ \omega=\frac{dx}{2y+a_1x+a_3}=\frac{dy}{3x^2+2a_2x+a_4-a_1y}$$
+\end{enumerate}
+\end{defn}
+
+{\bf Example}:\\
+
+If $E$ has a Weierstrass equation in the simplified form
+$y^2=x^3+Ax+B$ then $$ \Delta=-16(4A^3+27B^2),\quad
+j=-\frac{1728(4A)^3}{\Delta}$$
+
+{\bf Note}: The discriminant $\Delta$ coincides in this case with the usual notion of \PMlinkname{discriminant of the polynomial}{Discriminant} $x^3+Ax+B$.
+%%%%%
+%%%%%
+\end{document}

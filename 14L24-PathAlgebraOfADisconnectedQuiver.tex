@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PathAlgebraOfADisconnectedQuiver}
+\pmcreated{2013-03-22 19:16:25}
+\pmmodified{2013-03-22 19:16:25}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{path algebra of a disconnected quiver}
+\pmrecord{4}{42205}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14L24}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $Q$ be a disconnected quiver, i.e. $Q$ can be written as a disjoint union of two quivers $Q'$ and $Q''$ (which means that there is no path starting in $Q'$ and ending in $Q''$ and vice versa) and let $k$ be an arbitrary field.
+
+\textbf{Proposition.} The path algebra $kQ$ is isomorphic to the product of path algebras $kQ'\times kQ''$.
+
+\textit{Proof.} If $w$ is a path in $Q$, then $w$ belongs either to $Q'$ or $Q''$. Define linear map 
+$$T:kQ\to kQ'\times kQ''$$
+by $T(w)=(w,0)$ if $w\in Q'$ or $T(w)=(0,w)$ if $w\in Q''$ and extend it linearly to entire $kQ$. We will show that $T$ is an isomorphism of algebras.
+
+If $w,w'$ are paths in $Q$, then since $Q'$ and $Q''$ are disjoint, then each of them entirely lies in $Q'$ or $Q''$. Now since $Q'$ and $Q''$ don't have common vertices it follows that $w\cdot w'=w'\cdot w=0$. Without loss of generality we may assume, that $w$ is in $Q'$ and $w'$ is in $Q''$. Then we have
+$$T(w\cdot w')=T(0)=(0,0)=(w,0)\cdot(0,w')=T(w)\cdot T(w').$$
+If both lie in the same component, for example in $Q'$, then
+$$T(w\cdot w')=(w\cdot w',0)=(w,0)\cdot(w',0)=T(w)\cdot T(w').$$
+Since $T$ preservers multiplication on paths, then $T$ preserves multiplication and thus $T$ is an algebra homomorphism.
+
+Obviously by definition $T$ is 1-1.
+
+It remains to show, that $T$ is onto. Assume that $(a,b)\in kQ'\oplus kQ''$. Then we can write
+$$(a,b)=\sum_{i,j}\lambda_{i,j}(v_i,w_j)=\sum_{i,j}\lambda_{i,j}(v_i,0) + \sum_{i,j}\lambda_{i,j}(0,w_j),$$
+where $v_i$ are paths in $Q'$ and $w_j$ are paths in $Q''$. It can be easily checked, that
+$$T\left(\sum_{i,j}\lambda_{i,j}(v_i + w_j)\right)=(a,b).$$
+Here we consider all $v_i$ and $w_j$ as paths in $Q$.
+
+Thus $T$ is an isomorphism, which completes the proof. $\square$
+%%%%%
+%%%%%
+\end{document}

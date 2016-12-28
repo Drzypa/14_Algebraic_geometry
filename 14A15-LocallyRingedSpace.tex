@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LocallyRingedSpace}
+\pmcreated{2013-03-22 12:37:41}
+\pmmodified{2013-03-22 12:37:41}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{locally ringed space}
+\pmrecord{13}{32890}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A15}
+\pmclassification{msc}{18F20}
+\pmrelated{LocalRing}
+\pmrelated{PrimeSpectrum}
+\pmrelated{Scheme}
+\pmdefines{morphism of locally ringed spaces}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\m}{\mathfrak{m}}
+\newcommand{\lra}{\longrightarrow}
+\begin{document}
+\section{Definitions}
+
+A {\em locally ringed space} is a topological space $X$ together with a sheaf of rings $\O_X$ with the property that, for every point $p \in X$, the stalk $(\O_X)_p$ is a local ring\footnote{All rings mentioned in this article are required to be commutative.}.
+
+A morphism of locally ringed spaces from $(X,\O_X)$ to $(Y,\O_Y)$ is a continuous map $f: X \lra Y$ together with a morphism of sheaves $\phi: \O_Y \lra \O_X$ with respect to $f$ such that, for every point $p \in X$, the induced ring homomorphism on stalks $\phi_p: (\O_Y)_{f(p)} \lra (\O_X)_p$ is a local homomorphism. That is,
+$$
+\phi_p(y) \in \m_p \text{ for every } y \in \m_{f(p)},
+$$
+where $\m_p$ (respectively, $\m_{f(p)}$) is the maximal ideal of the ring $(\O_X)_p$ (respectively, $(\O_Y)_{f(p)}$).
+
+\section{Applications}
+
+Locally ringed spaces are encountered in many natural contexts. Basically, every sheaf on the topological space $X$ consisting of continuous functions with values in some field is a locally ringed space. Indeed, any such function which is not zero at a point $p \in X$ is nonzero and thus invertible in some neighborhood of $p$, which implies that the only maximal ideal of the stalk at $p$ is the set of germs of functions which vanish at $p$. The utility of this definition lies in the fact that one can then form constructions in familiar instances of locally ringed spaces which readily generalize in ways that would not necessarily be obvious without this framework. For example, given a manifold $X$ and its locally ringed space $\mathcal{D}_X$ of real--valued differentiable functions, one can show that the space of all tangent vectors to $X$ at $p$ is naturally isomorphic to the real vector space $(\m_p/\m_p^2)^*$, where the $^*$ indicates the dual vector space. We then see that, in general, for {\bf any} locally ringed space $X$, the space of tangent vectors at $p$ should be defined as the $k$--vector space $(\m_p/\m_p^2)^*$, where $k$ is the residue field $(\O_X)_p / \m_p$ and $^*$ denotes dual with respect to $k$ as before. It turns out that this definition is the correct definition even in esoteric contexts like algebraic geometry over finite fields which at first sight lack the differential structure needed for constructions such as tangent vector.
+
+Another useful application of locally ringed spaces is in the construction of schemes. The forgetful functor assigning to each locally ringed space $(X,\O_X)$ the ring $\O_X(X)$ is adjoint to the ``prime spectrum'' functor taking each ring $R$ to the locally ringed space $\operatorname{Spec}(R)$, and this correspondence is essentially why the category of locally ringed spaces is the proper building block to use in the formulation of the notion of scheme.
+%%%%%
+%%%%%
+\end{document}

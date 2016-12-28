@@ -1,0 +1,49 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ClosedImmersion}
+\pmcreated{2013-03-22 12:50:21}
+\pmmodified{2013-03-22 12:50:21}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{closed immersion}
+\pmrecord{6}{33165}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A15}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\lra}{\longrightarrow}
+\begin{document}
+A morphism of schemes $f: (X,\O_X) \lra (Y,\O_Y)$ is a {\em closed immersion} if:
+\begin{enumerate}
+\item As a map of topological spaces, $f: X \lra Y$ is a homeomorphism from $X$ into a closed subset of $Y$, and
+\item the morphism of sheaves $\O_Y \lra \O_X$ associated with $f$ is an \PMlinkname{epimorphism}{AbelianCategory} in the category of sheaves.
+\end{enumerate}
+
+This notion is the analog of the notion of \PMlinkname{closed immersion}{Immersion} in the category of differential manifolds.
+%%%%%
+%%%%%
+\end{document}

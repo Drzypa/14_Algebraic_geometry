@@ -1,0 +1,116 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Scheme}
+\pmcreated{2013-03-22 12:48:17}
+\pmmodified{2013-03-22 12:48:17}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{scheme}
+\pmrecord{16}{33122}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A15}
+\pmrelated{PrimeSpectrum}
+\pmrelated{Variety}
+\pmrelated{AlgebraicGeometry}
+\pmrelated{LocallyRingedSpace}
+\pmdefines{affine scheme}
+\pmdefines{morphism of schemes}
+\pmdefines{point on a scheme}
+\pmdefines{functor of points}
+\pmdefines{structure morphism}
+\pmdefines{generic point}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\p}{{\mathfrak{p}}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\H}{\mathcal{H}}
+\newcommand{\A}{\mathcal{A}}
+\renewcommand{\c}{\mathcal{C}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\lra}{\longrightarrow}
+\newcommand{\res}{\operatorname{res}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\diff}{\operatorname{diff}}
+\newcommand{\incl}{\operatorname{incl}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\begin{document}
+\PMlinkescapeword{Fix}
+\PMlinkescapeword{fix}
+\PMlinkescapeword{term}
+\PMlinkescapeword{order}
+\section{Introduction}
+
+In order to extend algebraic geometry to deal with fields that are not algebraically closed, it is necessary to generalize the notions of affine variety and projective variety.  The most suitable generalization seems to be the notion of a scheme.  A scheme in some sense captures the equations defining an algebraic object, so that the points of that object can be examined over many different fields.  In fact, the points of such an object take a secondary role: this is necessary because, for example, over a finite field most curves have no points at all until you pass to a suitable field extension. The underlying machinery allowing this is the tensor product of rings: given a $k$-algebra $A$ and a field extension $K$ of $k$, $A\otimes_k K$ is the $K$-algebra that is, in some sense, defined by the same equations as $A$.
+
+Along with this ability to deal with varying base fields, schemes offer a great number of other possibilities.  In particular, the tools for dealing with individual schemes can usually also be adapted to deal with families of schemes.  These families can even span different characteristics, which can be a powerful tool for applying the tools of characteristic zero geometry to problems in positive characteristic. 
+
+\section{Definitions}
+
+An \emph{affine scheme} is a locally ringed space $(X,\O_X)$ with the property that there exists a ring $R$ (commutative, with identity) whose prime spectrum $\Spec(R)$ is isomorphic to $X$ as a locally ringed space.
+
+A \emph{scheme} is a locally ringed space $(X,\O_X)$ which has an open cover $\{U_\alpha\}_{\alpha \in I}$ with the property that each open set $U_\alpha$, together with its restriction sheaf $\O_X|_{U_\alpha}$, is an affine scheme.
+
+We define a \emph{morphism of schemes} between two schemes $(X,\O_X)$ and $(Y,\O_Y)$ to be a morphism of locally ringed spaces $f: (X,\O_X) \lra (Y,\O_Y)$. 
+
+With these definitions, schemes of course form a category.  However, frequently one wishes to work in a slightly different category, such as the category of ``complex schemes'', that is, schemes obtained from complex algebras.  However, these schemes will have strange automorphisms obtained from automorphisms of the complex numbers.  In order to prevent this problem, we often look at another category.
+
+Fix a scheme $Y$.  Then a \emph{scheme over $Y$} is defined to be a scheme $X$ together with a morphism of schemes $X \lra Y$, called the structure morphism of $X$.  A morphism $X\to X'$ of schemes over $Y$ is a morphism $X\to X'$ which makes the following diagram commute:
+\[
+\xymatrix{
+X \ar[rr]\ar[dr] & & X' \ar[dl] \\
+& Y &
+}
+\]
+The resulting category is called the category of schemes over $Y$, and is sometimes denoted $\text{Sch}/Y$.  Frequently, $Y$ will be the spectrum of a ring (or especially a field) $R$, and in this case we will also call this the category of schemes over $R$ (rather than schemes over $\Spec R$).
+
+Observe that this resolves the problem of automorphisms of the complex numbers leading to automorphisms of schemes over $\mathbb{C}$. 
+
+If $Y$ is not simply the spectrum of a field (perhaps it is a curve or some more general scheme) then one should interpret this as saying that $X$ is a family of schemes; for each point of $Y$, we have a scheme, namely the fiber of $X$ over that point of $Y$. 
+
+\textbf{Note:} Some authors, notably Mumford and Grothendieck, require that a scheme be separated as well (and use the term \emph{prescheme} to describe a scheme that is not separated), but we will not impose this requirement.
+
+For many problems, the points of the underlying topological space of a scheme do not represent what we want to work with.  For example, if we take the coordinate ring $R$ of a variety over an algebraically closed field $k$, $\Spec R$ (as a scheme over $k$) behaves very much like the variety in question, but there are ``extra'' points in the underlying topological space: for every irreducible closed subset, we have a point whose closure is the whole subset.  Such a point is called a \emph{generic point}.  As a result, we have a more elaborate definition for a point on a scheme.
+
+\clearpage
+Fix a scheme $S$.  Then an \emph{$S$-point on a scheme} $X$ is a morphism $S\to X$.  If $X$ is a scheme over $Y$, then this morphism is expected to be a $Y$-morphism.  The functor $S\mapsto \Hom(S,X)$ is called the \emph{functor of points} on $X$.  The set of $S$-points on $X$ is denoted $X(S)$.  If $R$ is a ring, then $X(\Spec R)$ is often written $X(R)$.  Thus, for example, the complex points on $X$ might be written $X(\mathbb{C})$. 
+
+
+\section{Examples}
+
+\begin{itemize}
+\item Every affine scheme is clearly a scheme as well. In particular, $\Spec(R)$ is a scheme for any commutative ring $R$.
+\item Every variety can be interpreted as a scheme. An affine variety corresponds to the prime spectrum of its coordinate ring, and a projective variety has an open cover by affine pieces each of which is an affine variety, and hence an affine scheme.
+\end{itemize}
+
+\section{References}
+
+See the \PMlinkname{bibliography for algebraic geometry}{BibliographyForAlgebraicGeometry}.  Hartshorne's book, \emph{Algebraic Geometry}, is an excellent reference for these ideas.
+%%%%%
+%%%%%
+\end{document}

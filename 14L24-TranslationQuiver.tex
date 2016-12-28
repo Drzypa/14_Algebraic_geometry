@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{TranslationQuiver}
+\pmcreated{2013-03-22 19:17:53}
+\pmmodified{2013-03-22 19:17:53}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{translation quiver}
+\pmrecord{5}{42233}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14L24}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $Q=(Q_0,Q_1,s,t)$ be a locally finite quiver without loops. Recall that a loop is an arrow $\alpha$ such that $s(\alpha)=t(\alpha)$. Let $X,Y\subseteq Q_0$.
+
+\textbf{Definition 1.} A pair $(Q,\tau)$ is said to be a \textbf{translation quiver} iff the following holds:
+\begin{enumerate}
+\item $\tau:X\to Y$ is a bijection;
+\item If $x\in X$ and $y\in x^{-}$ is a direct predecessor of $x$, then the number of arrows from $y$ to $x$ is equal to the number of arrows from $\tau(x)$ to $y$.
+\end{enumerate}
+
+If $(Q,\tau)$ is a translation quiver then we will say that $\tau(x)$ exists if $x\in X$ and $\tau(x)$ does not exist (or it is not defined) if $x\not\in X$.
+
+\textbf{Definition 2.} If $(Q,\tau)$ is a translation quiver, then a pair $(Q',\tau')$ is called a \textbf{translation subquiver} if it is a translation quiver, $Q'$ is a \PMlinkname{full subquiver}{SubquiverAndImageOfAQuiver} of $Q$ and $\tau'(x)=\tau(x)$ whenever $x$ is a vertex in $Q'$ such that $\tau(x)$ exists and belongs to $Q'$.
+
+\textbf{Example.} Let $Q$ be the following quiver:
+$$\xymatrix{
+1\ar[rd] &   & 2\ar[rd] &   & 3\ar[rd] &   & 4 \\
+  & 5\ar[rd]\ar[ru] &   & 6\ar[r]\ar[ru] & 7\ar[r] & 8\ar[ru] &   \\
+  &   & 9\ar[ru]
+}$$
+If we put $X=\{2,3,4,6,8\}$, $Y=\{1,2,3,5,6\}$ and 
+$$\tau(2)=1;\ \tau(3)=2;\ \tau(4)=3;$$
+$$\tau(6)=5;\ \tau(8)=6;$$
+then the pair $(Q,\tau)$ is a translation quiver and 
+$$\xymatrix{
+& 2\ar[rd] &\\
+5\ar[ru]\ar[rd] & & 6\\
+& 9\ar[ru] &
+}$$
+is its translation subquiver, where $\tau'(6)=5$.
+
+\textbf{Remark.} It is common to write translation quivers as in example. This means that $Q$ is ,,oriented'' to the right and in rows we have vertices such that ,,jumping'' two places to the left gives us $\tau$ of this vertex. Note that in the example the vertex $7$ is not written in the same row as $9$ because $\tau(7)$ is not $9$ (indeed, $\tau(7)$ is not defined).
+%%%%%
+%%%%%
+\end{document}

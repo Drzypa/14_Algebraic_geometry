@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExampleOfQuasiaffineVarietyThatIsNotAffine}
+\pmcreated{2013-03-22 14:16:39}
+\pmmodified{2013-03-22 14:16:39}
+\pmowner{Mathprof}{13753}
+\pmmodifier{Mathprof}{13753}
+\pmtitle{example of quasi-affine variety that is not affine}
+\pmrecord{7}{35729}
+\pmprivacy{1}
+\pmauthor{Mathprof}{13753}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14-00}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\PMlinkescapeword{sort}
+Let $k$ be an algebraically closed field.  Then the affine plane $\mathbb{A}^2$ is certainly affine.  If we remove the point $(0,0)$, then we obtain a quasi-affine variety $A$.  
+
+The ring of regular functions of $A$ is the same as the ring of regular functions of $\mathbb{A}^2$.  To see this, first observe that the two varieties are clearly birational, so they have the same function field.  Clearly also any function regular on $\mathbb{A}^2$ is regular on $A$.  So let $f$ be regular on $A$.  Then it is a rational function on $\mathbb{A}^2$, and its poles (if any) have codimension one, which means they will have support on $A$.  Thus it must have no poles, and therefore it is regular on $\mathbb{A}^2$. 
+
+We know that the morphisms $A\to\mathbb{A}^2$ are in natural bijection with the morphisms from the coordinate ring of $\mathbb{A}^2$ to the coordinate ring of $A$; so isomorphisms would have to correspond to automorphisms of $k[X,Y]$, but this is just the set of invertible linear transformations of $X$ and $Y$; none of these yield an isomorphism $A\to\mathbb{A}^2$.  
+
+Alternatively, one can use \v{C}ech cohomology to show that $H^1(A,\mathcal{O}_A)$ is nonzero (in fact, it is infinite-dimensional), while every affine variety has zero higher cohomology groups.
+
+For further information on this sort of subject, see Chapter I of Hartshorne's \PMlinkescapetext{\emph{Algebraic Geometry}} (which lists this as exercise I.3.6).  See the bibliography for algebraic geometry for this and other books.
+%%%%%
+%%%%%
+\end{document}

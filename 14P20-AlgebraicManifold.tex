@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{AlgebraicManifold}
+\pmcreated{2013-03-22 15:36:08}
+\pmmodified{2013-03-22 15:36:08}
+\pmowner{jirka}{4157}
+\pmmodifier{jirka}{4157}
+\pmtitle{algebraic manifold}
+\pmrecord{6}{37518}
+\pmprivacy{1}
+\pmauthor{jirka}{4157}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14P20}
+\pmclassification{msc}{14-00}
+\pmclassification{msc}{58A07}
+\pmsynonym{algebraic submanifold}{AlgebraicManifold}
+\pmsynonym{$k$-algebraic manifold}{AlgebraicManifold}
+\pmsynonym{$k$-algebraic submanifold}{AlgebraicManifold}
+\pmdefines{Nash manifold}
+\pmdefines{Nash submanifold}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{theorem}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{conj}{Conjecture}
+\newtheorem*{cor}{Corollary}
+\newtheorem*{example}{Example}
+\newtheorem*{prop}{Proposition}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+\begin{document}
+\begin{defn}
+Let $k$ be a field and let $M \subset k^n$ be a submanifold.  $M$ is said to
+be an \emph{algebraic manifold} (or $k$-algebraic) if there exists an irreducible algebraic
+variety $V \subset k^n$ such that $\dim V = \dim M$ and $M \subset V$.  If $k = \mathbb{R}$,
+then $M$ is called a \emph{Nash manifold}.
+\end{defn}
+
+It can be proved that such a manifold is defined as the zero set of a finite collection of analytic algebraic functions.
+
+\begin{thebibliography}{9}
+\bibitem{ber:submanifold}
+M.\@ Salah Baouendi,
+Peter Ebenfelt,
+Linda Preiss Rothschild.
+{\em \PMlinkescapetext{Real Submanifolds in Complex Space and Their Mappings}},
+Princeton University Press,
+Princeton, New Jersey, 1999.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

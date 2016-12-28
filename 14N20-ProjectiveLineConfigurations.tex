@@ -1,0 +1,682 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProjectiveLineConfigurations}
+\pmcreated{2013-03-22 18:23:45}
+\pmmodified{2013-03-22 18:23:45}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{projective line configurations}
+\pmrecord{55}{41042}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14N20}
+\pmclassification{msc}{14N10}
+\pmclassification{msc}{05B99}
+\pmclassification{msc}{52C30}
+\pmclassification{msc}{51N15}
+\pmclassification{msc}{51E20}
+\pmclassification{msc}{51A45}
+\pmclassification{msc}{51A05}
+\pmclassification{msc}{51A20}
+\pmsynonym{projective configuration}{ProjectiveLineConfigurations}
+\pmsynonym{line configuration}{ProjectiveLineConfigurations}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+\section{Introduction}
+
+\subsection{Definition}
+
+A \emph{projective line configuration} consists of a collections
+of $p$ points and $\ell$ lines in a projective space such that 
+through each point of the configuration there pass a fixed 
+number $\lambda$ of lines of the configuration and on each 
+line of the configuration there are found a fixed number $\pi$
+of points of the configuration.  It is not required that the 
+intersection of any two lines belonging to the configuration 
+be a line of the configuration nor that through every two points 
+of the configuration there pass a line of the configuration. 
+(Indeed, this will usually not be the case except for the very
+simplest examples with small values of $\pi$ and $\lambda$.) 
+Besides being interesting geometric objects in their own right, 
+projective configurations arise naturally in geometric 
+definitions, constructions, and theorems, and also in such 
+contexts as collections of special points and lines associated 
+to algebraic varieties.
+
+\subsection{Examples}
+
+A simple example of a projective configuration is a triangle:
+\[ \begin{xy}
+ ,(0,0) ;(30,30)**@{-} ,(14,17)*{b}
+ ,(22,30) ;(52,0)**@{-} ,(38,17)*{a}
+ ,(0,5) ;(52,5)**@{-} ,(26,2)*{c}
+ ,(5,5)*{\bullet} ,(5,2)*{A}
+ ,(47,5)*{\bullet} ,(46,2)*{B}
+ ,(26,26)*{\bullet}, ,(30,26)*{C}
+\end{xy} \]
+Here we have 3 points, $A$,$B$,$C$ and 3 lines, $a$,$b$,$c$
+with the property that each of the points lines on exactly
+2 of the lines ($A$ lies on $b$ and $c$, $B$ lies on $a$
+and $c$, and $C$ lies on $a$ and $b$) and that each of the
+lines passes through exactly two of the points ($a$ passes
+through $B$ and $C$, $b$ passes through $A$ and $C$, and
+$c$ passes through $A$ and $B$.)
+
+Another example is a complete quadrangle.  This configuration
+consists of 4 points $A$, $B$, $C$, $D$ and the 6 lines $a$, 
+$b$, $c$, $d$, $e$, $f$ as illustrated below:
+\[ \begin{xy}
+ ,(5,35)*{\bullet} ,(8,37)*{A}
+ ,(35,35)*{\bullet} ,(32,37)*{B}
+ ,(5,5)*{\bullet} ,(8,2)*{C}
+ ,(35,5)*{\bullet} ,(32,2)*{D}
+ ,(0,5) ;(40,5)**@{-} ,(20,2)*{c}
+ ,(0,35) ;(40,35)**@{-} ,(20,37)*{a}
+ ,(5,0) ;(5,40)**@{-} ,(2,20)*{d}
+ ,(35,0) ;(35,40)**@{-} ,(37,20)*{b}
+ ,(0,0) ;(40,40)**@{-} ,(27,30)*{f}
+ ,(0,40) ;(40,0)**@{-} ,(12,30)*{e}
+\end{xy} \]
+Since each of the points lies
+on exactly 3 of the lines and each the lines contains exactly
+two of the points, this is indeed a bona fide projective
+configuration.  (Note that the intersection of the lines $e$ 
+and $f$ is not highlighted as this is not one of the points of 
+the configurations --- as mentioned at top, not every intersection
+of two lines of the configuration need be a point of the 
+configuration.)
+
+\subsection{Notation}
+
+When discussing line configurations, use is made of the
+notation $(p_{\lambda} \ell_{\pi})$ or 
+$\begin{pmatrix}p & \lambda \\ \pi & \ell \end{pmatrix}$
+to indicate that the configuration contains $p$ points and
+$\ell$ lines with $\lambda$ lines passing through each
+point and $\pi$ points on each line.  Thus, we would say
+that the triangle is a configuration of type $(3_2 3_2)$ 
+(or $\begin{pmatrix} 3 & 2 \\ 2 & 3 \end{pmatrix}$) and 
+the complete quadrangle is a configuration of type 
+$(4_3, 6_2)$.
+
+It is worth pointing out that the four numbers $p$, $\ell$,
+$\pi$, $\lambda$ are linked by the relation $p \cdot \lambda =
+\pi \cdot \ell$.  The reason for this is a counting argument ---
+we could count pairs consisting of a point and a line passing
+through that point two ways.  We could start with the $p$ points 
+and count $\lambda$ lines passing through each point to arrive
+at $p \lambda$ pairs.  Alternatively, we could start with the 
+$\ell$ lines and count $\pi$ points on each line to arrive
+at $\pi \ell$ pairs.  Since we are counting the same objects
+(pairs consisting of incident points and lines), we must
+arrive at the same number either way.
+
+Finally, when dealing with cases where $p = \ell$ (and hence,
+by what was said above, $\pi = \lambda$), one may use the
+abbreviated notation $(p_\lambda)$.  Thus, one could say 
+instead that the triangle is a configuration of type $(3_2)$.
+Thus notation is most commonly encountered in the context
+of self-dual configurations (which will be defined in the
+next subsection). 
+
+\subsection{Choice of Projective Space}
+
+So far, we have only spoken of projective configurations in a
+general manner.  To discuss the matter in more detail, we need 
+to take into account the projective space within which our
+configuration is situated.
+
+The need for doing so is rather well illustrated by the fact 
+that certain configurations may not exist in all projective
+spaces.  As an example, we may consider the Hesse configuration,
+which is a configuration of type $(9_4 12_3)$.  In this
+configuration, if we label the points by the letters $A$ through
+$I$ suitably, the lines pass through the following triplets of
+points: $ABC$, $DEF$, $GHI$, $ADG$, $BEH$, $CFI$, $AEI$, $BFG$,
+$CDH$, $AFH$, $BDI$, $CEG$.  It is not possible to find 9 points
+and 12 lines in the real projective plane $\mathbb{R} \mathbb{P}^2$
+(or, for that matter, any real projective space $\mathbb{R} 
+\mathbb{P}^n$) which form such a configuration.  However, such
+a configuration can be found in the complex projective plane
+$\mathbb{C} \mathbb{P}^2$ --- for instance we could take the
+9 points with homogeneous coordinates
+\[ \begin{matrix}
+ A: ( 1, -r_+, 0 ) &
+ B: ( 1, -1, 0 ) &
+ C: ( 1, -r_-, 0 ) \\
+ D: ( -r_+, 0, 1 ) &
+ E: ( -1, 0, 1 ) &
+ F: ( -r_-, 0, 1 ) \\
+ G: ( 0, 1, -r_+) &
+ H: ( 0, 1,-1 ) &
+ I: ( 0, 1, -r_- )
+\end{matrix} \]
+and the 12 lines with equations
+\[ \begin{matrix}
+ \hbox to 50pt{$\hfil ABC:\;$} z = 0 \hfill & 
+ \hbox to 50pt{$\hfil DEF:\;$} y = 0 \hfill & 
+ \hbox to 50pt{$\hfil GHI:\;$} x = 0 \hfill \\
+ \hbox to 50pt{$\hfil ADG:\;$} x + r_- y + r_+ z = 0 \hfill &
+ \hbox to 50pt{$\hfil BEH:\;$} x + y + z = 0 \hfill &
+ \hbox to 50pt{$\hfil CFI:\;$} x + r_+ y + r_- z = 0 \hfill \\
+ \hbox to 50pt{$\hfil AEI:\;$} x + r_- y + z = 0 \hfill &
+ \hbox to 50pt{$\hfil BFG:\;$} x + y + r_- z = 0 \hfill &
+ \hbox to 50pt{$\hfil CDH:\;$} r_- x + y + z = 0 \hfill \\
+ \hbox to 50pt{$\hfil AFH:\;$} r_+ x + y + z = 0 \hfill &
+ \hbox to 50pt{$\hfil BDI:\;$} x + y + r_+ z = 0 \hfill &
+ \hbox to 50pt{$\hfil CEG:\;$} x + r_+ y + z = 0 \hfill ,
+\end{matrix} \]
+where $r_\pm = (1 \pm i \sqrt{3})/2$.  That the appropriate points
+lie on the appropriate lines may be readily verified by a computation
+which is especially effortless if one makes use of the facts that
+$r_+^3 = r_-^3 = 1$ and $r_+ r_- = 1$.
+
+This notion of certain configurations being only found in certain
+spaces may be clarified by an intrinsic/extrinsic approach.  Define
+an \emph{abstract line configuration} of type $(p_\lambda \ell_\pi)$ 
+to be a triplet $\langle P, L, I \rangle$, where $P$ and $Q$ are sets
+and $I$ is a relation on $P \times L$ such that the following 
+conditions hold:
+\begin{itemize}
+\item The cardinality of $P$ is $p$.
+\item The cardinality of $L$ is $\ell$.
+\item For every $x \in P$, the cardinality of 
+$\{ y \in L \mid I(x,y) \}$ is $\lambda$.
+\item For every $x \in L$, the cardinality of 
+$\{ y \in P \mid I(y,x) \}$ is $\pi$.
+\item Given two distinct elements $x,y$ of $P$, there exists at
+most one element $z$ of $L$ such that $I(x,z)$ and $I(y,z)$.
+\item Given two distinct elements $x,y$ of $L$, there exists at
+most one element $z$ of $P$ such that $I(z,x)$ and $I(z,y)$.
+\end{itemize}
+Given a projective space $S$, we may then define an embeding of an
+abstract line complex $\langle P, L, I \rangle$ to be an assignment
+of a point of $S$ to every element of $P$ and a line to every element
+of $L$ in such a way that the point assigned to an element $x$ of
+$P$ will lie on the line assigned to an element $y$ of $L$ if and
+only if $I(x,y)$.  For instance, returning to our first example above,
+the abstract configuration of the triangle is 
+\[ \langle \{ A, B, C \}, \{ a, b, c \}, 
+           \{ (A,b), (A,c), (B,a), (B,c), (C,a), (C,b) \rangle .\]
+Not only is this way of thinking useful conceptually,
+but, as we shall see in the next section, it is useful in practise 
+because it lets us divide the work of finding configurations into a
+combinatorial task of determining abstract configurations and a
+geometric task of determining which abstract configurations may be
+embedded in which space.
+
+When the space within which our configuration is embedded is two-
+dimensional, i.e. happens to be a projective plane, then we can 
+apply the duality operation to obtain another line configuration
+in which the role of lies and points has been interchanged.  We
+call this new configuration the dual of the original configuration.
+If it happens that the dual configuration is projectively equivalent 
+to the original configuration, we call it a self-dual configuration.
+For instance, the triangle is a self-dual configuration in 
+$\mathbb{R}\mathbb{P}^2$, given two triangles, there will be a
+collineation which maps one into the other.  In the example of the
+complete quadrangle, its dual is a configuration known as the
+complete quadrangle, which consists of four lines such that each
+pair of lines intersects in on of the six points of the configuration.
+
+\[ \begin{xy}
+ ,(6,6)*{\bullet} ,(8,4)*{C}
+ ,(26,66)*{\bullet} ,(29,66)*{E}
+ ,(66,26)*{\bullet} ,(66,29)*{F}
+ ,(42,18)*{\bullet} ,(45,17)*{D}
+ ,(18,42)*{\bullet} ,(16,45)*{B}
+ ,(36,36)*{\bullet} ,(39,39)*{A}
+ ,(4,0) ;(28,72)**@{-} ,(26,11)*{c}
+ ,(0,4) ;(72,28)**@{-} ,(10,26)*{d}
+ ,(72,24) ;(0,48)**@{-} ,(52,34)*{b}
+ ,(24,72) ;(48,0)**@{-} ,(34,52)*{a}
+\end{xy} \]
+This notion of duality can be extended to abstract configurations.  
+Given an abstract line configuration $\langle P, L, I \rangle$, its
+dual is $\langle L, P, I' \rangle$ where $I'(x,y)$ if and only if
+$I(y,x)$.  For instance, the abstract configuration of the complete
+quadrangle is
+\begin{align*} \langle
+ &\{ A, B, C, D \},
+ \{ a, b, c, d, e, f \}, \\
+ &\{ (A,a), (A,d), (A,e), (B,a), (B,b), (B,f),
+    (C,c), (C,d), (C,f), (D,b), (D,c), (D,e) \}
+\rangle \end{align*}
+so its dual is
+\begin{align*} \langle
+ & \{ a, b, c, d, e, f \}, 
+ \{ A, B, C, D \}, \\
+ &\{ (a,A), (d,A), (e,A), (a,B), (b,B), (f,B),
+    (c,C), (d,C), (f,C), (b,D), (c,D), (e,D) \}
+\rangle \end{align*}
+which corresponds to the complete quadrilateral.
+Likewise, we can define a notion of self-duality at the abstract
+level.  We will say that an abstract line configuration $\langle
+P, L, I \rangle$ is self-dual if there exists a one-to-one 
+correspondence $g \colon P \to L$ such that, for all $x,y \in P$,
+we have $I(x,g(y))$ if and only if $I(y,g(x))$.
+
+\subsection{Symmetries}
+
+Next, we consider the effect of collineations on configurations.
+Given a configuration in a projective space, a collineation of
+that space will map that configuration into some configuration.
+If it happens to be mapped into the same configuration, then
+we say that the collineation is a symmetry of the configuration
+in question.
+
+To illustrate these ideas, let us consider a triangle in $\mathbb{R}
+\mathbb{P}^2$ consisting of the points $(1,0,0)$, $(0,1,0)$, $(0,0,1)$
+and the lines $x = 0$, $y = 0$, $z = 0$.  Firstly, consider the 
+collineation
+\begin{align*}
+ x &\mapsto x + y \\
+ y &\mapsto y \\
+ z &\mapsto z
+\end{align*}
+Under this mapping, the lines and points of our configuration 
+transform as follows:
+\[ \begin{matrix}
+ (1,0,0) \mapsto (1,0,0) \hskip 0.5in \hfill & x = 0 \mapsto x + y = 0 \hfill \\
+ (0,1,0) \mapsto (-1,1,0) \hfill & y = 0 \mapsto y = 0 \hfill \\
+ (0,0,1) \mapsto (0,0,1) \hfill & z = 0 \mapsto z = 0 \hfill
+\end{matrix} \]
+Since the point $(-1,1,0)$ does not belong to the original configuration,
+this transform is not a symmetry of our triangle.
+
+Secondly, consider the transformation
+\begin{align*}
+ x &\mapsto y \\
+ y &\mapsto z \\
+ z &\mapsto x
+\end{align*}
+Under this mapping, the lines and points of our configuration 
+transform as follows:
+\[ \begin{matrix}
+ (1,0,0) \mapsto (0,1,0) & \hskip 0.5in \hfill & x = 0 \mapsto y = 0 \hfill \\
+ (0,1,0) \mapsto (0,0,1) & \hskip 0.5in \hfill & y = 0 \mapsto z = 0 \hfill \\
+ (0,0,1) \mapsto (1,0,0) & \hskip 0.5in \hfill & z = 0 \mapsto z = 0 \hfill 
+\end{matrix} \]
+Since the images of the points are points of the original configuration and
+the images of the lines also belong to the original configuration, this
+collineation is a symmetry of the configuration.
+
+Thirdly, consider the collineation
+\begin{align*}
+ x &\mapsto 2x \\
+ y &\mapsto y \\
+ z &\mapsto z
+\end{align*}
+Under this mapping, the lines and points of our configuration 
+transform as follows:
+\[ \begin{matrix}
+ (1,0,0) \mapsto (2,0,0) \hskip 0.5in \hfill & x = 0 \mapsto 2x = 0 \hfill \\
+ (0,1,0) \mapsto (0,1,0) \hfill & y = 0 \mapsto y = 0 \hfill \\
+ (0,0,1) \mapsto (0,0,1) \hfill & z = 0 \mapsto z = 0 \hfill
+\end{matrix} \]
+Since the images of the points are points of the original configuration and
+the images of the lines also belong to the original configuration, this
+collineation is a symmetry of the configuration.  (Remember that, since we
+are dealing with homogeneous coordinates on projective space, overall scalings
+do not matter, so $(1,0,0)$ and $(2,0,0)$ label the same point, likewise 
+$x = 0$ and $2x = 0$ describe the same line.)  Note that this symmetry 
+differs from the one in the previous example because each point and line is
+individually left invariant as opposed to only having the set of all points
+and the set of all lines be left invariant.
+
+We may also consider permuting the points and lines in abstract line
+configurations.  Given an abstract line configuration $\langle P, L, I
+\rangle$, we will define a symmetry of this configuration to be a pair
+of permutations $f \colon P \to P$ and $g \colon L \to L$ such that, for
+all $x \in P$ and all $y \in L$, we have $I(f(x), g(y))$ if and only if
+$I(x, y)$. 
+
+We may relate these abstract and concrete symmetry groups as follows.  
+Suppose that we have an abstract configuration $C$ which is embedded 
+in a  projective space $P$ as a configuration $C'$.  Let $G_a$ be the
+group of symmetries of $C$.  Let $G_e$ be the group of collineations
+of $P$ which preserves $C'$ and let $G_f$ be the group of collineations  
+which leaves the points and lines of $C'$ fixed individually.  Then
+$G_f$ is a normal subgroup of $G_e$ and the quotient group $G_e/G_f$ 
+is a subgroup of $G_a$.
+
+To illustrate how this works, we will consider the symmetry groups 
+associated to the example of the triangle studied above.  We begin 
+with $G_e$.  Writing down the effect of a linear transform and 
+asking that it preserve the configuration, we find that, in order
+for a transformation to preserve the configuration, it should have
+one of the following forms:
+\[ \begin{matrix}
+\left\{ \begin{matrix} x \mapsto \alpha x \\ y \mapsto \beta y \\ 
+  z \mapsto \gamma z \end{matrix} \right. \quad &
+\left\{ \begin{matrix} x \mapsto \alpha y \\ y \mapsto \beta z \\ 
+  z \mapsto \gamma x \end{matrix} \right. \quad &
+\left\{ \begin{matrix} x \mapsto \alpha  z \\ y \mapsto \beta x \\ 
+  z \mapsto \gamma y \end{matrix} \right. \quad &
+\left\{ \begin{matrix} x \mapsto \alpha x \\ y \mapsto \beta z \\ 
+  z \mapsto \gamma x \end{matrix} \right. \quad &
+\left\{ \begin{matrix} x \mapsto \alpha z \\ y \mapsto \beta y \\ 
+  z \mapsto \gamma x \end{matrix} \right. \quad &
+\left\{ \begin{matrix} x \mapsto \alpha y \\ z \mapsto \beta y \\ 
+  z \mapsto \gamma z \end{matrix} \right. 
+\end{matrix} \]
+Here, $\alpha, \beta, \gamma$ are arbitrary non-zero real numbers.  
+If we instead ask that the points and lines of the triangle be fixed 
+individually, only transforms of the form
+\[
+ \left\{ \begin{matrix} x \mapsto \alpha x \\ y \mapsto \beta y \\ 
+  z \mapsto \gamma z \end{matrix} \right.
+\]
+remain.  These form the group $G_f$.  Examining the abstract 
+configuration of the triangle, we may verify that the following
+permutations are the ones which preserve incidence:
+\[ \begin{matrix} 
+ \begin{tabular}{c|ccc}
+  x    & A & B & C \\
+  \hline
+  f(x) & A & B & C
+ \end{tabular} \quad
+ \begin{tabular}{c|ccc}
+  x    & a & b & c \\
+  \hline
+  g(x) & a & b & c
+ \end{tabular} \qquad &
+ \begin{tabular}{c|ccc}
+  x    & A & B & C \\
+  \hline
+  f(x) & A & C & B
+ \end{tabular} \quad
+ \begin{tabular}{c|ccc}
+  x    & a & b & c \\
+  \hline
+  g(x) & a & c & b
+ \end{tabular} \\ \\
+ \begin{tabular}{c|ccc}
+  x    & A & B & C \\
+  \hline
+  f(x) & B & C & A
+ \end{tabular} \quad 
+ \begin{tabular}{c|ccc}
+  x    & a & b & c \\
+  \hline
+  g(x) & b & c & a
+ \end{tabular} \qquad &
+ \begin{tabular}{c|ccc}
+  x    & A & B & C \\
+  \hline
+  f(x) & C & B & A
+ \end{tabular} \quad
+ \begin{tabular}{c|ccc}
+  x    & a & b & c \\
+  \hline
+  g(x) & c & b & a
+ \end{tabular} \\ \\
+ \begin{tabular}{c|ccc}
+  x    & A & B & C \\
+  \hline
+  f(x) & C & A & B
+ \end{tabular} \quad
+ \begin{tabular}{c|ccc}
+  x    & a & b & c \\
+  \hline
+  g(x) & c & a & b
+ \end{tabular} \qquad &
+ \begin{tabular}{c|ccc}
+  x    & A & B & C \\
+  \hline
+  f(x) & B & A & C
+ \end{tabular} \quad
+ \begin{tabular}{c|ccc}
+  x    & a & b & c \\
+  \hline
+  g(x) & b & a & c
+ \end{tabular} 
+\end{matrix} \]
+The group presented above is isomorphic to $S_3$.  From what was described
+earlier, one may also check that $G_e / G_f$ is also isomorphic to $S_3$ so,
+in this case, $G_e / G_f$ is isomorphic to the whole of $G_a$.
+
+As another illustrative example of symmetry groups of configurations, we
+shall consider the configuration of type $(4_1 1_4)$ in $\mathbb{R}\mathbb{P}^2$
+consisting of a line $a$ with equation $z = 0$ and four points $A$, $B$, $C$,$D$ 
+with coordinates $(1,0,0)$, $(1,1,0)$, $(1,2,0)$, $(1,3,0)$ respectively.
+\[ \begin{xy}
+ ,(0,5) ;(50,5)**@{-} ;(25,7)*{a}
+ ,(10,5)*{\bullet} ,(10,2)*{A}
+ ,(20,5)*{\bullet} ,(20,2)*{B}
+ ,(30,5)*{\bullet} ,(30,2)*{C}
+ ,(40,5)*{\bullet} ,(40,2)*{D}
+\end{xy} \]
+In order to preserve this configuration, a collineation must have one
+of the following forms:
+\[ \begin{matrix}
+\left\{ \begin{matrix} 
+          x \mapsto \alpha x + \beta z \hfill \\ 
+          y \mapsto \alpha y + \gamma z \hfill \\ 
+          z \mapsto \delta z \hfill \end{matrix} \right. \quad &
+\left\{ \begin{matrix} 
+          x \mapsto \alpha x + \beta z \hfill \\ 
+          y \mapsto 3 \alpha x - \alpha y + \gamma z \hfill \\ 
+          z \mapsto \delta z \hfill \end{matrix} \right. \quad &
+\left\{ \begin{matrix} 
+          x \mapsto 3 \alpha x - 2 \alpha y + \beta z \hfill \\ 
+          y \mapsto 3 \alpha x - 3 \alpha y + \gamma z \hfill \\ 
+          z \mapsto \delta z \hfill \end{matrix} \right. \quad &
+\left\{ \begin{matrix} 
+          x \mapsto 3 \alpha x - 2 \alpha y + \beta z \hfill \\ 
+          y \mapsto 6 \alpha x - 3 \alpha y + \gamma z \hfill \\ 
+          z \mapsto \delta z \hfill \end{matrix} \right.
+\end{matrix} \]
+Here $\alpha$, $\beta$, $\gamma$, $\delta$ are real numbers with neither
+$\alpha$ nor $\beta$ equal to zero.  These transforms form the group $G_e$.  
+Of these, the transforms 
+\[
+ \left\{ \begin{matrix} 
+          x \mapsto \alpha x + \beta z \hfill \\ 
+          y \mapsto \alpha y + \gamma z \hfill \\ 
+          z \mapsto \delta z \hfill \end{matrix} \right.
+\]
+fix the points individually so form the normal subgroup $G_f$.  As for
+symmetries of the abstract configuration, since there is only one line, $g$
+is trivial whilst $f$ can be any permutation of $4$ objects because the
+only relation to be preserved is that all $4$ points line on the same line.
+Hence, $G_a$ is isomorphic to $S_4$.  However, $G_e / G_f$ is isomorphic
+to the Klein viergruppe, so here we have a case in which $G_e / G_f$ is a
+proper subgroup of $G_a$.
+
+\subsection{Generalizations}
+
+In projective spaces of dimension higher than two, we can consider
+configurations consisting not only of points and lines but also of
+higher-dimensional subspaces.  For instance, in three or more 
+dimensions, we can consider configurations consisting of points, 
+lines, and planes.  Specifically, such a configuration consists of
+a set of $n_{00}$ points, $n_{11}$ lines, and $n_{22}$ planes such
+that each point lies on exactly $n_{01}$ lines and $n_{02}$ planes,
+each line contains $n_{10}$ points and lies on $n_{12}$ planes, and
+each plane contains exactly $n_{20}$ points and $n_{21}$ planes,
+where $n_{00}$, $n_{01}$, $n_{10}$, $n_{02}$, $n_{11}$, $n_{20}$,
+$n_{12}$, $n_{21}$, and $n_{22}$ are positive integers.  An 
+example of such an object consists of the four points, six lines,
+and four planes which comprise the vertices, edges, and faces of
+a tetrahedron.  Other than mentioning that there exists such a
+generalization, we shall not pursue this topic further here, but
+shall confine our attention to configurations consisting only of
+points and lines in this article.
+ 
+\section{Determination}
+
+\subsection{Introduction}
+
+Having described the general theory of line configurations, we now
+turn our attention to the determination of configurations.  Following
+the methodology described above, we will proceed in two steps, first
+determining abstract configurations, then studying their embeddings 
+in projective spaces.
+
+\subsection{Restrictions on $p$, $\ell$, $\pi$, $\lambda$}
+
+We will begin by deriving some conditions which limit the possible
+values of $p$, $\ell$, $\pi$, $\lambda$ which can occur for a
+line configuration.  Already, we have noted one such restriction
+above, namely $p \cdot \lambda = \pi \cdot \ell$.
+
+Because there must be at least as many points as there are points
+on any line, we must have $p \ge \pi$.  Likewise, because there
+must be at least as many lines as pass through any point, we must
+also have $\ell \ge \lambda$.
+
+Let $P$ be any point of the configuration.  Then there will be 
+$\lambda$ lines passing through $P$, each of which will pass
+through $\lambda - 1$ points in addition to $P$.  Since a line
+is determined by two points and all $\lambda$ lines have $P$ in
+common, no two of them will have any other point in common, hence
+there will be $\lambda (\pi - 1)$ distinct points located on these
+lines.  Thus, we conclude that $p \ge \lambda (\pi - 1)$.  By
+interchanging ``point'' and ``line'' in the argument just given,
+we conclude that $\ell \ge \pi (\lambda - 1)$.
+
+Suppose that $\pi \ge 2$.  Since at most one line of the configuration
+can pass through two points but every line of the configuration must
+pass through at least two points of the configuration, there can be no 
+more lines in the configuration than there are pairs of points, so 
+$\ell \le {p \choose 2}$.  Dually, we must have $p \le {\ell \choose 2}$.
+
+As an illustration of these conditions, we will now ask what limitations
+they impose on the types of configurations which have 12 points.  From
+the inequality $p \ge \pi$, we see that $\pi$ is limited to the values 
+1,2,3,4,5,6,7,8,9,10,11,12.
+
+If $\pi = 1$, then we have $\ell = 12 \lambda$, hence the possible types
+are $( 12_\lambda  12 \lambda_1 )$.  All the other inequalities are 
+satisfied or irrelevant and, as we shall see, for every choice of $\lambda$,
+there is a configuration of this type.
+
+Likewise, if $\lambda = 1$, then we have $\ell \pi = 12$.  Thus, we have
+the possibilities $(12_1 12_1)$, $(12_1 6_2)$, $(12_1 4_3)$, $(12_1 3_4)$,
+$(12_1 2_6)$, and $(12_1 1_12)$, all of which satisfy the remaining 
+inequalities and which happen to occur as types of configurations.
+
+We now focus our attention to the cases where $\pi \ge 2$ and $\lambda \ge 2$.
+Then we have the inequalities $\ell \le {p \choose 2} = 66$ and 
+${\ell \choose 2} \ge p = 12$ to reckon with.  These limit $\ell$ to the 
+values $6 \le \ell \le 66$.  When $\lambda \ge 2$, the inequality 
+$p \ge \lambda (\pi - 1)$ implies that $7 \ge \pi$, so it turns out that
+the possible values 8,9,10,11,12 mentioned above are ruled out.
+Summarrizing, in this case we have the following restrictions on the ranges of
+our constants:
+\begin{align*}
+ 6 \le &\ell \le 66 \\
+ 2 \le &\lambda \le \ell \\ 
+ 2 \le &\pi \le 7
+\end{align*}
+
+To finish, we will consider the remaining possible values of $\pi$ 
+one at  a time.  When $\pi = 2$, we have $\ell = 6 \lambda$.
+Thus, the inequality $\ell \ge \pi (\lambda - 1)$ is automatically
+satisfied and the inequality $p \ge \lambda (\pi - 1)$ reduces to
+$\lambda \le 12$.  We have the following possibilities:
+\[ \begin{matrix}
+ (12_2 12_2) & (12_3 18_2) & (12_4 24_2) &
+ (12_5 30_2) & (12_6 36_2) & (12_7 42_2) \\
+ (12_8 48_2) & (12_9 54_2) & 
+ (12_{10} 60_2) & (12_{11} 66_2)
+\end{matrix} \]
+
+When $\pi = 3$, we have $\ell = 4 \lambda$.  Again, the inequality 
+$\ell \ge \pi (\lambda - 1)$ is automatically satisfied.  The
+inequality $p \ge \lambda (\pi - 1)$ reduces to $6 \ge \lambda$,
+hence we have the following possibilities:
+\[ \begin{matrix}
+ (12_2 8_3) & (12_3 12_3) & (12_4 16_3) &
+ (12_5 20_3) & (12_6 24_3)
+\end{matrix} \]
+
+When $\pi = 4$, we have $\ell = 3 \lambda$.  Then, the inequality
+$p \ge \lambda (\pi - 1)$ becomes $4 \ge \lambda$ and the inequality
+$\ell \ge \pi (\lambda - 1)$ also becomes $4 \ge \lambda$, hence we
+have the following possibilities:
+\[ \begin{matrix}
+ (12_2 6_4) & (12_3 9_4) & (12_4 12_4)
+\end{matrix} \] 
+
+When $\pi = 5$, we have $12 \lambda = 5 \ell$.  Since 5 and 12 are
+coprime, this implies that $\lambda = 5 n$ and $\ell = 12 n$ for
+some positive integer $n$.  But then, the inequality $p \ge \lambda
+(\pi - 1)$ would become $12 \ge 20 n$, which is impossible because
+$n > 0$, so we have no configurations with $p = 12$ and $\pi = 5$.
+
+When $\pi = 6$, we have $\ell = 2 \lambda$.  Then, the inequality
+$p \ge \lambda (\pi - 1)$ becomes $12 \ge 5 \lambda$, so only
+$\lambda = 2$ is possible.  Thus, we must also have $\ell = 4$.
+However, the inequality $\ell \ge \pi (\lambda - 1)$ is not satisfied
+when $\ell = 4$, $\pi = 6$, and $\lambda = 2$, so we have no
+configurations with $p = 12$ and $\pi = 6$.
+
+When $\pi = 7$, we have $12 \lambda = 7 \ell$.  Since 7 and 12 are
+coprime, this implies that $\lambda = 7 n$ and $\ell = 12 n$ for
+some positive integer $n$.  But then, the inequality $p \ge \lambda
+(\pi - 1)$ would become $12 \ge 42 n$, which is impossible because
+$n > 0$, so we have no configurations with $p = 12$ and $\pi = 7$.
+
+\subsection{The Cases $\lambda = 1$ and $\pi = 1$}
+
+Having deduced and illustrated limitations on the four constants
+$p$, $\ell$, $\pi$, $\lambda$, we now turn our attention to the
+determining which sets of numbers describe actual configurations.
+We begin with the easy case where one or both of $\lambda$ and 
+$\pi$ equals $1$.
+
+Before proceeding further, it is worth pointing out that we are
+only interested in classifying abstract configurations up to 
+equivalence by permutation.  That is to say, we will consider
+two abstract configurations $\langle P, L, I \rangle$ and
+$\langle P', L', I' \rangle$ equivalent if there exist one-to-one
+correspondences $f \colon P \to P'$ and $g \colon L \to L'$ such
+that $I(x,y)$ if and only if $I'(f(x),g(y))$.  The reason for
+doing this is that, since it is easy enough to permute elements 
+in a given configuration, listing only one configuration out of
+an equivalence class cuts down on the number.
+
+Suppose that we have an abstract configuration with $\pi = 1$. 
+Then, to every element of $L$ we may associate exactly one
+element of $P$.  Furthermore, we may define an equivalence
+relation on $L$ by equating the lines which pass through the
+same point.  Thus, our lines are partitioned into $p$ partitions
+of $\lambda$ points each.  Conversely, given two numbers $\lambda$
+and $p$ and setting $\ell = p \lambda$, we can make a 
+configuration by taking a set $L$ with $\ell$ elements and
+partitioning it into $p$ subsets of $\lambda$ elements each, 
+then associating to each equivalence class an element of the 
+set $P$.
+
+\section{Catalogue}
+
+[Under Construction]
+%%%%%
+%%%%%
+\end{document}

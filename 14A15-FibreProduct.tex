@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FibreProduct}
+\pmcreated{2013-03-22 12:49:13}
+\pmmodified{2013-03-22 12:49:13}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{fibre product}
+\pmrecord{10}{33142}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A15}
+\pmsynonym{fiber product}{FibreProduct}
+\pmsynonym{pullback}{FibreProduct}
+\pmsynonym{pull-back}{FibreProduct}
+\pmsynonym{fibred product}{FibreProduct}
+\pmrelated{CategoricalPullback}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+\usepackage[all]{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\lra}{\longrightarrow}
+\begin{document}
+Let $S$ be a scheme, and let $i: X \lra S$ and $j: Y \lra S$ be schemes over $S$. A {\em fibre product} of $X$ and $Y$ over $S$ is a scheme $X \times_S Y$ together with morphisms
+\begin{eqnarray*}
+& p: X \times_S Y \lra X & \\
+& q: X \times_S Y \lra Y &
+\end{eqnarray*}
+such that given any scheme $Z$ with morphisms
+\begin{eqnarray*}
+& x: Z \lra X & \\
+& y: Z \lra Y &
+\end{eqnarray*}
+where $i \circ x = j \circ y$, there exists a unique morphism
+$$
+(x,y): Z \lra X \times_S Y
+$$
+making the diagram
+$$
+\xymatrix{
+Z \ar@/_/[ddr]_y \ar@/^/[drr]^x \ar@{.>}[dr]|-{(x,y)} \\
+& X \times_S Y \ar[d]^-q \ar[r]_-p & X \ar[d]^-i \\
+& Y \ar[r]_-j & S
+}
+$$
+commute. In other words, a fiber product is an object $X \times_S Y$, {\bf together with} morphisms $p,q$ making the diagram commute, with the universal property that any other collection $(Z,x,y)$ forming such a commutative diagram maps into $(X\times_S Y,p,q)$.
+
+Fibre products of schemes always exist and are unique up to canonical isomorphism.
+
+\paragraph{Other notes}
+
+Fibre products are also called pullbacks and can be defined in any category using the same definition (but need not exist in general). For example, they always exist in the category of modules over a fixed ring, as well as in the category of groups.
+%%%%%
+%%%%%
+\end{document}

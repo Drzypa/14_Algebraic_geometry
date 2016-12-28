@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExampleOfFunctorOfPointsOfAScheme}
+\pmcreated{2013-03-22 14:11:07}
+\pmmodified{2013-03-22 14:11:07}
+\pmowner{archibal}{4430}
+\pmmodifier{archibal}{4430}
+\pmtitle{example of functor of points of a scheme}
+\pmrecord{4}{35612}
+\pmprivacy{1}
+\pmauthor{archibal}{4430}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A15}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\DeclareMathOperator{\Spec}{Spec}
+\begin{document}
+Let $X$ be an affine scheme of finite type over a field $k$.  Then we must have
+\[
+X = \Spec k[X_1,\ldots,X_n]/\left<f_1,\ldots,f_m\right>,
+\]
+with the structure morphism $X\to\Spec k$ induced from the natural embedding $k\to k[X_1,\ldots,X_n]$. 
+
+Let $k'$ be some field extension of $k$.  What are the $k'$-points of $X$?  Recall that a $k'$-point of $X$ is by definition a morphism $\Spec k' \to X$ (observe that since we have an embedding $k\to k'$ we have a morphism $\Spec k' \to \Spec k$, so $\Spec k'$ is natuarlly a $k$-scheme).  Since $X$ is affine, this must come from a ring homomorphism
+\[
+k[X_1,\ldots,X_n]/\left<f_1,\ldots,f_m\right> \to k'
+\]
+which takes elements of $k$ to themselves inside $k'$.  Such a homomorphism is completely specified by specifying the images of $X_1,\ldots,X_n$; for it to be a homomorphism, these images must satisfy $f_1,\ldots,f_m$.  In other words, a $k'$-point on $X$ is identified with an element of $(k')^n$ satisfying all the polynomials $f_i$.  
+
+If $k'$ is an algebraically closed field, a point on $X$ corresponds uniquely to a point on an affine variety defined by the same equations as $X$.  If $k'$ is just any extension of $k$, then we have simply found which new points belong on $X$ when we extend the base field.  T
+
+For an example of why schemes contain much more information than the list of points over their base field, take $X=\Spec \mathbb{R}[X]/\left<X^2+1\right>$.  Then $X$ has \emph{no} points over $\mathbb{R}$, its natural base field.  Over $\mathbb{C}$, it has two points, corresponding to $i$ and $-i$. 
+
+This suggests that schemes may be the appropriate adaptation of varieties to deal with non-algebraically closed fields.
+
+Observe that we never used the fact that $k'$ (or in fact $k$) was a field.  One often chooses $k'$ as something other than a field in order to solve a problem.  For example, one can take $k' = k[\epsilon]/\left<\epsilon^2\right>$.  Then specifying a $k'$-point on $X$ amounts to choosing an image $\kappa_i + \lambda_i\epsilon$ for each $X_i$.  It is clear that the $\kappa_i$ must satisfy the $f_j$.  But upon reflection, we see that the $\lambda_i$ must specify a tangent vector to $X$ at the point specified by the $\kappa_i$.  So the $k[\epsilon]/\left<\epsilon^2\right>$-points tell us about the tangent bundle to $X$.  Observe that we made no assumption about the field $k$ --- we can extract these ``tangent vectors'' in positive characteristic or over a non-complete field.
+
+The ring $k[\epsilon]/\left<\epsilon^2\right>$ and rings like it (often any Artinian ring) can be used to define and study infinitesimal deformations of schemes, as a simple case of the study of families of schemes.
+%%%%%
+%%%%%
+\end{document}

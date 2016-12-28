@@ -1,0 +1,75 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BoundForTheRankOfAnEllipticCurve}
+\pmcreated{2013-03-22 14:24:25}
+\pmmodified{2013-03-22 14:24:25}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{bound for the rank of an elliptic curve}
+\pmrecord{6}{35908}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H52}
+\pmrelated{ArithmeticOfEllipticCurves}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem*{exam}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+\begin{thm}
+Let $E/\Rats$ be an elliptic curve given by the equation:
+$$E\colon y^2=x(x-t)(x-s), \text{ with } t,s\in \Ints$$
+and suppose that $E$ has $s=m+a$ primes of bad reduction, with $m$ and $a$ being the number of primes with multiplicative and additive reduction respectively. Then the rank of $E$, denoted by $R_E$, satisfies:
+$$R_E\leq m+2a-1$$
+\end{thm}
+
+\begin{exam}
+%Pierre de Fermat proved that $n=1$ is not a {\it congruent number}\footnote{A %natural number $n$ is said to be congruent if there exists a right triangle %with rational sides and area $n$.} using that the equation $x^4+y^4=z^2$ does %not have any rational solutions (this is a special case of his famous ``last'' %theorem for which he did find a margin big enough to write a complete proof). 
+
+As an application of the theorem above, we can prove that $E_1\colon y^2=x^3-x$ has only finitely many rational solutions. Indeed, the discriminant of $E_1$, $\Delta=64$, is only divisible by $p=2$, which is a prime of (bad) multiplicative reduction. Therefore $R_{E_1}=0$. Moreover, the Nagell-Lutz theorem implies that the only torsion points on $E_1$ are those of order $2$. Hence, the only rational points on $E_1$ are:
+$$\{ \mathcal{O}, (0,0),(1,0),(-1,0)\}.$$
+\end{exam}
+
+\begin{thebibliography}{9}
+\bibitem{milne} James Milne, {\em Elliptic Curves}, online course notes.\\ \PMlinkexternal{http://www.jmilne.org/math/CourseNotes/math679.html}{http://www.jmilne.org/math/CourseNotes/math679.html}
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

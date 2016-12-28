@@ -1,0 +1,111 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ChowsTheorem}
+\pmcreated{2013-03-22 17:46:32}
+\pmmodified{2013-03-22 17:46:32}
+\pmowner{jirka}{4157}
+\pmmodifier{jirka}{4157}
+\pmtitle{Chow's theorem}
+\pmrecord{9}{40233}
+\pmprivacy{1}
+\pmauthor{jirka}{4157}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A10}
+\pmclassification{msc}{51N15}
+\pmclassification{msc}{32C25}
+\pmsynonym{every complex analytic projective variety is algebraic}{ChowsTheorem}
+\pmrelated{RemmertSteinExtensionTheorem}
+\pmrelated{ProjectiveVariety}
+\pmrelated{RemmertSteinTheorem}
+\pmrelated{MeromorphicFunctionOnProjectiveSpaceMustBeRational}
+\pmdefines{complex analytic projective variety}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{theorem}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{conj}{Conjecture}
+\newtheorem*{cor}{Corollary}
+\newtheorem*{example}{Example}
+\newtheorem*{prop}{Proposition}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+
+\begin{document}
+For the purposes of this entry, let us define \PMlinkescapetext{\emph{complex analytic projective variety}} as
+any complex analytic variety of ${\mathbb P}^n,$ the $n$ dimensional
+complex projective space.
+Let $\sigma \colon {\mathbb C}^{n+1} \setminus \{0\} \to {\mathbb P}^n$ be the natural projection.  That is,
+the map that takes $(z_1,\ldots,z_{n+1})$ to $[z_1:\ldots:z_{n+1}]$ in homogeneous coordinates.
+We define \emph{algebraic projective variety} of ${\mathbb P}^n$ as a set $\sigma(V)$
+where $V \subset {\mathbb C}^{n+1}$ is the common zero set of 
+a finite family of homogeneous holomorphic polynomials.  It is not hard to show that $\sigma(V)$
+is a \PMlinkescapetext{complex analytic projective variety} in the above sense.  Usually an algebraic
+projective variety is just called a \emph{projective variety} partly because of the following theorem.
+
+\begin{thm}[Chow]
+Every complex analytic projective variety is algebraic.
+\end{thm}
+
+We follow the proof by Cartan, Remmert and Stein.  Note that the application of the Remmert-Stein theorem
+is the key point in this proof.
+
+\begin{proof}
+Suppose that we have a complex analytic variety $X \in {\mathbb P}^n$.  It is not hard to show that
+that $\sigma^{-1}(X)$ is a complex analytic subvariety of ${\mathbb C}^{n+1} \setminus \{0\}.$  By 
+the theorem of Remmert-Stein the set $V = \sigma^{-1}(X) \cup \{0\}$ is a subvariety of ${\mathbb C}^{n+1}.$
+Furthermore $V$ is a complex cone, that is if $z = (z_1,\ldots,z_{n+1}) \in V,$ then $t z \in V$ for all
+$t \in {\mathbb C}.$
+
+Final step is to show that if a complex analytic subvariety $V \subset {\mathbb C}^{n+1}$ is a complex cone,
+then it is given by the vanishing of finitely many homogeneous polynomials.
+Take a finite set of defining functions of $V$ near the origin.  I.e.\@ take $f_1,\ldots,f_k$
+defined in some open ball $B = B(0,\epsilon),$ such that in 
+$B \cap V = \{ z \in B \mid f_1(z) = \cdots = f_k(z) = 0 \}.$  We can suppose that $\epsilon$
+is small enough that the power series for $f_j$ converges in $B$ for all $j.$
+Expand $f_j$ in a power series near the origin and group together
+homogeneous terms as $f_j = \sum_{m=0}^\infty f_{jm}$, where $f_{jm}$ is a homogeneous polynomial of
+degree $m.$  For $t \in {\mathbb C}$ we write
+\begin{equation*}
+f_j(t z) = \sum_{m=0}^\infty f_{jm}(tz) = \sum_{m=0}^\infty t^m f_{jm}(z)
+\end{equation*}
+For a fixed $z \in V$ we know that $f_{j}(t z) = 0$ for all $\lvert t \rvert < 1,$ hence we have a power series
+in one variable that is identically zero, and so all coefficients are zero.
+Thus $f_{jm}$ vanishes on $V \cap B$ and hence on $V.$  It follows that
+$V$ is defined by a family of homogeneous polynomials.  Since the ring of polynomials is Noetherian we need only
+finitely many, and we are done.
+\end{proof}
+
+\begin{thebibliography}{9}
+\bibitem{Whitney:varieties}
+Hassler Whitney.
+{\em \PMlinkescapetext{Complex Analytic Varieties}}.
+Addison-Wesley, Philippines, 1972.
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

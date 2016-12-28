@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{StructureSheaf}
+\pmcreated{2013-03-22 12:38:20}
+\pmmodified{2013-03-22 12:38:20}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{structure sheaf}
+\pmrecord{4}{32903}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A10}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+\usepackage{euscript}
+% define commands here
+
+\renewcommand{\o}{\mathfrak{o}}
+\renewcommand{\O}{\mathcal{O}}
+\begin{document}
+Let $X$ be an irreducible algebraic variety over a field $k$, together with the Zariski topology. Fix a point $x \in X$ and let $U \subset X$ be any affine open subset of $X$ containing $x$. Define
+$$
+\o_x := \{f/g \in k(U) \mid f,g \in k[U],\ g(x) \neq 0\},
+$$
+where $k[U]$ is the coordinate ring of $U$ and $k(U)$ is the fraction field of $k[U]$. The ring $\o_x$ is independent of the choice of affine open neighborhood $U$ of $x$.
+
+The {\em structure sheaf} on the variety $X$ is the sheaf of rings whose sections on any open subset $U \subset X$ are given by
+$$
+\O_X(U) := \bigcap_{x \in U} \o_x,
+$$
+and where the restriction map for $V \subset U$ is the inclusion map $\O_X(U) \hookrightarrow \O_X(V)$.
+
+There is an equivalence of categories under which an affine variety $X$ with its structure sheaf corresponds to the prime spectrum of the coordinate ring $k[X]$. In fact, the topological embedding $X \hookrightarrow \operatorname{Spec}(k[X])$ gives rise to a lattice--preserving bijection\footnote{Those who are fans of topos theory will recognize this map as an isomorphism of topos.} between the open sets of $X$ and of $\operatorname{Spec}(k[X])$, and the sections of the structure sheaf on $X$ are isomorphic to the sections of the sheaf $\operatorname{Spec}(k[X])$.
+%%%%%
+%%%%%
+\end{document}

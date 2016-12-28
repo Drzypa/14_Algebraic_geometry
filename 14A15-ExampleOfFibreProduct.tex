@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ExampleOfFibreProduct}
+\pmcreated{2013-03-22 14:08:38}
+\pmmodified{2013-03-22 14:08:38}
+\pmowner{archibal}{4430}
+\pmmodifier{archibal}{4430}
+\pmtitle{example of fibre product}
+\pmrecord{4}{35558}
+\pmprivacy{1}
+\pmauthor{archibal}{4430}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A15}
+\pmrelated{Group}
+\pmrelated{Homomorphism}
+\pmrelated{CartesianProduct}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Let $G$, $G'$, and $H$ be groups, and suppose we have homomorphisms $f:G\to H$ and $f':G'\to H$. Then we can construct the fibre product $G\times_H G'$.  It is the following group:
+\[
+\left\{(g,g') \in G\times G' \text{ such that } f(g)=f'(g')\right\}.
+\]
+Observe that since $f$ and $f'$ are homomorphisms, it is closed under the group operations. 
+
+Note also that the fibre product depends on the maps $f$ and $F'$, although the notation does not reflect this.
+%%%%%
+%%%%%
+\end{document}

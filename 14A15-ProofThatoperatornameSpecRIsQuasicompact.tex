@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProofThatoperatornameSpecRIsQuasicompact}
+\pmcreated{2013-03-22 16:07:40}
+\pmmodified{2013-03-22 16:07:40}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{proof that $\operatorname{Spec}(R)$ is quasi-compact}
+\pmrecord{10}{38198}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Proof}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A15}
+\pmrelated{VIemptysetImpliesIR}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\begin{document}
+Note that most of the notation used here is defined in the entry prime spectrum.
+
+The following is a proof that $\operatorname{Spec}(R)$ is quasi-compact.
+
+\begin{proof}
+Let $\Lambda$ be an indexing set and $\displaystyle \left\{ U_{\lambda} \right\}_{\lambda \in \Lambda}$ be an open cover for $\operatorname{Spec}(R)$.  For every $\lambda \in \Lambda$, let $I_{\lambda}$ be an ideal of $R$ with $\displaystyle U_{\lambda}=\operatorname{Spec}(R) \setminus V\left( I_{\lambda} \right)$.  Since
+
+\begin{center}
+$\begin{array}{ll}
+\operatorname{Spec}(R) & \displaystyle =\bigcup_{\lambda \in \Lambda} U_{\lambda} \\
+& \displaystyle =\bigcup_{\lambda \in \Lambda} \bigg( \operatorname{Spec}(R) \setminus V\left( I_{\lambda} \right) \bigg) \\
+& \displaystyle =\operatorname{Spec}(R) \setminus \bigcap_{\lambda \in \Lambda} V\left( I_{\lambda} \right) \\
+& \displaystyle =\operatorname{Spec}(R) \setminus V\left( \sum_{\lambda \in \Lambda} I_{\lambda} \right), \end{array}$
+\end{center}
+
+$\displaystyle V\left( \sum_{\lambda \in \Lambda} I_{\lambda} \right)=\emptyset$.  Thus, by \PMlinkname{this theorem}{VIemptysetImpliesIR}, $\displaystyle \sum_{\lambda \in \Lambda} I_{\lambda} =R$.  Since $\displaystyle 1_R \in R=\sum_{\lambda \in \Lambda} I_{\lambda}$, there exists a finite subset $L$ of $\Lambda$ such that, for every $\ell \in L$, there exists an $i_{\ell} \in I_{\ell}$ with $\displaystyle 1_R=\sum_{\ell \in L} i_{\ell}$.
+
+Let $r \in R$.  Then $\displaystyle r=r \cdot 1_R=r\sum_{\ell \in L} i_{\ell}=\sum_{\ell \in L} r \cdot i_{\ell} \in \sum_{\ell \in L} I_{\ell}$.  Thus, $\displaystyle \sum_{\ell \in L} I_{\ell}=R$.  Therefore, $\displaystyle V\left( \sum_{\ell \in L} I_{\ell} \right)=\emptyset$.  Since
+
+\begin{center}
+$\begin{array}{ll}
+\operatorname{Spec}(R) & \displaystyle =\operatorname{Spec}(R) \setminus V\left( \sum_{\ell \in L} I_{\ell} \right) \\
+& \displaystyle =\operatorname{Spec}(R) \setminus \bigcap_{\ell \in L} V\left( I_{\ell} \right) \\
+& \displaystyle =\bigcup_{\ell \in L} \bigg( \operatorname{Spec}(R) \setminus V\left( I_{\ell} \right) \bigg) \\
+& \displaystyle =\bigcup_{\ell \in L} U_{\ell}, \end{array}$
+\end{center}
+
+$\displaystyle \left\{ U_{\lambda} \right\}_{\lambda \in \Lambda}$ restricts to a finite subcover.  It follows that $\operatorname{Spec}(R)$ is quasi-compact.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

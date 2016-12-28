@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HeightFunction}
+\pmcreated{2013-03-22 13:49:09}
+\pmmodified{2013-03-22 13:49:09}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{height function}
+\pmrecord{5}{34549}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H52}
+%\pmkeywords{height}
+%\pmkeywords{descent}
+\pmrelated{EllipticCurve}
+\pmrelated{RankOfAnEllipticCurve}
+\pmrelated{ArithmeticOfEllipticCurves}
+\pmrelated{CanonicalHeightOnAnEllipticCurve}
+\pmdefines{height function}
+\pmdefines{canonical height}
+\pmdefines{descent theorem}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\begin{defn}
+Let $A$ be an abelian group. A height function on $A$ is a
+function $h\colon A\to \mathbb{R}$ with the properties:
+\begin{enumerate}
+\item For all $Q\in A$ there exists a constant $C_1$, depending on
+$A$ and $Q$, such that for all $P\in A$:
+$$ h(P+Q)\leq 2h(P) +C_1$$
+\item There exists an integer $m \geq 2$ and a constant $C_2$,
+depending on $A$, such that for all $P\in A$:
+$$ h(mP)\geq m^2h(P) -C_2$$
+\item For all $C_3 \in \mathbb{R}$, the following set is finite:
+$$\{ P\in A: h(P)\leq C_3\} $$
+\end{enumerate}
+\end{defn}
+
+{\bf Examples}:
+\begin{enumerate}
+\item For $t=p/q \in \mathbb{Q}$, a fraction in lower terms,
+define $H(t)=\max \{\mid p \mid ,\mid q \mid \}$. Even though this
+is not a height function as defined above, this is the prototype
+of what a height function should look like. \item Let $E$ be an
+elliptic curve over $\mathbb{Q}$. The function on $E(\mathbb{Q})$,
+the points in $E$ with coordinates in $\mathbb{Q}$,
+$h_x\colon E(\mathbb{Q})\to \mathbb{R}$ :
+$$h_x(P)={{\log H(x(P)),\quad if\ P\neq 0} \brace {0,\quad if\
+P=0}}$$ is a height function ($H$ is defined as above). Notice that
+this depends on the chosen Weierstrass model of the curve. \item
+The \emph{canonical height} of $E/\mathbb{Q}$ (due to Neron and Tate)
+is defined by:
+$$h_C(P)=1/2 \lim_{N\to \infty} 4^{(-N)}h_x([2^N]P)$$
+where $h_x$ is defined as in (2).
+\end{enumerate}
+
+Finally we mention the fundamental theorem of ``descent'', which
+highlights the importance of the height functions:
+
+\begin{thm}[Descent] Let $A$ be an abelian group and let $h\colon A \to
+\mathbb{R}$ be a height function. Suppose that for the integer
+$m$, as in property (2) of height, the quotient group $A/mA$ is
+finite. Then $A$ is finitely generated.
+\end{thm}
+
+\begin{thebibliography}{9}
+\bibitem{silverman} Joseph H. Silverman, {\em The Arithmetic of Elliptic Curves}. Springer-Verlag, New York, 1986.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,70 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SmoothSubmanifoldContainedInASubvarietyOfSameDimensionIsRealAnalytic}
+\pmcreated{2013-03-22 17:41:16}
+\pmmodified{2013-03-22 17:41:16}
+\pmowner{jirka}{4157}
+\pmmodifier{jirka}{4157}
+\pmtitle{smooth submanifold contained in a subvariety of same dimension is real analytic}
+\pmrecord{5}{40128}
+\pmprivacy{1}
+\pmauthor{jirka}{4157}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14P99}
+\pmrelated{RealAnalyticSubvariety}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{theorem}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{conj}{Conjecture}
+\newtheorem*{cor}{Corollary}
+\newtheorem*{example}{Example}
+\newtheorem*{prop}{Proposition}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+
+\begin{document}
+This theorem seems to usually be attributed to Malgrange in literature as it appeared in his book\cite{Malgrange}.
+
+\begin{thm}[Malgrange]
+Suppose $M \subset {\mathbb{R}}^N$ is a connected smooth ($C^\infty$) submanifold and
+$V \subset {\mathbb{R}}^N$ is a real analytic
+subvariety of the same dimension as $M$, such that $M \subset V$.  Then $M$ is a real analytic submanifold.
+\end{thm}
+
+The condition that $M$ is smooth cannot be relaxed to $C^k$ for $k < \infty$.  For example, note
+that in ${\mathbb{R}}^2$, the subvariety $y^3 - x^8 = 0$, which is the graph of the $C^1$ function $y = \lvert x \rvert^{\frac{8}{3}}$, is not a real analytic submanifold.
+
+\begin{thebibliography}{9}
+\bibitem{Malgrange}
+Bernard Malgrange.
+{\em \PMlinkescapetext{Ideals of Differentiable Functions}}.
+Oxford University Press, 1966.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

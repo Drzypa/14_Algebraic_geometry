@@ -1,0 +1,61 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FalseCounterexamplesToFermatsLastTheorem}
+\pmcreated{2013-03-22 18:05:46}
+\pmmodified{2013-03-22 18:05:46}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{false counterexamples to Fermat's last theorem}
+\pmrecord{8}{40636}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H52}
+\pmclassification{msc}{11D41}
+\pmclassification{msc}{11F80}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Like Martin Gardner's famous 1975 joke that $e^{\pi \sqrt{163}}$ is an integer, hoax counterexamples to Fermat's last theorem typically depend on the loss of machine precision. The following false counterexamples should check out on most scientific calculators.
+
+\begin{eqnarray*}
+1782^{12} + 1841^{12} & = & 1922^{12} \\
+6107^6 + 8919^6 & = & 9066^6 \\
+3987^{12} + 4365^{12} & = & 4472^{12} \\
+\end{eqnarray*}
+
+Executing the left side of the first equation on a typical scientific calculator and then taking the 12th root of that result will yield 1922. But on software calculators, such as the Mac OS Calculator, the 12th root is given as 1921.99999995495. Rising points out that it is not necessary to carry out any calculations in order to see that the first equation is false: ``The left side adds an even number and an odd number; thus that sum must be odd. The right side is even.'' In fact, modular arithmetic can be used to show all these equations are false: the left side of the second one is congruent to $5 \mod 9$ while the right side is congruent to $3 \mod 9$; casting out nines also disproves the third equation.
+
+Taxicab numbers involving $1^x$ in one of the expressions, like Ramanujan's friend 1729, can be used to benchmark machine precision. Any scientific calculator will readily show that $10^3 + 9^3 \neq 12^3$, since $\sqrt[3]{1729} \approx 12.002314$, and for some larger taxicab number a false counterexample will appear. A computer algebra system, on the other hand, can determine the falsehood of a counterexample even if it lacks the machine precision to resolve the numerical difference. For example, on Mathematica, assuming \verb"x, y, z, n" have been defined: \verb"TrueQ[x^n + y^n == z^n]" should return \verb"False".
+
+Some of these false counterexamples have appeared on episodes of {\it The Simpsons}, such as the first one, which appeared in the $\textrm{Homer}^3$ segment of ``Treehouse of Horror VI,'' first aired October 29, 1995, more than a year after Andrew Wiles and his colleagues announced the corrected proof of Fermat's last theorem.
+
+\begin{thebibliography}{2}
+\bibitem{gr} Gerald R. Rising, {\it Inside Your Calculator: From Simple Programs to Significant Insights}. Hoboken, New Jersey: John Wiley \& Sons (2007): Appendix D
+\bibitem{rr} Ray Richmond \& Antonia Coffman, {\it The Simpsons: A Complete Guide to Our Favorite Family}. New York: HarperCollings (1997): 187
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

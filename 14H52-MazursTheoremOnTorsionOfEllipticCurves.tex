@@ -1,0 +1,79 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MazursTheoremOnTorsionOfEllipticCurves}
+\pmcreated{2013-03-22 13:51:59}
+\pmmodified{2013-03-22 13:51:59}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Mazur's theorem on torsion of elliptic curves}
+\pmrecord{5}{34607}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H52}
+%\pmkeywords{torsion}
+%\pmkeywords{elliptic curve}
+\pmrelated{EllipticCurve}
+\pmrelated{MordellWeilTheorem}
+\pmrelated{RankOfAnEllipticCurve}
+\pmrelated{TorsionSubgroupOfAnEllipticCurveInjectsInTheReductionOfTheCurve}
+\pmrelated{ArithmeticOfEllipticCurves}
+\pmdefines{Mazur's theorem}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\begin{document}
+\begin{thm}[Mazur]
+Let $E/\Rats$ be an elliptic curve. Then the torsion subgroup
+$E_{\operatorname{torsion}}(\Rats)$ is exactly one of the
+following groups:
+$$\Ints/N\Ints \quad 1\leq N \leq 10\quad or\quad N=12$$
+$$\Ints /2 \Ints \oplus \Ints / 2N \Ints \quad 1\leq N\leq 4$$
+\end{thm}
+
+Note: see Nagell-Lutz theorem for an efficient algorithm to compute the torsion subgroup of an elliptic curve defined over $\Rats$.
+
+\begin{thebibliography}{9}
+\bibitem{silverman} Joseph H. Silverman, {\em The Arithmetic of Elliptic Curves}. Springer-Verlag, New York, 1986.
+\bibitem{mazur1} Barry Mazur, {\em Modular curves and the
+Eisenstein ideal}, IHES Publ. Math. 47 (1977), 33-186.
+\bibitem{mazur2} Barry Mazur, {\em Rational isogenies of prime
+degree}, Invent. Math. 44 (1978), 129-162.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,84 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ModulesOverBoundQuiverAlgebraAndBoundQuiverRepresentations}
+\pmcreated{2013-03-22 19:17:34}
+\pmmodified{2013-03-22 19:17:34}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{modules over bound quiver algebra and bound quiver representations}
+\pmrecord{5}{42227}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14L24}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $(Q,I)$ be a bound quiver over a fixed field $k$. Denote by $\mathrm{Mod}A$ (resp. $\mathrm{mod}A$) the category of all (resp. all finite-dimensional) (right) modules over algebra $A$ and by $\mathrm{REP}_{Q,I}$ (resp. $\mathrm{rep}_{Q,I}$) the category of all (resp. all finite-dimensional, (see \PMlinkname{this entry}{QuiverRepresentationsAndRepresentationMorphisms} for details) bound representations. 
+
+We will also allow $I=0$ (which is an admissible ideal only if lengths of paths in $Q$ are bounded, in particular when $Q$ is finite and acyclic). In this case bound representations are simply representations.
+
+\textbf{Theorem.} If $Q$ is a connected and finite quiver, $I$ and admissible ideal in $kQ$ and $A=kQ/I$, then there exists a $k$-equivalence of categories
+$$F:\mathrm{Mod}A\to\mathrm{REP}_{Q,I}$$
+which restricts to the equivalence of categories
+$$F':\mathrm{mod}A\to\mathrm{rep}_{Q,I}.$$
+
+\textit{Sketch of the proof.} We will only define functor $F$ and its quasi-inverse $G$. For proof that $F$ is actually an equivalence please see \cite[Theorem 1.6]{ASS} (this not difficult, but rather technical proof).
+
+Let $e_a$ be a stationary path in $a\in Q_0$ and put $\epsilon_a=e_a+I\in A$. Now if $M$ is a module in $\mathrm{Mod}A$, then define a representation
+$$F(M)=(M_{a}, M_{\alpha})$$
+by putting $M_a=M\epsilon_a$ ($M$ is a right module over $A$). Now for an arrow $\alpha\in Q_1$ define $M_{\alpha}:M_{s(\alpha)}\to M_{t(\alpha)}$ by putting $M_{\alpha}(x)=x\overline{\alpha}$, where $\overline{\alpha}=\alpha+I\in A$. It can be shown (see \cite{ASS}) that $F(M)$ is a bound representation.
+
+On module morphisms $F$ acts as follows. If $f:M\to M'$ is a module morphism, then define
+$$F(f)=(f_a)_{a\in Q_0}$$
+where $f_a:M_a\to M'_a$ is a restriction, i.e. $f_a(x)=f(x)$. It can be shown that $f_a$ is well-defined (i.e. $f_a(x)\in M'_a$) and in this manner $F$ is a functor.
+
+The inverse functor is defined on objects as follows: for a representation $(M_a,M_{\alpha})$ put
+$$G(M)=\bigoplus_{a\in Q_0} M_a.$$
+Now we will define right $kQ$-module structure on $G(M)$. For a stationary path $e_a$ in $a\in Q_0$ and for $x=(x_a)\in G(M)$ put
+$$x\cdot e_a=x_a.$$
+Now for a path $w=(a_1,\ldots,a_n)$ from $a$ to $b$ in $kQ$ we consider the evaluation map (see \PMlinkname{this entry}{RepresentationsOfABoundQuiver} for details) $f_w:M_a\to M_b$ and we put
+$$(x\cdot w)_c=\delta_{bc}f_w(x_a),$$
+where $\delta_{bc}$ denotes the Kronecker delta. It can be shown that $G(M)$ is a $kQ$-module with the property that $G(M)I=0$. In particular $G(M)$ is a $kQ/I$-module.
+
+Now, if $f=(f_a):M\to M'$ is a morphism of representations then we define
+$$G(f)=\bigoplus_{a\in Q_0}f_a:G(M)\to G(M).$$
+It can be shown that $G(f)$ is indeed an $A$-homomorphism and that $G$ is a functor.
+
+Also, it follows easily from definitions that both $F$ and $G$ take finite-dimensional objects to finite-dimensional.
+
+It remains to show that these two functors are quasi-inverse. For the proof please see \cite[Theorem 1.6]{ASS}. $\square$
+
+\textbf{Corollary.} If $Q$ is a finite, connected and acyclic quiver, then there exists an equivalence of categories $\mathrm{Mod}kQ\simeq\mathrm{REP}_{Q}$ which restricts to the equivalence of categories $\mathrm{mod}kQ\simeq\mathrm{rep}_{Q}$.
+
+\textit{Proof.} Since $Q$ is finite and acyclic, then the zero ideal $I=0$ is admissible (because lengths of paths are bounded, so $R_Q^m=0$ for some $m\geqslant 1$, where $R_Q$ denotes the arrow ideal). The thesis follows from the theorem. $\square$
+
+\begin{thebibliography}{99}
+\bibitem{ASS} I. Assem, D. Simson, A. SkowroÃƒski, \textit{Elements of the Representation Theory of Associative Algebras, vol 1.}, Cambridge University Press 2006, 2007
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

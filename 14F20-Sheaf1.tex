@@ -1,0 +1,98 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Sheaf1}
+\pmcreated{2013-03-22 14:12:47}
+\pmmodified{2013-03-22 14:12:47}
+\pmowner{archibal}{4430}
+\pmmodifier{archibal}{4430}
+\pmtitle{sheaf}
+\pmrecord{9}{35648}
+\pmprivacy{1}
+\pmauthor{archibal}{4430}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14F20}
+\pmclassification{msc}{18F10}
+\pmclassification{msc}{18F20}
+\pmsynonym{sheaves}{Sheaf1}
+\pmrelated{Sheaf}
+\pmrelated{Site}
+\pmrelated{Sheafification2}
+\pmrelated{NaturalTransformation}
+\pmrelated{FundamentalGroupoid2}
+\pmdefines{presheaf}
+\pmdefines{presheaves}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\newtheorem{rem}{Remark}
+\begin{document}
+\begin{defn}
+Let $T$ be a category, and let $C$ be another category.  Then a \emph{presheaf on $T$} is a contravariant functor $F:T\to C$.  If $U\overset{i}{\to} V$ is a morphism in $T$, we call $F(i):F(V)\to F(U)$ the \emph{restriction map} obtained from $i$.  A \emph{morphism of presheaves} is a natural transformation. 
+\end{defn}
+
+To understand this definition, and what it has to do with the more familiar definition of a \PMlinkname{presheaf}{Sheaf}, let $T$ be a site.  Then a presheaf maps the ``open sets'' to objects in $C$ and provides restriction maps whenever the underlying ``open sets'' have an ``inclusion''.  Of course, on a site, there may be many non-isomorphic inclusions.  
+
+In practice, to avoid set-theoretic difficulties, one usually fixes a universe $\mathcal{U}$ and then requires $T$ to be a \PMlinkname{small}{Small} category. 
+
+\begin{rem}
+If $T$ is a small category and $C$ is a $\mathcal{U}$-category, then presheaves on $T$ form a category.  
+
+If $T$ is not small, that is if the isomorphism classes of objects do not form a $\mathcal{U}$-set, then (normally) there are as many functors as subsets of $T$, which leads to the resulting category failing to be a $\mathcal{U}$-category.  If one removes the various qualifications in terms of universes, this means that there are too many functors: Russell's paradox arises.  If one uses universes, and qualifies everything in sight appropriately, a problem remains: there are too many functors from sets to sets to be allowed.  While your answer is described in terms of sets, they are too big to be inside the universe of discourse.  This problem underlies the set-theoretic problems with direct limits. 
+\end{rem}
+
+Let $T$ be a site, and suppose either $C$ is an abelian category or $C$ is the category of sets.
+
+\begin{defn}
+Let $F\colon T\to C$ be a presheaf.  Then $F$ is a \emph{sheaf} if for every covering ${U_i\to U}$ in $T$, the products $\prod_{U_i} F(U_i)$ and $\prod_{U_i \times_U U_j} F(U_i \times_U U_j)$ exist, and the sequence
+\[
+F(U)\to \prod_{U_i} F(U_i) \rightrightarrows \prod_{U_i \times_U U_j} F(U_i \times_U U_j)
+\]
+is exact.
+\end{defn}
+
+This ``exactness'' really needs explaining.  First of all, for every $i$, we have a morphism $F(U)\to F(U_i)$ obtained from the covering.  The map on the left (call it $f$) is the product of all these maps.  Second, for each pair $i$ and $j$, we have a morphism $g_1\colon F(U_i)\to F(U_i\times_U U_j)$ and a morphism $g_2\colon F(U_j)\to F(U_i\times_U U_j)$ obtained from the two projection maps of the fibred product.  The two maps on the right-hand side are obtained as products of all the $g_1$ and $g_2$ respectively. 
+
+If $C$ is the category of sets, then the exactness condition requires that the left-hand map is injective and that the two right-hand maps agree exactly on its image.
+
+If $C$ is an abelian category, then the kernel of the left-hand map should be zero, and the kernel of the difference of the two right-hand maps should be its image.  Perhaps this would be clearer if the diagram added a ``$0\to$'' on the left, but this usage is very standard.
+
+This definition of a sheaf is the motivation for the definition of a site: a site captures precisely those features of a topological space that are required to form sheaves.  The category of sheaves on a topological space is an example of a topos; the original definition of a topos was ``a category equivalent to the category of sheaves on a site'', although the concept was generalized in later work.  The motivation was that while a site may be badly behaved and pose set-theoretic difficulties, the topos associated to it is generally better behaved.
+
+The category of sheaves on a site has a long list of nice properties; among them is ``has enough injectives'', so that derived functors can be extracted and cohomology calculated.  This is how, for example, \'etale cohomology is obtained.
+
+\begin{thebibliography}{9}
+
+\bibitem{sga4}{Grothendieck et al., \emph{S\'eminaires en G\`eometrie Alg\`ebrique 4}, tomes 1, 2, and 3, available on the web at 
+\PMlinkexternal{http://www.math.mcgill.ca/~archibal/SGA/SGA.html}{http://www.math.mcgill.ca/~archibal/SGA/SGA.html}}
+
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

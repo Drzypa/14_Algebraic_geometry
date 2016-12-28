@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{NoetherianTopologicalSpace}
+\pmcreated{2013-03-22 13:03:33}
+\pmmodified{2013-03-22 13:03:33}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Noetherian topological space}
+\pmrecord{18}{33465}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A10}
+\pmrelated{Compact}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+A topological space $X$ is called {\PMlinkescapetext {\em Noetherian}} if it satisfies the descending chain condition for closed subsets: for any sequence 
+\[ Y_1 \supseteq Y_2 \supseteq \cdots \]
+of closed subsets $Y_i$ of $X$, there is an integer $m$ such that
+$Y_m=Y_{m+1}=\cdots$.
+
+As a first example, note that all finite topological spaces are Noetherian.
+
+There is a lot of interplay between the Noetherian condition and compactness:  
+\begin{itemize}
+\item Every Noetherian topological space is quasi-compact.
+\item A Hausdorff topological space $X$ is Noetherian if and only if every subspace of $X$ is compact. (i.e. $X$ is hereditarily compact)
+\end{itemize}
+
+Note that if $R$ is a Noetherian ring, then $\text{Spec}(R)$, the prime spectrum of $R$, is a Noetherian topological space.
+
+{\bf Example of a Noetherian topological space:}\\
+The space $\mathbb{A}^n_k$ (affine $n$-space over a field $k$) under the Zariski topology is an example of a Noetherian topological space.  By properties of the ideal of a subset of $\mathbb{A}^n_k$, we know that if 
+$Y_1 \supseteq Y_2 \supseteq \cdots$ is a descending chain of Zariski-closed subsets, then $I(Y_1) \subseteq I(Y_2) \subseteq \cdots$ is an ascending chain of ideals of $k[x_1,\ldots,x_n]$.
+
+Since $k[x_1,\ldots,x_n]$ is a Noetherian ring, there exists an integer $m$ such that $I(Y_m)=I(Y_{m+1})=\cdots$.  But because we have a one-to-one correspondence between radical ideals of $k[x_1,\ldots,x_n]$ and Zariski-closed sets in $\mathbb{A}^n_k$, we have $V(I(Y_i))=Y_i$ for all $i$.  Hence
+$Y_m=Y_{m+1}=\cdots$ as required.
+%%%%%
+%%%%%
+\end{document}

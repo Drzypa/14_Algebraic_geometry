@@ -1,0 +1,73 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Sheafification1}
+\pmcreated{2013-03-22 14:13:08}
+\pmmodified{2013-03-22 14:13:08}
+\pmowner{archibal}{4430}
+\pmmodifier{archibal}{4430}
+\pmtitle{sheafification}
+\pmrecord{4}{35654}
+\pmprivacy{1}
+\pmauthor{archibal}{4430}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14F20}
+\pmclassification{msc}{18F10}
+\pmclassification{msc}{18F20}
+\pmrelated{Sheafification}
+\pmrelated{Site}
+\pmrelated{Sheaf2}
+\pmrelated{Sheaf}
+\pmdefines{sheafification}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\DeclareMathOperator{\Hom}{Hom}
+\begin{document}
+Let $T$ be a site.  Let $P_T$ denote the category of presheaves on $T$ (with values in the category of abelian groups), and $S_T$ the category of sheaves on $T$.  There is a natural inclusion functor $\iota\colon S_T \to P_T$. 
+
+\begin{theorem}
+The functor $\iota$ has a left adjoint $\sharp\colon P_T\to S_T$, that is, for any sheaf $F$ and presheaf $G$, we have
+\[
+\Hom_{S_T}(G^\sharp,F)\cong\Hom_{P_T}(G,\iota F).
+\]
+This functor $\sharp$ is called \emph{sheafification}, and $G^\sharp$ is called the \emph{sheafification of $F$}.
+\end{theorem}
+
+One can readily check that this description in terms of adjoints characterizes $\sharp$ completely, and that this definition reduces to the usual definition of \PMlinkname{sheafification}{Sheafification} when $T$ is the Zariski site.  It also allows derivation of various exactness properties of $\sharp$ and $\iota$. 
+
+\begin{thebibliography}{9}
+
+\bibitem{sga4}{Grothendieck et al., \emph{S\'eminaires en G\`eometrie Alg\`ebrique 4}, tomes 1, 2, and 3, available on the web at 
+\PMlinkexternal{http://www.math.mcgill.ca/~archibal/SGA/SGA.html}{http://www.math.mcgill.ca/~archibal/SGA/SGA.html}}
+
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

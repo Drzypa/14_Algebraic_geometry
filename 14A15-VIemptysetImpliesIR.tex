@@ -1,0 +1,40 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{VIemptysetImpliesIR}
+\pmcreated{2013-03-22 16:07:43}
+\pmmodified{2013-03-22 16:07:43}
+\pmowner{Wkbj79}{1863}
+\pmmodifier{Wkbj79}{1863}
+\pmtitle{$V(I)=\emptyset$ implies $I=R$}
+\pmrecord{10}{38199}
+\pmprivacy{1}
+\pmauthor{Wkbj79}{1863}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A15}
+\pmrelated{ProofThatOperatornameSpecRIsQuasiCompact}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\usepackage{psfrag}
+\usepackage{graphicx}
+\usepackage{amsthm}
+%%\usepackage{xypic}
+
+\newtheorem*{thm*}{Theorem}
+
+\begin{document}
+Note that most of the notation used here is defined in the entry prime spectrum.
+
+\begin{thm*}
+If $R$ is a commutative ring with identity and $I$ is an ideal of $R$ with $V(I)=\emptyset$, then $I=R$.
+\end{thm*}
+
+\begin{proof}
+Let $R$ be a commutative ring with identity and $I$ be an ideal of $R$ with $I \neq R$.  Then, by \PMlinkname{this theorem}{EveryRingHasAMaximalIdeal}, there exists a maximal ideal $M$ of $R$ containing $I$.  Since $M$ is \PMlinkescapetext{maximal}, then $M$ is a proper prime ideal of $R$.  Thus, $M \in V(I)$.  The theorem follows.
+\end{proof}
+%%%%%
+%%%%%
+\end{document}

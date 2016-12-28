@@ -1,0 +1,122 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BirchAndSwinnertonDyerConjecture}
+\pmcreated{2013-03-22 13:49:46}
+\pmmodified{2013-03-22 13:49:46}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Birch and Swinnerton-Dyer conjecture}
+\pmrecord{16}{34561}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Conjecture}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H52}
+\pmsynonym{BS-D conjecture}{BirchAndSwinnertonDyerConjecture}
+%\pmkeywords{Birch}
+%\pmkeywords{Swinnerton}
+%\pmkeywords{Dyer}
+%\pmkeywords{L-series}
+%\pmkeywords{rank}
+%\pmkeywords{elliptic curve}
+\pmrelated{EllipticCurve}
+\pmrelated{RegulatorOfAnEllipticCurve}
+\pmrelated{MordellCurve}
+\pmrelated{ArithmeticOfEllipticCurves}
+\pmdefines{Birch and Swinnerton-Dyer conjecture}
+\pmdefines{parity conjecture}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\newtheorem{conj}{Conjecture}
+
+\newcommand{\Q}{\mathbb{Q}}
+\begin{document}
+Let $E$ be an elliptic curve over $\mathbb{Q}$, and let $L(E,s)$
+be the L-series attached to $E$.
+
+\begin{conj}[Birch and Swinnerton-Dyer]\quad
+\begin{enumerate}
+\item $L(E,s)$ has a zero at $s=1$ of order equal to the rank of
+$E(\mathbb{Q})$.
+
+\item Let $R=\operatorname{rank} (E(\mathbb{Q}))$. Then the residue of $L(E,s)$ at
+$s=1$, i.e. $\lim_{s\to 1}(s-1)^{-R} L(E,s)$ has a concrete
+expression involving the following invariants of $E$: the real
+period, the Tate-Shafarevich group, the elliptic regulator and the
+Neron model of $E$.
+\end{enumerate}
+\end{conj}
+
+J. Tate said about this conjecture: ``\emph{This remarkable conjecture relates the behavior of a function $L$ at a point where it is not at present known to be defined to the order of a group (Sha) which is not known to be finite!}'' The precise statement of the conjecture asserts that:
+
+$$\lim_{s\to 1} \frac{L(E,s)}{(s-1)^R}=\frac{|\operatorname{Sha}|\cdot \Omega \cdot \operatorname{Reg}(E/\Q) \cdot \prod_p c_p}{| E_{\operatorname{tors}}(\Q)|^2}$$ 
+where
+\begin{itemize}
+\item $R$ is the rank of $E/\Q$.
+\item $\Omega$ is either the real period or twice the real period of a minimal model for $E$, depending on whether $E(\mathbb{R})$ is connected or not.
+\item $|\operatorname{Sha}|$ is the order of the Tate-Shafarevich group of $E/\Q$.
+\item $\operatorname{Reg}(E/\Q)$ is the \PMlinkid{elliptic regulator}{RegulatorOfAnEllipticCurve} of $E(\Q)$.
+\item $|E_{\operatorname{tors}}(\Q)|$ is the number of torsion points on $E/\Q$ (including the point at infinity $O$).
+\item $c_p$ is an elementary local factor, equal to the cardinality of $E(\Q_p)/E_0(\Q_p)$, where $E_0(\Q_p)$ is the set of points in $E(\Q_p)$ whose reduction modulo $p$ is non-singular in $E(\mathbb{F}_p)$. Notice that if $p$ is a prime of good reduction for $E/\Q$ then $c_p=1$, so only $c_p\neq 1$ only for finitely many primes $p$. The number $c_p$ is usually called the Tamagawa number of $E$ at $p$.
+\end{itemize}
+
+The following is an easy consequence of the B-SD conjecture:
+\begin{conj}[Parity Conjecture]
+The root number of $E$, denoted by $w$, indicates the parity of
+the rank of the elliptic curve, this is, $w=1$ if and only if the
+rank is even.
+\end{conj}
+
+There has been a great amount of research towards the B-SD conjecture.
+For example, there are some particular cases which are already
+known:
+
+\begin{thm}[Coates, Wiles]
+Suppose $E$ is an elliptic curve defined over an imaginary quadratic
+field $K$, with complex multiplication by $K$, and $L(E,s)$ is the
+L-series of $E$. If $L(E,1)\neq 0$ then $E(K)$ is finite.
+\end{thm}
+
+\begin{thebibliography}{9}
+\bibitem{claymath} Claymath Institute, {\em Description},
+\PMlinkexternal{online}{http://www.claymath.org/millennium/Birch_and_Swinnerton-Dyer_Conjecture/}.
+\bibitem{coates} J. Coates, A. Wiles, {\em On the Conjecture of
+Birch and Swinnerton-Dyer}, Inv. Math. 39, 223-251 (1977).
+\bibitem{devlin} Keith Devlin, {\it The Millennium Problems: The Seven Greatest Unsolved Mathematical Puzzles of Our Time}, 189 - 212, Perseus Books Group, New York (2002).
+\bibitem{milne} James Milne, {\em Elliptic Curves}, \PMlinkexternal{online course
+notes}{http://www.jmilne.org/math/CourseNotes/math679.html}.
+\bibitem{silverman} Joseph H. Silverman, {\em The Arithmetic of Elliptic Curves}. Springer-Verlag, New York, 1986.
+\bibitem{silverman2} Joseph H. Silverman, {\em Advanced Topics in
+the Arithmetic of Elliptic Curves}. Springer-Verlag, New York,
+1994.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

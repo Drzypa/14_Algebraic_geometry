@@ -1,0 +1,139 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BorelBottWeilTheorem}
+\pmcreated{2013-03-22 13:50:52}
+\pmmodified{2013-03-22 13:50:52}
+\pmowner{mathcam}{2727}
+\pmmodifier{mathcam}{2727}
+\pmtitle{Borel-Bott-Weil theorem}
+\pmrecord{7}{34585}
+\pmprivacy{1}
+\pmauthor{mathcam}{2727}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14M15}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\newtheorem{thm}{Theorem}
+\newtheorem{prop}{Proposition}
+
+\newcommand{\ab}[1]{{#1}_{\mathrm{ab}}}
+\newcommand{\Ad}{\mathrm{Ad}}
+\newcommand{\ad}{\mathrm{ad}}
+\newcommand{\Aut}{\mathrm{Aut}\,}
+\newcommand{\Aff}[2]{\mathrm{Aff}_{#1} #2}
+\newcommand{\aff}[2]{\mathfrak{aff}_{#1} #2}
+\newcommand{\mcB}{\mathcal{B}}
+\newcommand{\bb}[1]{\mathbb{#1}}
+\newcommand{\bfrac}[2]{\left[\frac{#1}{#2}\\right]}
+\newcommand{\bkh}{\backslash}
+\newcommand{\Cyc}[2]{\mathcal{C}^{#1}_{#2}}
+\newcommand{\Cbar}[2]{\overline{\C{#1}{#2}}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\CF}[2]{\ensuremath{\mathfrak{C}(#1,#2)}}
+\newcommand{\Cinf}{\EuScript{C}^{\infty}}
+\newcommand{\cmp}{cyclic mod $p$\xspace}
+\newcommand{\cp}{\mathrm{c.p.}}
+\newcommand{\CS}{\EuScript{CS}}
+\newcommand{\deck}{\EuScript{D}}
+\newcommand{\defl}[1]{\mathfrak{def}_{#1}}
+\newcommand{\Der}{\mathrm{Der}\,}
+\newcommand{\eH}{[X_H]-[Y_H]}
+\newcommand{\EL}{\mathcal{EL}}
+\newcommand{\End}{\mathrm{End}}
+\newcommand{\ES}[1]{\EuScript{#1}}
+\newcommand{\Ext}{\mathrm{Ext}}
+\newcommand{\Fix}{\mathrm{Fix}}
+\newcommand{\fr}[1]{\mathfrak{#1}}
+\newcommand{\Frat}{\mathrm{Frat}\,}
+\newcommand{\Gal}[1]{\Gamma(#1 |\Q)}
+\newcommand{\GL}[2]{\mathrm{GL}_{#1} #2}
+\newcommand{\g}{\mathfrak{g}}
+\newcommand{\gl}[2]{\mathfrak{gl}_{#1} #2}
+\newcommand{\GrR}[1]{a(#1 G)}
+\newcommand{\Gr}{\mathrm{Gr}\,}
+\newcommand{\mcH}{\mathcal{H}}
+\renewcommand{\H}{\mathbb{H}}
+\newcommand{\Hom}[2]{\mathrm{Hom}(#1,#2)}
+\newcommand{\id}{\mathrm{id}}
+\newcommand{\im}{\mathrm{im}}
+\newcommand{\ind}[2]{\mathrm{ind}^{#1}_{#2}}
+\newcommand{\indp}[2]{\mathfrak{ind}^{#1}_{#2}}
+\renewcommand{\inf}[1]{\mathfrak{inf}_{#1}}
+\newcommand{\inn}[1]{\langle #1\rangle}
+\renewcommand{\int}{\mathrm{int}}
+\newcommand{\Iso}{\mathrm{Iso}}
+\newcommand{\K}{\mathcal{K}}
+\renewcommand{\ker}{\mathrm{ker}\,}
+\newcommand{\lap}[1]{\Delta_{#1}}
+\newcommand{\lapM}{\Delta_M}
+\newcommand{\Lie}{\mathrm{Lie}}
+\newcommand{\lineq}{linearly equivalent\xspace}
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\mG}{m_G}
+\newcommand{\mK}{m_{\K}}
+\newcommand{\mindeg}[1]{\fr{md}(#1)}
+\newcommand{\N}{\mathbb{N}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\Om}{\Omega}
+\newcommand{\om}{\omega}
+\newcommand{\Orb}{\mathrm{Orb}}
+\newcommand{\pad}{\hat{\Z}_p}
+\newcommand{\pder}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pderw}[1]{\frac{\partial}{\partial #1}}
+\newcommand{\pdersec}[2]{\frac{\partial^2 #1}{\partial {#2}^2}}
+\newcommand{\perm}[1]{\pi_{#1}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\rad}{\mathrm{rad}\,}
+\newcommand{\res}[2]{\mathrm{res}^{#1}_{#2}}
+\newcommand{\resp}[2]{\mathfrak{res}^{#1}_{#2}}
+\newcommand{\RG}{\EuScript{R}_G}
+\newcommand{\rk}{\mathrm{rk}\,}
+\newcommand{\V}[1]{\mathbf{#1}}
+\newcommand{\vp}{\varphi}
+\newcommand{\Stab}{\mathrm{Stab}}
+\newcommand{\SL}[2]{\mathrm{SL}_{#1} #2}
+\renewcommand{\sl}[2]{\fr{sl}_{#1} #2}
+\newcommand{\SO}[2]{\mathrm{SO}_{#1} #2}
+\newcommand{\Sp}[2]{\mathrm{Sp}_{#1} #2}
+\renewcommand{\sp}[2]{\fr{sp}_{#1} #2}
+\newcommand{\SU}[1]{\mathrm{SU}( #1)}
+\newcommand{\su}[1]{\fr{su}_{#1}}
+\newcommand{\Sym}{\mathrm{Sym}}
+\newcommand{\sym}{\mathrm{sym}}
+\newcommand{\Tg}{\mc{T}(\fr g)}
+\newcommand{\tom}{\tilde{\omega}}
+\newcommand{\ghtghp}{\fr g/\fr h\oplus(\fr g/\fr h^\perp)^*}
+\newcommand{\ghps}{(\fr g/\fr h^\perp)^*}
+\newcommand{\Tr}{\mathrm{Tr}}
+\newcommand{\tr}{\mathrm{tr}}
+\newcommand{\Ug}{\mc{U}(\fr g)}
+\newcommand{\Uh}{\mc{U}(\fr h)}
+\renewcommand{\V}[1]{\mathbf{#1}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Zp}{\Z/p}
+\renewcommand{\L}{\mathcal{L}}
+\begin{document}
+\PMlinkescapeword{states}
+
+Let $G$ be a semisimple Lie group, and $\lambda$ be an integral weight for that group. $\lambda$ naturally defines a one-dimensional representation $C_\lambda$ of the Borel subgroup $B$ of $G$, by simply pulling back the representation on the maximal torus $T=B/U$ where $U$ is the unipotent radical of $G$. Since we can think of the projection map $\pi\colon G\to G/B$ as a \PMlinkname{principle $B$-bundle}{PrincipleBundle}, to each $C_\lambda$, we get an associated fiber bundle $\L_\lambda$ on $G/B$, which is obviously a line bundle. Identifying $\L_\lambda$ with its sheaf of holomorphic sections, we consider the sheaf cohomology groups $H^i(\L_\lambda)$. Realizing $\g$, the Lie algebra of $G$, as vector fields on $G/B$, we see that $\g$ acts on the sections of $\L_\lambda$ over any open set, and so we get an action on cohomology groups. This integrates to an action of $G$, which on $H^0(\L_\lambda)$ is simply the obvious action of the group.
+
+The Borel-Bott-Weil theorem states the following: if $(\lambda+\rho,\alpha)=0$ for any simple root $\alpha$ of $\g$, then $$H^i(\L_\lambda)=0$$ for all $i$, where $\rho$ is half the sum of all the positive roots. Otherwise, let $w\in W$, the Weyl group of $G$, be the unique element such that $w(\lambda+\rho)$ is dominant (i.e. $(w(\lambda+\rho),\alpha)>0$ for all simple roots $\alpha$).
+Then $$H^{\ell(w)}(\L_\lambda)\cong V_\lambda$$ where $V_\lambda$ is the unique irreducible representation of highest weight $\lambda$, and $H^i(\L_\lambda)=0$ for all other $i$. In particular, if $\lambda$ is already dominant, then $\Gamma(\L_\lambda)\cong V_\lambda$, and the higher cohomology of $\L_\lambda$ vanishes.
+
+If $\lambda$ is dominant, than $\L_\lambda$ is generated by global sections, and thus determines a map $$m_\lambda\colon G/B\to\mathbb{P}\left(\Gamma(\L_\lambda)\right).$$ This map is an obvious one, which takes the coset of $B$ to the highest weight vector $v_0$ of $V_\lambda$. This can be extended by equivariance since $B$ fixes $v_0$. This provides an alternate description of $\L_\lambda$.
+
+For example, consider $G=\mathrm{SL}_2\C$. $G/B$ is $\C P^1$, the Riemann sphere, and an integral weight is specified simply by an integer $n$, and $\rho=1$. The line bundle $\L_n$ is simply $\O(n)$, whose sections are the homogeneous polynomials of degree $n$. This gives us in one stroke the representation theory of $\mathrm{SL}_2\C$: $\Gamma(\O(1))$ is the standard representation, and $\Gamma(\O(n))$ is its $n$th symmetric power. We even have
+a unified decription of the action of the Lie algebra, derived from its realization as vector fields on $\C P^1$: if $H,X,Y$ are the standard generators of $\mathfrak{sl}_2\C$, then
+\begin{align*}
+H&=x\frac{d}{dx}-y\frac{d}{dy}\\
+X&=x\frac{d}{dy}\\
+Y&=y\frac{d}{dx}\\
+\end{align*}
+%%%%%
+%%%%%
+\end{document}

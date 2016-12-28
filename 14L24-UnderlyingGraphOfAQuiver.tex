@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{UnderlyingGraphOfAQuiver}
+\pmcreated{2013-03-22 19:16:59}
+\pmmodified{2013-03-22 19:16:59}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{underlying graph of a quiver}
+\pmrecord{4}{42216}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14L24}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $Q=(Q_0,Q_1,s,t)$ be a quiver, i.e. $Q_0$ is a set of vertices, $Q_1$ is a set of arrows and $s,t:Q_1\to Q_0$ are functions which take each arrow to its source and target respectively.
+
+\textbf{Definition.} An \textbf{underlying graph of $Q$} or \textbf{graph associated with $Q$} is a graph
+$$G=(V,E,\tau)$$
+such that $V=Q_0$, $E=Q_1$ and $\tau:E\to V^2_{sym}$ is given by
+$$\tau(\alpha)=[s(\alpha),t(\alpha)]_{\sim}.$$
+
+In other words $G$ is a graph which is obtained from $Q$ after forgeting the orientation of arrows. The definition of a graph used here is taken from \PMlinkname{this entry}{AlternativeDefinitionOfAMultigraph}.
+
+Note, that if we know the underlying graph $G$ of a quiver $Q$, then the information we have is not enough to reconstruct $Q$ (except for a trivial case with no edges). The orientation of arrows is lost forever. In some cases it is possible to reconstruct $Q$ up to an \PMlinkname{isomorphism of quivers}{MorphismsBetweenQuivers}, for example graph
+$$\xymatrix{
+1\ar@{-}[r] & 2
+}$$
+uniquely (up to isomorphism) determines its quiver, but
+$$\xymatrix{
+G: & 1\ar@{-}[r] & 2\ar@{-}[r] & 3
+}$$
+does not uniquely determine its quiver. Indeed, there are exactly two nonisomorphic quivers with underlying graph $G$, namely:
+$$\xymatrix{
+Q: & 1\ar[r] & 2\ar[r] & 3\\
+Q': & 1\ar[r] & 2 & 3\ar[l]
+}$$
+%%%%%
+%%%%%
+\end{document}

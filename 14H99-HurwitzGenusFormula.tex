@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{HurwitzGenusFormula}
+\pmcreated{2013-03-22 15:57:15}
+\pmmodified{2013-03-22 15:57:15}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Hurwitz genus formula}
+\pmrecord{6}{37966}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H99}
+\pmrelated{RiemannRochTheorem}
+\pmrelated{EllipticCurve}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem*{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+The following formula, due to Hurwitz, is extremely useful when trying to compute the genus of an algebraic curve. In this entry $K$ is a perfect field (i.e. every algebraic extension of $K$ is separable). Recall that a non-constant map of curves $\psi: C_1 \to C_2$ over $K$ is separable if the extension of function fields $K(C_1)/\psi^\ast K(C_2)$ is a separable extension of fields.
+
+\begin{thm}[Hurwitz Genus Formula]
+Let $C_1$ and $C_2$ be two smooth curves defined over $K$ of genus $g_1$ and $g_2$, respectively. Let $\psi : C_1 \to C_2$ be a non-constant and separable map.  Then 
+$$2g_1-2 \geq (\deg \psi)(2g_2-2) + \sum_{P\in C_1} (e_{\psi}(P)-1)$$
+where $e_{\psi}(P)$ is the ramification index of $\psi$ at $P$. Moreover, there is equality if and only if either $\operatorname{char}(K)=0$ or $\operatorname{char}(K)=p>0$ and $p$ does not divide $e_{\psi}(P)$ for all $P\in C_1$.
+\end{thm}
+
+\begin{exa}
+As an application of the Hurwitz genus formula, we show that an elliptic curve $E : y^2=x(x-\alpha)(x-\beta)$ defined over a field $K$ of characteristic $0$ has genus $1$. Notice that the fact that $E$ is an elliptic curve over $K$ implies that $0,\alpha$ and $\beta$ are distinct elements of $K$, otherwise $E$ would be a singular curve. We define a map:
+$$\psi : E \to \mathbb{P}^1, \quad [x,y,z] \mapsto [x,z]$$
+and notice that $[0,1,0]$, the ``point at infinity'' of $E$, maps to $[1,0]$, the point at infinity of $\mathbb{P}^1$. The degree of this map is $2$: generically every point in $\mathbb{P}^1$ has two preimages, namely $[x,y,z]$ and $[x,-y,z]$. Moreover, the genus of $\mathbb{P}^1$ is $0$ and the map $\psi$ is ramified exactly at $4$ points, namely $P_1=[0,0,1], P_2=[\alpha,0,1], P_3=[\beta,0,1]$ and the point at infinity. It is easily checked that the ramification index at each point is $e_\psi(P_i)=2$. Hence, the Hurwitz formula reads:
+$$2g_1-2=2(2\cdot 0 -2)+\sum_{i=1}^4(e_\psi(P_i)-1)=-4+4=0.$$
+We conclude that $g_1=1$, as claimed.
+
+\end{exa}
+%%%%%
+%%%%%
+\end{document}

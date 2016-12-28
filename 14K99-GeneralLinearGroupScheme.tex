@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GeneralLinearGroupScheme}
+\pmcreated{2013-03-22 14:11:16}
+\pmmodified{2013-03-22 14:11:16}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{general linear group scheme}
+\pmrecord{7}{35617}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Example}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14K99}
+\pmclassification{msc}{14A15}
+\pmclassification{msc}{14L10}
+\pmclassification{msc}{20G15}
+\pmrelated{GeneralLinearGroup}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\DeclareMathOperator{\GL}{GL}
+\begin{document}
+\PMlinkescapeword{fix}
+\begin{defn}
+Fix a positive integer $n$.  We define the \emph{general linear group scheme} $\GL_n$ as the affine scheme defined by
+\[
+{\mathbb{Z}[Y,X_{11},\ldots,X_{1n},\ldots,X_{n1},\ldots,X_{nn}]}
+/
+{\left<Y\det\begin{pmatrix}
+X_{11}&\cdots&X_{1n}\\
+\vdots&\ddots&\vdots\\
+X_{n1}&\cdots&X_{nn}
+\end{pmatrix}-1\right>}
+\]
+\end{defn}
+
+Observe that if $R$ is any commutative ring, as \PMlinkname{usual}{ExampleOfFunctorOfPointsOfAScheme} with schemes, an $R$-point of $\GL_n$ is given by specifying, for each $i$ and $j$, an element $r_{ij}$ that is the image of $X_{ij}$, and by specifying one other element $r$ such that
+\[
+r\det\begin{pmatrix}
+r_{11}&\cdots&r_{1n}\\
+\vdots&\ddots&\vdots\\
+r_{n1}&\cdots&r_{nn}
+\end{pmatrix} = 1.
+\]
+In other words, an $R$-point of $\GL_n$ is an invertible matrix with entries in $R$. 
+
+As usual with schemes, we denote the $R$-points of $\GL_n$ by $\GL_n(R)$; we see that this notion does not lead to confusion, since it is exactly what is meant by the usual usage of this notation (see entry General Linear Group).
+%%%%%
+%%%%%
+\end{document}

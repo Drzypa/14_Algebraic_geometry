@@ -1,0 +1,83 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MinimalModelForAnEllipticCurve}
+\pmcreated{2013-03-22 15:48:03}
+\pmmodified{2013-03-22 15:48:03}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{minimal model for an elliptic curve}
+\pmrecord{4}{37763}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H52}
+\pmclassification{msc}{11G05}
+\pmclassification{msc}{11G07}
+\pmsynonym{minimal equation}{MinimalModelForAnEllipticCurve}
+\pmdefines{minimal model}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem*{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+Let $K$ be a local field, complete with respect to a discrete valuation $\nu$ (for example, $K$ could be $\Rats_p$, the field of \PMlinkid{$p$-adic numbers}{PAdicIntegers}, which is complete with respect to the \PMlinkid{$p$-adic valuation}{PAdicValuation}).
+
+Let $E/K$ be an elliptic curve defined over $K$ given by a Weierstrass equation 
+$$y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6$$
+where $a_1, a_2, a_3,a_4,a_6$ are constants in $K$. By a suitable change of variables, we may assume that $\nu(a_i)\geq 0$. As it is pointed out in \PMlinkid{this entry}{WeierstrassEquationOfAnEllipticCurve}, any other Weierstrass equation for $E$ is obtained by a change of variables of the form $$x=u^2x'+r,\quad y=u^3y'+su^2x'+t$$ 
+with $u,r,s,t\in K$ and $u\neq 0$. Moreover, by Proposition 2 in the same entry, the discriminants of both equations satisfy $\Delta=u^{12}\Delta'$, so they only differ by a $12$th power of a non-zero number in $K$. Let us define a set:
+$$S=\{ \nu(\Delta) : \Delta \text{ is the discriminant of a Weierstrass eq. for $E$ and } \nu(\Delta)\geq 0\}$$
+Since $\nu$ is a discrete valuation, the set $S$ is a set of non-negative integers, therefore it has a minimum value $m\in S$. Moreover, by the remark above, $m$ satisfies $0\leq m <12$ and $m$ is the unique number $t\in S$ with $0\leq t < 12$.
+
+\begin{defn}
+Let $E/K$ be an elliptic curve over a local field $K$, complete with respect to a discrete valuation $\nu$. A Weierstrass equation for $E$ with discriminant $\Delta$ is said to be a minimal model for $E$ (at $\nu$) if $\nu(\Delta)=m$, the minimum of the set $S$ above.
+\end{defn}
+
+It follows from the discussion above that every elliptic curve over a local field $K$ has a minimal model over $K$. 
+
+\begin{defn}
+Let $F$ be a number field and let $\nu$ be an infinite or finite place (archimedean or non-archimedean prime) of $F$. Let $E/F$ be an elliptic curve over $F$. A given Weierstrass model for $E/F$ is said to be minimal at $\nu$ if the same model is minimal over $F_\nu$, the completion of $F$ at $\nu$. A Weierstrass equation for $E/F$ is said to be minimal if it is minimal at $\nu$ for all places $\nu$ of $F$.
+\end{defn}
+
+It can be shown that all elliptic curves over $\Rats$ have a global minimal model. However, this is not true over general number fields. There exist elliptic curves over a number field $F$ which do not have a global minimal model  (i.e. any given model is not minimal at $\nu$ for every $\nu$).
+%%%%%
+%%%%%
+\end{document}

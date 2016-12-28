@@ -1,0 +1,171 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{BadReduction}
+\pmcreated{2013-03-22 13:49:21}
+\pmmodified{2013-03-22 13:49:21}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{bad reduction}
+\pmrecord{12}{34553}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14H52}
+%\pmkeywords{reduction}
+%\pmkeywords{elliptic curve}
+%\pmkeywords{split}
+%\pmkeywords{non-split}
+\pmrelated{EllipticCurve}
+\pmrelated{JInvariant}
+\pmrelated{HassesBoundForEllipticCurvesOverFiniteFields}
+\pmrelated{TorsionSubgroupOfAnEllipticCurveInjectsInTheReductionOfTheCurve}
+\pmrelated{ArithmeticOfEllipticCurves}
+\pmrelated{SingularPointsOfPlaneCurve}
+\pmdefines{bad reduction}
+\pmdefines{good reduction}
+\pmdefines{cusp}
+\pmdefines{node}
+\pmdefines{multiplicative reduction}
+\pmdefines{additive reduction}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\section{Singular Cubic Curves}
+
+Let $E$ be a cubic curve over a field $K$ with Weierstrass
+equation $f(x,y)=0$, where:
+$$f(x,y)=y^2+a_1xy+a_3y-x^3-a_2x^2-a_4x-a_6$$
+which has a singular point $P=(x_0,y_0)$. This is equivalent to:
+$$\partial f/ \partial x(P)=\partial f/ \partial y(P)=0$$
+and so we can write the Taylor expansion of $f(x,y)$ at
+$(x_0,y_0)$ as follows:
+\begin{eqnarray}
+\nonumber f(x,y)-f(x_0,y_0)&=&\lambda_1(x-x_0)^2+\lambda_2(x-x_0)(y-y_0)+\lambda_3(y-y_0)^2-(x-x_0)^3\\
+\nonumber
+&=&[(y-y_0)-\alpha(x-x_0)][(y-y_0)-\beta(x-x_0)]-(x-x_0)^3
+\end{eqnarray}
+for some $\lambda_i \in K$ and $\alpha,\beta \in \bar{K}$ (an
+algebraic closure of $K$).\\
+
+\begin{defn}
+The singular point $P$ is a \emph{node} if $\alpha\neq\beta$. In this
+case there are two different tangent lines to $E$ at $P$, namely:
+$$y-y_0=\alpha(x-x_0),\quad y-y_0=\beta(x-x_0)$$
+If $\alpha=\beta$ then we say that $P$ is a \emph{cusp}, and there is a
+unique tangent line at $P$.
+\end{defn}
+
+Note: See the entry for elliptic curve for examples of cusps and
+nodes.
+
+There is a very simple criterion to know whether a cubic curve in
+Weierstrass form is singular and to differentiate nodes from
+cusps:
+\begin{prop}
+Let $E/K$ be given by a Weierstrass equation, and let $\Delta$ be
+the discriminant and $c_4$ as in the definition of $\Delta$. Then:
+\begin{enumerate}
+\item $E$ is singular if and only if $\Delta=0$,\\
+
+\item $E$ has a node if and only if $\Delta=0$ and $c_4\neq 0$,\\
+
+\item $E$ has a cusp if and only if $\Delta=0=c_4$.
+\end{enumerate}
+\end{prop}
+\begin{proof}
+See $\cite{silverman}$, chapter III, Proposition 1.4, page 50.
+\end{proof}
+
+\section{Reduction of Elliptic Curves}
+
+Let $E/\mathbb{Q}$ be an elliptic curve (we could work over any
+number field $K$, but we choose $\mathbb{Q}$ for simplicity in the
+exposition). Assume that $E$ has a minimal model with Weierstrass equation:
+$$y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6$$
+with coefficients in $\mathbb{Z}$. Let $p$ be a prime in $\mathbb{Z}$. By reducing
+each of the coefficients $a_i$ modulo $p$ we obtain the equation
+of a cubic curve $\widetilde{E}$ over the finite field
+$\mathbb{F}_p$ (the field with $p$ elements).
+
+\begin{defn}\quad
+\begin{enumerate}
+\item If $\widetilde{E}$ is a non-singular curve then $\widetilde{E}$ is an elliptic curve over $\mathbb{F}_p$ and we say that $E$
+has \emph{good reduction} at $p$. Otherwise, we say that $E$ has \emph{bad
+reduction} at $p$.
+
+\item If $\widetilde{E}$ has a cusp then we say that $E$ has
+\emph{additive reduction} at $p$.
+
+\item If $\widetilde{E}$ has a node then we say that $E$ has
+\emph{multiplicative reduction} at $p$. If the slopes of the tangent
+lines ($\alpha$ and $\beta$ as above) are in $\mathbb{F}_p$ then
+the reduction is said to be \emph{split} multiplicative (and \emph{non-split}
+otherwise).
+\end{enumerate}
+\end{defn}
+
+From \emph{Proposition 1} we deduce the following:
+\begin{cor}
+Let $E/\mathbb{Q}$ be an elliptic curve with coefficients in
+$\mathbb{Z}$. Let $p\in \mathbb{Z}$ be a prime. If $E$ has bad
+reduction at $p$ then $p\mid \Delta$.
+\end{cor}
+
+{\bf Examples}:
+\begin{enumerate}
+\item $E_1\colon y^2=x^3+35x+5$ has good reduction at $p=7$.
+
+\item However $E_1$ has bad reduction at $p=5$, and the reduction
+is additive (since modulo $5$ we can write the equation as
+$[(y-0)-0(x-0)]^2-x^3$ and the slope is $0$).
+
+\item The elliptic curve $E_2\colon y^2=x^3-x^2+35$ has bad
+multiplicative reduction at $5$ and $7$. The reduction at $5$ is split,
+while the reduction at $7$ is non-split. Indeed, modulo $5$ we could
+write the equation as $[(y-0)-2(x-0)][(y-0)+2(x-0)]-x^3$, being
+the slopes $2$ and $-2$. However, for $p=7$ the slopes are not in
+$\mathbb{F}_7$ ($\sqrt{-1}$ is not in $\mathbb{F}_7$).
+\end{enumerate}
+
+\begin{thebibliography}{9}
+\bibitem{milne} James Milne, {\em Elliptic Curves}, \PMlinkexternal{online course
+notes}{http://www.jmilne.org/math/CourseNotes/math679.html}.
+\bibitem{silverman} Joseph H. Silverman, {\em The Arithmetic of Elliptic Curves}. Springer-Verlag, New York, 1986.
+\bibitem{silverman2} Joseph H. Silverman, {\em Advanced Topics in
+the Arithmetic of Elliptic Curves}. Springer-Verlag, New York,
+1994.
+\bibitem{shimura} Goro Shimura, {\em Introduction to the
+Arithmetic Theory of Automorphic Functions}. Princeton University
+Press, Princeton, New Jersey, 1971.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

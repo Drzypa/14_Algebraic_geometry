@@ -1,0 +1,57 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MorphismOfSchemesInducesAMapOfPoints}
+\pmcreated{2013-03-22 14:11:02}
+\pmmodified{2013-03-22 14:11:02}
+\pmowner{archibal}{4430}
+\pmmodifier{archibal}{4430}
+\pmtitle{morphism of schemes induces a map of points}
+\pmrecord{4}{35610}
+\pmprivacy{1}
+\pmauthor{archibal}{4430}
+\pmtype{Result}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A15}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+Let $f\colon X\to Y$ be a morphism of schemes over $S$, and let $T$ be a particular scheme over $S$.  Then $f$ induces a natural function from the $S$-points of $X$ to the $S$-points of $T$. 
+
+Recall that a $T$-point of $X$ is a morphism $\phi\colon T\to X$.  So examine the following diagram:
+\[
+\xymatrix{
+T \ar[drr]^\phi\ar[ddrrr]\ar@{-->}[drrrr]^\psi & &   &   &   \\
+  & & X\ar[rr]_f\ar[dr] &   & Y\ar[dl] \\
+  & &   & S & 
+}
+\]
+Since all the schemes in question are $S$-schemes, the solid arrows all commute.  The dashed arrow $\psi$ we simply construct as $f\circ\phi$, making the whole diagram commute.  The $\psi$ is a $T$-point of $Y$.
+%%%%%
+%%%%%
+\end{document}

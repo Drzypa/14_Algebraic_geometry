@@ -1,0 +1,71 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SeparatedScheme}
+\pmcreated{2013-03-22 12:50:25}
+\pmmodified{2013-03-22 12:50:25}
+\pmowner{djao}{24}
+\pmmodifier{djao}{24}
+\pmtitle{separated scheme}
+\pmrecord{6}{33166}
+\pmprivacy{1}
+\pmauthor{djao}{24}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14A15}
+\pmdefines{separated}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\p}{{\mathfrak{p}}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\R}{\mathbb{R}}
+\renewcommand{\H}{\mathcal{H}}
+\newcommand{\A}{\mathbb{A}}
+\renewcommand{\c}{\mathcal{C}}
+\renewcommand{\O}{\mathcal{O}}
+\newcommand{\D}{\mathcal{D}}
+\newcommand{\st}{\mid}
+\newcommand{\lra}{\longrightarrow}
+\newcommand{\res}{\operatorname{res}}
+\newcommand{\id}{\operatorname{id}}
+\newcommand{\diff}{\operatorname{diff}}
+\newcommand{\incl}{\operatorname{incl}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\Spec}{\operatorname{Spec}}
+\begin{document}
+A scheme $X$ is defined to be a {\em separated scheme} if the morphism
+$$
+d: X \to X \times_{\Spec\Z} X
+$$
+into the fibre product $X \times_{\Spec\Z} X$ which is induced by the identity maps $i: X \lra X$ in each coordinate is a closed immersion.
+
+Note the similarity to the definition of a Hausdorff topological space. In the situation of topological spaces, a space $X$ is Hausdorff if and only if the diagonal morphism $X \lra X \times X$ is a closed embedding of topological spaces. The definition of a separated scheme is very similar, except that the topological product is replaced with the scheme fibre product.
+
+More generally, if $X$ is a scheme over a base scheme $Y$, the scheme $X$ is defined to be \emph{separated} over $Y$ if the diagonal embedding
+$$
+d: X \to X \times_{Y} X
+$$
+is a closed immersion.
+%%%%%
+%%%%%
+\end{document}

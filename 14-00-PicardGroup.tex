@@ -1,0 +1,50 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{PicardGroup}
+\pmcreated{2013-03-22 12:52:30}
+\pmmodified{2013-03-22 12:52:30}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Picard group}
+\pmrecord{6}{33216}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14-00}
+\pmsynonym{divisor class group}{PicardGroup}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic} 
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+The {\em Picard group} of a variety, scheme, or more generally locally 
+ringed space $(X,O_X)$ is the group of locally free $O_X$ modules of rank
+$1$ with tensor product over $O_X$ as the operation, usually denoted by $\operatorname{Pic}(X)$. Alternatively, the Picard group is the group of isomorphism classes of invertible sheaves on $X$, under tensor products.
+
+It is not difficult to see that $\operatorname{Pic}(X)$ is isomorphic to ${\rm H}^1(X, O_X^*)$, the 
+first sheaf cohomology group of the multiplicative sheaf $O_X^*$ which consists of the
+units of $O_X$. 
+
+Finally, let $\operatorname{CaCl}(X)$ be the group of Cartier divisors on $X$ modulo linear equivalence. If $X$ is an integral scheme then the groups $\operatorname{CaCl}(X)$ and $\operatorname{Pic}(X)$ are isomorphic. Furthermote, if we let $\operatorname{Cl}(X)$ be the class group of Weil divisors (divisors modulo principal divisors) and $X$ is a  noetherian, integral and separated locally factorial scheme, then there is a natural isomorphism $\operatorname{Cl}(X)\cong \operatorname{Pic}(X)$. Thus, the Picard group is sometimes called the {\it divisor class group} of $X$.
+%%%%%
+%%%%%
+\end{document}

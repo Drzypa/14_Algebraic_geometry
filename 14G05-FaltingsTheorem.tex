@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FaltingsTheorem}
+\pmcreated{2013-03-22 15:57:21}
+\pmmodified{2013-03-22 15:57:21}
+\pmowner{alozano}{2414}
+\pmmodifier{alozano}{2414}
+\pmtitle{Faltings' theorem}
+\pmrecord{5}{37968}
+\pmprivacy{1}
+\pmauthor{alozano}{2414}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14G05}
+\pmclassification{msc}{14H99}
+\pmsynonym{Mordell's conjecture}{FaltingsTheorem}
+\pmrelated{SiegelsTheorem}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem*{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{exa}{Example}
+
+% Some sets
+\newcommand{\Nats}{\mathbb{N}}
+\newcommand{\Ints}{\mathbb{Z}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complex}{\mathbb{C}}
+\newcommand{\Rats}{\mathbb{Q}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\begin{document}
+Let $K$ be a number field and let $C/K$ be a non-singular curve defined over $K$ and genus $g$. When the genus is $0$, the curve is isomorphic to $\mathbb{P}^1$ (over an algebraic closure $\overline{K}$) and therefore $C(K)$ is either empty or equal to $\mathbb{P}^1(K)$ (in particular $C(K)$ is infinite). If the genus of $C$ is $1$ and $C(K)$ contains at least one point over $K$ then $C/K$ is an elliptic curve and the Mordell-Weil theorem shows that $C(K)$ is a finitely generated abelian group (in particular, $C(K)$ may be finite or infinite). However, if $g\geq 2$, Mordell conjectured in $1922$ that $C(K)$ cannot be infinite. This was first proven by Faltings in $1983$.
+
+\begin{thm}[Faltings' Theorem (Mordell's conjecture)]
+Let $K$ be a number field and let $C/K$ be a non-singular curve defined over $K$ of genus $g\geq 2$. Then $C(K)$ is finite. 
+\end{thm}
+
+The reader may also be interested in Siegel's theorem.
+%%%%%
+%%%%%
+\end{document}

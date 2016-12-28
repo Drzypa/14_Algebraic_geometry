@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SubquiverAndImageOfAQuiver}
+\pmcreated{2013-03-22 19:17:19}
+\pmmodified{2013-03-22 19:17:19}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{subquiver and image of a quiver}
+\pmrecord{5}{42222}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14L24}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $Q=(Q_0,Q_1,s,t)$ be a quiver.
+
+\textbf{Definition.} A quiver $Q'=(Q'_0, Q'_1, s',t')$ is said to be a \textbf{subquiver} of $Q$, if
+$$Q'_0\subseteq Q_0,\ \ Q'_1\subseteq Q_1$$
+are such that if $\alpha\in Q'_1$, then $s(\alpha),t(\alpha)\in Q'_0$. Furthermore
+$$s'(\alpha)=s(\alpha),\ \ t'(\alpha)=t(\alpha).$$
+In this case we write $Q'\subseteq Q$.
+
+A subquiver $Q'\subseteq Q$ is called \textbf{full} if for any $x,y\in Q'_0$ and any $\alpha\in Q_1$ such that $s(\alpha)=x$ and $t(\alpha)=y$ we have that $\alpha\in Q'_1$. In other words a subquiver is full if it ,,inherits'' all arrows between points.
+
+If $Q'$ is a subquiver of $Q$, then the mapping
+$$i=(i_0,i_1)$$
+where both $i_0, i_1$ are inclusions is a morphism of quivers. In this case $i$ is called \textbf{the inclusion morphism}.
+
+If $F:Q\to Q'$ is any morphism of quivers $Q=(Q_0,Q_1,s,t)$ and $Q'=(Q'_0, Q'_1,s',t')$, then the quadruple
+$$\mathrm{Im}(F)=(\mathrm{Im}(F_0), \mathrm{Im}(F_1), s'', t'')$$
+where $s'', t''$ are the restrictions of $s',t'$ to $\mathrm{Im}(F_1)$ is called \textbf{the image of $F$}. It can be easily shown, that $\mathrm{Im}(F)$ is a subquiver of $Q'$.
+%%%%%
+%%%%%
+\end{document}

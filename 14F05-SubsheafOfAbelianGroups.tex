@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SubsheafOfAbelianGroups}
+\pmcreated{2013-03-22 17:39:21}
+\pmmodified{2013-03-22 17:39:21}
+\pmowner{jirka}{4157}
+\pmmodifier{jirka}{4157}
+\pmtitle{subsheaf of abelian groups}
+\pmrecord{5}{40089}
+\pmprivacy{1}
+\pmauthor{jirka}{4157}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14F05}
+\pmclassification{msc}{54B40}
+\pmclassification{msc}{18F20}
+\pmsynonym{subsheaf}{SubsheafOfAbelianGroups}
+\pmsynonym{subsheaves}{SubsheafOfAbelianGroups}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{theorem}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{conj}{Conjecture}
+\newtheorem*{cor}{Corollary}
+\newtheorem*{example}{Example}
+\newtheorem*{prop}{Proposition}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+
+\begin{document}
+Let $\mathcal{F}$ be a sheaf of abelian groups  over a topological space $X$.  Let $\mathcal{G}$ be a sheaf
+over $X$, such that for every open set $U \subset X$, $\mathcal{G}(U)$ is a subgroup of
+$\mathcal{F}(U)$.  And further let the \PMlinkescapetext{restriction morphisms} on $\mathcal{G}$ be \PMlinkescapetext{induced} by those on $\mathcal{F}$.
+Then $\mathcal{G}$ is a \emph{subsheaf} of $\mathcal{F}$.
+
+Suppose a sheaf of abelian groups $\mathcal{F}$ is defined as a disjoint union of stalks $\mathcal{F}_x$ over points $x \in X$, and $\mathcal{F}$ is topologized in the appropriate manner.
+In particular, each stalk is an abelian group and the group operations are continuous.
+Then a subsheaf $\mathcal{G}$ is an open subset of $\mathcal{F}$ such that $\mathcal{G}_x = 
+\mathcal{G} \cap \mathcal{F}_x$ is a subgroup of $\mathcal{F}_x$.
+
+When $\mathcal{G}$ is a subsheaf of $\mathcal{F}$, then 
+$\mathcal{F}_x / \mathcal{G}_x$ is an abelian group.  Considering this to be the stalk over $x$
+we have a sheaf which is denoted by $\mathcal{F}/\mathcal{G}$, with the topology being the quotient topology.
+
+\begin{example}
+Suppose $M$ is a complex manifold.
+Let $\mathcal{M}^*$ be the sheaf of germs of meromorphic functions which are not identically zero.  That is, for $z \in M,$ the stalk $\mathcal{M}^*_z$ is the abelian group of germs of meromorphic functions at $z$ with the group operation being multiplication.
+Then $\mathcal{O}^*$, the sheaf
+of germs of holomorphic functions which are not identically 0 is a subsheaf
+of $\mathcal{M}^*$.
+
+The sheaf $\mathcal{M}^* / \mathcal{O}^*$ is then the sheaf of divisors.  If $M$ is of (complex) dimension 1, then
+$\mathcal{M}^* / \mathcal{O}^*$ is just the sheaf of functions into the integers with finite support.
+\end{example}
+
+\begin{thebibliography}{9}
+\bibitem{item0}
+Glen E.\@ Bredon.
+{\em \PMlinkescapetext{Sheaf Theory}},
+Springer, 1997.
+\bibitem{item1}
+Robin Hartshorne.
+{\em \PMlinkescapetext{Algebraic Geometry}},
+Springer, 1977.
+\bibitem{Hormander:several}
+Lars H\"ormander.
+{\em \PMlinkescapetext{An Introduction to Complex Analysis in Several
+Variables}},
+North-Holland Publishing Company, New York, New York, 1973.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

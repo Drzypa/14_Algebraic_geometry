@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MorphismsBetweenBoundQuivers}
+\pmcreated{2013-03-22 19:17:07}
+\pmmodified{2013-03-22 19:17:07}
+\pmowner{joking}{16130}
+\pmmodifier{joking}{16130}
+\pmtitle{morphisms between bound quivers}
+\pmrecord{5}{42218}
+\pmprivacy{1}
+\pmauthor{joking}{16130}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14L24}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\begin{document}
+Let $(Q,I)$ and $(Q',I')$ be \PMlinkname{bound quivers}{AdmissibleIdealsBoundQuiverAndItsAlgebra} over the same base field $k$.
+
+\textbf{Definition.} A morphism $F:Q\to Q'$ is said to be \textbf{bounded by $(I,I')$} if \PMlinkname{the induced linear map}{MorphismsOfPathAlgebrasInducedFromMorphismsOfQuivers} $\overline{F}:kQ\to kQ'$ is such that 
+$$\overline{F}(I)\subseteq I'.$$
+In this case we write
+$$F:(Q,I)\to (Q',I')$$
+and we say that $F$ is a \textbf{morphism of bound quivers}.
+
+If $F:(Q,I)\to (Q',I')$ is a morphism of bound quivers, then $\overline{F}:kQ\to kQ'$ induces a linear map
+$$\overline{\overline{F}}:kQ/I\to kQ'/I'.$$
+Furthermore, if $F_0$ is injective, then $\overline{F}$ is a homomorphism of algebras (see \PMlinkname{this entry}{MorphismsOfPathAlgebrasInducedFromMorphismsOfQuivers} for details) and thus $\overline{\overline{F}}$ is a homormorphism of algebras.
+%%%%%
+%%%%%
+\end{document}

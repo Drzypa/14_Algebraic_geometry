@@ -1,0 +1,77 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Variety}
+\pmcreated{2013-03-22 14:16:43}
+\pmmodified{2013-03-22 14:16:43}
+\pmowner{mps}{409}
+\pmmodifier{mps}{409}
+\pmtitle{variety}
+\pmrecord{9}{35730}
+\pmprivacy{1}
+\pmauthor{mps}{409}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{14-00}
+\pmsynonym{abstract variety}{Variety}
+\pmrelated{Scheme}
+\pmrelated{AffineVariety}
+\pmrelated{ProjectiveVariety}
+\pmdefines{complete}
+\pmdefines{curve}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+
+\DeclareMathOperator{\Spec}{Spec}
+\begin{document}
+\begin{defn}
+Let $X$ be a scheme over a field $k$.  Then $X$ is said to be an \emph{abstract variety} over $k$ if it is integral, separated, and of finite type over $k$.  Usually we simply say $X$ is a \emph{variety}.  If $X$ is proper over $k$, it is said to be \emph{complete}.  If the dimension of $X$ is one, then $X$ is said to be a \emph{curve}.
+\end{defn}
+Some authors also require $k$ to be algebraically closed, and some authors require curves to be nonsingular.  
+
+Calling $X$ a variety would appear to conflict with the preexisting notion of an \PMlinkname{affine}{AffineVariety} or projective variety.  However, it can be shown that if $k$ is algebraically closed, then there is an equivalence of categories between affine abstract varieties over $k$ and affine varieties over $k$, and another between projective abstract varieties over $k$ and projective varieties over $k$. 
+
+This equivalence of categories identifies an abstract variety with the set of its $k$-points; this can be thought of as simply ignoring all the generic points.  In the other direction, it identifies an affine variety with the prime spectrum of its coordinate ring: the variety in $\mathbb{A}^n$ defined by the ideal 
+\[
+\left<f_1,\ldots,f_m\right>
+\]
+is identified with
+\[
+\Spec k[X_1,\ldots,X_n]/\left<f_1,\ldots,f_m\right>.
+\]
+
+A projective variety is identified as the gluing together of the affine varieties obtained by taking the complements of hyperplanes.  To see this, suppose we have a projective variety in $\mathbb{P}^n$ given by the homogeneous ideal $\left<f_1,\ldots,f_m\right>$.  If we delete the hyperplane $X_i=0$, then we obtain an affine variety: let $T_j = X_j/X_i$; then the affine variety is the set of common zeros of 
+\[
+\left<f_1(T_0,\ldots,T_n),\ldots,f_m(T_0,\ldots,T_n)\right>.
+\]
+In this way, we can get $n+1$ overlapping affine varieties that cover our original projective variety. Using the theory of schemes, we can glue these affine varieties together to get a scheme; the result will be projective. 
+
+For more on this, see Hartshorne's book \emph{Algebraic Geometry}; see the bibliography for algebraic geometry for more resources.
+%%%%%
+%%%%%
+\end{document}
