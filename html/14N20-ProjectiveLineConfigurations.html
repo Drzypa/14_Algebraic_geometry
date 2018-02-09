@@ -1,0 +1,955 @@
+<!DOCTYPE html><html>
+<head>
+<title>projective line configurations</title>
+<!--Generated on Fri Feb  9 18:01:03 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">projective line configurations</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Introduction</h2>
+
+<section id="S1.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.1 </span>Definition</h3>
+
+<div id="S1.SS1.p1" class="ltx_para">
+<p class="ltx_p">A <em class="ltx_emph ltx_font_italic">projective line configuration</em> consists of a collections
+of <math id="S1.SS1.p1.m1" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> points and <math id="S1.SS1.p1.m2" class="ltx_Math" alttext="\ell" display="inline"><mi mathvariant="normal">ℓ</mi></math> lines in a projective space such that
+through each point of the configuration there pass a fixed
+number <math id="S1.SS1.p1.m3" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math> of lines of the configuration and on each
+line of the configuration there are found a fixed number <math id="S1.SS1.p1.m4" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math>
+of points of the configuration. It is not required that the
+intersection of any two lines belonging to the configuration
+be a line of the configuration nor that through every two points
+of the configuration there pass a line of the configuration.
+(Indeed, this will usually not be the case except for the very
+simplest examples with small values of <math id="S1.SS1.p1.m5" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math> and <math id="S1.SS1.p1.m6" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math>.)
+Besides being interesting geometric objects in their own right,
+projective configurations arise naturally in geometric
+definitions, constructions, and theorems, and also in such
+contexts as collections of special points and lines associated
+to algebraic varieties.</p>
+</div>
+</section>
+<section id="S1.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.2 </span>Examples</h3>
+
+<div id="S1.SS2.p1" class="ltx_para">
+<p class="ltx_p">A simple example of a projective configuration is a triangle:
+</p>
+<table id="S1.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex1.m1" class="ltx_Math" alttext="\xy,(0,0);(30,30)**@{-},(14,17)*{b},(22,30);(52,0)**@{-},(38,17)*{a},(0,5);(52%
+,5)**@{-},(26,2)*{c},(5,5)*{\bullet},(5,2)*{A},(47,5)*{\bullet},(46,2)*{B},(26%
+,26)*{\bullet},,(30,26)*{C}" display="block"><mrow><merror class="ltx_ERROR undefined undefined"><mtext>{xy}</mtext></merror><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>;</mo><mrow><mo stretchy="false">(</mo><mn>30</mn><mo>,</mo><mn>30</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>*</mo><mi mathvariant="normal">@</mi><mo>-</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>14</mn><mo>,</mo><mn>17</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>b</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>22</mn><mo>,</mo><mn>30</mn><mo stretchy="false">)</mo></mrow><mo>;</mo><mrow><mo stretchy="false">(</mo><mn>52</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>*</mo><mi mathvariant="normal">@</mi><mo>-</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>38</mn><mo>,</mo><mn>17</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>a</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo>;</mo><mrow><mo stretchy="false">(</mo><mn>52</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>*</mo><mi mathvariant="normal">@</mi><mo>-</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>26</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>c</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>∙</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>A</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>47</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>∙</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>46</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>B</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>26</mn><mo>,</mo><mn>26</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>∙</mo><mo>,</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>30</mn><mo>,</mo><mn>26</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>C</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Here we have 3 points, <math id="S1.SS2.p1.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>,<math id="S1.SS2.p1.m2" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math>,<math id="S1.SS2.p1.m3" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> and 3 lines, <math id="S1.SS2.p1.m4" class="ltx_Math" alttext="a" display="inline"><mi>a</mi></math>,<math id="S1.SS2.p1.m5" class="ltx_Math" alttext="b" display="inline"><mi>b</mi></math>,<math id="S1.SS2.p1.m6" class="ltx_Math" alttext="c" display="inline"><mi>c</mi></math>
+with the property that each of the points lines on exactly
+2 of the lines (<math id="S1.SS2.p1.m7" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> lies on <math id="S1.SS2.p1.m8" class="ltx_Math" alttext="b" display="inline"><mi>b</mi></math> and <math id="S1.SS2.p1.m9" class="ltx_Math" alttext="c" display="inline"><mi>c</mi></math>, <math id="S1.SS2.p1.m10" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> lies on <math id="S1.SS2.p1.m11" class="ltx_Math" alttext="a" display="inline"><mi>a</mi></math>
+and <math id="S1.SS2.p1.m12" class="ltx_Math" alttext="c" display="inline"><mi>c</mi></math>, and <math id="S1.SS2.p1.m13" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> lies on <math id="S1.SS2.p1.m14" class="ltx_Math" alttext="a" display="inline"><mi>a</mi></math> and <math id="S1.SS2.p1.m15" class="ltx_Math" alttext="b" display="inline"><mi>b</mi></math>) and that each of the
+lines passes through exactly two of the points (<math id="S1.SS2.p1.m16" class="ltx_Math" alttext="a" display="inline"><mi>a</mi></math> passes
+through <math id="S1.SS2.p1.m17" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math> and <math id="S1.SS2.p1.m18" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>, <math id="S1.SS2.p1.m19" class="ltx_Math" alttext="b" display="inline"><mi>b</mi></math> passes through <math id="S1.SS2.p1.m20" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> and <math id="S1.SS2.p1.m21" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>, and
+<math id="S1.SS2.p1.m22" class="ltx_Math" alttext="c" display="inline"><mi>c</mi></math> passes through <math id="S1.SS2.p1.m23" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> and <math id="S1.SS2.p1.m24" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math>.)</p>
+</div>
+<div id="S1.SS2.p2" class="ltx_para">
+<p class="ltx_p">Another example is a complete quadrangle. This configuration
+consists of 4 points <math id="S1.SS2.p2.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>, <math id="S1.SS2.p2.m2" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math>, <math id="S1.SS2.p2.m3" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>, <math id="S1.SS2.p2.m4" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math> and the 6 lines <math id="S1.SS2.p2.m5" class="ltx_Math" alttext="a" display="inline"><mi>a</mi></math>,
+<math id="S1.SS2.p2.m6" class="ltx_Math" alttext="b" display="inline"><mi>b</mi></math>, <math id="S1.SS2.p2.m7" class="ltx_Math" alttext="c" display="inline"><mi>c</mi></math>, <math id="S1.SS2.p2.m8" class="ltx_Math" alttext="d" display="inline"><mi>d</mi></math>, <math id="S1.SS2.p2.m9" class="ltx_Math" alttext="e" display="inline"><mi>e</mi></math>, <math id="S1.SS2.p2.m10" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> as illustrated below:</p>
+<table id="S1.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex2.m1" class="ltx_Math" alttext="\xy,(5,35)*{\bullet},(8,37)*{A},(35,35)*{\bullet},(32,37)*{B},(5,5)*{\bullet},%
+(8,2)*{C},(35,5)*{\bullet},(32,2)*{D},(0,5);(40,5)**@{-},(20,2)*{c},(0,35);(40%
+,35)**@{-},(20,37)*{a},(5,0);(5,40)**@{-},(2,20)*{d},(35,0);(35,40)**@{-},(37,%
+20)*{b},(0,0);(40,40)**@{-},(27,30)*{f},(0,40);(40,0)**@{-},(12,30)*{e}" display="block"><mrow><merror class="ltx_ERROR undefined undefined"><mtext>{xy}</mtext></merror><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>,</mo><mn>35</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>∙</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>8</mn><mo>,</mo><mn>37</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>A</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>35</mn><mo>,</mo><mn>35</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>∙</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>32</mn><mo>,</mo><mn>37</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>B</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>∙</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>8</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>C</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>35</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>∙</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>32</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>D</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo>;</mo><mrow><mo stretchy="false">(</mo><mn>40</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>*</mo><mi mathvariant="normal">@</mi><mo>-</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>20</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>c</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>35</mn><mo stretchy="false">)</mo></mrow><mo>;</mo><mrow><mo stretchy="false">(</mo><mn>40</mn><mo>,</mo><mn>35</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>*</mo><mi mathvariant="normal">@</mi><mo>-</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>20</mn><mo>,</mo><mn>37</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>a</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>;</mo><mrow><mo stretchy="false">(</mo><mn>5</mn><mo>,</mo><mn>40</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>*</mo><mi mathvariant="normal">@</mi><mo>-</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mn>20</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>d</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>35</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>;</mo><mrow><mo stretchy="false">(</mo><mn>35</mn><mo>,</mo><mn>40</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>*</mo><mi mathvariant="normal">@</mi><mo>-</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>37</mn><mo>,</mo><mn>20</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>b</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>;</mo><mrow><mo stretchy="false">(</mo><mn>40</mn><mo>,</mo><mn>40</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>*</mo><mi mathvariant="normal">@</mi><mo>-</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>27</mn><mo>,</mo><mn>30</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>f</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>40</mn><mo stretchy="false">)</mo></mrow><mo>;</mo><mrow><mo stretchy="false">(</mo><mn>40</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>*</mo><mi mathvariant="normal">@</mi><mo>-</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>12</mn><mo>,</mo><mn>30</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>e</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Since each of the points lies
+on exactly 3 of the lines and each the lines contains exactly
+two of the points, this is indeed a bona fide projective
+configuration. (Note that the intersection of the lines <math id="S1.SS2.p2.m11" class="ltx_Math" alttext="e" display="inline"><mi>e</mi></math>
+and <math id="S1.SS2.p2.m12" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is not highlighted as this is not one of the points of
+the configurations — as mentioned at top, not every intersection
+of two lines of the configuration need be a point of the
+configuration.)</p>
+</div>
+</section>
+<section id="S1.SS3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.3 </span>Notation</h3>
+
+<div id="S1.SS3.p1" class="ltx_para">
+<p class="ltx_p">When discussing line configurations, use is made of the
+notation <math id="S1.SS3.p1.m1" class="ltx_Math" alttext="(p_{\lambda}\ell_{\pi})" display="inline"><mrow><mo stretchy="false">(</mo><mrow><msub><mi>p</mi><mi>λ</mi></msub><mo>⁢</mo><msub><mi mathvariant="normal">ℓ</mi><mi>π</mi></msub></mrow><mo stretchy="false">)</mo></mrow></math> or
+<math id="S1.SS3.p1.m2" class="ltx_Math" alttext="\begin{pmatrix}p&amp;\lambda\\
+\pi&amp;\ell\end{pmatrix}" display="inline"><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mi>p</mi></mtd><mtd columnalign="center"><mi>λ</mi></mtd></mtr><mtr><mtd columnalign="center"><mi>π</mi></mtd><mtd columnalign="center"><mi mathvariant="normal">ℓ</mi></mtd></mtr></mtable><mo>)</mo></mrow></math>
+to indicate that the configuration contains <math id="S1.SS3.p1.m3" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> points and
+<math id="S1.SS3.p1.m4" class="ltx_Math" alttext="\ell" display="inline"><mi mathvariant="normal">ℓ</mi></math> lines with <math id="S1.SS3.p1.m5" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math> lines passing through each
+point and <math id="S1.SS3.p1.m6" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math> points on each line. Thus, we would say
+that the triangle is a configuration of type <math id="S1.SS3.p1.m7" class="ltx_Math" alttext="(3_{2}3_{2})" display="inline"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>3</mn><mn>2</mn></msub><mo>⁢</mo><msub><mn>3</mn><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></math>
+(or <math id="S1.SS3.p1.m8" class="ltx_Math" alttext="\begin{pmatrix}3&amp;2\\
+2&amp;3\end{pmatrix}" display="inline"><mrow><mo>(</mo><mtable columnspacing="5pt" rowspacing="0pt"><mtr><mtd columnalign="center"><mn>3</mn></mtd><mtd columnalign="center"><mn>2</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>2</mn></mtd><mtd columnalign="center"><mn>3</mn></mtd></mtr></mtable><mo>)</mo></mrow></math>) and
+the complete quadrangle is a configuration of type
+<math id="S1.SS3.p1.m9" class="ltx_Math" alttext="(4_{3},6_{2})" display="inline"><mrow><mo stretchy="false">(</mo><msub><mn>4</mn><mn>3</mn></msub><mo>,</mo><msub><mn>6</mn><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></math>.</p>
+</div>
+<div id="S1.SS3.p2" class="ltx_para">
+<p class="ltx_p">It is worth pointing out that the four numbers <math id="S1.SS3.p2.m1" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, <math id="S1.SS3.p2.m2" class="ltx_Math" alttext="\ell" display="inline"><mi mathvariant="normal">ℓ</mi></math>,
+<math id="S1.SS3.p2.m3" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math>, <math id="S1.SS3.p2.m4" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math> are linked by the relation <math id="S1.SS3.p2.m5" class="ltx_Math" alttext="p\cdot\lambda=\pi\cdot\ell" display="inline"><mrow><mrow><mi>p</mi><mo>⋅</mo><mi>λ</mi></mrow><mo>=</mo><mrow><mi>π</mi><mo>⋅</mo><mi mathvariant="normal">ℓ</mi></mrow></mrow></math>. The reason for this is a counting argument —
+we could count pairs consisting of a point and a line passing
+through that point two ways. We could start with the <math id="S1.SS3.p2.m6" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> points
+and count <math id="S1.SS3.p2.m7" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math> lines passing through each point to arrive
+at <math id="S1.SS3.p2.m8" class="ltx_Math" alttext="p\lambda" display="inline"><mrow><mi>p</mi><mo>⁢</mo><mi>λ</mi></mrow></math> pairs. Alternatively, we could start with the
+<math id="S1.SS3.p2.m9" class="ltx_Math" alttext="\ell" display="inline"><mi mathvariant="normal">ℓ</mi></math> lines and count <math id="S1.SS3.p2.m10" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math> points on each line to arrive
+at <math id="S1.SS3.p2.m11" class="ltx_Math" alttext="\pi\ell" display="inline"><mrow><mi>π</mi><mo>⁢</mo><mi mathvariant="normal">ℓ</mi></mrow></math> pairs. Since we are counting the same objects
+(pairs consisting of incident points and lines), we must
+arrive at the same number either way.</p>
+</div>
+<div id="S1.SS3.p3" class="ltx_para">
+<p class="ltx_p">Finally, when dealing with cases where <math id="S1.SS3.p3.m1" class="ltx_Math" alttext="p=\ell" display="inline"><mrow><mi>p</mi><mo>=</mo><mi mathvariant="normal">ℓ</mi></mrow></math> (and hence,
+by what was said above, <math id="S1.SS3.p3.m2" class="ltx_Math" alttext="\pi=\lambda" display="inline"><mrow><mi>π</mi><mo>=</mo><mi>λ</mi></mrow></math>), one may use the
+abbreviated notation <math id="S1.SS3.p3.m3" class="ltx_Math" alttext="(p_{\lambda})" display="inline"><mrow><mo stretchy="false">(</mo><msub><mi>p</mi><mi>λ</mi></msub><mo stretchy="false">)</mo></mrow></math>. Thus, one could say
+instead that the triangle is a configuration of type <math id="S1.SS3.p3.m4" class="ltx_Math" alttext="(3_{2})" display="inline"><mrow><mo stretchy="false">(</mo><msub><mn>3</mn><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></math>.
+Thus notation is most commonly encountered in the context
+of self-dual configurations (which will be defined in the
+next subsection).</p>
+</div>
+</section>
+<section id="S1.SS4" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.4 </span>Choice of Projective Space</h3>
+
+<div id="S1.SS4.p1" class="ltx_para">
+<p class="ltx_p">So far, we have only spoken of projective configurations in a
+general manner. To discuss the matter in more detail, we need
+to take into account the projective space within which our
+configuration is situated.</p>
+</div>
+<div id="S1.SS4.p2" class="ltx_para">
+<p class="ltx_p">The need for doing so is rather well illustrated by the fact
+that certain configurations may not exist in all projective
+spaces. As an example, we may consider the Hesse configuration,
+which is a configuration of type <math id="S1.SS4.p2.m1" class="ltx_Math" alttext="(9_{4}12_{3})" display="inline"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>9</mn><mn>4</mn></msub><mo>⁢</mo><msub><mn>12</mn><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></math>. In this
+configuration, if we label the points by the letters <math id="S1.SS4.p2.m2" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> through
+<math id="S1.SS4.p2.m3" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> suitably, the lines pass through the following triplets of
+points: <math id="S1.SS4.p2.m4" class="ltx_Math" alttext="ABC" display="inline"><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mi>C</mi></mrow></math>, <math id="S1.SS4.p2.m5" class="ltx_Math" alttext="DEF" display="inline"><mrow><mi>D</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mi>F</mi></mrow></math>, <math id="S1.SS4.p2.m6" class="ltx_Math" alttext="GHI" display="inline"><mrow><mi>G</mi><mo>⁢</mo><mi>H</mi><mo>⁢</mo><mi>I</mi></mrow></math>, <math id="S1.SS4.p2.m7" class="ltx_Math" alttext="ADG" display="inline"><mrow><mi>A</mi><mo>⁢</mo><mi>D</mi><mo>⁢</mo><mi>G</mi></mrow></math>, <math id="S1.SS4.p2.m8" class="ltx_Math" alttext="BEH" display="inline"><mrow><mi>B</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mi>H</mi></mrow></math>, <math id="S1.SS4.p2.m9" class="ltx_Math" alttext="CFI" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mi>F</mi><mo>⁢</mo><mi>I</mi></mrow></math>, <math id="S1.SS4.p2.m10" class="ltx_Math" alttext="AEI" display="inline"><mrow><mi>A</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mi>I</mi></mrow></math>, <math id="S1.SS4.p2.m11" class="ltx_Math" alttext="BFG" display="inline"><mrow><mi>B</mi><mo>⁢</mo><mi>F</mi><mo>⁢</mo><mi>G</mi></mrow></math>,
+<math id="S1.SS4.p2.m12" class="ltx_Math" alttext="CDH" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mi>D</mi><mo>⁢</mo><mi>H</mi></mrow></math>, <math id="S1.SS4.p2.m13" class="ltx_Math" alttext="AFH" display="inline"><mrow><mi>A</mi><mo>⁢</mo><mi>F</mi><mo>⁢</mo><mi>H</mi></mrow></math>, <math id="S1.SS4.p2.m14" class="ltx_Math" alttext="BDI" display="inline"><mrow><mi>B</mi><mo>⁢</mo><mi>D</mi><mo>⁢</mo><mi>I</mi></mrow></math>, <math id="S1.SS4.p2.m15" class="ltx_Math" alttext="CEG" display="inline"><mrow><mi>C</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mi>G</mi></mrow></math>. It is not possible to find 9 points
+and 12 lines in the real projective plane <math id="S1.SS4.p2.m16" class="ltx_Math" alttext="\mathbb{R}\mathbb{P}^{2}" display="inline"><mrow><mi>ℝ</mi><mo>⁢</mo><msup><mi>ℙ</mi><mn>2</mn></msup></mrow></math>
+(or, for that matter, any real projective space <math id="S1.SS4.p2.m17" class="ltx_Math" alttext="\mathbb{R}\mathbb{P}^{n}" display="inline"><mrow><mi>ℝ</mi><mo>⁢</mo><msup><mi>ℙ</mi><mi>n</mi></msup></mrow></math>) which form such a configuration. However, such
+a configuration can be found in the complex projective plane
+<math id="S1.SS4.p2.m18" class="ltx_Math" alttext="\mathbb{C}\mathbb{P}^{2}" display="inline"><mrow><mi>ℂ</mi><mo>⁢</mo><msup><mi>ℙ</mi><mn>2</mn></msup></mrow></math> — for instance we could take the
+9 points with homogeneous coordinates</p>
+<table id="S1.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex3.m1" class="ltx_Math" alttext="\begin{matrix}A:(1,-r_{+},0)&amp;B:(1,-1,0)&amp;C:(1,-r_{-},0)\\
+D:(-r_{+},0,1)&amp;E:(-1,0,1)&amp;F:(-r_{-},0,1)\\
+G:(0,1,-r_{+})&amp;H:(0,1,-1)&amp;I:(0,1,-r_{-})\end{matrix}" display="block"><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>A</mi><mo>:</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><msub><mi>r</mi><mo>+</mo></msub></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>B</mi><mo>:</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>C</mi><mo>:</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><msub><mi>r</mi><mo>-</mo></msub></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>D</mi><mo>:</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><msub><mi>r</mi><mo>+</mo></msub></mrow><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>E</mi><mo>:</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>F</mi><mo>:</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><msub><mi>r</mi><mo>-</mo></msub></mrow><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>G</mi><mo>:</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><msub><mi>r</mi><mo>+</mo></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>H</mi><mo>:</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>I</mi><mo>:</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><msub><mi>r</mi><mo>-</mo></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and the 12 lines with equations</p>
+<table id="S1.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex4.m1" class="ltx_Math" alttext="\begin{matrix}\hbox to 50.0pt{$\hfil ABC:\;$}z=0\hfill&amp;\hbox to 50.0pt{$\hfil
+DEF%
+:\;$}y=0\hfill&amp;\hbox to 50.0pt{$\hfil GHI:\;$}x=0\hfill\\
+\hbox to 50.0pt{$\hfil ADG:\;$}x+r_{-}y+r_{+}z=0\hfill&amp;\hbox to 50.0pt{$\hfil
+BEH%
+:\;$}x+y+z=0\hfill&amp;\hbox to 50.0pt{$\hfil CFI:\;$}x+r_{+}y+r_{-}z=0\hfill\\
+\hbox to 50.0pt{$\hfil AEI:\;$}x+r_{-}y+z=0\hfill&amp;\hbox to 50.0pt{$\hfil BFG:%
+\;$}x+y+r_{-}z=0\hfill&amp;\hbox to 50.0pt{$\hfil CDH:\;$}r_{-}x+y+z=0\hfill\\
+\hbox to 50.0pt{$\hfil AFH:\;$}r_{+}x+y+z=0\hfill&amp;\hbox to 50.0pt{$\hfil BDI:%
+\;$}x+y+r_{+}z=0\hfill&amp;\hbox to 50.0pt{$\hfil CEG:\;$}x+r_{+}y+z=0\hfill,\end{matrix}" display="block"><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mrow><mpadded width="50.0pt"><mrow><mi>A</mi><mo>⁢</mo><mi>B</mi><mo>⁢</mo><mi>C</mi></mrow><mo rspace="5.3pt">:</mo><mi></mi></mpadded><mo>⁢</mo><mi>z</mi></mrow><mo>=</mo><mn>0</mn></mrow></mtd><mtd columnalign="center"><mrow><mrow><mpadded width="50.0pt"><mrow><mi>D</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mi>F</mi></mrow><mo rspace="5.3pt">:</mo><mi></mi></mpadded><mo>⁢</mo><mi>y</mi></mrow><mo>=</mo><mn>0</mn></mrow></mtd><mtd columnalign="center"><mrow><mrow><mpadded width="50.0pt"><mrow><mi>G</mi><mo>⁢</mo><mi>H</mi><mo>⁢</mo><mi>I</mi></mrow><mo rspace="5.3pt">:</mo><mi></mi></mpadded><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mrow><mrow><mpadded width="50.0pt"><mrow><mi>A</mi><mo>⁢</mo><mi>D</mi><mo>⁢</mo><mi>G</mi></mrow><mo rspace="5.3pt">:</mo><mi></mi></mpadded><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><msub><mi>r</mi><mo>-</mo></msub><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><msub><mi>r</mi><mo>+</mo></msub><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></mtd><mtd columnalign="center"><mrow><mrow><mrow><mpadded width="50.0pt"><mrow><mi>B</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mi>H</mi></mrow><mo rspace="5.3pt">:</mo><mi></mi></mpadded><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi></mrow><mo>=</mo><mn>0</mn></mrow></mtd><mtd columnalign="center"><mrow><mrow><mrow><mpadded width="50.0pt"><mrow><mi>C</mi><mo>⁢</mo><mi>F</mi><mo>⁢</mo><mi>I</mi></mrow><mo rspace="5.3pt">:</mo><mi></mi></mpadded><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><msub><mi>r</mi><mo>+</mo></msub><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><msub><mi>r</mi><mo>-</mo></msub><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mrow><mrow><mpadded width="50.0pt"><mrow><mi>A</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mi>I</mi></mrow><mo rspace="5.3pt">:</mo><mi></mi></mpadded><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><msub><mi>r</mi><mo>-</mo></msub><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mi>z</mi></mrow><mo>=</mo><mn>0</mn></mrow></mtd><mtd columnalign="center"><mrow><mrow><mrow><mpadded width="50.0pt"><mrow><mi>B</mi><mo>⁢</mo><mi>F</mi><mo>⁢</mo><mi>G</mi></mrow><mo rspace="5.3pt">:</mo><mi></mi></mpadded><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>y</mi><mo>+</mo><mrow><msub><mi>r</mi><mo>-</mo></msub><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></mtd><mtd columnalign="center"><mrow><mrow><mrow><mpadded width="50.0pt"><mrow><mi>C</mi><mo>⁢</mo><mi>D</mi><mo>⁢</mo><mi>H</mi></mrow><mo rspace="5.3pt">:</mo><mi></mi></mpadded><mo>⁢</mo><msub><mi>r</mi><mo>-</mo></msub><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi></mrow><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mrow><mrow><mpadded width="50.0pt"><mrow><mi>A</mi><mo>⁢</mo><mi>F</mi><mo>⁢</mo><mi>H</mi></mrow><mo rspace="5.3pt">:</mo><mi></mi></mpadded><mo>⁢</mo><msub><mi>r</mi><mo>+</mo></msub><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi></mrow><mo>=</mo><mn>0</mn></mrow></mtd><mtd columnalign="center"><mrow><mrow><mrow><mpadded width="50.0pt"><mrow><mi>B</mi><mo>⁢</mo><mi>D</mi><mo>⁢</mo><mi>I</mi></mrow><mo rspace="5.3pt">:</mo><mi></mi></mpadded><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>y</mi><mo>+</mo><mrow><msub><mi>r</mi><mo>+</mo></msub><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></mtd><mtd columnalign="center"><mrow><mrow><mrow><mrow><mpadded width="50.0pt"><mrow><mi>C</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mi>G</mi></mrow><mo rspace="5.3pt">:</mo><mi></mi></mpadded><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><msub><mi>r</mi><mo>+</mo></msub><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mi>z</mi></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S1.SS4.p2.m19" class="ltx_Math" alttext="r_{\pm}=(1\pm i\sqrt{3})/2" display="inline"><mrow><msub><mi>r</mi><mo>±</mo></msub><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>±</mo><mrow><mi>i</mi><mo>⁢</mo><msqrt><mn>3</mn></msqrt></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>2</mn></mrow></mrow></math>. That the appropriate points
+lie on the appropriate lines may be readily verified by a computation
+which is especially effortless if one makes use of the facts that
+<math id="S1.SS4.p2.m20" class="ltx_Math" alttext="r_{+}^{3}=r_{-}^{3}=1" display="inline"><mrow><msubsup><mi>r</mi><mo>+</mo><mn>3</mn></msubsup><mo>=</mo><msubsup><mi>r</mi><mo>-</mo><mn>3</mn></msubsup><mo>=</mo><mn>1</mn></mrow></math> and <math id="S1.SS4.p2.m21" class="ltx_Math" alttext="r_{+}r_{-}=1" display="inline"><mrow><mrow><msub><mi>r</mi><mo>+</mo></msub><mo>⁢</mo><msub><mi>r</mi><mo>-</mo></msub></mrow><mo>=</mo><mn>1</mn></mrow></math>.</p>
+</div>
+<div id="S1.SS4.p3" class="ltx_para">
+<p class="ltx_p">This notion of certain configurations being only found in certain
+spaces may be clarified by an intrinsic/extrinsic approach. Define
+an <em class="ltx_emph ltx_font_italic">abstract line configuration</em> of type <math id="S1.SS4.p3.m1" class="ltx_Math" alttext="(p_{\lambda}\ell_{\pi})" display="inline"><mrow><mo stretchy="false">(</mo><mrow><msub><mi>p</mi><mi>λ</mi></msub><mo>⁢</mo><msub><mi mathvariant="normal">ℓ</mi><mi>π</mi></msub></mrow><mo stretchy="false">)</mo></mrow></math>
+to be a triplet <math id="S1.SS4.p3.m2" class="ltx_Math" alttext="\langle P,L,I\rangle" display="inline"><mrow><mo stretchy="false">⟨</mo><mi>P</mi><mo>,</mo><mi>L</mi><mo>,</mo><mi>I</mi><mo stretchy="false">⟩</mo></mrow></math>, where <math id="S1.SS4.p3.m3" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> and <math id="S1.SS4.p3.m4" class="ltx_Math" alttext="Q" display="inline"><mi>Q</mi></math> are sets
+and <math id="S1.SS4.p3.m5" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> is a relation on <math id="S1.SS4.p3.m6" class="ltx_Math" alttext="P\times L" display="inline"><mrow><mi>P</mi><mo>×</mo><mi>L</mi></mrow></math> such that the following
+conditions hold:</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p">The cardinality of <math id="I1.i1.p1.m1" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> is <math id="I1.i1.p1.m2" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p">The cardinality of <math id="I1.i2.p1.m1" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math> is <math id="I1.i2.p1.m2" class="ltx_Math" alttext="\ell" display="inline"><mi mathvariant="normal">ℓ</mi></math>.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i3.p1" class="ltx_para">
+<p class="ltx_p">For every <math id="I1.i3.p1.m1" class="ltx_Math" alttext="x\in P" display="inline"><mrow><mi>x</mi><mo>∈</mo><mi>P</mi></mrow></math>, the cardinality of
+<math id="I1.i3.p1.m2" class="ltx_Math" alttext="\{y\in L\mid I(x,y)\}" display="inline"><mrow><mo stretchy="false">{</mo><mrow><mi>y</mi><mo>∈</mo><mi>L</mi></mrow><mo>∣</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">}</mo></mrow></math> is <math id="I1.i3.p1.m3" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math>.</p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i4.p1" class="ltx_para">
+<p class="ltx_p">For every <math id="I1.i4.p1.m1" class="ltx_Math" alttext="x\in L" display="inline"><mrow><mi>x</mi><mo>∈</mo><mi>L</mi></mrow></math>, the cardinality of
+<math id="I1.i4.p1.m2" class="ltx_Math" alttext="\{y\in P\mid I(y,x)\}" display="inline"><mrow><mo stretchy="false">{</mo><mrow><mi>y</mi><mo>∈</mo><mi>P</mi></mrow><mo>∣</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">}</mo></mrow></math> is <math id="I1.i4.p1.m3" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math>.</p>
+</div>
+</li>
+<li id="I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i5.p1" class="ltx_para">
+<p class="ltx_p">Given two distinct elements <math id="I1.i5.p1.m1" class="ltx_Math" alttext="x,y" display="inline"><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow></math> of <math id="I1.i5.p1.m2" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>, there exists at
+most one element <math id="I1.i5.p1.m3" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math> of <math id="I1.i5.p1.m4" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math> such that <math id="I1.i5.p1.m5" class="ltx_Math" alttext="I(x,z)" display="inline"><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math> and <math id="I1.i5.p1.m6" class="ltx_Math" alttext="I(y,z)" display="inline"><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i6.p1" class="ltx_para">
+<p class="ltx_p">Given two distinct elements <math id="I1.i6.p1.m1" class="ltx_Math" alttext="x,y" display="inline"><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow></math> of <math id="I1.i6.p1.m2" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math>, there exists at
+most one element <math id="I1.i6.p1.m3" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math> of <math id="I1.i6.p1.m4" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> such that <math id="I1.i6.p1.m5" class="ltx_Math" alttext="I(z,x)" display="inline"><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math> and <math id="I1.i6.p1.m6" class="ltx_Math" alttext="I(z,y)" display="inline"><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>z</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">Given a projective space <math id="S1.SS4.p3.m7" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math>, we may then define an embeding of an
+abstract line complex <math id="S1.SS4.p3.m8" class="ltx_Math" alttext="\langle P,L,I\rangle" display="inline"><mrow><mo stretchy="false">⟨</mo><mi>P</mi><mo>,</mo><mi>L</mi><mo>,</mo><mi>I</mi><mo stretchy="false">⟩</mo></mrow></math> to be an assignment
+of a point of <math id="S1.SS4.p3.m9" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math> to every element of <math id="S1.SS4.p3.m10" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> and a line to every element
+of <math id="S1.SS4.p3.m11" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math> in such a way that the point assigned to an element <math id="S1.SS4.p3.m12" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> of
+<math id="S1.SS4.p3.m13" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> will lie on the line assigned to an element <math id="S1.SS4.p3.m14" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> of <math id="S1.SS4.p3.m15" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math> if and
+only if <math id="S1.SS4.p3.m16" class="ltx_Math" alttext="I(x,y)" display="inline"><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></math>. For instance, returning to our first example above,
+the abstract configuration of the triangle is
+</p>
+<table id="S1.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex5.m1" class="ltx_Math" alttext="\langle\{A,B,C\},\{a,b,c\},\{(A,b),(A,c),(B,a),(B,c),(C,a),(C,b)\rangle." display="block"><mrow><mo stretchy="false">⟨</mo><mrow><mo stretchy="false">{</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo stretchy="false">}</mo></mrow><mo>,</mo><mrow><mo stretchy="false">{</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>C</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>C</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">⟩</mo></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Not only is this way of thinking useful conceptually,
+but, as we shall see in the next section, it is useful in practise
+because it lets us divide the work of finding configurations into a
+combinatorial task of determining abstract configurations and a
+geometric task of determining which abstract configurations may be
+embedded in which space.</p>
+</div>
+<div id="S1.SS4.p4" class="ltx_para">
+<p class="ltx_p">When the space within which our configuration is embedded is two-
+dimensional, i.e. happens to be a projective plane, then we can
+apply the duality operation to obtain another line configuration
+in which the role of lies and points has been interchanged. We
+call this new configuration the dual of the original configuration.
+If it happens that the dual configuration is projectively equivalent
+to the original configuration, we call it a self-dual configuration.
+For instance, the triangle is a self-dual configuration in
+<math id="S1.SS4.p4.m1" class="ltx_Math" alttext="\mathbb{R}\mathbb{P}^{2}" display="inline"><mrow><mi>ℝ</mi><mo>⁢</mo><msup><mi>ℙ</mi><mn>2</mn></msup></mrow></math>, given two triangles, there will be a
+collineation which maps one into the other. In the example of the
+complete quadrangle, its dual is a configuration known as the
+complete quadrangle, which consists of four lines such that each
+pair of lines intersects in on of the six points of the configuration.</p>
+</div>
+<div id="S1.SS4.p5" class="ltx_para">
+<table id="S1.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex6.m1" class="ltx_Math" alttext="\xy,(6,6)*{\bullet},(8,4)*{C},(26,66)*{\bullet},(29,66)*{E},(66,26)*{\bullet},%
+(66,29)*{F},(42,18)*{\bullet},(45,17)*{D},(18,42)*{\bullet},(16,45)*{B},(36,36%
+)*{\bullet},(39,39)*{A},(4,0);(28,72)**@{-},(26,11)*{c},(0,4);(72,28)**@{-},(1%
+0,26)*{d},(72,24);(0,48)**@{-},(52,34)*{b},(24,72);(48,0)**@{-},(34,52)*{a}" display="block"><mrow><merror class="ltx_ERROR undefined undefined"><mtext>{xy}</mtext></merror><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>6</mn><mo>,</mo><mn>6</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>∙</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>8</mn><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>C</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>26</mn><mo>,</mo><mn>66</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>∙</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>29</mn><mo>,</mo><mn>66</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>E</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>66</mn><mo>,</mo><mn>26</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>∙</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>66</mn><mo>,</mo><mn>29</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>F</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>42</mn><mo>,</mo><mn>18</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>∙</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>45</mn><mo>,</mo><mn>17</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>D</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>18</mn><mo>,</mo><mn>42</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>∙</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>16</mn><mo>,</mo><mn>45</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>B</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>36</mn><mo>,</mo><mn>36</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>∙</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>39</mn><mo>,</mo><mn>39</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>A</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>4</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>;</mo><mrow><mo stretchy="false">(</mo><mn>28</mn><mo>,</mo><mn>72</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>*</mo><mi mathvariant="normal">@</mi><mo>-</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>26</mn><mo>,</mo><mn>11</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>c</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>4</mn><mo stretchy="false">)</mo></mrow><mo>;</mo><mrow><mo stretchy="false">(</mo><mn>72</mn><mo>,</mo><mn>28</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>*</mo><mi mathvariant="normal">@</mi><mo>-</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>10</mn><mo>,</mo><mn>26</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>d</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>72</mn><mo>,</mo><mn>24</mn><mo stretchy="false">)</mo></mrow><mo>;</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>48</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>*</mo><mi mathvariant="normal">@</mi><mo>-</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>52</mn><mo>,</mo><mn>34</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>b</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>24</mn><mo>,</mo><mn>72</mn><mo stretchy="false">)</mo></mrow><mo>;</mo><mrow><mo stretchy="false">(</mo><mn>48</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>*</mo><mi mathvariant="normal">@</mi><mo>-</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>34</mn><mo>,</mo><mn>52</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>a</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">This notion of duality can be extended to abstract configurations.
+Given an abstract line configuration <math id="S1.SS4.p5.m1" class="ltx_Math" alttext="\langle P,L,I\rangle" display="inline"><mrow><mo stretchy="false">⟨</mo><mi>P</mi><mo>,</mo><mi>L</mi><mo>,</mo><mi>I</mi><mo stretchy="false">⟩</mo></mrow></math>, its
+dual is <math id="S1.SS4.p5.m2" class="ltx_Math" alttext="\langle L,P,I^{\prime}\rangle" display="inline"><mrow><mo stretchy="false">⟨</mo><mi>L</mi><mo>,</mo><mi>P</mi><mo>,</mo><msup><mi>I</mi><mo>′</mo></msup><mo stretchy="false">⟩</mo></mrow></math> where <math id="S1.SS4.p5.m3" class="ltx_Math" alttext="I^{\prime}(x,y)" display="inline"><mrow><msup><mi>I</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></math> if and only if
+<math id="S1.SS4.p5.m4" class="ltx_Math" alttext="I(y,x)" display="inline"><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></math>. For instance, the abstract configuration of the complete
+quadrangle is</p>
+<table id="S3.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="S1.Ex7" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.Ex7.m1" class="ltx_Math" alttext="\displaystyle\langle" display="inline"><mo stretchy="false">⟨</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.Ex7.m2" class="ltx_Math" alttext="\displaystyle\{A,B,C,D\},\{a,b,c,d,e,f\}," display="inline"><mrow><mi mathvariant="normal">{</mi><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo>,</mo><mi>D</mi><mo stretchy="false">}</mo><mo>,</mo><mo stretchy="false">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false">}</mo><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.Ex8" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.Ex8.m2" class="ltx_Math" alttext="\displaystyle\{(A,a),(A,d),(A,e),(B,a),(B,b),(B,f),(C,c),(C,d),(C,f),(D,b),(D,%
+c),(D,e)\}\rangle" display="inline"><mrow><mrow><mi mathvariant="normal">{</mi><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>,</mo><mi>d</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo>,</mo><mi>e</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo>,</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo>,</mo><mi>f</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>C</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>C</mi><mo>,</mo><mi>d</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>C</mi><mo>,</mo><mi>f</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo>,</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo>,</mo><mi>c</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo>,</mo><mi>e</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">}</mo></mrow><mo stretchy="false">⟩</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">so its dual is</p>
+<table id="S3.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="S1.Ex9" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.Ex9.m1" class="ltx_Math" alttext="\displaystyle\langle" display="inline"><mo stretchy="false">⟨</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.Ex9.m2" class="ltx_Math" alttext="\displaystyle\{a,b,c,d,e,f\},\{A,B,C,D\}," display="inline"><mrow><mi mathvariant="normal">{</mi><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi><mo>,</mo><mi>f</mi><mo stretchy="false">}</mo><mo>,</mo><mo stretchy="false">{</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi><mo>,</mo><mi>D</mi><mo stretchy="false">}</mo><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.Ex10" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.Ex10.m2" class="ltx_Math" alttext="\displaystyle\{(a,A),(d,A),(e,A),(a,B),(b,B),(f,B),(c,C),(d,C),(f,C),(b,D),(c,%
+D),(e,D)\}\rangle" display="inline"><mrow><mrow><mi mathvariant="normal">{</mi><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>d</mi><mo>,</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>e</mi><mo>,</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo>,</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo>,</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>,</mo><mi>B</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>c</mi><mo>,</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>d</mi><mo>,</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo>,</mo><mi>C</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo>,</mo><mi>D</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>c</mi><mo>,</mo><mi>D</mi><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mi>e</mi><mo>,</mo><mi>D</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">}</mo></mrow><mo stretchy="false">⟩</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">which corresponds to the complete quadrilateral.
+Likewise, we can define a notion of self-duality at the abstract
+level. We will say that an abstract line configuration <math id="S1.SS4.p5.m5" class="ltx_Math" alttext="\langle P,L,I\rangle" display="inline"><mrow><mo stretchy="false">⟨</mo><mi>P</mi><mo>,</mo><mi>L</mi><mo>,</mo><mi>I</mi><mo stretchy="false">⟩</mo></mrow></math> is self-dual if there exists a one-to-one
+correspondence <math id="S1.SS4.p5.m6" class="ltx_Math" alttext="g\colon P\to L" display="inline"><mrow><mi>g</mi><mo>:</mo><mrow><mi>P</mi><mo>→</mo><mi>L</mi></mrow></mrow></math> such that, for all <math id="S1.SS4.p5.m7" class="ltx_Math" alttext="x,y\in P" display="inline"><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>P</mi></mrow></math>,
+we have <math id="S1.SS4.p5.m8" class="ltx_Math" alttext="I(x,g(y))" display="inline"><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math> if and only if <math id="S1.SS4.p5.m9" class="ltx_Math" alttext="I(y,g(x))" display="inline"><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+</div>
+</section>
+<section id="S1.SS5" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.5 </span>Symmetries</h3>
+
+<div id="S1.SS5.p1" class="ltx_para">
+<p class="ltx_p">Next, we consider the effect of collineations on configurations.
+Given a configuration in a projective space, a collineation of
+that space will map that configuration into some configuration.
+If it happens to be mapped into the same configuration, then
+we say that the collineation is a symmetry of the configuration
+in question.</p>
+</div>
+<div id="S1.SS5.p2" class="ltx_para">
+<p class="ltx_p">To illustrate these ideas, let us consider a triangle in <math id="S1.SS5.p2.m1" class="ltx_Math" alttext="\mathbb{R}\mathbb{P}^{2}" display="inline"><mrow><mi>ℝ</mi><mo>⁢</mo><msup><mi>ℙ</mi><mn>2</mn></msup></mrow></math> consisting of the points <math id="S1.SS5.p2.m2" class="ltx_Math" alttext="(1,0,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>, <math id="S1.SS5.p2.m3" class="ltx_Math" alttext="(0,1,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>, <math id="S1.SS5.p2.m4" class="ltx_Math" alttext="(0,0,1)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>
+and the lines <math id="S1.SS5.p2.m5" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>, <math id="S1.SS5.p2.m6" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>, <math id="S1.SS5.p2.m7" class="ltx_Math" alttext="z=0" display="inline"><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow></math>. Firstly, consider the
+collineation</p>
+<table id="S3.EGx3" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="S1.Ex11" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.Ex11.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><mi>x</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.Ex11.m2" class="ltx_Math" alttext="\displaystyle\mapsto x+y" display="inline"><mrow><mi></mi><mo>↦</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.Ex12" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.Ex12.m1" class="ltx_Math" alttext="\displaystyle y" display="inline"><mi>y</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.Ex12.m2" class="ltx_Math" alttext="\displaystyle\mapsto y" display="inline"><mrow><mi></mi><mo>↦</mo><mi>y</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.Ex13" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.Ex13.m1" class="ltx_Math" alttext="\displaystyle z" display="inline"><mi>z</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.Ex13.m2" class="ltx_Math" alttext="\displaystyle\mapsto z" display="inline"><mrow><mi></mi><mo>↦</mo><mi>z</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Under this mapping, the lines and points of our configuration
+transform as follows:</p>
+<table id="S1.Ex14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex14.m1" class="ltx_Math" alttext="\begin{matrix}(1,0,0)\mapsto(1,0,0)\hfill&amp;x=0\mapsto x+y=0\hfill\\
+(0,1,0)\mapsto(-1,1,0)\hfill&amp;y=0\mapsto y=0\hfill\\
+(0,0,1)\mapsto(0,0,1)\hfill&amp;z=0\mapsto z=0\hfill\end{matrix}" display="block"><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>↦</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>x</mi><mo>=</mo><mn>0</mn><mo>↦</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>↦</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>y</mi><mo>=</mo><mn>0</mn><mo>↦</mo><mi>y</mi><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>↦</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>z</mi><mo>=</mo><mn>0</mn><mo>↦</mo><mi>z</mi><mo>=</mo><mn>0</mn></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Since the point <math id="S1.SS5.p2.m8" class="ltx_Math" alttext="(-1,1,0)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math> does not belong to the original configuration,
+this transform is not a symmetry of our triangle.</p>
+</div>
+<div id="S1.SS5.p3" class="ltx_para">
+<p class="ltx_p">Secondly, consider the transformation</p>
+<table id="S3.EGx4" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="S1.Ex15" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.Ex15.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><mi>x</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.Ex15.m2" class="ltx_Math" alttext="\displaystyle\mapsto y" display="inline"><mrow><mi></mi><mo>↦</mo><mi>y</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.Ex16" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.Ex16.m1" class="ltx_Math" alttext="\displaystyle y" display="inline"><mi>y</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.Ex16.m2" class="ltx_Math" alttext="\displaystyle\mapsto z" display="inline"><mrow><mi></mi><mo>↦</mo><mi>z</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.Ex17" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.Ex17.m1" class="ltx_Math" alttext="\displaystyle z" display="inline"><mi>z</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.Ex17.m2" class="ltx_Math" alttext="\displaystyle\mapsto x" display="inline"><mrow><mi></mi><mo>↦</mo><mi>x</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Under this mapping, the lines and points of our configuration
+transform as follows:</p>
+<table id="S1.Ex18" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex18.m1" class="ltx_Math" alttext="\begin{matrix}(1,0,0)\mapsto(0,1,0)&amp;\hfill&amp;x=0\mapsto y=0\hfill\\
+(0,1,0)\mapsto(0,0,1)&amp;\hfill&amp;y=0\mapsto z=0\hfill\\
+(0,0,1)\mapsto(1,0,0)&amp;\hfill&amp;z=0\mapsto z=0\hfill\end{matrix}" display="block"><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>↦</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="center"><mi></mi></mtd><mtd columnalign="center"><mrow><mi>x</mi><mo>=</mo><mn>0</mn><mo>↦</mo><mi>y</mi><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>↦</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="center"><mi></mi></mtd><mtd columnalign="center"><mrow><mi>y</mi><mo>=</mo><mn>0</mn><mo>↦</mo><mi>z</mi><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>↦</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="center"><mi></mi></mtd><mtd columnalign="center"><mrow><mi>z</mi><mo>=</mo><mn>0</mn><mo>↦</mo><mi>z</mi><mo>=</mo><mn>0</mn></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Since the images of the points are points of the original configuration and
+the images of the lines also belong to the original configuration, this
+collineation is a symmetry of the configuration.</p>
+</div>
+<div id="S1.SS5.p4" class="ltx_para">
+<p class="ltx_p">Thirdly, consider the collineation</p>
+<table id="S3.EGx5" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="S1.Ex19" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.Ex19.m1" class="ltx_Math" alttext="\displaystyle x" display="inline"><mi>x</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.Ex19.m2" class="ltx_Math" alttext="\displaystyle\mapsto 2x" display="inline"><mrow><mi></mi><mo>↦</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.Ex20" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.Ex20.m1" class="ltx_Math" alttext="\displaystyle y" display="inline"><mi>y</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.Ex20.m2" class="ltx_Math" alttext="\displaystyle\mapsto y" display="inline"><mrow><mi></mi><mo>↦</mo><mi>y</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S1.Ex21" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S1.Ex21.m1" class="ltx_Math" alttext="\displaystyle z" display="inline"><mi>z</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S1.Ex21.m2" class="ltx_Math" alttext="\displaystyle\mapsto z" display="inline"><mrow><mi></mi><mo>↦</mo><mi>z</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Under this mapping, the lines and points of our configuration
+transform as follows:</p>
+<table id="S1.Ex22" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex22.m1" class="ltx_Math" alttext="\begin{matrix}(1,0,0)\mapsto(2,0,0)\hfill&amp;x=0\mapsto 2x=0\hfill\\
+(0,1,0)\mapsto(0,1,0)\hfill&amp;y=0\mapsto y=0\hfill\\
+(0,0,1)\mapsto(0,0,1)\hfill&amp;z=0\mapsto z=0\hfill\end{matrix}" display="block"><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>↦</mo><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>x</mi><mo>=</mo><mn>0</mn><mo>↦</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>↦</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>y</mi><mo>=</mo><mn>0</mn><mo>↦</mo><mi>y</mi><mo>=</mo><mn>0</mn></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>↦</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd columnalign="center"><mrow><mi>z</mi><mo>=</mo><mn>0</mn><mo>↦</mo><mi>z</mi><mo>=</mo><mn>0</mn></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Since the images of the points are points of the original configuration and
+the images of the lines also belong to the original configuration, this
+collineation is a symmetry of the configuration. (Remember that, since we
+are dealing with homogeneous coordinates on projective space, overall scalings
+do not matter, so <math id="S1.SS5.p4.m1" class="ltx_Math" alttext="(1,0,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math> and <math id="S1.SS5.p4.m2" class="ltx_Math" alttext="(2,0,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math> label the same point, likewise
+<math id="S1.SS5.p4.m3" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="S1.SS5.p4.m4" class="ltx_Math" alttext="2x=0" display="inline"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo>=</mo><mn>0</mn></mrow></math> describe the same line.) Note that this symmetry
+differs from the one in the previous example because each point and line is
+individually left invariant as opposed to only having the set of all points
+and the set of all lines be left invariant.</p>
+</div>
+<div id="S1.SS5.p5" class="ltx_para">
+<p class="ltx_p">We may also consider permuting the points and lines in abstract line
+configurations. Given an abstract line configuration <math id="S1.SS5.p5.m1" class="ltx_Math" alttext="\langle P,L,I\rangle" display="inline"><mrow><mo stretchy="false">⟨</mo><mi>P</mi><mo>,</mo><mi>L</mi><mo>,</mo><mi>I</mi><mo stretchy="false">⟩</mo></mrow></math>, we will define a symmetry of this configuration to be a pair
+of permutations <math id="S1.SS5.p5.m2" class="ltx_Math" alttext="f\colon P\to P" display="inline"><mrow><mi>f</mi><mo>:</mo><mrow><mi>P</mi><mo>→</mo><mi>P</mi></mrow></mrow></math> and <math id="S1.SS5.p5.m3" class="ltx_Math" alttext="g\colon L\to L" display="inline"><mrow><mi>g</mi><mo>:</mo><mrow><mi>L</mi><mo>→</mo><mi>L</mi></mrow></mrow></math> such that, for
+all <math id="S1.SS5.p5.m4" class="ltx_Math" alttext="x\in P" display="inline"><mrow><mi>x</mi><mo>∈</mo><mi>P</mi></mrow></math> and all <math id="S1.SS5.p5.m5" class="ltx_Math" alttext="y\in L" display="inline"><mrow><mi>y</mi><mo>∈</mo><mi>L</mi></mrow></math>, we have <math id="S1.SS5.p5.m6" class="ltx_Math" alttext="I(f(x),g(y))" display="inline"><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math> if and only if
+<math id="S1.SS5.p5.m7" class="ltx_Math" alttext="I(x,y)" display="inline"><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+</div>
+<div id="S1.SS5.p6" class="ltx_para">
+<p class="ltx_p">We may relate these abstract and concrete symmetry groups as follows.
+Suppose that we have an abstract configuration <math id="S1.SS5.p6.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> which is embedded
+in a projective space <math id="S1.SS5.p6.m2" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> as a configuration <math id="S1.SS5.p6.m3" class="ltx_Math" alttext="C^{\prime}" display="inline"><msup><mi>C</mi><mo>′</mo></msup></math>. Let <math id="S1.SS5.p6.m4" class="ltx_Math" alttext="G_{a}" display="inline"><msub><mi>G</mi><mi>a</mi></msub></math> be the
+group of symmetries of <math id="S1.SS5.p6.m5" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>. Let <math id="S1.SS5.p6.m6" class="ltx_Math" alttext="G_{e}" display="inline"><msub><mi>G</mi><mi>e</mi></msub></math> be the group of collineations
+of <math id="S1.SS5.p6.m7" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> which preserves <math id="S1.SS5.p6.m8" class="ltx_Math" alttext="C^{\prime}" display="inline"><msup><mi>C</mi><mo>′</mo></msup></math> and let <math id="S1.SS5.p6.m9" class="ltx_Math" alttext="G_{f}" display="inline"><msub><mi>G</mi><mi>f</mi></msub></math> be the group of collineations
+which leaves the points and lines of <math id="S1.SS5.p6.m10" class="ltx_Math" alttext="C^{\prime}" display="inline"><msup><mi>C</mi><mo>′</mo></msup></math> fixed individually. Then
+<math id="S1.SS5.p6.m11" class="ltx_Math" alttext="G_{f}" display="inline"><msub><mi>G</mi><mi>f</mi></msub></math> is a normal subgroup of <math id="S1.SS5.p6.m12" class="ltx_Math" alttext="G_{e}" display="inline"><msub><mi>G</mi><mi>e</mi></msub></math> and the quotient group <math id="S1.SS5.p6.m13" class="ltx_Math" alttext="G_{e}/G_{f}" display="inline"><mrow><msub><mi>G</mi><mi>e</mi></msub><mo>/</mo><msub><mi>G</mi><mi>f</mi></msub></mrow></math>
+is a subgroup of <math id="S1.SS5.p6.m14" class="ltx_Math" alttext="G_{a}" display="inline"><msub><mi>G</mi><mi>a</mi></msub></math>.</p>
+</div>
+<div id="S1.SS5.p7" class="ltx_para">
+<p class="ltx_p">To illustrate how this works, we will consider the symmetry groups
+associated to the example of the triangle studied above. We begin
+with <math id="S1.SS5.p7.m1" class="ltx_Math" alttext="G_{e}" display="inline"><msub><mi>G</mi><mi>e</mi></msub></math>. Writing down the effect of a linear transform and
+asking that it preserve the configuration, we find that, in order
+for a transformation to preserve the configuration, it should have
+one of the following forms:
+</p>
+<table id="S1.Ex23" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex23.m1" class="ltx_Math" alttext="\begin{matrix}\left\{\begin{matrix}x\mapsto\alpha x\\
+y\mapsto\beta y\\
+z\mapsto\gamma z\end{matrix}\right.&amp;\left\{\begin{matrix}x\mapsto\alpha y\\
+y\mapsto\beta z\\
+z\mapsto\gamma x\end{matrix}\right.&amp;\left\{\begin{matrix}x\mapsto\alpha z\\
+y\mapsto\beta x\\
+z\mapsto\gamma y\end{matrix}\right.&amp;\left\{\begin{matrix}x\mapsto\alpha x\\
+y\mapsto\beta z\\
+z\mapsto\gamma x\end{matrix}\right.&amp;\left\{\begin{matrix}x\mapsto\alpha z\\
+y\mapsto\beta y\\
+z\mapsto\gamma x\end{matrix}\right.&amp;\left\{\begin{matrix}x\mapsto\alpha y\\
+z\mapsto\beta y\\
+z\mapsto\gamma z\end{matrix}\right.\end{matrix}" display="block"><mtable columnspacing="5pt" displaystyle="true"><mtr><mtd columnalign="center"><mrow><mo>{</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>x</mi><mo>↦</mo><mrow><mi>α</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>y</mi><mo>↦</mo><mrow><mi>β</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>z</mi><mo>↦</mo><mrow><mi>γ</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mtd></mtr></mtable></mrow></mtd><mtd columnalign="center"><mrow><mo>{</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>x</mi><mo>↦</mo><mrow><mi>α</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>y</mi><mo>↦</mo><mrow><mi>β</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>z</mi><mo>↦</mo><mrow><mi>γ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mtd></mtr></mtable></mrow></mtd><mtd columnalign="center"><mrow><mo>{</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>x</mi><mo>↦</mo><mrow><mi>α</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>y</mi><mo>↦</mo><mrow><mi>β</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>z</mi><mo>↦</mo><mrow><mi>γ</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></mtd></mtr></mtable></mrow></mtd><mtd columnalign="center"><mrow><mo>{</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>x</mi><mo>↦</mo><mrow><mi>α</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>y</mi><mo>↦</mo><mrow><mi>β</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>z</mi><mo>↦</mo><mrow><mi>γ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mtd></mtr></mtable></mrow></mtd><mtd columnalign="center"><mrow><mo>{</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>x</mi><mo>↦</mo><mrow><mi>α</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>y</mi><mo>↦</mo><mrow><mi>β</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>z</mi><mo>↦</mo><mrow><mi>γ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mtd></mtr></mtable></mrow></mtd><mtd columnalign="center"><mrow><mo>{</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>x</mi><mo>↦</mo><mrow><mi>α</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>z</mi><mo>↦</mo><mrow><mi>β</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>z</mi><mo>↦</mo><mrow><mi>γ</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mtd></mtr></mtable></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Here, <math id="S1.SS5.p7.m2" class="ltx_Math" alttext="\alpha,\beta,\gamma" display="inline"><mrow><mi>α</mi><mo>,</mo><mi>β</mi><mo>,</mo><mi>γ</mi></mrow></math> are arbitrary non-zero real numbers.
+If we instead ask that the points and lines of the triangle be fixed
+individually, only transforms of the form</p>
+<table id="S1.Ex24" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex24.m1" class="ltx_Math" alttext="\left\{\begin{matrix}x\mapsto\alpha x\\
+y\mapsto\beta y\\
+z\mapsto\gamma z\end{matrix}\right." display="block"><mrow><mo>{</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>x</mi><mo>↦</mo><mrow><mi>α</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>y</mi><mo>↦</mo><mrow><mi>β</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>z</mi><mo>↦</mo><mrow><mi>γ</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mtd></mtr></mtable></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">remain. These form the group <math id="S1.SS5.p7.m3" class="ltx_Math" alttext="G_{f}" display="inline"><msub><mi>G</mi><mi>f</mi></msub></math>. Examining the abstract
+configuration of the triangle, we may verify that the following
+permutations are the ones which preserve incidence:</p>
+<table id="S1.Ex25" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex25.m1" class="ltx_Math" alttext="\begin{matrix}\begin{tabular}[]{c|ccc}x&amp;A&amp;B&amp;C\\
+\hline f(x)&amp;A&amp;B&amp;C\end{tabular}\quad\begin{tabular}[]{c|ccc}x&amp;a&amp;b&amp;c\\
+\hline g(x)&amp;a&amp;b&amp;c\end{tabular}&amp;\begin{tabular}[]{c|ccc}x&amp;A&amp;B&amp;C\\
+\hline f(x)&amp;A&amp;C&amp;B\end{tabular}\quad\begin{tabular}[]{c|ccc}x&amp;a&amp;b&amp;c\\
+\hline g(x)&amp;a&amp;c&amp;b\end{tabular}\\
+\\
+\begin{tabular}[]{c|ccc}x&amp;A&amp;B&amp;C\\
+\hline f(x)&amp;B&amp;C&amp;A\end{tabular}\quad\begin{tabular}[]{c|ccc}x&amp;a&amp;b&amp;c\\
+\hline g(x)&amp;b&amp;c&amp;a\end{tabular}&amp;\begin{tabular}[]{c|ccc}x&amp;A&amp;B&amp;C\\
+\hline f(x)&amp;C&amp;B&amp;A\end{tabular}\quad\begin{tabular}[]{c|ccc}x&amp;a&amp;b&amp;c\\
+\hline g(x)&amp;c&amp;b&amp;a\end{tabular}\\
+\\
+\begin{tabular}[]{c|ccc}x&amp;A&amp;B&amp;C\\
+\hline f(x)&amp;C&amp;A&amp;B\end{tabular}\quad\begin{tabular}[]{c|ccc}x&amp;a&amp;b&amp;c\\
+\hline g(x)&amp;c&amp;a&amp;b\end{tabular}&amp;\begin{tabular}[]{c|ccc}x&amp;A&amp;B&amp;C\\
+\hline f(x)&amp;B&amp;A&amp;C\end{tabular}\quad\begin{tabular}[]{c|ccc}x&amp;a&amp;b&amp;c\\
+\hline g(x)&amp;b&amp;a&amp;c\end{tabular}\end{matrix}" display="block"><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mtable class="ltx_guessed_headers" columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r ltx_th_row" columnalign="center"><mtext>x</mtext></mtd><mtd columnalign="center"><mtext>A</mtext></mtd><mtd columnalign="center"><mtext>B</mtext></mtd><mtd columnalign="center"><mtext>C</mtext></mtd></mtr><mtr><mtd class="ltx_border_r ltx_border_t ltx_th_row" columnalign="center"><mtext>f(x)</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>A</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>B</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>C</mtext></mtd></mtr></mtable><mo separator="true"> </mo><mtable class="ltx_guessed_headers" columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r ltx_th_row" columnalign="center"><mtext>x</mtext></mtd><mtd columnalign="center"><mtext>a</mtext></mtd><mtd columnalign="center"><mtext>b</mtext></mtd><mtd columnalign="center"><mtext>c</mtext></mtd></mtr><mtr><mtd class="ltx_border_r ltx_border_t ltx_th_row" columnalign="center"><mtext>g(x)</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>a</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>b</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>c</mtext></mtd></mtr></mtable></mrow></mtd><mtd columnalign="center"><mrow><mtable class="ltx_guessed_headers" columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r ltx_th_row" columnalign="center"><mtext>x</mtext></mtd><mtd columnalign="center"><mtext>A</mtext></mtd><mtd columnalign="center"><mtext>B</mtext></mtd><mtd columnalign="center"><mtext>C</mtext></mtd></mtr><mtr><mtd class="ltx_border_r ltx_border_t ltx_th_row" columnalign="center"><mtext>f(x)</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>A</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>C</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>B</mtext></mtd></mtr></mtable><mo separator="true"> </mo><mtable class="ltx_guessed_headers" columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r ltx_th_row" columnalign="center"><mtext>x</mtext></mtd><mtd columnalign="center"><mtext>a</mtext></mtd><mtd columnalign="center"><mtext>b</mtext></mtd><mtd columnalign="center"><mtext>c</mtext></mtd></mtr><mtr><mtd class="ltx_border_r ltx_border_t ltx_th_row" columnalign="center"><mtext>g(x)</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>a</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>c</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>b</mtext></mtd></mtr></mtable></mrow></mtd></mtr><mtr><mtd columnalign="center"><mi></mi></mtd></mtr><mtr><mtd columnalign="center"><mrow><mtable class="ltx_guessed_headers" columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r ltx_th_row" columnalign="center"><mtext>x</mtext></mtd><mtd columnalign="center"><mtext>A</mtext></mtd><mtd columnalign="center"><mtext>B</mtext></mtd><mtd columnalign="center"><mtext>C</mtext></mtd></mtr><mtr><mtd class="ltx_border_r ltx_border_t ltx_th_row" columnalign="center"><mtext>f(x)</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>B</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>C</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>A</mtext></mtd></mtr></mtable><mo separator="true"> </mo><mtable class="ltx_guessed_headers" columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r ltx_th_row" columnalign="center"><mtext>x</mtext></mtd><mtd columnalign="center"><mtext>a</mtext></mtd><mtd columnalign="center"><mtext>b</mtext></mtd><mtd columnalign="center"><mtext>c</mtext></mtd></mtr><mtr><mtd class="ltx_border_r ltx_border_t ltx_th_row" columnalign="center"><mtext>g(x)</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>b</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>c</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>a</mtext></mtd></mtr></mtable></mrow></mtd><mtd columnalign="center"><mrow><mtable class="ltx_guessed_headers" columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r ltx_th_row" columnalign="center"><mtext>x</mtext></mtd><mtd columnalign="center"><mtext>A</mtext></mtd><mtd columnalign="center"><mtext>B</mtext></mtd><mtd columnalign="center"><mtext>C</mtext></mtd></mtr><mtr><mtd class="ltx_border_r ltx_border_t ltx_th_row" columnalign="center"><mtext>f(x)</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>C</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>B</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>A</mtext></mtd></mtr></mtable><mo separator="true"> </mo><mtable class="ltx_guessed_headers" columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r ltx_th_row" columnalign="center"><mtext>x</mtext></mtd><mtd columnalign="center"><mtext>a</mtext></mtd><mtd columnalign="center"><mtext>b</mtext></mtd><mtd columnalign="center"><mtext>c</mtext></mtd></mtr><mtr><mtd class="ltx_border_r ltx_border_t ltx_th_row" columnalign="center"><mtext>g(x)</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>c</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>b</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>a</mtext></mtd></mtr></mtable></mrow></mtd></mtr><mtr><mtd columnalign="center"><mi></mi></mtd></mtr><mtr><mtd columnalign="center"><mrow><mtable class="ltx_guessed_headers" columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r ltx_th_row" columnalign="center"><mtext>x</mtext></mtd><mtd columnalign="center"><mtext>A</mtext></mtd><mtd columnalign="center"><mtext>B</mtext></mtd><mtd columnalign="center"><mtext>C</mtext></mtd></mtr><mtr><mtd class="ltx_border_r ltx_border_t ltx_th_row" columnalign="center"><mtext>f(x)</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>C</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>A</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>B</mtext></mtd></mtr></mtable><mo separator="true"> </mo><mtable class="ltx_guessed_headers" columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r ltx_th_row" columnalign="center"><mtext>x</mtext></mtd><mtd columnalign="center"><mtext>a</mtext></mtd><mtd columnalign="center"><mtext>b</mtext></mtd><mtd columnalign="center"><mtext>c</mtext></mtd></mtr><mtr><mtd class="ltx_border_r ltx_border_t ltx_th_row" columnalign="center"><mtext>g(x)</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>c</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>a</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>b</mtext></mtd></mtr></mtable></mrow></mtd><mtd columnalign="center"><mrow><mtable class="ltx_guessed_headers" columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r ltx_th_row" columnalign="center"><mtext>x</mtext></mtd><mtd columnalign="center"><mtext>A</mtext></mtd><mtd columnalign="center"><mtext>B</mtext></mtd><mtd columnalign="center"><mtext>C</mtext></mtd></mtr><mtr><mtd class="ltx_border_r ltx_border_t ltx_th_row" columnalign="center"><mtext>f(x)</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>B</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>A</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>C</mtext></mtd></mtr></mtable><mo separator="true"> </mo><mtable class="ltx_guessed_headers" columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_border_r ltx_th_row" columnalign="center"><mtext>x</mtext></mtd><mtd columnalign="center"><mtext>a</mtext></mtd><mtd columnalign="center"><mtext>b</mtext></mtd><mtd columnalign="center"><mtext>c</mtext></mtd></mtr><mtr><mtd class="ltx_border_r ltx_border_t ltx_th_row" columnalign="center"><mtext>g(x)</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>b</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>a</mtext></mtd><mtd class="ltx_border_t" columnalign="center"><mtext>c</mtext></mtd></mtr></mtable></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">The group presented above is isomorphic to <math id="S1.SS5.p7.m4" class="ltx_Math" alttext="S_{3}" display="inline"><msub><mi>S</mi><mn>3</mn></msub></math>. From what was described
+earlier, one may also check that <math id="S1.SS5.p7.m5" class="ltx_Math" alttext="G_{e}/G_{f}" display="inline"><mrow><msub><mi>G</mi><mi>e</mi></msub><mo>/</mo><msub><mi>G</mi><mi>f</mi></msub></mrow></math> is also isomorphic to <math id="S1.SS5.p7.m6" class="ltx_Math" alttext="S_{3}" display="inline"><msub><mi>S</mi><mn>3</mn></msub></math> so,
+in this case, <math id="S1.SS5.p7.m7" class="ltx_Math" alttext="G_{e}/G_{f}" display="inline"><mrow><msub><mi>G</mi><mi>e</mi></msub><mo>/</mo><msub><mi>G</mi><mi>f</mi></msub></mrow></math> is isomorphic to the whole of <math id="S1.SS5.p7.m8" class="ltx_Math" alttext="G_{a}" display="inline"><msub><mi>G</mi><mi>a</mi></msub></math>.</p>
+</div>
+<div id="S1.SS5.p8" class="ltx_para">
+<p class="ltx_p">As another illustrative example of symmetry groups of configurations, we
+shall consider the configuration of type <math id="S1.SS5.p8.m1" class="ltx_Math" alttext="(4_{1}1_{4})" display="inline"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>4</mn><mn>1</mn></msub><mo>⁢</mo><msub><mn>1</mn><mn>4</mn></msub></mrow><mo stretchy="false">)</mo></mrow></math> in <math id="S1.SS5.p8.m2" class="ltx_Math" alttext="\mathbb{R}\mathbb{P}^{2}" display="inline"><mrow><mi>ℝ</mi><mo>⁢</mo><msup><mi>ℙ</mi><mn>2</mn></msup></mrow></math>
+consisting of a line <math id="S1.SS5.p8.m3" class="ltx_Math" alttext="a" display="inline"><mi>a</mi></math> with equation <math id="S1.SS5.p8.m4" class="ltx_Math" alttext="z=0" display="inline"><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow></math> and four points <math id="S1.SS5.p8.m5" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>, <math id="S1.SS5.p8.m6" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math>, <math id="S1.SS5.p8.m7" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>,<math id="S1.SS5.p8.m8" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math>
+with coordinates <math id="S1.SS5.p8.m9" class="ltx_Math" alttext="(1,0,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>, <math id="S1.SS5.p8.m10" class="ltx_Math" alttext="(1,1,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>, <math id="S1.SS5.p8.m11" class="ltx_Math" alttext="(1,2,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>, <math id="S1.SS5.p8.m12" class="ltx_Math" alttext="(1,3,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math> respectively.</p>
+<table id="S1.Ex26" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex26.m1" class="ltx_Math" alttext="\xy,(0,5);(50,5)**@{-};(25,7)*{a},(10,5)*{\bullet},(10,2)*{A},(20,5)*{\bullet}%
+,(20,2)*{B},(30,5)*{\bullet},(30,2)*{C},(40,5)*{\bullet},(40,2)*{D}" display="block"><mrow><merror class="ltx_ERROR undefined undefined"><mtext>{xy}</mtext></merror><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo>;</mo><mrow><mo stretchy="false">(</mo><mn>50</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>*</mo><mi mathvariant="normal">@</mi><mo>-</mo><mo>;</mo><mrow><mo stretchy="false">(</mo><mn>25</mn><mo>,</mo><mn>7</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>a</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>10</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>∙</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>10</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>A</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>20</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>∙</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>20</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>B</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>30</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>∙</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>30</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>C</mi><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>40</mn><mo>,</mo><mn>5</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mo>∙</mo><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>40</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo></mrow><mo>*</mo><mi>D</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">In order to preserve this configuration, a collineation must have one
+of the following forms:</p>
+<table id="S1.Ex27" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex27.m1" class="ltx_Math" alttext="\begin{matrix}\left\{\begin{matrix}x\mapsto\alpha x+\beta z\hfill\\
+y\mapsto\alpha y+\gamma z\hfill\\
+z\mapsto\delta z\hfill\end{matrix}\right.&amp;\left\{\begin{matrix}x\mapsto\alpha x%
++\beta z\hfill\\
+y\mapsto 3\alpha x-\alpha y+\gamma z\hfill\\
+z\mapsto\delta z\hfill\end{matrix}\right.&amp;\left\{\begin{matrix}x\mapsto 3%
+\alpha x-2\alpha y+\beta z\hfill\\
+y\mapsto 3\alpha x-3\alpha y+\gamma z\hfill\\
+z\mapsto\delta z\hfill\end{matrix}\right.&amp;\left\{\begin{matrix}x\mapsto 3%
+\alpha x-2\alpha y+\beta z\hfill\\
+y\mapsto 6\alpha x-3\alpha y+\gamma z\hfill\\
+z\mapsto\delta z\hfill\end{matrix}\right.\end{matrix}" display="block"><mtable columnspacing="5pt" displaystyle="true"><mtr><mtd columnalign="center"><mrow><mo>{</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>x</mi><mo>↦</mo><mrow><mrow><mi>α</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>β</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>y</mi><mo>↦</mo><mrow><mrow><mi>α</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>γ</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>z</mi><mo>↦</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mtd></mtr></mtable></mrow></mtd><mtd columnalign="center"><mrow><mo>{</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>x</mi><mo>↦</mo><mrow><mrow><mi>α</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>β</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>y</mi><mo>↦</mo><mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>α</mi><mo>⁢</mo><mi>x</mi></mrow><mo>-</mo><mrow><mi>α</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>+</mo><mrow><mi>γ</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>z</mi><mo>↦</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mtd></mtr></mtable></mrow></mtd><mtd columnalign="center"><mrow><mo>{</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>x</mi><mo>↦</mo><mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>α</mi><mo>⁢</mo><mi>x</mi></mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>α</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>+</mo><mrow><mi>β</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>y</mi><mo>↦</mo><mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>α</mi><mo>⁢</mo><mi>x</mi></mrow><mo>-</mo><mrow><mn>3</mn><mo>⁢</mo><mi>α</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>+</mo><mrow><mi>γ</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>z</mi><mo>↦</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mtd></mtr></mtable></mrow></mtd><mtd columnalign="center"><mrow><mo>{</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>x</mi><mo>↦</mo><mrow><mrow><mrow><mn>3</mn><mo>⁢</mo><mi>α</mi><mo>⁢</mo><mi>x</mi></mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>α</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>+</mo><mrow><mi>β</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>y</mi><mo>↦</mo><mrow><mrow><mrow><mn>6</mn><mo>⁢</mo><mi>α</mi><mo>⁢</mo><mi>x</mi></mrow><mo>-</mo><mrow><mn>3</mn><mo>⁢</mo><mi>α</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>+</mo><mrow><mi>γ</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>z</mi><mo>↦</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mtd></mtr></mtable></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Here <math id="S1.SS5.p8.m13" class="ltx_Math" alttext="\alpha" display="inline"><mi>α</mi></math>, <math id="S1.SS5.p8.m14" class="ltx_Math" alttext="\beta" display="inline"><mi>β</mi></math>, <math id="S1.SS5.p8.m15" class="ltx_Math" alttext="\gamma" display="inline"><mi>γ</mi></math>, <math id="S1.SS5.p8.m16" class="ltx_Math" alttext="\delta" display="inline"><mi>δ</mi></math> are real numbers with neither
+<math id="S1.SS5.p8.m17" class="ltx_Math" alttext="\alpha" display="inline"><mi>α</mi></math> nor <math id="S1.SS5.p8.m18" class="ltx_Math" alttext="\beta" display="inline"><mi>β</mi></math> equal to zero. These transforms form the group <math id="S1.SS5.p8.m19" class="ltx_Math" alttext="G_{e}" display="inline"><msub><mi>G</mi><mi>e</mi></msub></math>.
+Of these, the transforms</p>
+<table id="S1.Ex28" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex28.m1" class="ltx_Math" alttext="\left\{\begin{matrix}x\mapsto\alpha x+\beta z\hfill\\
+y\mapsto\alpha y+\gamma z\hfill\\
+z\mapsto\delta z\hfill\end{matrix}\right." display="block"><mrow><mo>{</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mi>x</mi><mo>↦</mo><mrow><mrow><mi>α</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mi>β</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>y</mi><mo>↦</mo><mrow><mrow><mi>α</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>γ</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>z</mi><mo>↦</mo><mrow><mi>δ</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mtd></mtr></mtable></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">fix the points individually so form the normal subgroup <math id="S1.SS5.p8.m20" class="ltx_Math" alttext="G_{f}" display="inline"><msub><mi>G</mi><mi>f</mi></msub></math>. As for
+symmetries of the abstract configuration, since there is only one line, <math id="S1.SS5.p8.m21" class="ltx_Math" alttext="g" display="inline"><mi>g</mi></math>
+is trivial whilst <math id="S1.SS5.p8.m22" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> can be any permutation of <math id="S1.SS5.p8.m23" class="ltx_Math" alttext="4" display="inline"><mn>4</mn></math> objects because the
+only relation to be preserved is that all <math id="S1.SS5.p8.m24" class="ltx_Math" alttext="4" display="inline"><mn>4</mn></math> points line on the same line.
+Hence, <math id="S1.SS5.p8.m25" class="ltx_Math" alttext="G_{a}" display="inline"><msub><mi>G</mi><mi>a</mi></msub></math> is isomorphic to <math id="S1.SS5.p8.m26" class="ltx_Math" alttext="S_{4}" display="inline"><msub><mi>S</mi><mn>4</mn></msub></math>. However, <math id="S1.SS5.p8.m27" class="ltx_Math" alttext="G_{e}/G_{f}" display="inline"><mrow><msub><mi>G</mi><mi>e</mi></msub><mo>/</mo><msub><mi>G</mi><mi>f</mi></msub></mrow></math> is isomorphic
+to the Klein viergruppe, so here we have a case in which <math id="S1.SS5.p8.m28" class="ltx_Math" alttext="G_{e}/G_{f}" display="inline"><mrow><msub><mi>G</mi><mi>e</mi></msub><mo>/</mo><msub><mi>G</mi><mi>f</mi></msub></mrow></math> is a
+proper subgroup of <math id="S1.SS5.p8.m29" class="ltx_Math" alttext="G_{a}" display="inline"><msub><mi>G</mi><mi>a</mi></msub></math>.</p>
+</div>
+</section>
+<section id="S1.SS6" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.6 </span>Generalizations</h3>
+
+<div id="S1.SS6.p1" class="ltx_para">
+<p class="ltx_p">In projective spaces of dimension higher than two, we can consider
+configurations consisting not only of points and lines but also of
+higher-dimensional subspaces. For instance, in three or more
+dimensions, we can consider configurations consisting of points,
+lines, and planes. Specifically, such a configuration consists of
+a set of <math id="S1.SS6.p1.m1" class="ltx_Math" alttext="n_{00}" display="inline"><msub><mi>n</mi><mn>00</mn></msub></math> points, <math id="S1.SS6.p1.m2" class="ltx_Math" alttext="n_{11}" display="inline"><msub><mi>n</mi><mn>11</mn></msub></math> lines, and <math id="S1.SS6.p1.m3" class="ltx_Math" alttext="n_{22}" display="inline"><msub><mi>n</mi><mn>22</mn></msub></math> planes such
+that each point lies on exactly <math id="S1.SS6.p1.m4" class="ltx_Math" alttext="n_{01}" display="inline"><msub><mi>n</mi><mn>01</mn></msub></math> lines and <math id="S1.SS6.p1.m5" class="ltx_Math" alttext="n_{02}" display="inline"><msub><mi>n</mi><mn>02</mn></msub></math> planes,
+each line contains <math id="S1.SS6.p1.m6" class="ltx_Math" alttext="n_{10}" display="inline"><msub><mi>n</mi><mn>10</mn></msub></math> points and lies on <math id="S1.SS6.p1.m7" class="ltx_Math" alttext="n_{12}" display="inline"><msub><mi>n</mi><mn>12</mn></msub></math> planes, and
+each plane contains exactly <math id="S1.SS6.p1.m8" class="ltx_Math" alttext="n_{20}" display="inline"><msub><mi>n</mi><mn>20</mn></msub></math> points and <math id="S1.SS6.p1.m9" class="ltx_Math" alttext="n_{21}" display="inline"><msub><mi>n</mi><mn>21</mn></msub></math> planes,
+where <math id="S1.SS6.p1.m10" class="ltx_Math" alttext="n_{00}" display="inline"><msub><mi>n</mi><mn>00</mn></msub></math>, <math id="S1.SS6.p1.m11" class="ltx_Math" alttext="n_{01}" display="inline"><msub><mi>n</mi><mn>01</mn></msub></math>, <math id="S1.SS6.p1.m12" class="ltx_Math" alttext="n_{10}" display="inline"><msub><mi>n</mi><mn>10</mn></msub></math>, <math id="S1.SS6.p1.m13" class="ltx_Math" alttext="n_{02}" display="inline"><msub><mi>n</mi><mn>02</mn></msub></math>, <math id="S1.SS6.p1.m14" class="ltx_Math" alttext="n_{11}" display="inline"><msub><mi>n</mi><mn>11</mn></msub></math>, <math id="S1.SS6.p1.m15" class="ltx_Math" alttext="n_{20}" display="inline"><msub><mi>n</mi><mn>20</mn></msub></math>,
+<math id="S1.SS6.p1.m16" class="ltx_Math" alttext="n_{12}" display="inline"><msub><mi>n</mi><mn>12</mn></msub></math>, <math id="S1.SS6.p1.m17" class="ltx_Math" alttext="n_{21}" display="inline"><msub><mi>n</mi><mn>21</mn></msub></math>, and <math id="S1.SS6.p1.m18" class="ltx_Math" alttext="n_{22}" display="inline"><msub><mi>n</mi><mn>22</mn></msub></math> are positive integers. An
+example of such an object consists of the four points, six lines,
+and four planes which comprise the vertices, edges, and faces of
+a tetrahedron. Other than mentioning that there exists such a
+generalization, we shall not pursue this topic further here, but
+shall confine our attention to configurations consisting only of
+points and lines in this article.</p>
+</div>
+</section>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span>Determination</h2>
+
+<section id="S2.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.1 </span>Introduction</h3>
+
+<div id="S2.SS1.p1" class="ltx_para">
+<p class="ltx_p">Having described the general theory of line configurations, we now
+turn our attention to the determination of configurations. Following
+the methodology described above, we will proceed in two steps, first
+determining abstract configurations, then studying their embeddings
+in projective spaces.</p>
+</div>
+</section>
+<section id="S2.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.2 </span>Restrictions on <math id="S2.SS2.m1" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, <math id="S2.SS2.m2" class="ltx_Math" alttext="\ell" display="inline"><mi mathvariant="normal">ℓ</mi></math>, <math id="S2.SS2.m3" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math>, <math id="S2.SS2.m4" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math>
+</h3>
+
+<div id="S2.SS2.p1" class="ltx_para">
+<p class="ltx_p">We will begin by deriving some conditions which limit the possible
+values of <math id="S2.SS2.p1.m1" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, <math id="S2.SS2.p1.m2" class="ltx_Math" alttext="\ell" display="inline"><mi mathvariant="normal">ℓ</mi></math>, <math id="S2.SS2.p1.m3" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math>, <math id="S2.SS2.p1.m4" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math> which can occur for a
+line configuration. Already, we have noted one such restriction
+above, namely <math id="S2.SS2.p1.m5" class="ltx_Math" alttext="p\cdot\lambda=\pi\cdot\ell" display="inline"><mrow><mrow><mi>p</mi><mo>⋅</mo><mi>λ</mi></mrow><mo>=</mo><mrow><mi>π</mi><mo>⋅</mo><mi mathvariant="normal">ℓ</mi></mrow></mrow></math>.</p>
+</div>
+<div id="S2.SS2.p2" class="ltx_para">
+<p class="ltx_p">Because there must be at least as many points as there are points
+on any line, we must have <math id="S2.SS2.p2.m1" class="ltx_Math" alttext="p\geq\pi" display="inline"><mrow><mi>p</mi><mo>≥</mo><mi>π</mi></mrow></math>. Likewise, because there
+must be at least as many lines as pass through any point, we must
+also have <math id="S2.SS2.p2.m2" class="ltx_Math" alttext="\ell\geq\lambda" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>≥</mo><mi>λ</mi></mrow></math>.</p>
+</div>
+<div id="S2.SS2.p3" class="ltx_para">
+<p class="ltx_p">Let <math id="S2.SS2.p3.m1" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> be any point of the configuration. Then there will be
+<math id="S2.SS2.p3.m2" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math> lines passing through <math id="S2.SS2.p3.m3" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>, each of which will pass
+through <math id="S2.SS2.p3.m4" class="ltx_Math" alttext="\lambda-1" display="inline"><mrow><mi>λ</mi><mo>-</mo><mn>1</mn></mrow></math> points in addition to <math id="S2.SS2.p3.m5" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>. Since a line
+is determined by two points and all <math id="S2.SS2.p3.m6" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math> lines have <math id="S2.SS2.p3.m7" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> in
+common, no two of them will have any other point in common, hence
+there will be <math id="S2.SS2.p3.m8" class="ltx_Math" alttext="\lambda(\pi-1)" display="inline"><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></math> distinct points located on these
+lines. Thus, we conclude that <math id="S2.SS2.p3.m9" class="ltx_Math" alttext="p\geq\lambda(\pi-1)" display="inline"><mrow><mi>p</mi><mo>≥</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. By
+interchanging “point” and “line” in the argument just given,
+we conclude that <math id="S2.SS2.p3.m10" class="ltx_Math" alttext="\ell\geq\pi(\lambda-1)" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>≥</mo><mrow><mi>π</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+<div id="S2.SS2.p4" class="ltx_para">
+<p class="ltx_p">Suppose that <math id="S2.SS2.p4.m1" class="ltx_Math" alttext="\pi\geq 2" display="inline"><mrow><mi>π</mi><mo>≥</mo><mn>2</mn></mrow></math>. Since at most one line of the configuration
+can pass through two points but every line of the configuration must
+pass through at least two points of the configuration, there can be no
+more lines in the configuration than there are pairs of points, so
+<math id="S2.SS2.p4.m2" class="ltx_Math" alttext="\ell\leq{p\choose 2}" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>≤</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>p</mi><mn>2</mn></mfrac><mo>)</mo></mrow></mrow></math>. Dually, we must have <math id="S2.SS2.p4.m3" class="ltx_Math" alttext="p\leq{\ell\choose 2}" display="inline"><mrow><mi>p</mi><mo>≤</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi mathvariant="normal">ℓ</mi><mn>2</mn></mfrac><mo>)</mo></mrow></mrow></math>.</p>
+</div>
+<div id="S2.SS2.p5" class="ltx_para">
+<p class="ltx_p">As an illustration of these conditions, we will now ask what limitations
+they impose on the types of configurations which have 12 points. From
+the inequality <math id="S2.SS2.p5.m1" class="ltx_Math" alttext="p\geq\pi" display="inline"><mrow><mi>p</mi><mo>≥</mo><mi>π</mi></mrow></math>, we see that <math id="S2.SS2.p5.m2" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math> is limited to the values
+1,2,3,4,5,6,7,8,9,10,11,12.
+</p>
+</div>
+<div id="S2.SS2.p6" class="ltx_para">
+<p class="ltx_p">If <math id="S2.SS2.p6.m1" class="ltx_Math" alttext="\pi=1" display="inline"><mrow><mi>π</mi><mo>=</mo><mn>1</mn></mrow></math>, then we have <math id="S2.SS2.p6.m2" class="ltx_Math" alttext="\ell=12\lambda" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>=</mo><mrow><mn>12</mn><mo>⁢</mo><mi>λ</mi></mrow></mrow></math>, hence the possible types
+are <math id="S2.SS2.p6.m3" class="ltx_Math" alttext="(12_{\lambda}12\lambda_{1})" display="inline"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mi>λ</mi></msub><mo>⁢</mo><mn>12</mn><mo>⁢</mo><msub><mi>λ</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></math>. All the other inequalities are
+satisfied or irrelevant and, as we shall see, for every choice of <math id="S2.SS2.p6.m4" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math>,
+there is a configuration of this type.</p>
+</div>
+<div id="S2.SS2.p7" class="ltx_para">
+<p class="ltx_p">Likewise, if <math id="S2.SS2.p7.m1" class="ltx_Math" alttext="\lambda=1" display="inline"><mrow><mi>λ</mi><mo>=</mo><mn>1</mn></mrow></math>, then we have <math id="S2.SS2.p7.m2" class="ltx_Math" alttext="\ell\pi=12" display="inline"><mrow><mrow><mi mathvariant="normal">ℓ</mi><mo>⁢</mo><mi>π</mi></mrow><mo>=</mo><mn>12</mn></mrow></math>. Thus, we have
+the possibilities <math id="S2.SS2.p7.m3" class="ltx_Math" alttext="(12_{1}12_{1})" display="inline"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>1</mn></msub><mo>⁢</mo><msub><mn>12</mn><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow></math>, <math id="S2.SS2.p7.m4" class="ltx_Math" alttext="(12_{1}6_{2})" display="inline"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>1</mn></msub><mo>⁢</mo><msub><mn>6</mn><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></math>, <math id="S2.SS2.p7.m5" class="ltx_Math" alttext="(12_{1}4_{3})" display="inline"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>1</mn></msub><mo>⁢</mo><msub><mn>4</mn><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></math>, <math id="S2.SS2.p7.m6" class="ltx_Math" alttext="(12_{1}3_{4})" display="inline"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>1</mn></msub><mo>⁢</mo><msub><mn>3</mn><mn>4</mn></msub></mrow><mo stretchy="false">)</mo></mrow></math>,
+<math id="S2.SS2.p7.m7" class="ltx_Math" alttext="(12_{1}2_{6})" display="inline"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>1</mn></msub><mo>⁢</mo><msub><mn>2</mn><mn>6</mn></msub></mrow><mo stretchy="false">)</mo></mrow></math>, and <math id="S2.SS2.p7.m8" class="ltx_Math" alttext="(12_{1}1_{1}2)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>1</mn></msub><mo>⁢</mo><msub><mn>1</mn><mn>1</mn></msub><mo>⁢</mo><mn>2</mn></mrow><mo stretchy="false">)</mo></mrow></math>, all of which satisfy the remaining
+inequalities and which happen to occur as types of configurations.</p>
+</div>
+<div id="S2.SS2.p8" class="ltx_para">
+<p class="ltx_p">We now focus our attention to the cases where <math id="S2.SS2.p8.m1" class="ltx_Math" alttext="\pi\geq 2" display="inline"><mrow><mi>π</mi><mo>≥</mo><mn>2</mn></mrow></math> and <math id="S2.SS2.p8.m2" class="ltx_Math" alttext="\lambda\geq 2" display="inline"><mrow><mi>λ</mi><mo>≥</mo><mn>2</mn></mrow></math>.
+Then we have the inequalities <math id="S2.SS2.p8.m3" class="ltx_Math" alttext="\ell\leq{p\choose 2}=66" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>≤</mo><mrow><mo>(</mo><mfrac linethickness="0pt"><mi>p</mi><mn>2</mn></mfrac><mo>)</mo></mrow><mo>=</mo><mn>66</mn></mrow></math> and
+<math id="S2.SS2.p8.m4" class="ltx_Math" alttext="{\ell\choose 2}\geq p=12" display="inline"><mrow><mrow><mo>(</mo><mfrac linethickness="0pt"><mi mathvariant="normal">ℓ</mi><mn>2</mn></mfrac><mo>)</mo></mrow><mo>≥</mo><mi>p</mi><mo>=</mo><mn>12</mn></mrow></math> to reckon with. These limit <math id="S2.SS2.p8.m5" class="ltx_Math" alttext="\ell" display="inline"><mi mathvariant="normal">ℓ</mi></math> to the
+values <math id="S2.SS2.p8.m6" class="ltx_Math" alttext="6\leq\ell\leq 66" display="inline"><mrow><mn>6</mn><mo>≤</mo><mi mathvariant="normal">ℓ</mi><mo>≤</mo><mn>66</mn></mrow></math>. When <math id="S2.SS2.p8.m7" class="ltx_Math" alttext="\lambda\geq 2" display="inline"><mrow><mi>λ</mi><mo>≥</mo><mn>2</mn></mrow></math>, the inequality
+<math id="S2.SS2.p8.m8" class="ltx_Math" alttext="p\geq\lambda(\pi-1)" display="inline"><mrow><mi>p</mi><mo>≥</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> implies that <math id="S2.SS2.p8.m9" class="ltx_Math" alttext="7\geq\pi" display="inline"><mrow><mn>7</mn><mo>≥</mo><mi>π</mi></mrow></math>, so it turns out that
+the possible values 8,9,10,11,12 mentioned above are ruled out.
+Summarrizing, in this case we have the following restrictions on the ranges of
+our constants:</p>
+<table id="S3.EGx6" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="S2.Ex29" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S2.Ex29.m1" class="ltx_Math" alttext="\displaystyle 6\leq" display="inline"><mrow><mn>6</mn><mo>≤</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S2.Ex29.m2" class="ltx_Math" alttext="\displaystyle\ell\leq 66" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>≤</mo><mn>66</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S2.Ex30" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S2.Ex30.m1" class="ltx_Math" alttext="\displaystyle 2\leq" display="inline"><mrow><mn>2</mn><mo>≤</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S2.Ex30.m2" class="ltx_Math" alttext="\displaystyle\lambda\leq\ell" display="inline"><mrow><mi>λ</mi><mo>≤</mo><mi mathvariant="normal">ℓ</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S2.Ex31" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S2.Ex31.m1" class="ltx_Math" alttext="\displaystyle 2\leq" display="inline"><mrow><mn>2</mn><mo>≤</mo><mi></mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S2.Ex31.m2" class="ltx_Math" alttext="\displaystyle\pi\leq 7" display="inline"><mrow><mi>π</mi><mo>≤</mo><mn>7</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S2.SS2.p9" class="ltx_para">
+<p class="ltx_p">To finish, we will consider the remaining possible values of <math id="S2.SS2.p9.m1" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math>
+one at a time. When <math id="S2.SS2.p9.m2" class="ltx_Math" alttext="\pi=2" display="inline"><mrow><mi>π</mi><mo>=</mo><mn>2</mn></mrow></math>, we have <math id="S2.SS2.p9.m3" class="ltx_Math" alttext="\ell=6\lambda" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>=</mo><mrow><mn>6</mn><mo>⁢</mo><mi>λ</mi></mrow></mrow></math>.
+Thus, the inequality <math id="S2.SS2.p9.m4" class="ltx_Math" alttext="\ell\geq\pi(\lambda-1)" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>≥</mo><mrow><mi>π</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> is automatically
+satisfied and the inequality <math id="S2.SS2.p9.m5" class="ltx_Math" alttext="p\geq\lambda(\pi-1)" display="inline"><mrow><mi>p</mi><mo>≥</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> reduces to
+<math id="S2.SS2.p9.m6" class="ltx_Math" alttext="\lambda\leq 12" display="inline"><mrow><mi>λ</mi><mo>≤</mo><mn>12</mn></mrow></math>. We have the following possibilities:</p>
+<table id="S2.Ex32" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex32.m1" class="ltx_Math" alttext="\begin{matrix}(12_{2}12_{2})&amp;(12_{3}18_{2})&amp;(12_{4}24_{2})&amp;(12_{5}30_{2})&amp;(12_%
+{6}36_{2})&amp;(12_{7}42_{2})\\
+(12_{8}48_{2})&amp;(12_{9}54_{2})&amp;(12_{10}60_{2})&amp;(12_{11}66_{2})\end{matrix}" display="block"><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>2</mn></msub><mo>⁢</mo><msub><mn>12</mn><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>3</mn></msub><mo>⁢</mo><msub><mn>18</mn><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>4</mn></msub><mo>⁢</mo><msub><mn>24</mn><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>5</mn></msub><mo>⁢</mo><msub><mn>30</mn><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>6</mn></msub><mo>⁢</mo><msub><mn>36</mn><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>7</mn></msub><mo>⁢</mo><msub><mn>42</mn><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>8</mn></msub><mo>⁢</mo><msub><mn>48</mn><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>9</mn></msub><mo>⁢</mo><msub><mn>54</mn><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>10</mn></msub><mo>⁢</mo><msub><mn>60</mn><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>11</mn></msub><mo>⁢</mo><msub><mn>66</mn><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S2.SS2.p10" class="ltx_para">
+<p class="ltx_p">When <math id="S2.SS2.p10.m1" class="ltx_Math" alttext="\pi=3" display="inline"><mrow><mi>π</mi><mo>=</mo><mn>3</mn></mrow></math>, we have <math id="S2.SS2.p10.m2" class="ltx_Math" alttext="\ell=4\lambda" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>=</mo><mrow><mn>4</mn><mo>⁢</mo><mi>λ</mi></mrow></mrow></math>. Again, the inequality
+<math id="S2.SS2.p10.m3" class="ltx_Math" alttext="\ell\geq\pi(\lambda-1)" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>≥</mo><mrow><mi>π</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> is automatically satisfied. The
+inequality <math id="S2.SS2.p10.m4" class="ltx_Math" alttext="p\geq\lambda(\pi-1)" display="inline"><mrow><mi>p</mi><mo>≥</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> reduces to <math id="S2.SS2.p10.m5" class="ltx_Math" alttext="6\geq\lambda" display="inline"><mrow><mn>6</mn><mo>≥</mo><mi>λ</mi></mrow></math>,
+hence we have the following possibilities:</p>
+<table id="S2.Ex33" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex33.m1" class="ltx_Math" alttext="\begin{matrix}(12_{2}8_{3})&amp;(12_{3}12_{3})&amp;(12_{4}16_{3})&amp;(12_{5}20_{3})&amp;(12_{%
+6}24_{3})\end{matrix}" display="block"><mtable columnspacing="5pt" displaystyle="true"><mtr><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>2</mn></msub><mo>⁢</mo><msub><mn>8</mn><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>3</mn></msub><mo>⁢</mo><msub><mn>12</mn><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>4</mn></msub><mo>⁢</mo><msub><mn>16</mn><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>5</mn></msub><mo>⁢</mo><msub><mn>20</mn><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>6</mn></msub><mo>⁢</mo><msub><mn>24</mn><mn>3</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S2.SS2.p11" class="ltx_para">
+<p class="ltx_p">When <math id="S2.SS2.p11.m1" class="ltx_Math" alttext="\pi=4" display="inline"><mrow><mi>π</mi><mo>=</mo><mn>4</mn></mrow></math>, we have <math id="S2.SS2.p11.m2" class="ltx_Math" alttext="\ell=3\lambda" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>=</mo><mrow><mn>3</mn><mo>⁢</mo><mi>λ</mi></mrow></mrow></math>. Then, the inequality
+<math id="S2.SS2.p11.m3" class="ltx_Math" alttext="p\geq\lambda(\pi-1)" display="inline"><mrow><mi>p</mi><mo>≥</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> becomes <math id="S2.SS2.p11.m4" class="ltx_Math" alttext="4\geq\lambda" display="inline"><mrow><mn>4</mn><mo>≥</mo><mi>λ</mi></mrow></math> and the inequality
+<math id="S2.SS2.p11.m5" class="ltx_Math" alttext="\ell\geq\pi(\lambda-1)" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>≥</mo><mrow><mi>π</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> also becomes <math id="S2.SS2.p11.m6" class="ltx_Math" alttext="4\geq\lambda" display="inline"><mrow><mn>4</mn><mo>≥</mo><mi>λ</mi></mrow></math>, hence we
+have the following possibilities:
+</p>
+<table id="S2.Ex34" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex34.m1" class="ltx_Math" alttext="\begin{matrix}(12_{2}6_{4})&amp;(12_{3}9_{4})&amp;(12_{4}12_{4})\end{matrix}" display="block"><mtable columnspacing="5pt" displaystyle="true"><mtr><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>2</mn></msub><mo>⁢</mo><msub><mn>6</mn><mn>4</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>3</mn></msub><mo>⁢</mo><msub><mn>9</mn><mn>4</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><msub><mn>12</mn><mn>4</mn></msub><mo>⁢</mo><msub><mn>12</mn><mn>4</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S2.SS2.p12" class="ltx_para">
+<p class="ltx_p">When <math id="S2.SS2.p12.m1" class="ltx_Math" alttext="\pi=5" display="inline"><mrow><mi>π</mi><mo>=</mo><mn>5</mn></mrow></math>, we have <math id="S2.SS2.p12.m2" class="ltx_Math" alttext="12\lambda=5\ell" display="inline"><mrow><mrow><mn>12</mn><mo>⁢</mo><mi>λ</mi></mrow><mo>=</mo><mrow><mn>5</mn><mo>⁢</mo><mi mathvariant="normal">ℓ</mi></mrow></mrow></math>. Since 5 and 12 are
+coprime, this implies that <math id="S2.SS2.p12.m3" class="ltx_Math" alttext="\lambda=5n" display="inline"><mrow><mi>λ</mi><mo>=</mo><mrow><mn>5</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></math> and <math id="S2.SS2.p12.m4" class="ltx_Math" alttext="\ell=12n" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>=</mo><mrow><mn>12</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></math> for
+some positive integer <math id="S2.SS2.p12.m5" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>. But then, the inequality <math id="S2.SS2.p12.m6" class="ltx_Math" alttext="p\geq\lambda(\pi-1)" display="inline"><mrow><mi>p</mi><mo>≥</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> would become <math id="S2.SS2.p12.m7" class="ltx_Math" alttext="12\geq 20n" display="inline"><mrow><mn>12</mn><mo>≥</mo><mrow><mn>20</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></math>, which is impossible because
+<math id="S2.SS2.p12.m8" class="ltx_Math" alttext="n&gt;0" display="inline"><mrow><mi>n</mi><mo>&gt;</mo><mn>0</mn></mrow></math>, so we have no configurations with <math id="S2.SS2.p12.m9" class="ltx_Math" alttext="p=12" display="inline"><mrow><mi>p</mi><mo>=</mo><mn>12</mn></mrow></math> and <math id="S2.SS2.p12.m10" class="ltx_Math" alttext="\pi=5" display="inline"><mrow><mi>π</mi><mo>=</mo><mn>5</mn></mrow></math>.</p>
+</div>
+<div id="S2.SS2.p13" class="ltx_para">
+<p class="ltx_p">When <math id="S2.SS2.p13.m1" class="ltx_Math" alttext="\pi=6" display="inline"><mrow><mi>π</mi><mo>=</mo><mn>6</mn></mrow></math>, we have <math id="S2.SS2.p13.m2" class="ltx_Math" alttext="\ell=2\lambda" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>λ</mi></mrow></mrow></math>. Then, the inequality
+<math id="S2.SS2.p13.m3" class="ltx_Math" alttext="p\geq\lambda(\pi-1)" display="inline"><mrow><mi>p</mi><mo>≥</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> becomes <math id="S2.SS2.p13.m4" class="ltx_Math" alttext="12\geq 5\lambda" display="inline"><mrow><mn>12</mn><mo>≥</mo><mrow><mn>5</mn><mo>⁢</mo><mi>λ</mi></mrow></mrow></math>, so only
+<math id="S2.SS2.p13.m5" class="ltx_Math" alttext="\lambda=2" display="inline"><mrow><mi>λ</mi><mo>=</mo><mn>2</mn></mrow></math> is possible. Thus, we must also have <math id="S2.SS2.p13.m6" class="ltx_Math" alttext="\ell=4" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>=</mo><mn>4</mn></mrow></math>.
+However, the inequality <math id="S2.SS2.p13.m7" class="ltx_Math" alttext="\ell\geq\pi(\lambda-1)" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>≥</mo><mrow><mi>π</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> is not satisfied
+when <math id="S2.SS2.p13.m8" class="ltx_Math" alttext="\ell=4" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>=</mo><mn>4</mn></mrow></math>, <math id="S2.SS2.p13.m9" class="ltx_Math" alttext="\pi=6" display="inline"><mrow><mi>π</mi><mo>=</mo><mn>6</mn></mrow></math>, and <math id="S2.SS2.p13.m10" class="ltx_Math" alttext="\lambda=2" display="inline"><mrow><mi>λ</mi><mo>=</mo><mn>2</mn></mrow></math>, so we have no
+configurations with <math id="S2.SS2.p13.m11" class="ltx_Math" alttext="p=12" display="inline"><mrow><mi>p</mi><mo>=</mo><mn>12</mn></mrow></math> and <math id="S2.SS2.p13.m12" class="ltx_Math" alttext="\pi=6" display="inline"><mrow><mi>π</mi><mo>=</mo><mn>6</mn></mrow></math>.</p>
+</div>
+<div id="S2.SS2.p14" class="ltx_para">
+<p class="ltx_p">When <math id="S2.SS2.p14.m1" class="ltx_Math" alttext="\pi=7" display="inline"><mrow><mi>π</mi><mo>=</mo><mn>7</mn></mrow></math>, we have <math id="S2.SS2.p14.m2" class="ltx_Math" alttext="12\lambda=7\ell" display="inline"><mrow><mrow><mn>12</mn><mo>⁢</mo><mi>λ</mi></mrow><mo>=</mo><mrow><mn>7</mn><mo>⁢</mo><mi mathvariant="normal">ℓ</mi></mrow></mrow></math>. Since 7 and 12 are
+coprime, this implies that <math id="S2.SS2.p14.m3" class="ltx_Math" alttext="\lambda=7n" display="inline"><mrow><mi>λ</mi><mo>=</mo><mrow><mn>7</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></math> and <math id="S2.SS2.p14.m4" class="ltx_Math" alttext="\ell=12n" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>=</mo><mrow><mn>12</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></math> for
+some positive integer <math id="S2.SS2.p14.m5" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>. But then, the inequality <math id="S2.SS2.p14.m6" class="ltx_Math" alttext="p\geq\lambda(\pi-1)" display="inline"><mrow><mi>p</mi><mo>≥</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>π</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> would become <math id="S2.SS2.p14.m7" class="ltx_Math" alttext="12\geq 42n" display="inline"><mrow><mn>12</mn><mo>≥</mo><mrow><mn>42</mn><mo>⁢</mo><mi>n</mi></mrow></mrow></math>, which is impossible because
+<math id="S2.SS2.p14.m8" class="ltx_Math" alttext="n&gt;0" display="inline"><mrow><mi>n</mi><mo>&gt;</mo><mn>0</mn></mrow></math>, so we have no configurations with <math id="S2.SS2.p14.m9" class="ltx_Math" alttext="p=12" display="inline"><mrow><mi>p</mi><mo>=</mo><mn>12</mn></mrow></math> and <math id="S2.SS2.p14.m10" class="ltx_Math" alttext="\pi=7" display="inline"><mrow><mi>π</mi><mo>=</mo><mn>7</mn></mrow></math>.</p>
+</div>
+</section>
+<section id="S2.SS3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.3 </span>The Cases <math id="S2.SS3.m1" class="ltx_Math" alttext="\lambda=1" display="inline"><mrow><mi>λ</mi><mo>=</mo><mn>1</mn></mrow></math> and <math id="S2.SS3.m2" class="ltx_Math" alttext="\pi=1" display="inline"><mrow><mi>π</mi><mo>=</mo><mn>1</mn></mrow></math>
+</h3>
+
+<div id="S2.SS3.p1" class="ltx_para">
+<p class="ltx_p">Having deduced and illustrated limitations on the four constants
+<math id="S2.SS3.p1.m1" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, <math id="S2.SS3.p1.m2" class="ltx_Math" alttext="\ell" display="inline"><mi mathvariant="normal">ℓ</mi></math>, <math id="S2.SS3.p1.m3" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math>, <math id="S2.SS3.p1.m4" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math>, we now turn our attention to the
+determining which sets of numbers describe actual configurations.
+We begin with the easy case where one or both of <math id="S2.SS3.p1.m5" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math> and
+<math id="S2.SS3.p1.m6" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math> equals <math id="S2.SS3.p1.m7" class="ltx_Math" alttext="1" display="inline"><mn>1</mn></math>.</p>
+</div>
+<div id="S2.SS3.p2" class="ltx_para">
+<p class="ltx_p">Before proceeding further, it is worth pointing out that we are
+only interested in classifying abstract configurations up to
+equivalence by permutation. That is to say, we will consider
+two abstract configurations <math id="S2.SS3.p2.m1" class="ltx_Math" alttext="\langle P,L,I\rangle" display="inline"><mrow><mo stretchy="false">⟨</mo><mi>P</mi><mo>,</mo><mi>L</mi><mo>,</mo><mi>I</mi><mo stretchy="false">⟩</mo></mrow></math> and
+<math id="S2.SS3.p2.m2" class="ltx_Math" alttext="\langle P^{\prime},L^{\prime},I^{\prime}\rangle" display="inline"><mrow><mo stretchy="false">⟨</mo><msup><mi>P</mi><mo>′</mo></msup><mo>,</mo><msup><mi>L</mi><mo>′</mo></msup><mo>,</mo><msup><mi>I</mi><mo>′</mo></msup><mo stretchy="false">⟩</mo></mrow></math> equivalent if there exist one-to-one
+correspondences <math id="S2.SS3.p2.m3" class="ltx_Math" alttext="f\colon P\to P^{\prime}" display="inline"><mrow><mi>f</mi><mo>:</mo><mrow><mi>P</mi><mo>→</mo><msup><mi>P</mi><mo>′</mo></msup></mrow></mrow></math> and <math id="S2.SS3.p2.m4" class="ltx_Math" alttext="g\colon L\to L^{\prime}" display="inline"><mrow><mi>g</mi><mo>:</mo><mrow><mi>L</mi><mo>→</mo><msup><mi>L</mi><mo>′</mo></msup></mrow></mrow></math> such
+that <math id="S2.SS3.p2.m5" class="ltx_Math" alttext="I(x,y)" display="inline"><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></math> if and only if <math id="S2.SS3.p2.m6" class="ltx_Math" alttext="I^{\prime}(f(x),g(y))" display="inline"><mrow><msup><mi>I</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math>. The reason for
+doing this is that, since it is easy enough to permute elements
+in a given configuration, listing only one configuration out of
+an equivalence class cuts down on the number.</p>
+</div>
+<div id="S2.SS3.p3" class="ltx_para">
+<p class="ltx_p">Suppose that we have an abstract configuration with <math id="S2.SS3.p3.m1" class="ltx_Math" alttext="\pi=1" display="inline"><mrow><mi>π</mi><mo>=</mo><mn>1</mn></mrow></math>.
+Then, to every element of <math id="S2.SS3.p3.m2" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math> we may associate exactly one
+element of <math id="S2.SS3.p3.m3" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>. Furthermore, we may define an equivalence
+relation on <math id="S2.SS3.p3.m4" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math> by equating the lines which pass through the
+same point. Thus, our lines are partitioned into <math id="S2.SS3.p3.m5" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> partitions
+of <math id="S2.SS3.p3.m6" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math> points each. Conversely, given two numbers <math id="S2.SS3.p3.m7" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math>
+and <math id="S2.SS3.p3.m8" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> and setting <math id="S2.SS3.p3.m9" class="ltx_Math" alttext="\ell=p\lambda" display="inline"><mrow><mi mathvariant="normal">ℓ</mi><mo>=</mo><mrow><mi>p</mi><mo>⁢</mo><mi>λ</mi></mrow></mrow></math>, we can make a
+configuration by taking a set <math id="S2.SS3.p3.m10" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math> with <math id="S2.SS3.p3.m11" class="ltx_Math" alttext="\ell" display="inline"><mi mathvariant="normal">ℓ</mi></math> elements and
+partitioning it into <math id="S2.SS3.p3.m12" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> subsets of <math id="S2.SS3.p3.m13" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math> elements each,
+then associating to each equivalence class an element of the
+set <math id="S2.SS3.p3.m14" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>.</p>
+</div>
+</section>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3 </span>Catalogue</h2>
+
+<div id="S3.p1" class="ltx_para">
+<p class="ltx_p">[Under Construction]
+</p>
+<table class="ltx_tabular ltx_align_right ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_t">Title</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">projective line configurations</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Canonical name</td>
+<td class="ltx_td ltx_align_left ltx_border_r">ProjectiveLineConfigurations</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Date of creation</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 18:23:45</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified on</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 18:23:45</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Owner</td>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified by</td>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Numerical id</td>
+<td class="ltx_td ltx_align_left ltx_border_r">55</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Author</td>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Entry type</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Topic</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 14N20</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 14N10</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 05B99</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 52C30</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 51N15</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 51E20</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 51A45</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 51A05</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 51A20</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Synonym</td>
+<td class="ltx_td ltx_align_left ltx_border_r">projective configuration</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l">Synonym</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">line configuration</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 18:01:03 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

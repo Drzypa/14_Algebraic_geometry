@@ -1,0 +1,248 @@
+<!DOCTYPE html><html>
+<head>
+<title>rank of an elliptic curve</title>
+<!--Generated on Fri Feb  9 17:59:04 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">rank of an elliptic curve</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">Let <math id="p1.m1" class="ltx_Math" alttext="K" display="inline"><mi>K</mi></math> be a number field and let <math id="p1.m2" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math> be an elliptic curve over
+<math id="p1.m3" class="ltx_Math" alttext="K" display="inline"><mi>K</mi></math>. By <math id="p1.m4" class="ltx_Math" alttext="E(K)" display="inline"><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></mrow></math> we denote the set of points in <math id="p1.m5" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math> with coordinates
+in <math id="p1.m6" class="ltx_Math" alttext="K" display="inline"><mi>K</mi></math>.</p>
+</div>
+<div id="Thmthm1" class="ltx_theorem ltx_theorem_thm">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Theorem 1</span> (Mordell-Weil).</h6>
+<div id="Thmthm1.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmthm1.p1.m1" class="ltx_Math" alttext="E(K)" display="inline"><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></mrow></math><span class="ltx_text ltx_font_italic"> is a finitely generated abelian
+group.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">The proof of this theorem is fairly involved. The
+main two ingredients are the so called “weak Mordell-Weil theorem”
+(see below), the concept of height function for abelian groups and
+the “descent” theorem. 
+<br class="ltx_break">See <cite class="ltx_cite ltx_citemacro_cite ltx_markedasmath">[<a href="#bib.bib2" title="" class="ltx_ref">2</a>]</cite>, Chapter VIII, page
+189.
+∎</p>
+</div>
+</div>
+<div id="Thmthm2" class="ltx_theorem ltx_theorem_thm">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Theorem 2</span> (Weak Mordell-Weil).</h6>
+<div id="Thmthm2.p1" class="ltx_para">
+<p class="ltx_p"><math id="Thmthm2.p1.m1" class="ltx_Math" alttext="E(K)/mE(K)" display="inline"><mrow><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mi>m</mi></mrow><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></mrow></math><span class="ltx_text ltx_font_italic"> is
+finite for all <math id="Thmthm2.p1.m2" class="ltx_Math" alttext="m\geq 2" display="inline"><mrow><mi>m</mi><mo mathvariant="normal">≥</mo><mn mathvariant="normal">2</mn></mrow></math>.</span></p>
+</div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">The Mordell-Weil theorem implies that for any elliptic curve <math id="p3.m1" class="ltx_Math" alttext="E/K" display="inline"><mrow><mi>E</mi><mo>/</mo><mi>K</mi></mrow></math>
+the group of points has the following structure:</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="E(K)\simeq E_{\operatorname{torsion}}(K)\bigoplus{\mathbb{Z}}^{R}" display="block"><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mrow><msub><mi>E</mi><mi>torsion</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⊕</mo><msup><mi>ℤ</mi><mi>R</mi></msup></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="p3.m2" class="ltx_Math" alttext="E_{\operatorname{torsion}}(K)" display="inline"><mrow><msub><mi>E</mi><mi>torsion</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></mrow></math> denotes the set of points of finite order (or torsion group),
+and <math id="p3.m3" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is a non-negative integer which is called the <math id="p3.m4" class="ltx_Math" alttext="rank" display="inline"><mrow><mi>r</mi><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>n</mi><mo>⁢</mo><mi>k</mi></mrow></math> of the
+elliptic curve. It is not known how big this number <math id="p3.m5" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> can get
+for elliptic curves over <math id="p3.m6" class="ltx_Math" alttext="\mathbb{Q}" display="inline"><mi>ℚ</mi></math>. The largest rank known for
+an elliptic curve over <math id="p3.m7" class="ltx_Math" alttext="\mathbb{Q}" display="inline"><mi>ℚ</mi></math> is 28 <span class="ltx_text ltx_font_typewriter">http://www.math.hr/ duje/tors/tors.html</span>Elkies (2006).</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Note: see Mazur’s theorem for an account of the possible torsion subgroups over <math id="p4.m1" class="ltx_Math" alttext="\mathbb{Q}" display="inline"><mi>ℚ</mi></math>.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Examples</span>:</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">1.</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p">The elliptic curve <math id="I1.i1.p1.m1" class="ltx_Math" alttext="E_{1}/\mathbb{Q}\colon y^{2}=x^{3}+6" display="inline"><mrow><mrow><msub><mi>E</mi><mn>1</mn></msub><mo>/</mo><mi>ℚ</mi></mrow><mo>:</mo><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>6</mn></mrow></mrow></mrow></math> has rank 0
+and <math id="I1.i1.p1.m2" class="ltx_Math" alttext="E_{1}(\mathbb{Q})\simeq{0}" display="inline"><mrow><mrow><msub><mi>E</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℚ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mn>0</mn></mrow></math>.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">2.</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="I1.i2.p1.m1" class="ltx_Math" alttext="E_{2}/\mathbb{Q}\colon y^{2}=x^{3}+1" display="inline"><mrow><mrow><msub><mi>E</mi><mn>2</mn></msub><mo>/</mo><mi>ℚ</mi></mrow><mo>:</mo><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>1</mn></mrow></mrow></mrow></math>, then
+<math id="I1.i2.p1.m2" class="ltx_Math" alttext="E_{2}(\mathbb{Q})\simeq\mathbb{Z}/6\mathbb{Z}" display="inline"><mrow><mrow><msub><mi>E</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℚ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><mn>6</mn></mrow><mo>⁢</mo><mi>ℤ</mi></mrow></mrow></math>. The torsion group
+is generated by the point <math id="I1.i2.p1.m3" class="ltx_Math" alttext="(2,3)" display="inline"><mrow><mo stretchy="false">(</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo stretchy="false">)</mo></mrow></math>.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">3.</span> 
+<div id="I1.i3.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="I1.i3.p1.m1" class="ltx_Math" alttext="E_{3}/\mathbb{Q}\colon y^{2}=x^{3}+109858299531561" display="inline"><mrow><mrow><msub><mi>E</mi><mn>3</mn></msub><mo>/</mo><mi>ℚ</mi></mrow><mo>:</mo><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>109858299531561</mn></mrow></mrow></mrow></math>, then
+<math id="I1.i3.p1.m2" class="ltx_Math" alttext="E_{3}(\mathbb{Q})\simeq\mathbb{Z}/3\mathbb{Z}\bigoplus{\mathbb{Z}}^{5}" display="inline"><mrow><mrow><msub><mi>E</mi><mn>3</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℚ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><mrow><mrow><mi>ℤ</mi><mo>/</mo><mn>3</mn></mrow><mo>⁢</mo><mi>ℤ</mi><mo>⁢</mo><mrow><mo largeop="true" mathsize="160%" stretchy="false" symmetric="true">⊕</mo><msup><mi>ℤ</mi><mn>5</mn></msup></mrow></mrow></mrow></math>. See
+<span class="ltx_text ltx_font_typewriter">http://math.bu.edu/people/alozano/Torsion.html</span>generators
+here.</p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">4.</span> 
+<div id="I1.i4.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="I1.i4.p1.m1" class="ltx_Math" alttext="E_{4}/\mathbb{Q}\colon y^{2}+1951/164xy-3222367/40344y=x^{3}+3537/164x^{2}-403%
+02641/121032x" display="inline"><mrow><mrow><msub><mi>E</mi><mn>4</mn></msub><mo>/</mo><mi>ℚ</mi></mrow><mo>:</mo><mrow><mrow><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><mrow><mrow><mn>1951</mn><mo>/</mo><mn>164</mn></mrow><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>-</mo><mrow><mrow><mn>3222367</mn><mo>/</mo><mn>40344</mn></mrow><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mrow><mrow><mn>3537</mn><mo>/</mo><mn>164</mn></mrow><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mrow><mo>-</mo><mrow><mrow><mn>40302641</mn><mo>/</mo><mn>121032</mn></mrow><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></mrow></math>, then
+<math id="I1.i4.p1.m2" class="ltx_Math" alttext="E_{4}(\mathbb{Q})\simeq{\mathbb{Z}}^{10}" display="inline"><mrow><mrow><msub><mi>E</mi><mn>4</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℚ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≃</mo><msup><mi>ℤ</mi><mn>10</mn></msup></mrow></math>. See
+<span class="ltx_text ltx_font_typewriter">http://math.bu.edu/people/alozano/Examples.html</span>generators
+here.</p>
+</div>
+</li>
+</ol>
+</div>
+<section id="bib" class="ltx_bibliography">
+<h2 class="ltx_title ltx_title_bibliography">References</h2>
+
+<ul class="ltx_biblist">
+      
+<li id="bib.bib1" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">1</span>
+        
+<span class="ltx_bibblock"> James Milne, <span class="ltx_text ltx_font_italic">Elliptic Curves</span>, online course notes. <span class="ltx_text ltx_font_typewriter">http://www.jmilne.org/math/CourseNotes/math679.html</span>http://www.jmilne.org/math/CourseNotes/math679.html
+
+</span>
+      </li>
+      
+<li id="bib.bib2" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">2</span>
+        
+<span class="ltx_bibblock"> Joseph H. Silverman, <span class="ltx_text ltx_font_italic">The Arithmetic of Elliptic Curves</span>. Springer-Verlag, New York, 1986.
+
+</span>
+      </li>
+      
+<li id="bib.bib3" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">3</span>
+        
+<span class="ltx_bibblock"> Joseph H. Silverman, <span class="ltx_text ltx_font_italic">Advanced Topics in
+the Arithmetic of Elliptic Curves</span>. Springer-Verlag, New York,
+1994.
+
+</span>
+      </li>
+      
+<li id="bib.bib4" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">4</span>
+        
+<span class="ltx_bibblock"> Goro Shimura, <span class="ltx_text ltx_font_italic">Introduction to the
+Arithmetic Theory of Automorphic Functions</span>. Princeton University
+Press, Princeton, New Jersey, 1971.
+
+</span>
+      </li>
+    
+</ul>
+</section>
+<div id="p6" class="ltx_para ltx_align_right">
+<table class="ltx_tabular ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_t">Title</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">rank of an elliptic curve</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Canonical name</td>
+<td class="ltx_td ltx_align_left ltx_border_r">RankOfAnEllipticCurve</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Date of creation</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 13:49:12</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified on</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 13:49:12</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Owner</td>
+<td class="ltx_td ltx_align_left ltx_border_r">alozano (2414)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified by</td>
+<td class="ltx_td ltx_align_left ltx_border_r">alozano (2414)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Numerical id</td>
+<td class="ltx_td ltx_align_left ltx_border_r">14</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Author</td>
+<td class="ltx_td ltx_align_left ltx_border_r">alozano (2414)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Entry type</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 14H52</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Synonym</td>
+<td class="ltx_td ltx_align_left ltx_border_r">rank</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">EllipticCurve</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">HeightFunction</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">MordellWeilTheorem</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">SelmerGroup</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">MazursTheoremOnTorsionOfEllipticCurves</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">NagellLutzTheorem</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">ArithmeticOfEllipticCurves</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">weak Mordell-Weil theorem</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">rank of an elliptic curve</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 17:59:04 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

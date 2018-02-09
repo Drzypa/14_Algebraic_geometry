@@ -1,0 +1,125 @@
+<!DOCTYPE html><html>
+<head>
+<title>locally ringed space</title>
+<!--Generated on Fri Feb  9 17:57:00 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">locally ringed space</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Definitions</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p class="ltx_p">A <span class="ltx_text ltx_font_italic">locally ringed space</span> is a topological space <math id="S1.p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> together with a sheaf of rings <math id="S1.p1.m2" class="ltx_Math" alttext="\mathcal{O}_{X}" display="inline"><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub></math> with the property that, for every point <math id="S1.p1.m3" class="ltx_Math" alttext="p\in X" display="inline"><mrow><mi>p</mi><mo>∈</mo><mi>X</mi></mrow></math>, the stalk <math id="S1.p1.m4" class="ltx_Math" alttext="(\mathcal{O}_{X})_{p}" display="inline"><msub><mrow><mo stretchy="false">(</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub><mo stretchy="false">)</mo></mrow><mi>p</mi></msub></math> is a local ring<span class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>All rings mentioned in this article are required to be commutative.</span></span></span>.</p>
+</div>
+<div id="S1.p2" class="ltx_para">
+<p class="ltx_p">A morphism of locally ringed spaces from <math id="S1.p2.m1" class="ltx_Math" alttext="(X,\mathcal{O}_{X})" display="inline"><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub><mo stretchy="false">)</mo></mrow></math> to <math id="S1.p2.m2" class="ltx_Math" alttext="(Y,\mathcal{O}_{Y})" display="inline"><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo>,</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>Y</mi></msub><mo stretchy="false">)</mo></mrow></math> is a continuous map <math id="S1.p2.m3" class="ltx_Math" alttext="f:X\longrightarrow Y" display="inline"><mrow><mi>f</mi><mo>:</mo><mrow><mi>X</mi><mo>⟶</mo><mi>Y</mi></mrow></mrow></math> together with a morphism of sheaves <math id="S1.p2.m4" class="ltx_Math" alttext="\phi:\mathcal{O}_{Y}\longrightarrow\mathcal{O}_{X}" display="inline"><mrow><mi>ϕ</mi><mo>:</mo><mrow><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>Y</mi></msub><mo>⟶</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub></mrow></mrow></math> with respect to <math id="S1.p2.m5" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> such that, for every point <math id="S1.p2.m6" class="ltx_Math" alttext="p\in X" display="inline"><mrow><mi>p</mi><mo>∈</mo><mi>X</mi></mrow></math>, the induced ring homomorphism on stalks <math id="S1.p2.m7" class="ltx_Math" alttext="\phi_{p}:(\mathcal{O}_{Y})_{f(p)}\longrightarrow(\mathcal{O}_{X})_{p}" display="inline"><mrow><msub><mi>ϕ</mi><mi>p</mi></msub><mo>:</mo><mrow><msub><mrow><mo stretchy="false">(</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>Y</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></msub><mo>⟶</mo><msub><mrow><mo stretchy="false">(</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub><mo stretchy="false">)</mo></mrow><mi>p</mi></msub></mrow></mrow></math> is a local homomorphism. That is,</p>
+<table id="S1.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex1.m1" class="ltx_Math" alttext="\phi_{p}(y)\in\mathfrak{m}_{p}\text{ for every }y\in\mathfrak{m}_{f(p)}," display="block"><mrow><mrow><mrow><msub><mi>ϕ</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mrow><msub><mi>𝔪</mi><mi>p</mi></msub><mo>⁢</mo><mtext> for every </mtext><mo>⁢</mo><mi>y</mi></mrow><mo>∈</mo><msub><mi>𝔪</mi><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></msub></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S1.p2.m8" class="ltx_Math" alttext="\mathfrak{m}_{p}" display="inline"><msub><mi>𝔪</mi><mi>p</mi></msub></math> (respectively, <math id="S1.p2.m9" class="ltx_Math" alttext="\mathfrak{m}_{f(p)}" display="inline"><msub><mi>𝔪</mi><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></msub></math>) is the maximal ideal of the ring <math id="S1.p2.m10" class="ltx_Math" alttext="(\mathcal{O}_{X})_{p}" display="inline"><msub><mrow><mo stretchy="false">(</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub><mo stretchy="false">)</mo></mrow><mi>p</mi></msub></math> (respectively, <math id="S1.p2.m11" class="ltx_Math" alttext="(\mathcal{O}_{Y})_{f(p)}" display="inline"><msub><mrow><mo stretchy="false">(</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>Y</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></msub></math>).</p>
+</div>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span>Applications</h2>
+
+<div id="S2.p1" class="ltx_para">
+<p class="ltx_p">Locally ringed spaces are encountered in many natural contexts. Basically, every sheaf on the topological space <math id="S2.p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> consisting of continuous functions with values in some field is a locally ringed space. Indeed, any such function which is not zero at a point <math id="S2.p1.m2" class="ltx_Math" alttext="p\in X" display="inline"><mrow><mi>p</mi><mo>∈</mo><mi>X</mi></mrow></math> is nonzero and thus invertible in some neighborhood of <math id="S2.p1.m3" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, which implies that the only maximal ideal of the stalk at <math id="S2.p1.m4" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> is the set of germs of functions which vanish at <math id="S2.p1.m5" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>. The utility of this definition lies in the fact that one can then form constructions in familiar instances of locally ringed spaces which readily generalize in ways that would not necessarily be obvious without this framework. For example, given a manifold <math id="S2.p1.m6" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> and its locally ringed space <math id="S2.p1.m7" class="ltx_Math" alttext="\mathcal{D}_{X}" display="inline"><msub><mi class="ltx_font_mathcaligraphic">𝒟</mi><mi>X</mi></msub></math> of real–valued differentiable functions, one can show that the space of all tangent vectors to <math id="S2.p1.m8" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> at <math id="S2.p1.m9" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> is naturally isomorphic to the real vector space <math id="S2.p1.m10" class="ltx_Math" alttext="(\mathfrak{m}_{p}/\mathfrak{m}_{p}^{2})^{*}" display="inline"><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi>𝔪</mi><mi>p</mi></msub><mo>/</mo><msubsup><mi>𝔪</mi><mi>p</mi><mn>2</mn></msubsup></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></math>, where the <math id="S2.p1.m11" class="ltx_Math" alttext="{}^{*}" display="inline"><msup><mi></mi><mo>*</mo></msup></math> indicates the dual vector space. We then see that, in general, for <span class="ltx_text ltx_font_bold">any</span> locally ringed space <math id="S2.p1.m12" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math>, the space of tangent vectors at <math id="S2.p1.m13" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> should be defined as the <math id="S2.p1.m14" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>–vector space <math id="S2.p1.m15" class="ltx_Math" alttext="(\mathfrak{m}_{p}/\mathfrak{m}_{p}^{2})^{*}" display="inline"><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi>𝔪</mi><mi>p</mi></msub><mo>/</mo><msubsup><mi>𝔪</mi><mi>p</mi><mn>2</mn></msubsup></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></math>, where <math id="S2.p1.m16" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> is the residue field <math id="S2.p1.m17" class="ltx_Math" alttext="(\mathcal{O}_{X})_{p}/\mathfrak{m}_{p}" display="inline"><mrow><msub><mrow><mo stretchy="false">(</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub><mo stretchy="false">)</mo></mrow><mi>p</mi></msub><mo>/</mo><msub><mi>𝔪</mi><mi>p</mi></msub></mrow></math> and <math id="S2.p1.m18" class="ltx_Math" alttext="{}^{*}" display="inline"><msup><mi></mi><mo>*</mo></msup></math> denotes dual with respect to <math id="S2.p1.m19" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> as before. It turns out that this definition is the correct definition even in esoteric contexts like algebraic geometry over finite fields which at first sight lack the differential structure needed for constructions such as tangent vector.</p>
+</div>
+<div id="S2.p2" class="ltx_para">
+<p class="ltx_p">Another useful application of locally ringed spaces is in the construction of schemes. The forgetful functor assigning to each locally ringed space <math id="S2.p2.m1" class="ltx_Math" alttext="(X,\mathcal{O}_{X})" display="inline"><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub><mo stretchy="false">)</mo></mrow></math> the ring <math id="S2.p2.m2" class="ltx_Math" alttext="\mathcal{O}_{X}(X)" display="inline"><mrow><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></math> is adjoint to the “prime spectrum” functor taking each ring <math id="S2.p2.m3" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> to the locally ringed space <math id="S2.p2.m4" class="ltx_Math" alttext="\operatorname{Spec}(R)" display="inline"><mrow><mi>Spec</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow></math>, and this correspondence is essentially why the category of locally ringed spaces is the proper building block to use in the formulation of the notion of scheme.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">locally ringed space</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">LocallyRingedSpace</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 12:37:41</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 12:37:41</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">djao (24)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">djao (24)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">13</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">djao (24)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 14A15</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 18F20</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_r">LocalRing</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_r">PrimeSpectrum</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Scheme</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Defines</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">morphism of locally ringed spaces</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 17:57:00 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

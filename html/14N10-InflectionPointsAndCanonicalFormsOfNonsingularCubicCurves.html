@@ -1,0 +1,965 @@
+<!DOCTYPE html><html>
+<head>
+<title>inflection points and canonical forms of non-singular cubic curves</title>
+<!--Generated on Fri Feb  9 18:00:52 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">inflection points and canonical forms of non-singular cubic curves</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">In this entry, we shall investigate the inflection points
+of non-singular complex cubic curves and show that the
+equations of such curves can always be put in various
+canonical forms. The reason for lumping these two subjects
+in a single entry is that, being related, it is more
+efficient to develop them both at the same time than it would
+be to treat either one in isolation — on the one hand,
+putting the equation of the curve in a canonical form
+simplifies calculations relating to inflection points whilst,
+on the other hand, information about inflection points allows
+one to construct canonical forms.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">We shall consider our curves as projective curves and describe
+them with homogenous equations; i.e. a curve is a locus in
+<math id="p2.m1" class="ltx_Math" alttext="\mathbb{C}\mathbb{P}^{2}" display="inline"><mrow><mi>ℂ</mi><mo>⁢</mo><msup><mi>ℙ</mi><mn>2</mn></msup></mrow></math> where <math id="p2.m2" class="ltx_Math" alttext="F(x,y,z)=0" display="inline"><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> for some third-
+order homogenous polynomial <math id="p2.m3" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math>. For the purpose at hand, the
+term “inflection point” may be taken to mean a point on the
+curve where the tangent intersects the curve with multiplicity
+3 — a point on the curve will have this property if and only
+if it is a zero of the Hessian.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">We begin by presenting a crude canonical form. With further
+refinement, this will become the Weierstrass canonical form.</p>
+</div>
+<div id="Thmthm1" class="ltx_theorem ltx_theorem_thm">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Theorem 1</span>.</h6>
+<div id="Thmthm1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Suppose <math id="Thmthm1.p1.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is a non-singular complex cubic curve and <math id="Thmthm1.p1.m2" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> a point
+on that curve. Then we may choose homogenous coordiantes in which
+the coordiantes of <math id="Thmthm1.p1.m3" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> are <math id="Thmthm1.p1.m4" class="ltx_Math" alttext="(0,0,1)" display="inline"><mrow><mo mathvariant="normal" stretchy="false">(</mo><mn mathvariant="normal">0</mn><mo mathvariant="normal">,</mo><mn mathvariant="normal">0</mn><mo mathvariant="normal">,</mo><mn mathvariant="normal">1</mn><mo mathvariant="normal" stretchy="false">)</mo></mrow></math> and equation of the curve
+looks as follows:</span></p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="yz^{2}+ax^{3}+bx^{2}y+cxy^{2}+dy^{3}+ex^{2}z=0" display="block"><mrow><mrow><mrow><mi>y</mi><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>y</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi>e</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">The most general equation of a cubic is as follows:</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="AX^{3}+BX^{2}Y+CX^{2}Z+DXY^{2}+EXYZ+FXZ^{2}+GY^{3}+HY^{2}Z+KYZ^{2}+LZ^{3}=0" display="block"><mrow><mrow><mrow><mi>A</mi><mo>⁢</mo><msup><mi>X</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi>B</mi><mo>⁢</mo><msup><mi>X</mi><mn>2</mn></msup><mo>⁢</mo><mi>Y</mi></mrow><mo>+</mo><mrow><mi>C</mi><mo>⁢</mo><msup><mi>X</mi><mn>2</mn></msup><mo>⁢</mo><mi>Z</mi></mrow><mo>+</mo><mrow><mi>D</mi><mo>⁢</mo><mi>X</mi><mo>⁢</mo><msup><mi>Y</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>E</mi><mo>⁢</mo><mi>X</mi><mo>⁢</mo><mi>Y</mi><mo>⁢</mo><mi>Z</mi></mrow><mo>+</mo><mrow><mi>F</mi><mo>⁢</mo><mi>X</mi><mo>⁢</mo><msup><mi>Z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>G</mi><mo>⁢</mo><msup><mi>Y</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi>H</mi><mo>⁢</mo><msup><mi>Y</mi><mn>2</mn></msup><mo>⁢</mo><mi>Z</mi></mrow><mo>+</mo><mrow><mi>K</mi><mo>⁢</mo><mi>Y</mi><mo>⁢</mo><msup><mi>Z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>L</mi><mo>⁢</mo><msup><mi>Z</mi><mn>3</mn></msup></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Requiring that the curve pass through <math id="p4.m1" class="ltx_Math" alttext="(0,0,1)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math> means that
+<math id="p4.m2" class="ltx_Math" alttext="L=0" display="inline"><mrow><mi>L</mi><mo>=</mo><mn>0</mn></mrow></math>. Since our curve is not singular, it has a tangent
+at all points, in particular, a tangent through <math id="p4.m3" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>. We
+may ask that the equation of the tangent through <math id="p4.m4" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> be
+<math id="p4.m5" class="ltx_Math" alttext="Y=0" display="inline"><mrow><mi>Y</mi><mo>=</mo><mn>0</mn></mrow></math>, which requires that <math id="p4.m6" class="ltx_Math" alttext="F=0" display="inline"><mrow><mi>F</mi><mo>=</mo><mn>0</mn></mrow></math>. Since our curve is
+not singular at <math id="p4.m7" class="ltx_Math" alttext="(0,0,1)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>, both <math id="p4.m8" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math> and <math id="p4.m9" class="ltx_Math" alttext="K" display="inline"><mi>K</mi></math> cannot be zero
+so, without loss of generality, we may take <math id="p4.m10" class="ltx_Math" alttext="K=1" display="inline"><mrow><mi>K</mi><mo>=</mo><mn>1</mn></mrow></math>.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">We may then make the following linear transform:</p>
+<table id="S0.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="S0.Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex3.m1" class="ltx_Math" alttext="\displaystyle X" display="inline"><mi>X</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex3.m2" class="ltx_Math" alttext="\displaystyle=x" display="inline"><mrow><mi></mi><mo>=</mo><mi>x</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S0.Ex4" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex4.m1" class="ltx_Math" alttext="\displaystyle Y" display="inline"><mi>Y</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex4.m2" class="ltx_Math" alttext="\displaystyle=y" display="inline"><mrow><mi></mi><mo>=</mo><mi>y</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S0.Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex5.m1" class="ltx_Math" alttext="\displaystyle Z" display="inline"><mi>Z</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex5.m2" class="ltx_Math" alttext="\displaystyle=z-Ex/2-Hy/2" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>z</mi><mo>-</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mi>x</mi></mrow><mo>/</mo><mn>2</mn></mrow><mo>-</mo><mrow><mrow><mi>H</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Upon doing so, our equation assumes the form</p>
+<table id="S0.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex6.m1" class="ltx_Math" alttext="yz^{2}+ax^{3}+bx^{2}y+cxy^{2}+dy^{3}+ex^{2}z=0" display="block"><mrow><mrow><mrow><mi>y</mi><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>y</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi>e</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where the coefficients <math id="p5.m1" class="ltx_Math" alttext="a,b,c,d,e" display="inline"><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>,</mo><mi>e</mi></mrow></math> are defined as follows:</p>
+<table id="S0.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="S0.Ex7" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex7.m1" class="ltx_Math" alttext="\displaystyle a" display="inline"><mi>a</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex7.m2" class="ltx_Math" alttext="\displaystyle=A-CE/2" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>A</mi><mo>-</mo><mrow><mrow><mi>C</mi><mo>⁢</mo><mi>E</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S0.Ex8" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex8.m1" class="ltx_Math" alttext="\displaystyle b" display="inline"><mi>b</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex8.m2" class="ltx_Math" alttext="\displaystyle=B-CH/2-E^{2}/4" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>B</mi><mo>-</mo><mrow><mrow><mi>C</mi><mo>⁢</mo><mi>H</mi></mrow><mo>/</mo><mn>2</mn></mrow><mo>-</mo><mrow><msup><mi>E</mi><mn>2</mn></msup><mo>/</mo><mn>4</mn></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S0.Ex9" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex9.m1" class="ltx_Math" alttext="\displaystyle c" display="inline"><mi>c</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex9.m2" class="ltx_Math" alttext="\displaystyle=D-EH/2" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>D</mi><mo>-</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mi>H</mi></mrow><mo>/</mo><mn>2</mn></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S0.Ex10" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex10.m1" class="ltx_Math" alttext="\displaystyle d" display="inline"><mi>d</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex10.m2" class="ltx_Math" alttext="\displaystyle=G-H^{2}/4" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>G</mi><mo>-</mo><mrow><msup><mi>H</mi><mn>2</mn></msup><mo>/</mo><mn>4</mn></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S0.Ex11" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex11.m1" class="ltx_Math" alttext="\displaystyle e" display="inline"><mi>e</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex11.m2" class="ltx_Math" alttext="\displaystyle=C" display="inline"><mrow><mi></mi><mo>=</mo><mi>C</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Next, we turn our attention to the Hessian to begin our
+investigation of inflection points.</p>
+</div>
+<div id="Thmthm2" class="ltx_theorem ltx_theorem_thm">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Theorem 2</span>.</h6>
+<div id="Thmthm2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">If <math id="Thmthm2.p1.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is a non-singular complex cubic curve with homogenous
+equation <math id="Thmthm2.p1.m2" class="ltx_Math" alttext="F(x,y,z)=0" display="inline"><mrow><mrow><mi>F</mi><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>x</mi><mo mathvariant="normal">,</mo><mi>y</mi><mo mathvariant="normal">,</mo><mi>z</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><mo mathvariant="normal">=</mo><mn mathvariant="normal">0</mn></mrow></math>, then the Hessian of <math id="Thmthm2.p1.m3" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math> does not equal
+a multiple of <math id="Thmthm2.p1.m4" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">By the foregoing theorem, we know that there exists
+a system of coordinates in which</p>
+<table id="S0.Ex12" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex12.m1" class="ltx_Math" alttext="F(x,y,z)=yz^{2}+ax^{3}+bx^{2}y+cxy^{2}+dy^{3}+ex^{2}z." display="block"><mrow><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>y</mi><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>y</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi>e</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Let us examine the Hessian at the point <math id="p7.m1" class="ltx_Math" alttext="(0,0,1)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>:</p>
+<table id="S0.Ex13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex13.m1" class="ltx_Math" alttext="H(0,0,1)=\left|\begin{matrix}2e&amp;0&amp;0\\
+0&amp;0&amp;2\\
+0&amp;2&amp;0\end{matrix}\right|=8e" display="block"><mrow><mrow><mi>H</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mn>2</mn><mo>⁢</mo><mi>e</mi></mrow></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>2</mn></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>2</mn></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>|</mo></mrow><mo>=</mo><mrow><mn>8</mn><mo>⁢</mo><mi>e</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">If <math id="p7.m2" class="ltx_Math" alttext="e\neq 0" display="inline"><mrow><mi>e</mi><mo>≠</mo><mn>0</mn></mrow></math>, then the Hessian cannot me a multiple of <math id="p7.m3" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math>
+because <math id="p7.m4" class="ltx_Math" alttext="F(0,0,1)=0" display="inline"><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>. Assume then that <math id="p7.m5" class="ltx_Math" alttext="e=0" display="inline"><mrow><mi>e</mi><mo>=</mo><mn>0</mn></mrow></math>. In that
+case, we must have <math id="p7.m6" class="ltx_Math" alttext="a\neq 0" display="inline"><mrow><mi>a</mi><mo>≠</mo><mn>0</mn></mrow></math> because, if <math id="p7.m7" class="ltx_Math" alttext="a=0" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow></math>, then <math id="p7.m8" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math>
+would factor as a product of <math id="p7.m9" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> and a quadratic polynomial,
+which is impossible because the curve <math id="p7.m10" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is assumed not
+to be singular.<span class="ltx_note ltx_role_footnote"><sup class="ltx_note_mark">1</sup><span class="ltx_note_outer"><span class="ltx_note_content"><sup class="ltx_note_mark">1</sup>Were <math id="p7.m11" class="ltx_Math" alttext="F(x,y,z)=yQ(x,y,z)" display="inline"><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>y</mi><mo>⁢</mo><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> for
+some quadratic polynomial <math id="p7.m12" class="ltx_Math" alttext="Q" display="inline"><mi>Q</mi></math>, then the gradient of <math id="p7.m13" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math>
+would vanish at the intersection of the line <math id="p7.m14" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math> and
+the conic <math id="p7.m15" class="ltx_Math" alttext="Q(x,y,z)=0" display="inline"><mrow><mrow><mi>Q</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>, so the variety described by
+<math id="p7.m16" class="ltx_Math" alttext="F(x,y,z)=0" display="inline"><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> would be singular at the point(s) of
+intersection.</span></span></span> Evaluating the Hessian on the line <math id="p7.m17" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>,</p>
+<table id="S0.Ex14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex14.m1" class="ltx_Math" alttext="H(x,0,z)=\left|\begin{matrix}6ax&amp;2bx&amp;0\\
+2bx&amp;2cx&amp;2z\\
+0&amp;2z&amp;0\end{matrix}\right|=24axz^{2}" display="block"><mrow><mrow><mi>H</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mn>0</mn><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mn>6</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow></mtd><mtd columnalign="center"><mrow><mn>2</mn><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mrow><mn>2</mn><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow></mtd><mtd columnalign="center"><mrow><mn>2</mn><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>x</mi></mrow></mtd><mtd columnalign="center"><mrow><mn>2</mn><mo>⁢</mo><mi>z</mi></mrow></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mrow><mn>2</mn><mo>⁢</mo><mi>z</mi></mrow></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>|</mo></mrow><mo>=</mo><mrow><mn>24</mn><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Since <math id="p7.m18" class="ltx_Math" alttext="a" display="inline"><mi>a</mi></math> cannnot be zero, this does not vanish identically
+and is clearly not a non-zero multiple of <math id="p7.m19" class="ltx_Math" alttext="F(x,0,z)" display="inline"><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mn>0</mn><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow></math>.
+∎</p>
+</div>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">This theorem tells us that <math id="p8.m1" class="ltx_Math" alttext="H(x,y,z)=0" display="inline"><mrow><mrow><mi>H</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> is the equation of
+a cubic curve distinct from <math id="p8.m2" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>. Hence, we know that there
+must be at least one and at most nine point of intersection
+of these two curves, i.e. at least one and at most nine
+inflection points. Knowing that inflection points exist, we
+can improve our canonical form by choosing <math id="p8.m3" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> as an
+inflection point. With a little tidying up, this will give us
+Weierstrass’ canonical form.</p>
+</div>
+<div id="Thmthm3" class="ltx_theorem ltx_theorem_thm">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Theorem 3</span>.</h6>
+<div id="Thmthm3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Suppose <math id="Thmthm3.p1.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is a non-singular complex cubic curve and <math id="Thmthm3.p1.m2" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> a point
+of inflection of on that curve. Then we may choose homogenous
+coordinates in which the coordiantes of <math id="Thmthm3.p1.m3" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> are <math id="Thmthm3.p1.m4" class="ltx_Math" alttext="(0,0,1)" display="inline"><mrow><mo mathvariant="normal" stretchy="false">(</mo><mn mathvariant="normal">0</mn><mo mathvariant="normal">,</mo><mn mathvariant="normal">0</mn><mo mathvariant="normal">,</mo><mn mathvariant="normal">1</mn><mo mathvariant="normal" stretchy="false">)</mo></mrow></math> and
+equation of the curve looks as follows:</span></p>
+<table id="S0.Ex15" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex15.m1" class="ltx_Math" alttext="yz^{2}+4x^{3}+g_{2}xy^{2}+g_{3}y^{3}=0" display="block"><mrow><mrow><mrow><mi>y</mi><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><msub><mi>g</mi><mn>2</mn></msub><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><msub><mi>g</mi><mn>3</mn></msub><mo>⁢</mo><msup><mi>y</mi><mn>3</mn></msup></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">By our earlier result, we know that there exist
+coordinates in which the equation of the curve is</p>
+<table id="S0.Ex16" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex16.m1" class="ltx_Math" alttext="YZ^{2}+aX^{3}+bX^{2}Y+cXY^{2}+dY^{3}+eX^{2}Z=0" display="block"><mrow><mrow><mrow><mi>Y</mi><mo>⁢</mo><msup><mi>Z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><msup><mi>X</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msup><mi>X</mi><mn>2</mn></msup><mo>⁢</mo><mi>Y</mi></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>X</mi><mo>⁢</mo><msup><mi>Y</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>Y</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi>e</mi><mo>⁢</mo><msup><mi>X</mi><mn>2</mn></msup><mo>⁢</mo><mi>Z</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and the coordinates of <math id="p9.m1" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> are <math id="p9.m2" class="ltx_Math" alttext="(0,0,1)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>. By the
+calculation made in the proof of the previous theorem,
+we know that <math id="p9.m3" class="ltx_Math" alttext="H(0,0,1)=8e" display="inline"><mrow><mrow><mi>H</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>8</mn><mo>⁢</mo><mi>e</mi></mrow></mrow></math>. Since <math id="p9.m4" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> is a point
+of inflection, this implies that <math id="p9.m5" class="ltx_Math" alttext="e=0" display="inline"><mrow><mi>e</mi><mo>=</mo><mn>0</mn></mrow></math>.</p>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">As noted in the previous proof, we cannot have <math id="p10.m1" class="ltx_Math" alttext="a=0" display="inline"><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow></math>
+because that would make our curve singular. Hence,
+we can divide by <math id="p10.m2" class="ltx_Math" alttext="a^{1/3}" display="inline"><msup><mi>a</mi><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup></math> to make the following coordinate
+transformation:</p>
+<table id="S0.EGx3" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="S0.Ex17" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex17.m1" class="ltx_Math" alttext="\displaystyle X" display="inline"><mi>X</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex17.m2" class="ltx_Math" alttext="\displaystyle=x-by/3" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mi>x</mi><mo>-</mo><mrow><mrow><mi>b</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S0.Ex18" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex18.m1" class="ltx_Math" alttext="\displaystyle Y" display="inline"><mi>Y</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex18.m2" class="ltx_Math" alttext="\displaystyle=ay/4" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>y</mi></mrow><mo>/</mo><mn>4</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S0.Ex19" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex19.m1" class="ltx_Math" alttext="\displaystyle Z" display="inline"><mi>Z</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex19.m2" class="ltx_Math" alttext="\displaystyle=z" display="inline"><mrow><mi></mi><mo>=</mo><mi>z</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">After canceling a factor of <math id="p10.m3" class="ltx_Math" alttext="a" display="inline"><mi>a</mi></math>, our equation becomes
+</p>
+<table id="S0.Ex20" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex20.m1" class="ltx_Math" alttext="yz^{2}+4x^{3}+g_{2}xy^{2}+g_{3}y^{3}=0," display="block"><mrow><mrow><mrow><mrow><mi>y</mi><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><msub><mi>g</mi><mn>2</mn></msub><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><msub><mi>g</mi><mn>3</mn></msub><mo>⁢</mo><msup><mi>y</mi><mn>3</mn></msup></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where</p>
+<table id="S0.EGx4" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="S0.Ex21" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex21.m1" class="ltx_Math" alttext="\displaystyle g_{2}" display="inline"><msub><mi>g</mi><mn>2</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex21.m2" class="ltx_Math" alttext="\displaystyle={1\over 4}ac-{7\over 12}b^{2}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>4</mn></mfrac></mstyle><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>c</mi></mrow><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mn>7</mn><mn>12</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>b</mi><mn>2</mn></msup></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S0.Ex22" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex22.m1" class="ltx_Math" alttext="\displaystyle g_{3}" display="inline"><msub><mi>g</mi><mn>3</mn></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex22.m2" class="ltx_Math" alttext="\displaystyle={11\over 432}b^{3}+{1\over 48}abc+{1\over 16}a^{2}d" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mn>11</mn><mn>432</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>b</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>48</mn></mfrac></mstyle><mo>⁢</mo><mi>a</mi><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>c</mi></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mn>16</mn></mfrac></mstyle><mo>⁢</mo><msup><mi>a</mi><mn>2</mn></msup><mo>⁢</mo><mi>d</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">Using this canonical form, it is easy to show that we
+have the maximum number of inflection points possible.</p>
+</div>
+<div id="Thmthm4" class="ltx_theorem ltx_theorem_thm">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Theorem 4</span>.</h6>
+<div id="Thmthm4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A non-singular complex cubic curve has nine inflection points.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="p12" class="ltx_para">
+<p class="ltx_p">Given an inflection point, the foregoing theorem tells us
+that we can choose a coordinate system in which that point
+has coordinates <math id="p12.m1" class="ltx_Math" alttext="(0,0,1)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math> and the equation of the curve
+assumes the form <math id="p12.m2" class="ltx_Math" alttext="F(x,y,z)=0" display="inline"><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> where</p>
+<table id="S0.Ex23" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex23.m1" class="ltx_Math" alttext="F(x,y,z)=yz^{2}+4x^{3}+g_{2}xy^{2}+g_{3}y^{3}." display="block"><mrow><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>y</mi><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mn>4</mn><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><msub><mi>g</mi><mn>2</mn></msub><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><msub><mi>g</mi><mn>3</mn></msub><mo>⁢</mo><msup><mi>y</mi><mn>3</mn></msup></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Computing the Hessian, we have</p>
+<table id="S0.Ex24" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex24.m1" class="ltx_Math" alttext="H(x,y,z)=\left|\begin{matrix}24x&amp;2g_{2}y&amp;0\\
+2g_{2}y&amp;2g_{2}x+6g_{3}y&amp;2z\\
+0&amp;2z&amp;2y\end{matrix}\right|=96g_{2}x^{2}y+288g_{3}xy^{2}-8g_{2}^{2}y^{3}-96xz^{2}" display="block"><mrow><mrow><mi>H</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mn>24</mn><mo>⁢</mo><mi>x</mi></mrow></mtd><mtd columnalign="center"><mrow><mn>2</mn><mo>⁢</mo><msub><mi>g</mi><mn>2</mn></msub><mo>⁢</mo><mi>y</mi></mrow></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center"><mrow><mn>2</mn><mo>⁢</mo><msub><mi>g</mi><mn>2</mn></msub><mo>⁢</mo><mi>y</mi></mrow></mtd><mtd columnalign="center"><mrow><mrow><mn>2</mn><mo>⁢</mo><msub><mi>g</mi><mn>2</mn></msub><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><msub><mi>g</mi><mn>3</mn></msub><mo>⁢</mo><mi>y</mi></mrow></mrow></mtd><mtd columnalign="center"><mrow><mn>2</mn><mo>⁢</mo><mi>z</mi></mrow></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mrow><mn>2</mn><mo>⁢</mo><mi>z</mi></mrow></mtd><mtd columnalign="center"><mrow><mn>2</mn><mo>⁢</mo><mi>y</mi></mrow></mtd></mtr></mtable><mo>|</mo></mrow><mo>=</mo><mrow><mrow><mrow><mn>96</mn><mo>⁢</mo><msub><mi>g</mi><mn>2</mn></msub><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mn>288</mn><mo>⁢</mo><msub><mi>g</mi><mn>3</mn></msub><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo>-</mo><mrow><mn>8</mn><mo>⁢</mo><msubsup><mi>g</mi><mn>2</mn><mn>2</mn></msubsup><mo>⁢</mo><msup><mi>y</mi><mn>3</mn></msup></mrow><mo>-</mo><mrow><mn>96</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Computing its gradient at <math id="p12.m3" class="ltx_Math" alttext="(0,0,1)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>, we find that</p>
+</div>
+<div id="p13" class="ltx_para">
+<table id="S0.Ex25" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex25.m1" class="ltx_Math" alttext="\left({\partial H\over\partial x},{\partial H\over\partial y},{\partial H\over%
+\partial z}\right)(0,0,1)=(-96,0,0)." display="block"><mrow><mrow><mrow><mrow><mo>(</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>H</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac><mo>,</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>H</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac><mo>,</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>H</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow></mfrac><mo>)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>96</mn></mrow><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">For comparison, we have</p>
+<table id="S0.Ex26" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex26.m1" class="ltx_Math" alttext="\left({\partial F\over\partial x},{\partial F\over\partial y},{\partial F\over%
+\partial z}\right)(0,0,1)=(0,1,0)." display="block"><mrow><mrow><mrow><mrow><mo>(</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>F</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac><mo>,</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>F</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac><mo>,</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>F</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow></mfrac><mo>)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Thus, we see that the curves <math id="p13.m1" class="ltx_Math" alttext="H(x,y,z)=0" display="inline"><mrow><mrow><mi>H</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> and
+<math id="p13.m2" class="ltx_Math" alttext="F(x,y,z)=0" display="inline"><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> are both smooth at <math id="p13.m3" class="ltx_Math" alttext="(0,0,1)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math> and
+intersect transversely, hence they have intersection
+multiplicity 1 there. Because we could choose our
+coordinates to place any inflection point at
+<math id="p13.m4" class="ltx_Math" alttext="(0,0,1)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>, this means that every intersection of
+our curve with its Hessian has intersection
+multiplicity 1. Since both <math id="p13.m5" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math> and <math id="p13.m6" class="ltx_Math" alttext="H" display="inline"><mi>H</mi></math> are of
+third order, Bezout’s theorem implies that there
+are nine distinct intersection points, i.e. nine
+distinct points of inflection.
+∎</p>
+</div>
+</div>
+<div id="p14" class="ltx_para">
+<p class="ltx_p">Knowing that there exist multiple inflection points,
+we will now cast the equation in a form which places
+two inflection points at priveleged locations.</p>
+</div>
+<div id="Thmthm5" class="ltx_theorem ltx_theorem_thm">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Theorem 5</span>.</h6>
+<div id="Thmthm5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Suppose <math id="Thmthm5.p1.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is a non-singular complex cubic curve and <math id="Thmthm5.p1.m2" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>
+and <math id="Thmthm5.p1.m3" class="ltx_Math" alttext="Q" display="inline"><mi>Q</mi></math> are points of inflection of on that curve. Then we
+may choose homogeneous coordinates in which the coordinates
+of <math id="Thmthm5.p1.m4" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> are <math id="Thmthm5.p1.m5" class="ltx_Math" alttext="(1,0,0)" display="inline"><mrow><mo mathvariant="normal" stretchy="false">(</mo><mn mathvariant="normal">1</mn><mo mathvariant="normal">,</mo><mn mathvariant="normal">0</mn><mo mathvariant="normal">,</mo><mn mathvariant="normal">0</mn><mo mathvariant="normal" stretchy="false">)</mo></mrow></math>, the coordinates of <math id="Thmthm5.p1.m6" class="ltx_Math" alttext="Q" display="inline"><mi>Q</mi></math> are <math id="Thmthm5.p1.m7" class="ltx_Math" alttext="(0,1,0)" display="inline"><mrow><mo mathvariant="normal" stretchy="false">(</mo><mn mathvariant="normal">0</mn><mo mathvariant="normal">,</mo><mn mathvariant="normal">1</mn><mo mathvariant="normal">,</mo><mn mathvariant="normal">0</mn><mo mathvariant="normal" stretchy="false">)</mo></mrow></math>
+and the equation of the curve looks as follows:</span></p>
+<table id="S0.Ex27" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex27.m1" class="ltx_Math" alttext="x^{2}y+y^{2}x+z^{3}+axyz=0" display="block"><mrow><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="p15" class="ltx_para">
+<p class="ltx_p">Since <math id="p15.m1" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> is a point of its inflection, the tangent to <math id="p15.m2" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>
+at <math id="p15.m3" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> intersects <math id="p15.m4" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> with multiplicity 3 at <math id="p15.m5" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>. Since
+<math id="p15.m6" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is a cubic, this means that this tangent cannot
+intersect <math id="p15.m7" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> at any other points; in particular, it
+cannot pass through <math id="p15.m8" class="ltx_Math" alttext="Q" display="inline"><mi>Q</mi></math>. Likewise, the tangent through
+<math id="p15.m9" class="ltx_Math" alttext="Q" display="inline"><mi>Q</mi></math> cannot pass through <math id="p15.m10" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>. Hence, the tangent at <math id="p15.m11" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>
+and the tangent at <math id="p15.m12" class="ltx_Math" alttext="Q" display="inline"><mi>Q</mi></math> must intersect at some third point
+<math id="p15.m13" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> which is not collinear with <math id="p15.m14" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> and <math id="p15.m15" class="ltx_Math" alttext="Q" display="inline"><mi>Q</mi></math>.</p>
+</div>
+<div id="p16" class="ltx_para">
+<p class="ltx_p">We may choose our coordinates so as to place <math id="p16.m1" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> at <math id="p16.m2" class="ltx_Math" alttext="(1,0,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>,
+<math id="p16.m3" class="ltx_Math" alttext="Q" display="inline"><mi>Q</mi></math> at <math id="p16.m4" class="ltx_Math" alttext="(0,1,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math> and <math id="p16.m5" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> at <math id="p16.m6" class="ltx_Math" alttext="(0,0,1)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>. The equation of our
+curve is <math id="p16.m7" class="ltx_Math" alttext="F(x,y,z)=0" display="inline"><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>, where</p>
+<table id="S0.Ex28" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex28.m1" class="ltx_Math" alttext="F(x,y,z)=axyz+bz^{3}+cyz^{2}+dy^{2}z+ey^{3}+fxz^{2}+gx^{2}z+hxy^{2}+jx^{2}y+kx%
+^{3}." display="block"><mrow><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msup><mi>z</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup><mo>⁢</mo><mi>z</mi></mrow><mo>+</mo><mrow><mi>e</mi><mo>⁢</mo><msup><mi>y</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>g</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>z</mi></mrow><mo>+</mo><mrow><mi>h</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>j</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>k</mi><mo>⁢</mo><msup><mi>x</mi><mn>3</mn></msup></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Since <math id="p16.m8" class="ltx_Math" alttext="F(1,0,0)=k" display="inline"><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>k</mi></mrow></math> and <math id="p16.m9" class="ltx_Math" alttext="F(0,1,0)=e" display="inline"><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>e</mi></mrow></math>, we must have
+<math id="p16.m10" class="ltx_Math" alttext="k=0" display="inline"><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="p16.m11" class="ltx_Math" alttext="e=0" display="inline"><mrow><mi>e</mi><mo>=</mo><mn>0</mn></mrow></math> in order for <math id="p16.m12" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> and <math id="p16.m13" class="ltx_Math" alttext="Q" display="inline"><mi>Q</mi></math> to lie on
+<math id="p16.m14" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>. The equation of the line <math id="p16.m15" class="ltx_Math" alttext="PR" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mi>R</mi></mrow></math> is <math id="p16.m16" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>.
+Restricting to this line, we have</p>
+<table id="S0.Ex29" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex29.m1" class="ltx_Math" alttext="F(x,0,z)=bz^{3}+fz^{2}+gx^{2}z." display="block"><mrow><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mn>0</mn><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>b</mi><mo>⁢</mo><msup><mi>z</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>g</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Since <math id="p16.m17" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> is an inflection point, the curve must have
+third order contact with this tangent line, the restriction
+of <math id="p16.m18" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math> to this line should have a triple root at <math id="p16.m19" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>,
+i.e. should be a multiple of <math id="p16.m20" class="ltx_Math" alttext="z^{3}" display="inline"><msup><mi>z</mi><mn>3</mn></msup></math>. Hence, <math id="p16.m21" class="ltx_Math" alttext="f=0" display="inline"><mrow><mi>f</mi><mo>=</mo><mn>0</mn></mrow></math> and
+<math id="p16.m22" class="ltx_Math" alttext="g=0" display="inline"><mrow><mi>g</mi><mo>=</mo><mn>0</mn></mrow></math>.</p>
+</div>
+<div id="p17" class="ltx_para">
+<p class="ltx_p">Likewise, the equation of the line <math id="p17.m1" class="ltx_Math" alttext="QR" display="inline"><mrow><mi>Q</mi><mo>⁢</mo><mi>R</mi></mrow></math> is <math id="p17.m2" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>.
+Restricting to this line, we have</p>
+<table id="S0.Ex30" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex30.m1" class="ltx_Math" alttext="F(0,y,z)=bz^{3}+cyz^{2}+dy^{2}z." display="block"><mrow><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>b</mi><mo>⁢</mo><msup><mi>z</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Again, since <math id="p17.m3" class="ltx_Math" alttext="Q" display="inline"><mi>Q</mi></math> is an inflection point, we must have
+a triple root, so this quantity should be a multiple
+of <math id="p17.m4" class="ltx_Math" alttext="z^{3}" display="inline"><msup><mi>z</mi><mn>3</mn></msup></math>, so we must have <math id="p17.m5" class="ltx_Math" alttext="c=0" display="inline"><mrow><mi>c</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="p17.m6" class="ltx_Math" alttext="d=0" display="inline"><mrow><mi>d</mi><mo>=</mo><mn>0</mn></mrow></math>.</p>
+</div>
+<div id="p18" class="ltx_para">
+<p class="ltx_p">Summarizing our progress so far, we have found that</p>
+<table id="S0.Ex31" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex31.m1" class="ltx_Math" alttext="F(x,y,z)=axyz+bz^{3}+hxy^{2}+jx^{2}y." display="block"><mrow><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><msup><mi>z</mi><mn>3</mn></msup></mrow><mo>+</mo><mrow><mi>h</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>j</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Next, we note that <math id="p18.m1" class="ltx_Math" alttext="h" display="inline"><mi>h</mi></math> cannot be zero because that
+would imply that <math id="p18.m2" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> had a singularity at <math id="p18.m3" class="ltx_Math" alttext="Q" display="inline"><mi>Q</mi></math>.
+Likewise, we must not have <math id="p18.m4" class="ltx_Math" alttext="j" display="inline"><mi>j</mi></math> be zero because that
+would mean a singularity at <math id="p18.m5" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math>. Also, were <math id="p18.m6" class="ltx_Math" alttext="b=0" display="inline"><mrow><mi>b</mi><mo>=</mo><mn>0</mn></mrow></math>,
+we would have <math id="p18.m7" class="ltx_Math" alttext="F(x,y,z)=xy(z+hy+jx)" display="inline"><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>z</mi><mo>+</mo><mrow><mi>h</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>j</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> which would
+have a singularity at <math id="p18.m8" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>. Thus, by rescaling
+<math id="p18.m9" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>, <math id="p18.m10" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math>, and <math id="p18.m11" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math> if necessarry, we can take
+<math id="p18.m12" class="ltx_Math" alttext="h=j=b=1" display="inline"><mrow><mi>h</mi><mo>=</mo><mi>j</mi><mo>=</mo><mi>b</mi><mo>=</mo><mn>1</mn></mrow></math>, so our equation assumes the form</p>
+<table id="S0.Ex32" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex32.m1" class="ltx_Math" alttext="F(x,y,z)=axyz+z^{3}+xy^{2}+x^{2}y." display="block"><mrow><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup><mo>+</mo><mrow><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+<div id="p19" class="ltx_para">
+<p class="ltx_p">Upon examining the form of the equation just derived
+more closely, we learn an important geometric fact:</p>
+</div>
+<div id="Thmthm6" class="ltx_theorem ltx_theorem_thm">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Theorem 6</span>.</h6>
+<div id="Thmthm6.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Suppose that <math id="Thmthm6.p1.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is a non-singular complex cubic curve
+and that <math id="Thmthm6.p1.m2" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> and <math id="Thmthm6.p1.m3" class="ltx_Math" alttext="Q" display="inline"><mi>Q</mi></math> are inflection points of <math id="Thmthm6.p1.m4" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>. Then
+the line <math id="Thmthm6.p1.m5" class="ltx_Math" alttext="PQ" display="inline"><mrow><mi>P</mi><mo mathvariant="italic">⁢</mo><mi>Q</mi></mrow></math> intersects <math id="Thmthm6.p1.m6" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> in a third point <math id="Thmthm6.p1.m7" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>, which
+is also an inflection point.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="p20" class="ltx_para">
+<p class="ltx_p">By the foregoing result, we know that we can write the
+equation for <math id="p20.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> as <math id="p20.m2" class="ltx_Math" alttext="F(x,y,z)=0" display="inline"><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> with</p>
+<table id="S0.Ex33" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex33.m1" class="ltx_Math" alttext="F(x,y,z)=xy^{2}+x^{2}y+z^{3}+axyz" display="block"><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">with <math id="p20.m3" class="ltx_Math" alttext="P" display="inline"><mi>P</mi></math> located at <math id="p20.m4" class="ltx_Math" alttext="(1,0,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math> and <math id="p20.m5" class="ltx_Math" alttext="Q" display="inline"><mi>Q</mi></math> located at <math id="p20.m6" class="ltx_Math" alttext="(0,1,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>.
+The line <math id="p20.m7" class="ltx_Math" alttext="PQ" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mi>Q</mi></mrow></math> then has equation <math id="p20.m8" class="ltx_Math" alttext="z=0" display="inline"><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow></math>. Restricting <math id="p20.m9" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math>
+to this line, <math id="p20.m10" class="ltx_Math" alttext="F(x,y,0)=xy^{2}+x^{2}y=x(x+y)y" display="inline"><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>y</mi></mrow></mrow></math>, so
+<math id="p20.m11" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>, the third point of intersection of <math id="p20.m12" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> with <math id="p20.m13" class="ltx_Math" alttext="PQ" display="inline"><mrow><mi>P</mi><mo>⁢</mo><mi>Q</mi></mrow></math>, has
+coordinates <math id="p20.m14" class="ltx_Math" alttext="(1,-1,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>.</p>
+</div>
+<div id="p21" class="ltx_para">
+<p class="ltx_p">Next, we compute the Hessian determinant at <math id="p21.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>:</p>
+<table id="S0.Ex34" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex34.m1" class="ltx_Math" alttext="H(1,-1,0)=\left|\begin{matrix}-1&amp;0&amp;-a\\
+0&amp;1&amp;a\\
+-a&amp;a&amp;0\end{matrix}\right|=0" display="block"><mrow><mrow><mi>H</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mo>-</mo><mn>1</mn></mrow></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mrow><mo>-</mo><mi>a</mi></mrow></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mn>1</mn></mtd><mtd columnalign="center"><mi>a</mi></mtd></mtr><mtr><mtd columnalign="center"><mrow><mo>-</mo><mi>a</mi></mrow></mtd><mtd columnalign="center"><mi>a</mi></mtd><mtd columnalign="center"><mn>0</mn></mtd></mtr></mtable><mo>|</mo></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Since it equals zero, <math id="p21.m2" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is an inflection point.
+∎</p>
+</div>
+</div>
+<div id="p22" class="ltx_para">
+<p class="ltx_p">Since our curve is of the third order, a line cannot
+intersect more than three points. Hence, we see that
+a line passing through two inflection points of a
+non-singular complex cubic plane curve must pass through
+exactly three inflection points. As it turns out, this
+observation, together with the fact that there are exactly
+nine inflection points suffices to determine the locations
+of the inflection points up to collineation. However, rather
+than pursuing this line of reasoning here, we will instead
+cast the equation of the curve in a form which makes it easy
+to locate all the inflection points and makes the symmetry
+of the curve apparent.</p>
+</div>
+<div id="Thmthm7" class="ltx_theorem ltx_theorem_thm">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Theorem 7</span>.</h6>
+<div id="Thmthm7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Suppose <math id="Thmthm7.p1.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is a non-singular complex cubic curve. Then we
+may choose homogeneous coordinates the equation of the curve
+assumes the form</span></p>
+<table id="S0.Ex35" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex35.m1" class="ltx_Math" alttext="x^{3}+y^{3}+z^{3}+6mxyz=0." display="block"><mrow><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="p23" class="ltx_para">
+<p class="ltx_p">We know that there exists a straight line <math id="p23.m1" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math> which intersects
+<math id="p23.m2" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> in exactly three points, all of which are inflection points
+of <math id="p23.m3" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>. Choose a homogenous coordinate system in which the
+equation of <math id="p23.m4" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math> is <math id="p23.m5" class="ltx_Math" alttext="Z=0" display="inline"><mrow><mi>Z</mi><mo>=</mo><mn>0</mn></mrow></math>. Since the three points of intersection
+of <math id="p23.m6" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> with <math id="p23.m7" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math> are distinct, we may place them at any three
+locations; we shall choose
+<math id="p23.m8" class="ltx_Math" alttext="(1,-1,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>, <math id="p23.m9" class="ltx_Math" alttext="(1,-\rho,0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><mi>ρ</mi></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>, and <math id="p23.m10" class="ltx_Math" alttext="(1,-\rho^{2},0)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><msup><mi>ρ</mi><mn>2</mn></msup></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></math>, where
+<math id="p23.m11" class="ltx_Math" alttext="\rho=(-1+\sqrt{-3})/2" display="inline"><mrow><mi>ρ</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mo>-</mo><mn>1</mn></mrow><mo>+</mo><msqrt><mrow><mo>-</mo><mn>3</mn></mrow></msqrt></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>2</mn></mrow></mrow></math> is a primitive cube root of unity.</p>
+</div>
+<div id="p24" class="ltx_para">
+<p class="ltx_p">With this choice, the equation of <math id="p24.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> becomes
+</p>
+<table id="S0.Ex36" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex36.m1" class="ltx_Math" alttext="X^{3}+Y^{3}+DX^{2}Z+EXYZ+FY^{2}Z+BXZ^{2}+CYZ^{2}+AZ^{3}=0." display="block"><mrow><mrow><mrow><msup><mi>X</mi><mn>3</mn></msup><mo>+</mo><msup><mi>Y</mi><mn>3</mn></msup><mo>+</mo><mrow><mi>D</mi><mo>⁢</mo><msup><mi>X</mi><mn>2</mn></msup><mo>⁢</mo><mi>Z</mi></mrow><mo>+</mo><mrow><mi>E</mi><mo>⁢</mo><mi>X</mi><mo>⁢</mo><mi>Y</mi><mo>⁢</mo><mi>Z</mi></mrow><mo>+</mo><mrow><mi>F</mi><mo>⁢</mo><msup><mi>Y</mi><mn>2</mn></msup><mo>⁢</mo><mi>Z</mi></mrow><mo>+</mo><mrow><mi>B</mi><mo>⁢</mo><mi>X</mi><mo>⁢</mo><msup><mi>Z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>C</mi><mo>⁢</mo><mi>Y</mi><mo>⁢</mo><msup><mi>Z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>A</mi><mo>⁢</mo><msup><mi>Z</mi><mn>3</mn></msup></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">By making the change of variables</p>
+<table id="S0.Ex37" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex37.m1" class="ltx_Math" alttext="x=X-FZ/3" display="block"><mrow><mi>x</mi><mo>=</mo><mrow><mi>X</mi><mo>-</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><mi>Z</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<table id="S0.Ex38" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex38.m1" class="ltx_Math" alttext="y^{\prime}=Y-DZ/3" display="block"><mrow><msup><mi>y</mi><mo>′</mo></msup><mo>=</mo><mrow><mi>Y</mi><mo>-</mo><mrow><mrow><mi>D</mi><mo>⁢</mo><mi>Z</mi></mrow><mo>/</mo><mn>3</mn></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">we simplify the equation of the curve to</p>
+<table id="S0.Ex39" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex39.m1" class="ltx_Math" alttext="x^{3}+y^{3}+ExyZ+bxZ^{2}+cyZ^{2}+aZ^{3}=0." display="block"><mrow><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup><mo>+</mo><mrow><mi>E</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>Z</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>Z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><msup><mi>Z</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><mi>a</mi><mo>⁢</mo><msup><mi>Z</mi><mn>3</mn></msup></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where</p>
+<table id="S0.Ex40" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex40.m1" class="ltx_Math" alttext="a=A-\frac{BD}{3}+\frac{2D^{3}}{27}-\frac{CF}{3}+\frac{DEF}{9}+\frac{2F^{3}}{27}" display="block"><mrow><mi>a</mi><mo>=</mo><mrow><mrow><mrow><mrow><mi>A</mi><mo>-</mo><mfrac><mrow><mi>B</mi><mo>⁢</mo><mi>D</mi></mrow><mn>3</mn></mfrac></mrow><mo>+</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><msup><mi>D</mi><mn>3</mn></msup></mrow><mn>27</mn></mfrac></mrow><mo>-</mo><mfrac><mrow><mi>C</mi><mo>⁢</mo><mi>F</mi></mrow><mn>3</mn></mfrac></mrow><mo>+</mo><mfrac><mrow><mi>D</mi><mo>⁢</mo><mi>E</mi><mo>⁢</mo><mi>F</mi></mrow><mn>9</mn></mfrac><mo>+</mo><mfrac><mrow><mn>2</mn><mo>⁢</mo><msup><mi>F</mi><mn>3</mn></msup></mrow><mn>27</mn></mfrac></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<table id="S0.Ex41" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex41.m1" class="ltx_Math" alttext="b=B-\frac{D^{2}}{3}-\frac{EF}{3}" display="block"><mrow><mi>b</mi><mo>=</mo><mrow><mi>B</mi><mo>-</mo><mfrac><msup><mi>D</mi><mn>2</mn></msup><mn>3</mn></mfrac><mo>-</mo><mfrac><mrow><mi>E</mi><mo>⁢</mo><mi>F</mi></mrow><mn>3</mn></mfrac></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<table id="S0.Ex42" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex42.m1" class="ltx_Math" alttext="c=C-\frac{DE}{3}-\frac{F^{2}}{3}" display="block"><mrow><mi>c</mi><mo>=</mo><mrow><mi>C</mi><mo>-</mo><mfrac><mrow><mi>D</mi><mo>⁢</mo><mi>E</mi></mrow><mn>3</mn></mfrac><mo>-</mo><mfrac><msup><mi>F</mi><mn>2</mn></msup><mn>3</mn></mfrac></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Note that this transformation leaves the coordinates of the three
+points of intersection of <math id="p24.m2" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math> and <math id="p24.m3" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> unchanged.</p>
+</div>
+<div id="p25" class="ltx_para">
+<p class="ltx_p">Next, we impose the requirement that the three points lying on <math id="p25.m1" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math> be
+inflecton points of <math id="p25.m2" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math>. Setting <math id="p25.m3" class="ltx_Math" alttext="Z" display="inline"><mi>Z</mi></math> to zero, the Hessian becomes</p>
+<table id="S0.Ex43" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex43.m1" class="ltx_Math" alttext="\left|\begin{matrix}6x&amp;0&amp;Ey\\
+0&amp;6y&amp;Ex\\
+Ey&amp;Ex&amp;2bx+2cy\end{matrix}\right|=72bx^{2}y+72cxy^{2}-6E^{2}(x^{3}+y^{3})" display="block"><mrow><mrow><mo>|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mn>6</mn><mo>⁢</mo><mi>x</mi></mrow></mtd><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mrow><mi>E</mi><mo>⁢</mo><mi>y</mi></mrow></mtd></mtr><mtr><mtd columnalign="center"><mn>0</mn></mtd><mtd columnalign="center"><mrow><mn>6</mn><mo>⁢</mo><mi>y</mi></mrow></mtd><mtd columnalign="center"><mrow><mi>E</mi><mo>⁢</mo><mi>x</mi></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mi>E</mi><mo>⁢</mo><mi>y</mi></mrow></mtd><mtd columnalign="center"><mrow><mi>E</mi><mo>⁢</mo><mi>x</mi></mrow></mtd><mtd columnalign="center"><mrow><mrow><mn>2</mn><mo>⁢</mo><mi>b</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mrow><mn>2</mn><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></mtd></mtr></mtable><mo>|</mo></mrow><mo>=</mo><mrow><mrow><mrow><mn>72</mn><mo>⁢</mo><mi>b</mi><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mn>72</mn><mo>⁢</mo><mi>c</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mrow><mo>-</mo><mrow><mn>6</mn><mo>⁢</mo><msup><mi>E</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">In order for the three points intersection of <math id="p25.m4" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math> and <math id="p25.m5" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> to be
+inflection points, we must have this be a multiple of <math id="p25.m6" class="ltx_Math" alttext="x^{3}+y^{3}" display="inline"><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup></mrow></math>.
+This requires that <math id="p25.m7" class="ltx_Math" alttext="b" display="inline"><mi>b</mi></math> and <math id="p25.m8" class="ltx_Math" alttext="c" display="inline"><mi>c</mi></math> both be zero.</p>
+</div>
+<div id="p26" class="ltx_para">
+<p class="ltx_p">Were <math id="p26.m1" class="ltx_Math" alttext="a" display="inline"><mi>a</mi></math> zero as well, our cubic would have a singularity at <math id="p26.m2" class="ltx_Math" alttext="(0,0,1)" display="inline"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math>.
+Since <math id="p26.m3" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is assumed to not be singular, that means that <math id="p26.m4" class="ltx_Math" alttext="a\neq 0" display="inline"><mrow><mi>a</mi><mo>≠</mo><mn>0</mn></mrow></math>, so
+we can make the further transform</p>
+<table id="S0.Ex44" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex44.m1" class="ltx_Math" alttext="z=a^{1/3}Z" display="block"><mrow><mi>z</mi><mo>=</mo><mrow><msup><mi>a</mi><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></msup><mo>⁢</mo><mi>Z</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<table id="S0.Ex45" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex45.m1" class="ltx_Math" alttext="m=a^{-1/3}E/6" display="block"><mrow><mi>m</mi><mo>=</mo><mrow><mrow><msup><mi>a</mi><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mn>3</mn></mrow></mrow></msup><mo>⁢</mo><mi>E</mi></mrow><mo>/</mo><mn>6</mn></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">to put the equation for <math id="p26.m5" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> in the form <math id="p26.m6" class="ltx_Math" alttext="x^{3}+y^{3}+z^{3}+6mxyz=0" display="inline"><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>.
+∎</p>
+</div>
+</div>
+<div id="p27" class="ltx_para">
+<p class="ltx_p">While we have shown that we can transform the equation of any
+non-singular curve into our canonical form, there remains the
+possibility that a curve whose equation is expressible in
+our canonical form may be singular or degenerate. We will
+now examine this possibility.</p>
+</div>
+<div id="Thmthm8" class="ltx_theorem ltx_theorem_thm">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Theorem 8</span>.</h6>
+<div id="Thmthm8.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">A equation <math id="Thmthm8.p1.m1" class="ltx_Math" alttext="x^{3}+y^{3}+z^{3}+6mxyz=0" display="inline"><mrow><mrow><msup><mi>x</mi><mn mathvariant="normal">3</mn></msup><mo mathvariant="normal">+</mo><msup><mi>y</mi><mn mathvariant="normal">3</mn></msup><mo mathvariant="normal">+</mo><msup><mi>z</mi><mn mathvariant="normal">3</mn></msup><mo mathvariant="normal">+</mo><mrow><mn mathvariant="normal">6</mn><mo mathvariant="italic">⁢</mo><mi>m</mi><mo mathvariant="italic">⁢</mo><mi>x</mi><mo mathvariant="italic">⁢</mo><mi>y</mi><mo mathvariant="italic">⁢</mo><mi>z</mi></mrow></mrow><mo mathvariant="normal">=</mo><mn mathvariant="normal">0</mn></mrow></math> describes a singular
+curve if and only if <math id="Thmthm8.p1.m2" class="ltx_Math" alttext="8m^{3}+1=0" display="inline"><mrow><mrow><mrow><mn mathvariant="normal">8</mn><mo mathvariant="italic">⁢</mo><msup><mi>m</mi><mn mathvariant="normal">3</mn></msup></mrow><mo mathvariant="normal">+</mo><mn mathvariant="normal">1</mn></mrow><mo mathvariant="normal">=</mo><mn mathvariant="normal">0</mn></mrow></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="p28" class="ltx_para">
+<p class="ltx_p">The curve described by the equation <math id="p28.m1" class="ltx_Math" alttext="f(x,y,z)=0" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> is singular
+if and only if there exists a point on the curve at which all
+three partial derivatives of <math id="p28.m2" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> go zero. Taking derivatives
+and doing a little bit of algebraic manipulation, this means
+that, for the curve to be singular, there must be a non-trivial
+solution to the system of equations</p>
+<table id="S0.Ex46" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex46.m1" class="ltx_Math" alttext="x^{2}=-2myz" display="block"><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<table id="S0.Ex47" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex47.m1" class="ltx_Math" alttext="y^{2}=-2mxz" display="block"><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>=</mo><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<table id="S0.Ex48" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex48.m1" class="ltx_Math" alttext="z^{2}=-2mxy." display="block"><mrow><mrow><msup><mi>z</mi><mn>2</mn></msup><mo>=</mo><mrow><mo>-</mo><mrow><mn>2</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Multiplying the last three equations together, we obtain
+<math id="p28.m3" class="ltx_Math" alttext="x^{2}y^{2}z^{2}=-8m^{3}x^{2}y^{2}z^{2}=0" display="inline"><mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>=</mo><mrow><mo>-</mo><mrow><mn>8</mn><mo>⁢</mo><msup><mi>m</mi><mn>3</mn></msup><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>, or
+<math id="p28.m4" class="ltx_Math" alttext="(8m^{3}+1)x^{2}y^{2}z^{2}=0" display="inline"><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>8</mn><mo>⁢</mo><msup><mi>m</mi><mn>3</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>y</mi><mn>2</mn></msup><mo>⁢</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo>=</mo><mn>0</mn></mrow></math>. If <math id="p28.m5" class="ltx_Math" alttext="8m^{3}+1\neq 0" display="inline"><mrow><mrow><mrow><mn>8</mn><mo>⁢</mo><msup><mi>m</mi><mn>3</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow><mo>≠</mo><mn>0</mn></mrow></math>, the only
+way for this to be satisfied is to have either <math id="p28.m6" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math> or <math id="p28.m7" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>
+or <math id="p28.m8" class="ltx_Math" alttext="z=0" display="inline"><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow></math>. However, suppose that <math id="p28.m9" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>. Then, by the last two
+equations, we would also have <math id="p28.m10" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="p28.m11" class="ltx_Math" alttext="z=0" display="inline"><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow></math>, so the solution
+would be trivial. Likewise, if <math id="p28.m12" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>, then it follows that
+<math id="p28.m13" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="p28.m14" class="ltx_Math" alttext="z=0" display="inline"><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow></math>; and, if <math id="p28.m15" class="ltx_Math" alttext="z=0" display="inline"><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow></math>, it follows that <math id="p28.m16" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math> and <math id="p28.m17" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>.
+Hence, when <math id="p28.m18" class="ltx_Math" alttext="8m^{3}+1\neq 0" display="inline"><mrow><mrow><mrow><mn>8</mn><mo>⁢</mo><msup><mi>m</mi><mn>3</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow><mo>≠</mo><mn>0</mn></mrow></math>, we only have the trivial solution,
+so the curve is non-singular.</p>
+</div>
+<div id="p29" class="ltx_para">
+<p class="ltx_p">We will finish by explicitly showing that the curve degenerates
+when <math id="p29.m1" class="ltx_Math" alttext="8m^{3}+1=0" display="inline"><mrow><mrow><mrow><mn>8</mn><mo>⁢</mo><msup><mi>m</mi><mn>3</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mn>0</mn></mrow></math>, i.e. when <math id="p29.m2" class="ltx_Math" alttext="m=-1/2" display="inline"><mrow><mi>m</mi><mo>=</mo><mrow><mo>-</mo><mrow><mn>1</mn><mo>/</mo><mn>2</mn></mrow></mrow></mrow></math> or <math id="p29.m3" class="ltx_Math" alttext="m=-\rho/2" display="inline"><mrow><mi>m</mi><mo>=</mo><mrow><mo>-</mo><mrow><mi>ρ</mi><mo>/</mo><mn>2</mn></mrow></mrow></mrow></math> or
+<math id="p29.m4" class="ltx_Math" alttext="m=-\rho^{2}/2" display="inline"><mrow><mi>m</mi><mo>=</mo><mrow><mo>-</mo><mrow><msup><mi>ρ</mi><mn>2</mn></msup><mo>/</mo><mn>2</mn></mrow></mrow></mrow></math>. (As before, <math id="p29.m5" class="ltx_Math" alttext="\rho" display="inline"><mi>ρ</mi></math> is a primitive cube
+root of unity.) In each of these cases, we can factor our
+equation into a product of three linear terms:</p>
+<table id="S0.Ex49" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex49.m1" class="ltx_Math" alttext="x^{3}+y^{3}+z^{3}-3xyz=(x+y+z)(x+\rho y+\rho^{2}z)(x+\rho^{2}y+\rho z)" display="block"><mrow><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup></mrow><mo>-</mo><mrow><mn>3</mn><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi>ρ</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><msup><mi>ρ</mi><mn>2</mn></msup><mo>⁢</mo><mi>z</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mrow><msup><mi>ρ</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><mi>ρ</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<table id="S0.Ex50" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex50.m1" class="ltx_Math" alttext="x^{3}+y^{3}+z^{3}-3\rho xyz=\rho^{2}(x+y+\rho z)(x+\rho y+z)(\rho x+y+z)" display="block"><mrow><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup></mrow><mo>-</mo><mrow><mn>3</mn><mo>⁢</mo><mi>ρ</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>=</mo><mrow><msup><mi>ρ</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mrow><mi>ρ</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi>ρ</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>ρ</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<table id="S0.Ex51" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex51.m1" class="ltx_Math" alttext="x^{3}+y^{3}+z^{3}-3\rho^{2}xyz=\rho(x+y+\rho^{2}z)(x+\rho^{2}y+z)(\rho^{2}x+y+z)" display="block"><mrow><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup></mrow><mo>-</mo><mrow><mn>3</mn><mo>⁢</mo><msup><mi>ρ</mi><mn>2</mn></msup><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></mrow><mo>=</mo><mrow><mi>ρ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mrow><msup><mi>ρ</mi><mn>2</mn></msup><mo>⁢</mo><mi>z</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mrow><msup><mi>ρ</mi><mn>2</mn></msup><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msup><mi>ρ</mi><mn>2</mn></msup><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Thus, when <math id="p29.m6" class="ltx_Math" alttext="8m^{3}+1=0" display="inline"><mrow><mrow><mrow><mn>8</mn><mo>⁢</mo><msup><mi>m</mi><mn>3</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow><mo>=</mo><mn>0</mn></mrow></math>, our curve degenerates into a triangle
+(whose vertices are the singularities).
+∎</p>
+</div>
+</div>
+<div id="p30" class="ltx_para">
+<p class="ltx_p">Having obtained this canonical form, it is quite easy to exhibit all
+nine inflection points.</p>
+</div>
+<div id="Thmthm9" class="ltx_theorem ltx_theorem_thm">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Theorem 9</span>.</h6>
+<div id="Thmthm9.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Given a non-singular complex cubic plane curve, there
+exists a coordinate system in which the inflection
+points of that curve have the following coordinates:</span></p>
+<table id="S0.Ex52" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex52.m1" class="ltx_Math" alttext="\begin{matrix}(1,-\rho,0)&amp;(1,-1,0)&amp;(1,-\rho^{2},0)\\
+(-\rho,0,1)&amp;(-1,0,1)&amp;(-\rho^{2},0,1)\\
+(0,1,-\rho)&amp;(0,1,-1)&amp;(0,1,-\rho^{2})\end{matrix}." display="block"><mrow><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><mi>ρ</mi></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><msup><mi>ρ</mi><mn>2</mn></msup></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>ρ</mi></mrow><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><msup><mi>ρ</mi><mn>2</mn></msup></mrow><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><mi>ρ</mi></mrow><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mtd><mtd columnalign="center"><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><msup><mi>ρ</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mtd></mtr></mtable><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">As previously, <math id="Thmthm9.p1.m1" class="ltx_Math" alttext="\rho" display="inline"><mi>ρ</mi></math> denotes a primitive third root of unity.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="p31" class="ltx_para">
+<p class="ltx_p">For convenience, set <math id="p31.m1" class="ltx_Math" alttext="f=x^{3}+y^{3}+z^{3}+6mxyz" display="inline"><mrow><mi>f</mi><mo>=</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup><mo>+</mo><mrow><mn>6</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></mrow></math> and
+let <math id="p31.m2" class="ltx_Math" alttext="h" display="inline"><mi>h</mi></math> be <math id="p31.m3" class="ltx_Math" alttext="1/216" display="inline"><mrow><mn>1</mn><mo>/</mo><mn>216</mn></mrow></math> times the Hessian of <math id="p31.m4" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>.
+Computing, we have</p>
+<table id="S0.Ex53" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex53.m1" class="ltx_Math" alttext="h=\frac{1}{216}\left|\begin{matrix}6x&amp;6mz&amp;6my\\
+6mz&amp;6y&amp;6mx\\
+6my&amp;6mx&amp;6z\\
+\end{matrix}\right|=(2m^{3}+1)xyz-m^{2}(x^{3}+y^{3}+z^{3})" display="block"><mrow><mi>h</mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>216</mn></mfrac><mo>⁢</mo><mrow><mo>|</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mrow><mn>6</mn><mo>⁢</mo><mi>x</mi></mrow></mtd><mtd columnalign="center"><mrow><mn>6</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>z</mi></mrow></mtd><mtd columnalign="center"><mrow><mn>6</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>y</mi></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mn>6</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>z</mi></mrow></mtd><mtd columnalign="center"><mrow><mn>6</mn><mo>⁢</mo><mi>y</mi></mrow></mtd><mtd columnalign="center"><mrow><mn>6</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>x</mi></mrow></mtd></mtr><mtr><mtd columnalign="center"><mrow><mn>6</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>y</mi></mrow></mtd><mtd columnalign="center"><mrow><mn>6</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>x</mi></mrow></mtd><mtd columnalign="center"><mrow><mn>6</mn><mo>⁢</mo><mi>z</mi></mrow></mtd></mtr></mtable><mo>|</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>m</mi><mn>3</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow><mo>-</mo><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Thus the Hessian is of the same form, but with <math id="p31.m5" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math> replaced by
+<math id="p31.m6" class="ltx_Math" alttext="-(2m^{3}+1)/6m^{2}" display="inline"><mrow><mo>-</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>m</mi><mn>3</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>/</mo><mn>6</mn></mrow><mo>⁢</mo><msup><mi>m</mi><mn>2</mn></msup></mrow></mrow></math>. Next, we form two combinations of <math id="p31.m7" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>
+ande <math id="p31.m8" class="ltx_Math" alttext="h" display="inline"><mi>h</mi></math>:</p>
+<table id="S0.Ex54" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex54.m1" class="ltx_Math" alttext="m^{2}f+h=(8m^{3}+1)xyz" display="block"><mrow><mrow><mrow><msup><mi>m</mi><mn>2</mn></msup><mo>⁢</mo><mi>f</mi></mrow><mo>+</mo><mi>h</mi></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>8</mn><mo>⁢</mo><msup><mi>m</mi><mn>3</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<table id="S0.Ex55" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex55.m1" class="ltx_Math" alttext="(2m^{3}+1)f-6mh=(8m^{3}+1)(x^{3}+y^{3}+z^{3})" display="block"><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>2</mn><mo>⁢</mo><msup><mi>m</mi><mn>3</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>f</mi></mrow><mo>-</mo><mrow><mn>6</mn><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>h</mi></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mn>8</mn><mo>⁢</mo><msup><mi>m</mi><mn>3</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">As we have just seen, the condition for the curve not to be
+singular is exactly that <math id="p31.m9" class="ltx_Math" alttext="8m^{3}+1\neq 0" display="inline"><mrow><mrow><mrow><mn>8</mn><mo>⁢</mo><msup><mi>m</mi><mn>3</mn></msup></mrow><mo>+</mo><mn>1</mn></mrow><mo>≠</mo><mn>0</mn></mrow></math>, so we may cancel
+to conclude that</p>
+<table id="S0.Ex56" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex56.m1" class="ltx_Math" alttext="x^{3}+y^{3}+z^{3}=0" display="block"><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and</p>
+<table id="S0.Ex57" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex57.m1" class="ltx_Math" alttext="xyz=0." display="block"><mrow><mrow><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow><mo>=</mo><mn>0</mn></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">The latter equation will be satisfied if either <math id="p31.m10" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math> or
+<math id="p31.m11" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math> or <math id="p31.m12" class="ltx_Math" alttext="z=0" display="inline"><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow></math>. When <math id="p31.m13" class="ltx_Math" alttext="x=0" display="inline"><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow></math>, the former equation reduces
+to <math id="p31.m14" class="ltx_Math" alttext="y^{3}+z^{3}=0" display="inline"><mrow><mrow><msup><mi>y</mi><mn>3</mn></msup><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup></mrow><mo>=</mo><mn>0</mn></mrow></math>, which gives us the solutions</p>
+<table id="S0.Ex58" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex58.m1" class="ltx_Math" alttext="(0,1,-\rho),(0,1,-1),(0,1,-\rho^{2})" display="block"><mrow><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><mi>ρ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><msup><mi>ρ</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Likewise, when <math id="p31.m15" class="ltx_Math" alttext="y=0" display="inline"><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow></math>, it reduces to <math id="p31.m16" class="ltx_Math" alttext="x^{3}+z^{3}=0" display="inline"><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup></mrow><mo>=</mo><mn>0</mn></mrow></math> with
+the solutions</p>
+<table id="S0.Ex59" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex59.m1" class="ltx_Math" alttext="(-\rho,0,1),(-1,0,1),(-\rho^{2},0,1)" display="block"><mrow><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>ρ</mi></mrow><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><msup><mi>ρ</mi><mn>2</mn></msup></mrow><mo>,</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and, when <math id="p31.m17" class="ltx_Math" alttext="z=0" display="inline"><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow></math>, it reduces to <math id="p31.m18" class="ltx_Math" alttext="x^{3}+y^{3}=0" display="inline"><mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup></mrow><mo>=</mo><mn>0</mn></mrow></math>, with
+solutions</p>
+<table id="S0.Ex60" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex60.m1" class="ltx_Math" alttext="(1,-\rho,0),(1,-1,0),(1,-\rho^{2},0)." display="block"><mrow><mrow><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><mi>ρ</mi></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow><mo>,</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mrow><mo>-</mo><msup><mi>ρ</mi><mn>2</mn></msup></mrow><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">∎</p>
+</div>
+</div>
+<div id="p32" class="ltx_para ltx_align_right">
+<table class="ltx_tabular ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">inflection points and canonical forms of non-singular cubic curves</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">InflectionPointsAndCanonicalFormsOfNonsingularCubicCurves</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2014-01-16 16:32:44</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2014-01-16 16:32:44</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">42</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Feature</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 14N10</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">msc 14H52</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 18:00:52 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

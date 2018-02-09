@@ -1,0 +1,269 @@
+<!DOCTYPE html><html>
+<head>
+<title>projective space</title>
+<!--Generated on Fri Feb  9 17:56:05 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">projective space</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<section id="S0.SS0.SSS0.Px1" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Projective space and homogeneous coordinates.</h2>
+
+<div id="S0.SS0.SSS0.Px1.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="S0.SS0.SSS0.Px1.p1.m1" class="ltx_Math" alttext="\mathbb{K}" display="inline"><mi>𝕂</mi></math> be a field. <span class="ltx_text ltx_font_italic">Projective space</span> of dimension <math id="S0.SS0.SSS0.Px1.p1.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> over
+<math id="S0.SS0.SSS0.Px1.p1.m3" class="ltx_Math" alttext="\mathbb{K}" display="inline"><mi>𝕂</mi></math>, typically denoted by <math id="S0.SS0.SSS0.Px1.p1.m4" class="ltx_Math" alttext="{\mathbb{K}\mathrm{P}}^{n}" display="inline"><mrow><mi>𝕂</mi><mo>⁢</mo><msup><mi mathvariant="normal">P</mi><mi>n</mi></msup></mrow></math>, is the set of lines passing
+through the origin in <math id="S0.SS0.SSS0.Px1.p1.m5" class="ltx_Math" alttext="\mathbb{K}^{n+1}" display="inline"><msup><mi>𝕂</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></math>. More formally, consider the
+equivalence relation <math id="S0.SS0.SSS0.Px1.p1.m6" class="ltx_Math" alttext="\sim" display="inline"><mo>∼</mo></math> on the set of non-zero points <math id="S0.SS0.SSS0.Px1.p1.m7" class="ltx_Math" alttext="\mathbb{K}^{n+1}\backslash\{0\}" display="inline"><mrow><msup><mi>𝕂</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>\</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow></math>
+defined by</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\mathbf{x}\sim\lambda\mathbf{x},\quad\mathbf{x}\in\mathbb{K}^{n+1}\backslash\{%
+0\},\quad\lambda\in\mathbb{K}\backslash\{0\}." display="block"><mrow><mrow><mrow><mi>𝐱</mi><mo>∼</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>𝐱</mi></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mrow><mi>𝐱</mi><mo>∈</mo><mrow><msup><mi>𝕂</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>\</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mi>λ</mi><mo>∈</mo><mrow><mi>𝕂</mi><mo>\</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Projective space is defined to be the set of the
+corresponding equivalence classes.</p>
+</div>
+<div id="S0.SS0.SSS0.Px1.p2" class="ltx_para">
+<p class="ltx_p">Every <math id="S0.SS0.SSS0.Px1.p2.m1" class="ltx_Math" alttext="\mathbf{x}=(x_{0},\ldots,x_{n})\in\mathbb{K}^{n+1}\backslash\{0\}" display="inline"><mrow><mi>𝐱</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>∈</mo><mrow><msup><mi>𝕂</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>\</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow></mrow></math> determines an element of
+projective space, namely the line passing through <math id="S0.SS0.SSS0.Px1.p2.m2" class="ltx_Math" alttext="\mathbf{x}" display="inline"><mi>𝐱</mi></math>. Formally,
+this line is the equivalence class <math id="S0.SS0.SSS0.Px1.p2.m3" class="ltx_Math" alttext="[\mathbf{x}]" display="inline"><mrow><mo stretchy="false">[</mo><mi>𝐱</mi><mo stretchy="false">]</mo></mrow></math>, or <math id="S0.SS0.SSS0.Px1.p2.m4" class="ltx_Math" alttext="[x_{0}:x_{1}:\ldots:x_{n}]" display="inline"><mrow><mo stretchy="false">[</mo><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>:</mo><msub><mi>x</mi><mn>1</mn></msub><mo>:</mo><mi mathvariant="normal">…</mi><mo>:</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo stretchy="false">]</mo></mrow></math>,
+as it is commonly denoted. The numbers <math id="S0.SS0.SSS0.Px1.p2.m5" class="ltx_Math" alttext="x_{0},\ldots,x_{n}" display="inline"><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></math> are referred
+to as <em class="ltx_emph ltx_font_italic">homogeneous coordinates</em> of the line. Homogeneous coordinates
+differ from ordinary coordinate systems in that a given element of
+projective space is labeled by multiple homogeneous “coordinates”.</p>
+</div>
+</section>
+<section id="S0.SS0.SSS0.Px2" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Affine coordinates.</h2>
+
+<div id="S0.SS0.SSS0.Px2.p1" class="ltx_para">
+<p class="ltx_p">Projective space also admits a more
+conventional type of coordinate system, called affine coordinates.
+Let <math id="S0.SS0.SSS0.Px2.p1.m1" class="ltx_Math" alttext="A_{0}\subset{\mathbb{K}\mathrm{P}}^{n}" display="inline"><mrow><msub><mi>A</mi><mn>0</mn></msub><mo>⊂</mo><mrow><mi>𝕂</mi><mo>⁢</mo><msup><mi mathvariant="normal">P</mi><mi>n</mi></msup></mrow></mrow></math> be the subset of all elements
+<math id="S0.SS0.SSS0.Px2.p1.m2" class="ltx_Math" alttext="p=[x_{0}:x_{1}:\ldots:x_{n}]\in{\mathbb{K}\mathrm{P}}^{n}" display="inline"><mrow><mi>p</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><msub><mi>x</mi><mn>0</mn></msub><mo>:</mo><msub><mi>x</mi><mn>1</mn></msub><mo>:</mo><mi mathvariant="normal">…</mi><mo>:</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">]</mo></mrow><mo>∈</mo><mi>𝕂</mi><msup><mi mathvariant="normal">P</mi><mi>n</mi></msup></mrow></math> such that <math id="S0.SS0.SSS0.Px2.p1.m3" class="ltx_Math" alttext="x_{0}\neq 0" display="inline"><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>≠</mo><mn>0</mn></mrow></math>. We then
+define the functions</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="X_{i}:A_{0}\rightarrow\mathbb{K}^{n},\quad i=1,\ldots,n," display="block"><mrow><mrow><msub><mi>X</mi><mi>i</mi></msub><mo>:</mo><mrow><mrow><msub><mi>A</mi><mn>0</mn></msub><mo>→</mo><msup><mi>𝕂</mi><mi>n</mi></msup></mrow><mo rspace="12.5pt">,</mo><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">according to</p>
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="X_{i}(p)=\frac{x_{i}}{x_{0}}," display="block"><mrow><mrow><mrow><msub><mi>X</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><msub><mi>x</mi><mi>i</mi></msub><msub><mi>x</mi><mn>0</mn></msub></mfrac></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S0.SS0.SSS0.Px2.p1.m4" class="ltx_Math" alttext="(x_{0},x_{1},\ldots,x_{n})" display="inline"><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>0</mn></msub><mo>,</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></math> is <span class="ltx_text ltx_font_italic">any</span> element of the equivalence class representing <math id="S0.SS0.SSS0.Px2.p1.m5" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>. This
+definition makes sense because other elements of the same equivalence
+class have the form</p>
+<table id="S0.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="(y_{0},y_{1},\ldots,y_{n})=(\lambda x_{0},\lambda x_{1},\ldots,\lambda x_{n})" display="block"><mrow><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>0</mn></msub><mo>,</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>y</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>x</mi><mn>0</mn></msub></mrow><mo>,</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">for some non-zero <math id="S0.SS0.SSS0.Px2.p1.m6" class="ltx_Math" alttext="\lambda\in\mathbb{K}" display="inline"><mrow><mi>λ</mi><mo>∈</mo><mi>𝕂</mi></mrow></math>, and hence</p>
+<table id="S0.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex5.m1" class="ltx_Math" alttext="\frac{y_{i}}{y_{0}}=\frac{x_{i}}{x_{0}}." display="block"><mrow><mrow><mfrac><msub><mi>y</mi><mi>i</mi></msub><msub><mi>y</mi><mn>0</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>x</mi><mi>i</mi></msub><msub><mi>x</mi><mn>0</mn></msub></mfrac></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S0.SS0.SSS0.Px2.p2" class="ltx_para">
+<p class="ltx_p">The functions <math id="S0.SS0.SSS0.Px2.p2.m1" class="ltx_Math" alttext="X_{1},\ldots,X_{n}" display="inline"><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>n</mi></msub></mrow></math> are called <em class="ltx_emph ltx_font_italic">affine coordinates</em> relative
+to the hyperplane</p>
+<table id="S0.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex6.m1" class="ltx_Math" alttext="H_{0}=\{x_{0}=1\}\subset\mathbb{K}^{n+1}." display="block"><mrow><msub><mi>H</mi><mn>0</mn></msub><mo>=</mo><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn><mo stretchy="false">}</mo></mrow><mo>⊂</mo><msup><mi>𝕂</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Geometrically,
+affine coordinates can be described by saying that the elements of
+<math id="S0.SS0.SSS0.Px2.p2.m2" class="ltx_Math" alttext="A_{0}" display="inline"><msub><mi>A</mi><mn>0</mn></msub></math> are lines in <math id="S0.SS0.SSS0.Px2.p2.m3" class="ltx_Math" alttext="\mathbb{K}^{n+1}" display="inline"><msup><mi>𝕂</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></math> that are not parallel to <math id="S0.SS0.SSS0.Px2.p2.m4" class="ltx_Math" alttext="H_{0}" display="inline"><msub><mi>H</mi><mn>0</mn></msub></math>, and
+that every such line intersects <math id="S0.SS0.SSS0.Px2.p2.m5" class="ltx_Math" alttext="H_{0}" display="inline"><msub><mi>H</mi><mn>0</mn></msub></math> in one and exactly one point.
+Conversely points of <math id="S0.SS0.SSS0.Px2.p2.m6" class="ltx_Math" alttext="H_{0}" display="inline"><msub><mi>H</mi><mn>0</mn></msub></math> are represented by tuples
+<math id="S0.SS0.SSS0.Px2.p2.m7" class="ltx_Math" alttext="(1,x_{1},\ldots,x_{n})" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></math> with <math id="S0.SS0.SSS0.Px2.p2.m8" class="ltx_Math" alttext="(x_{1},\ldots,x_{n})\in\mathbb{K}^{n}" display="inline"><mrow><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>𝕂</mi><mi>n</mi></msup></mrow></math>, and each such
+point uniquely labels a line <math id="S0.SS0.SSS0.Px2.p2.m9" class="ltx_Math" alttext="[1:x_{1}:\ldots:x_{n}]" display="inline"><mrow><mo stretchy="false">[</mo><mrow><mn>1</mn><mo>:</mo><msub><mi>x</mi><mn>1</mn></msub><mo>:</mo><mi mathvariant="normal">…</mi><mo>:</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo stretchy="false">]</mo></mrow></math> in <math id="S0.SS0.SSS0.Px2.p2.m10" class="ltx_Math" alttext="A_{0}" display="inline"><msub><mi>A</mi><mn>0</mn></msub></math>.</p>
+</div>
+<div id="S0.SS0.SSS0.Px2.p3" class="ltx_para">
+<p class="ltx_p">It must be noted that a single system of affine coordinates does not
+cover <span class="ltx_text ltx_font_italic">all</span> of projective space. However, it is possible to
+define a system of affine coordinates relative to every hyperplane in
+<math id="S0.SS0.SSS0.Px2.p3.m1" class="ltx_Math" alttext="\mathbb{K}^{n+1}" display="inline"><msup><mi>𝕂</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></math> that does not contain the origin. In particular, we get
+<math id="S0.SS0.SSS0.Px2.p3.m2" class="ltx_Math" alttext="n+1" display="inline"><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></math> different systems of affine coordinates corresponding to the
+hyperplanes <math id="S0.SS0.SSS0.Px2.p3.m3" class="ltx_Math" alttext="\{x_{i}=1\},\;i=0,1,\ldots,n." display="inline"><mrow><mrow><mo stretchy="false">{</mo><msub><mi>x</mi><mi>i</mi></msub><mo>=</mo><mn>1</mn><mo stretchy="false">}</mo></mrow><mo rspace="5.3pt">,</mo><mi>i</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo>.</mo></mrow></math> Every element of
+projective space is covered by at least one of these <math id="S0.SS0.SSS0.Px2.p3.m4" class="ltx_Math" alttext="n+1" display="inline"><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></math> systems of
+coordinates.</p>
+</div>
+</section>
+<section id="S0.SS0.SSS0.Px3" class="ltx_paragraph">
+<h2 class="ltx_title ltx_title_paragraph">Projective automorphisms.</h2>
+
+<div id="S0.SS0.SSS0.Px3.p1" class="ltx_para">
+<p class="ltx_p">A projective automorphism, also known as a projectivity, is a
+bijective transformation of projective space that preserves all
+incidence relations. For <math id="S0.SS0.SSS0.Px3.p1.m1" class="ltx_Math" alttext="n\geq 2" display="inline"><mrow><mi>n</mi><mo>≥</mo><mn>2</mn></mrow></math>, every automorphism of <math id="S0.SS0.SSS0.Px3.p1.m2" class="ltx_Math" alttext="{\mathbb{K}\mathrm{P}}^{n}" display="inline"><mrow><mi>𝕂</mi><mo>⁢</mo><msup><mi mathvariant="normal">P</mi><mi>n</mi></msup></mrow></math> is
+engendered by a semilinear invertible transformation of <math id="S0.SS0.SSS0.Px3.p1.m3" class="ltx_Math" alttext="\mathbb{K}^{n+1}" display="inline"><msup><mi>𝕂</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></math>.
+Let <math id="S0.SS0.SSS0.Px3.p1.m4" class="ltx_Math" alttext="A:\mathbb{K}^{n+1}\rightarrow\mathbb{K}^{n+1}" display="inline"><mrow><mi>A</mi><mo>:</mo><mrow><msup><mi>𝕂</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>→</mo><msup><mi>𝕂</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></mrow></math> be an invertible semilinear
+transformation. The corresponding projectivity
+<math id="S0.SS0.SSS0.Px3.p1.m5" class="ltx_Math" alttext="[A]:{\mathbb{K}\mathrm{P}}^{n}\rightarrow{\mathbb{K}\mathrm{P}}^{n}" display="inline"><mrow><mrow><mo stretchy="false">[</mo><mi>A</mi><mo stretchy="false">]</mo></mrow><mo>:</mo><mrow><mrow><mi>𝕂</mi><mo>⁢</mo><msup><mi mathvariant="normal">P</mi><mi>n</mi></msup></mrow><mo>→</mo><mrow><mi>𝕂</mi><mo>⁢</mo><msup><mi mathvariant="normal">P</mi><mi>n</mi></msup></mrow></mrow></mrow></math> is the transformation</p>
+<table id="S0.Ex7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex7.m1" class="ltx_Math" alttext="[\mathbf{x}]\mapsto[A\mathbf{x}],\quad\mathbf{x}\in\mathbb{K}^{n+1}." display="block"><mrow><mrow><mrow><mrow><mo stretchy="false">[</mo><mi>𝐱</mi><mo stretchy="false">]</mo></mrow><mo>↦</mo><mrow><mo stretchy="false">[</mo><mrow><mi>A</mi><mo>⁢</mo><mi>𝐱</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mi>𝐱</mi><mo>∈</mo><msup><mi>𝕂</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">For every non-zero <math id="S0.SS0.SSS0.Px3.p1.m6" class="ltx_Math" alttext="\lambda\in\mathbb{K}" display="inline"><mrow><mi>λ</mi><mo>∈</mo><mi>𝕂</mi></mrow></math> the
+transformation <math id="S0.SS0.SSS0.Px3.p1.m7" class="ltx_Math" alttext="\lambda A" display="inline"><mrow><mi>λ</mi><mo>⁢</mo><mi>A</mi></mrow></math> gives the same projective automorphism as
+<math id="S0.SS0.SSS0.Px3.p1.m8" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>. For this reason, it is convenient we identify the group of
+projective automorphisms with the quotient</p>
+<table id="S0.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex8.m1" class="ltx_Math" alttext="{\operatorname{P\Gamma L}}_{n+1}(\mathbb{K})=\operatorname{\Gamma L}_{n+1}(%
+\mathbb{K})/\mathbb{K}." display="block"><mrow><mrow><mrow><msub><mrow><mi mathvariant="normal">P</mi><mo>⁢</mo><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mi mathvariant="normal">L</mi></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝕂</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mi mathvariant="normal">L</mi></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝕂</mi><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mi>𝕂</mi></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Here <math id="S0.SS0.SSS0.Px3.p1.m9" class="ltx_Math" alttext="\operatorname{\Gamma L}" display="inline"><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mi mathvariant="normal">L</mi></mrow></math> refers to the group of
+invertible semi-linear transformations, while the quotienting <math id="S0.SS0.SSS0.Px3.p1.m10" class="ltx_Math" alttext="\mathbb{K}" display="inline"><mi>𝕂</mi></math>
+refers to the subgroup of scalar multiplications.</p>
+</div>
+<div id="S0.SS0.SSS0.Px3.p2" class="ltx_para">
+<p class="ltx_p">A collineation is a special kind of projective automorphism, one that
+is engendered by a strictly linear transformation. The group of
+projective collineations is therefore denoted by <math id="S0.SS0.SSS0.Px3.p2.m1" class="ltx_Math" alttext="{\mathrm{PGL}}_{n+1}(\mathbb{K})" display="inline"><mrow><msub><mi>PGL</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝕂</mi><mo stretchy="false">)</mo></mrow></mrow></math>
+Note that for fields such as <math id="S0.SS0.SSS0.Px3.p2.m2" class="ltx_Math" alttext="\mathbb{R}" display="inline"><mi>ℝ</mi></math> and <math id="S0.SS0.SSS0.Px3.p2.m3" class="ltx_Math" alttext="\mathbb{C}" display="inline"><mi>ℂ</mi></math>, the group of
+projective collineations is also described by the projectivizations
+<math id="S0.SS0.SSS0.Px3.p2.m4" class="ltx_Math" alttext="{\mathrm{PSL}}_{n+1}(\mathbb{R}),{\mathrm{PSL}}_{n+1}(\mathbb{C})" display="inline"><mrow><mrow><msub><mi>PSL</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><msub><mi>PSL</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℂ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, of the corresponding
+unimodular group.</p>
+</div>
+<div id="S0.SS0.SSS0.Px3.p3" class="ltx_para">
+<p class="ltx_p">Also note that if a field, such as <math id="S0.SS0.SSS0.Px3.p3.m1" class="ltx_Math" alttext="\mathbb{R}" display="inline"><mi>ℝ</mi></math>, lacks non-trivial
+automorphisms, then all semi-linear transformations are linear. For
+such fields all projective automorphisms are collineations.
+Thus,</p>
+<table id="S0.Ex9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex9.m1" class="ltx_Math" alttext="{\operatorname{P\Gamma L}}_{n+1}(\mathbb{R})={\mathrm{PSL}}_{n+1}(\mathbb{R})=%
+{\mathrm{SL}}_{n+1}(\mathbb{R})/\{\pm\,I_{n+1}\}." display="block"><mrow><mrow><mrow><msub><mrow><mi mathvariant="normal">P</mi><mo>⁢</mo><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mi mathvariant="normal">L</mi></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>PSL</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>SL</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>/</mo><mrow><mo stretchy="false">{</mo><mrow><mo rspace="4.2pt">±</mo><msub><mi>I</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo stretchy="false">}</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">By contrast, since <math id="S0.SS0.SSS0.Px3.p3.m2" class="ltx_Math" alttext="\mathbb{C}" display="inline"><mi>ℂ</mi></math>
+possesses non-trivial automorphisms, complex conjugation for example,
+the group of automorphisms of complex projective space is larger than
+<math id="S0.SS0.SSS0.Px3.p3.m3" class="ltx_Math" alttext="{\mathrm{PSL}}_{n+1}(\mathbb{C})" display="inline"><mrow><msub><mi>PSL</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℂ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, where the latter denotes the quotient of
+<math id="S0.SS0.SSS0.Px3.p3.m4" class="ltx_Math" alttext="{\mathrm{SL}}_{n+1}(\mathbb{C})" display="inline"><mrow><msub><mi>SL</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℂ</mi><mo stretchy="false">)</mo></mrow></mrow></math> by the subgroup of scalings by the <math id="S0.SS0.SSS0.Px3.p3.m5" class="ltx_Math" alttext="(n+1)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></math>st roots
+of unity.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">projective space</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">ProjectiveSpace</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 12:03:53</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 12:03:53</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rmilson (146)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rmilson (146)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">13</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rmilson (146)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 14-00</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Projectivity</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_r">SemilinearTransformation</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Defines</th>
+<td class="ltx_td ltx_align_left ltx_border_r">homogeneous coordinates</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Defines</th>
+<td class="ltx_td ltx_align_left ltx_border_r">affine coordinates</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Defines</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">projective automorphism</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 17:56:05 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html><html>
+<head>
+<title>Hodge theory</title>
+<!--Generated on Fri Feb  9 18:00:45 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Hodge theory</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">Hodge theory is a branch of algebraic geometry and complex manifold theory that deals with the decomposition of the cohomology groups of an complex projective algebraic variety.
+</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Let <math id="p2.m1" class="ltx_Math" alttext="\Omega^{k}(M)" display="inline"><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math> denote the space of differential <math id="p2.m2" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-forms. We know that there is a map, called the exterior derivative</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="d\colon\Omega^{k}\rightarrow\Omega^{k+1}" display="block"><mrow><mi>d</mi><mo>:</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>→</mo><msup><mi mathvariant="normal">Ω</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and that <math id="p2.m3" class="ltx_Math" alttext="d^{2}=0" display="inline"><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn></mrow></math>. This forms a complex and the cohomology of this complex, <math id="p2.m4" class="ltx_Math" alttext="H_{DR}^{*}(M)" display="inline"><mrow><msubsup><mi>H</mi><mrow><mi>D</mi><mo>⁢</mo><mi>R</mi></mrow><mo>*</mo></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math> is called the de Rham cohomology of <math id="p2.m5" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>. It is isomorphic to the singular cohomology of <math id="p2.m6" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">For a complex manifold, it is more natural to have complex coordinates for our differential forms. Writing <math id="p3.m1" class="ltx_Math" alttext="z_{j}=x_{j}+iy_{j}" display="inline"><mrow><msub><mi>z</mi><mi>j</mi></msub><mo>=</mo><mrow><msub><mi>x</mi><mi>j</mi></msub><mo>+</mo><mrow><mi>i</mi><mo>⁢</mo><msub><mi>y</mi><mi>j</mi></msub></mrow></mrow></mrow></math> we obtain two 1-forms, <math id="p3.m2" class="ltx_Math" alttext="dz_{j}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>z</mi><mi>j</mi></msub></mrow></math> and <math id="p3.m3" class="ltx_Math" alttext="d\bar{z_{j}}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mover accent="true"><msub><mi>z</mi><mi>j</mi></msub><mo stretchy="false">¯</mo></mover></mrow></math>. These forms serve as a basis for all <math id="p3.m4" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-forms, <math id="p3.m5" class="ltx_Math" alttext="dz_{i_{1}}\wedge dz_{i_{2}}\wedge\dots\wedge dz_{i_{p}}\wedge d\bar{z_{j_{1}}}%
+\wedge\dots\wedge d\bar{z_{j_{q}}}" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><msub><mi>z</mi><msub><mi>i</mi><mn>1</mn></msub></msub></mrow><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msub><mi>z</mi><msub><mi>i</mi><mn>2</mn></msub></msub></mrow><mo>∧</mo><mi mathvariant="normal">…</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msub><mi>z</mi><msub><mi>i</mi><mi>p</mi></msub></msub></mrow><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><mover accent="true"><msub><mi>z</mi><msub><mi>j</mi><mn>1</mn></msub></msub><mo stretchy="false">¯</mo></mover></mrow><mo>∧</mo><mi mathvariant="normal">…</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><mover accent="true"><msub><mi>z</mi><msub><mi>j</mi><mi>q</mi></msub></msub><mo stretchy="false">¯</mo></mover></mrow></mrow></math>, where <math id="p3.m6" class="ltx_Math" alttext="p+q=k" display="inline"><mrow><mrow><mi>p</mi><mo>+</mo><mi>q</mi></mrow><mo>=</mo><mi>k</mi></mrow></math>. We call forms written like this to be <math id="p3.m7" class="ltx_Math" alttext="(p,q)" display="inline"><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></math>-forms. Let <math id="p3.m8" class="ltx_Math" alttext="\Omega^{p,q}" display="inline"><msup><mi mathvariant="normal">Ω</mi><mrow><mi>p</mi><mo>,</mo><mi>q</mi></mrow></msup></math> be the space of <math id="p3.m9" class="ltx_Math" alttext="(p,q)" display="inline"><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></math>-forms. Then we have a natural decomposition</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="\Omega^{k}(M)=\bigoplus_{p+q=k}\Omega^{p,q}(M)." display="block"><mrow><mrow><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⊕</mo><mrow><mrow><mi>p</mi><mo>+</mo><mi>q</mi></mrow><mo>=</mo><mi>k</mi></mrow></munder><mrow><msup><mi mathvariant="normal">Ω</mi><mrow><mi>p</mi><mo>,</mo><mi>q</mi></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">The question then becomes , does this decomposition pass to the level of cohomology? The answer in general is no. If it were true in general, it would force all manifolds to have even first cohomology, which is obviously not true. But fortunately there are some nice classes of manifolds for which is does hold.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">The Laplacian opererator <math id="p5.m1" class="ltx_Math" alttext="\Delta=d\phi+\phi d" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>=</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>ϕ</mi></mrow><mo>+</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mi>d</mi></mrow></mrow></mrow></math> where <math id="p5.m2" class="ltx_Math" alttext="\phi" display="inline"><mi>ϕ</mi></math> is the adjoint operator (with respect to the Riemannian metric) to <math id="p5.m3" class="ltx_Math" alttext="d" display="inline"><mi>d</mi></math>. A form is called harmonic if its Laplacian is 0. The motivation for considering the Laplacian comes from looking for differential forms of minimal length. Because a basis on <math id="p5.m4" class="ltx_Math" alttext="TM" display="inline"><mrow><mi>T</mi><mo>⁢</mo><mi>M</mi></mrow></math> induces a basis on <math id="p5.m5" class="ltx_Math" alttext="T^{*}M" display="inline"><mrow><msup><mi>T</mi><mo>*</mo></msup><mo>⁢</mo><mi>M</mi></mrow></math> then we have an metric on <math id="p5.m6" class="ltx_Math" alttext="\bigwedge^{k}T^{*}M" display="inline"><mrow><msup><mo largeop="true" mathsize="160%" stretchy="false" symmetric="true">⋀</mo><mi>k</mi></msup><mrow><msup><mi>T</mi><mo>*</mo></msup><mo>⁢</mo><mi>M</mi></mrow></mrow></math> Due to this, we can define a norm on <math id="p5.m7" class="ltx_Math" alttext="\Omega^{k}" display="inline"><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup></math>. It turns out that for <math id="p5.m8" class="ltx_Math" alttext="\lVert\omega\rVert" display="inline"><mrow><mo fence="true" stretchy="false">∥</mo><mi>ω</mi><mo fence="true" stretchy="false">∥</mo></mrow></math> to be minimal, then <math id="p5.m9" class="ltx_Math" alttext="(\omega,d\gamma)=0" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo>,</mo><mrow><mi>d</mi><mo>⁢</mo><mi>γ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>0</mn></mrow></math> for all <math id="p5.m10" class="ltx_Math" alttext="\gamma\in\Omega^{k-1}" display="inline"><mrow><mi>γ</mi><mo>∈</mo><msup><mi mathvariant="normal">Ω</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></math>. This is equivalent to <math id="p5.m11" class="ltx_Math" alttext="(\phi\omega,\gamma)=0" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mi>ω</mi></mrow><mo>,</mo><mi>γ</mi><mo stretchy="false">)</mo></mrow><mo>=</mo><mn>0</mn></mrow></math>. So a closed form with minimal norm is harmonic.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">The most fundamental theorem of Hodge theory states that the space of harmonic <math id="p6.m1" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-forms, <math id="p6.m2" class="ltx_Math" alttext="H_{\Delta}^{k}(M)\cong H_{DR}^{k}(M)" display="inline"><mrow><mrow><msubsup><mi>H</mi><mi mathvariant="normal">Δ</mi><mi>k</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≅</mo><mrow><msubsup><mi>H</mi><mrow><mi>D</mi><mo>⁢</mo><mi>R</mi></mrow><mi>k</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Now for local coordinates, a <math id="p7.m1" class="ltx_Math" alttext="1" display="inline"><mn>1</mn></math>-form is written as <math id="p7.m2" class="ltx_Math" alttext="\omega=\sum f_{i}dz_{i}+\sum g_{j}d\bar{z_{j}}" display="inline"><mrow><mi>ω</mi><mo>=</mo><mrow><mrow><mo largeop="true" symmetric="true">∑</mo><mrow><msub><mi>f</mi><mi>i</mi></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>z</mi><mi>i</mi></msub></mrow></mrow><mo>+</mo><mrow><mo largeop="true" symmetric="true">∑</mo><mrow><msub><mi>g</mi><mi>j</mi></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mover accent="true"><msub><mi>z</mi><mi>j</mi></msub><mo stretchy="false">¯</mo></mover></mrow></mrow></mrow></mrow></math>. We define two new operators <math id="p7.m3" class="ltx_Math" alttext="\partial" display="inline"><mo>∂</mo></math> and <math id="p7.m4" class="ltx_Math" alttext="\bar{\partial}" display="inline"><mover accent="true"><mo>∂</mo><mo stretchy="false">¯</mo></mover></math> such that</p>
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="\partial\omega=\sum\frac{\partial f_{i}}{\partial z_{k}}dz_{k}\wedge dz_{i}+%
+\sum\frac{\partial g_{j}}{\partial z_{k}}dz_{k}\wedge d\bar{z_{j}}" display="block"><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>ω</mi></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>f</mi><mi>i</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>z</mi><mi>k</mi></msub></mrow></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>z</mi><mi>k</mi></msub></mrow></mrow><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msub><mi>z</mi><mi>i</mi></msub></mrow></mrow><mo>+</mo><mrow><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>g</mi><mi>j</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>z</mi><mi>k</mi></msub></mrow></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>z</mi><mi>k</mi></msub></mrow></mrow></mrow><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><mover accent="true"><msub><mi>z</mi><mi>j</mi></msub><mo stretchy="false">¯</mo></mover></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<table id="S0.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="\bar{\partial}\omega=\sum\frac{\partial f_{i}}{\partial\bar{z_{k}}}d\bar{z_{k}%
+}\wedge dz_{i}+\sum\frac{\partial g_{j}}{\partial\bar{z_{k}}}dz_{k}\wedge d%
+\bar{z_{j}}" display="block"><mrow><mrow><mover accent="true"><mo>∂</mo><mo stretchy="false">¯</mo></mover><mo>⁢</mo><mi>ω</mi></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>f</mi><mi>i</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mover accent="true"><msub><mi>z</mi><mi>k</mi></msub><mo stretchy="false">¯</mo></mover></mrow></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mover accent="true"><msub><mi>z</mi><mi>k</mi></msub><mo stretchy="false">¯</mo></mover></mrow></mrow><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msub><mi>z</mi><mi>i</mi></msub></mrow></mrow><mo>+</mo><mrow><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>g</mi><mi>j</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mover accent="true"><msub><mi>z</mi><mi>k</mi></msub><mo stretchy="false">¯</mo></mover></mrow></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>z</mi><mi>k</mi></msub></mrow></mrow></mrow><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><mover accent="true"><msub><mi>z</mi><mi>j</mi></msub><mo stretchy="false">¯</mo></mover></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">These operators also satisfy the relations <math id="p7.m5" class="ltx_Math" alttext="\partial^{2}=\bar{\partial^{2}}=0" display="inline"><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>=</mo><mover accent="true"><msup><mo>∂</mo><mn>2</mn></msup><mo stretchy="false">¯</mo></mover><mo>=</mo><mn>0</mn></mrow></math> and <math id="p7.m6" class="ltx_Math" alttext="\partial\bar{\partial}+\bar{\partial}\partial=0" display="inline"><mrow><mrow><mrow><mo>∂</mo><mo>⁡</mo><mover accent="true"><mo>∂</mo><mo stretchy="false">¯</mo></mover></mrow><mo>+</mo><mrow><mover accent="true"><mo>∂</mo><mo stretchy="false">¯</mo></mover><mo>⁢</mo><mo>∂</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>. These operators also have adjoints and they as well have the relation that <math id="p7.m7" class="ltx_Math" alttext="d=\partial^{*}+\bar{\partial}^{*}" display="inline"><mrow><mi>d</mi><mo>=</mo><mrow><msup><mo>∂</mo><mo>*</mo></msup><mo>+</mo><msup><mover accent="true"><mo>∂</mo><mo stretchy="false">¯</mo></mover><mo>*</mo></msup></mrow></mrow></math>. Writing these in terms of the laplacian we obtain that</p>
+<table id="S0.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex5.m1" class="ltx_Math" alttext="\Delta=(\partial\partial^{*}+\partial^{*}\partial)+(\bar{\partial}\bar{%
+\partial}^{*}+\bar{\partial}^{*}\bar{\partial})+\mathbb{O}" display="block"><mrow><mi mathvariant="normal">Δ</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mo>∂</mo><mo>*</mo></msup></mrow><mo>+</mo><mrow><msup><mo>∂</mo><mo>*</mo></msup><mo>⁡</mo><mo>∂</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mover accent="true"><mo>∂</mo><mo stretchy="false">¯</mo></mover><mo>⁢</mo><msup><mover accent="true"><mo>∂</mo><mo stretchy="false">¯</mo></mover><mo>*</mo></msup></mrow><mo>+</mo><mrow><msup><mover accent="true"><mo>∂</mo><mo stretchy="false">¯</mo></mover><mo>*</mo></msup><mo>⁢</mo><mover accent="true"><mo>∂</mo><mo stretchy="false">¯</mo></mover></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mi>𝕆</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="p7.m8" class="ltx_Math" alttext="\mathbb{O}" display="inline"><mi>𝕆</mi></math> denotes some cross terms.
+For this to be of any interest to us in terms on Hodge theory, these cross terms must vanish. Assuming they do, then if a form is harmonic, then each of the components of the <math id="p7.m9" class="ltx_Math" alttext="(p,q)" display="inline"><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></math>-form are harmonic. Therefore, we obtain a decomposition of the space of harmonic forms</p>
+<table id="S0.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex6.m1" class="ltx_Math" alttext="H_{\Delta}^{k}=\bigoplus_{p+q=k}H_{\Delta}^{p,q}" display="block"><mrow><msubsup><mi>H</mi><mi mathvariant="normal">Δ</mi><mi>k</mi></msubsup><mo>=</mo><mrow><munder><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⊕</mo><mrow><mrow><mi>p</mi><mo>+</mo><mi>q</mi></mrow><mo>=</mo><mi>k</mi></mrow></munder><msubsup><mi>H</mi><mi mathvariant="normal">Δ</mi><mrow><mi>p</mi><mo>,</mo><mi>q</mi></mrow></msubsup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">.
+This gives us a Hodge decomposition on the level of cohomology due to the isomorphism between the space of harmonic forms and the de Rham cohomology groups.</p>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">This has some immediate and interesting consequences. It tells us that any smooth complex projective variety has an even first betti number. With some work, one could also show that the second cohomology group is non-empty.</p>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">We worked under the assumption that the cross terms in the above expression vanished. A example of a class of manifolds where this holds true is Kahler Manifolds, which are complex manifolds with a Riemannian metric that is compatible with the complex structure.</p>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">This is just a small portion of the large topic of Hodge theory.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">Hodge theory</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">HodgeTheory</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 15:21:39</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 15:21:39</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">bwebste (988)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">bwebste (988)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">12</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">bwebste (988)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 14N05</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">msc 58A14</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 18:00:45 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

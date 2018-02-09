@@ -1,0 +1,200 @@
+<!DOCTYPE html><html>
+<head>
+<title>scheme</title>
+<!--Generated on Fri Feb  9 17:57:11 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">scheme</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Introduction</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p class="ltx_p">In order to extend algebraic geometry to deal with fields that are not algebraically closed, it is necessary to generalize the notions of affine variety and projective variety. The most suitable generalization seems to be the notion of a scheme. A scheme in some sense captures the equations defining an algebraic object, so that the points of that object can be examined over many different fields. In fact, the points of such an object take a secondary role: this is necessary because, for example, over a finite field most curves have no points at all until you pass to a suitable field extension. The underlying machinery allowing this is the tensor product of rings: given a <math id="S1.p1.m1" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-algebra <math id="S1.p1.m2" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> and a field extension <math id="S1.p1.m3" class="ltx_Math" alttext="K" display="inline"><mi>K</mi></math> of <math id="S1.p1.m4" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>, <math id="S1.p1.m5" class="ltx_Math" alttext="A\otimes_{k}K" display="inline"><mrow><mi>A</mi><msub><mo>⊗</mo><mi>k</mi></msub><mi>K</mi></mrow></math> is the <math id="S1.p1.m6" class="ltx_Math" alttext="K" display="inline"><mi>K</mi></math>-algebra that is, in some sense, defined by the same equations as <math id="S1.p1.m7" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>.</p>
+</div>
+<div id="S1.p2" class="ltx_para">
+<p class="ltx_p">Along with this ability to deal with varying base fields, schemes offer a great number of other possibilities. In particular, the tools for dealing with individual schemes can usually also be adapted to deal with families of schemes. These families can even span different characteristics, which can be a powerful tool for applying the tools of characteristic zero geometry to problems in positive characteristic.</p>
+</div>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span>Definitions</h2>
+
+<div id="S2.p1" class="ltx_para">
+<p class="ltx_p">An <em class="ltx_emph ltx_font_italic">affine scheme</em> is a locally ringed space <math id="S2.p1.m1" class="ltx_Math" alttext="(X,\mathcal{O}_{X})" display="inline"><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub><mo stretchy="false">)</mo></mrow></math> with the property that there exists a ring <math id="S2.p1.m2" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> (commutative, with identity) whose prime spectrum <math id="S2.p1.m3" class="ltx_Math" alttext="\operatorname{Spec}(R)" display="inline"><mrow><mi>Spec</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow></math> is isomorphic to <math id="S2.p1.m4" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> as a locally ringed space.</p>
+</div>
+<div id="S2.p2" class="ltx_para">
+<p class="ltx_p">A <em class="ltx_emph ltx_font_italic">scheme</em> is a locally ringed space <math id="S2.p2.m1" class="ltx_Math" alttext="(X,\mathcal{O}_{X})" display="inline"><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub><mo stretchy="false">)</mo></mrow></math> which has an open cover <math id="S2.p2.m2" class="ltx_Math" alttext="\{U_{\alpha}\}_{\alpha\in I}" display="inline"><msub><mrow><mo stretchy="false">{</mo><msub><mi>U</mi><mi>α</mi></msub><mo stretchy="false">}</mo></mrow><mrow><mi>α</mi><mo>∈</mo><mi>I</mi></mrow></msub></math> with the property that each open set <math id="S2.p2.m3" class="ltx_Math" alttext="U_{\alpha}" display="inline"><msub><mi>U</mi><mi>α</mi></msub></math>, together with its restriction sheaf <math id="S2.p2.m4" class="ltx_Math" alttext="\mathcal{O}_{X}|_{U_{\alpha}}" display="inline"><msub><mrow><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub><mo fence="true" stretchy="false">|</mo></mrow><msub><mi>U</mi><mi>α</mi></msub></msub></math>, is an affine scheme.</p>
+</div>
+<div id="S2.p3" class="ltx_para">
+<p class="ltx_p">We define a <em class="ltx_emph ltx_font_italic">morphism of schemes</em> between two schemes <math id="S2.p3.m1" class="ltx_Math" alttext="(X,\mathcal{O}_{X})" display="inline"><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub><mo stretchy="false">)</mo></mrow></math> and <math id="S2.p3.m2" class="ltx_Math" alttext="(Y,\mathcal{O}_{Y})" display="inline"><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo>,</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>Y</mi></msub><mo stretchy="false">)</mo></mrow></math> to be a morphism of locally ringed spaces <math id="S2.p3.m3" class="ltx_Math" alttext="f:(X,\mathcal{O}_{X})\longrightarrow(Y,\mathcal{O}_{Y})" display="inline"><mrow><mi>f</mi><mo>:</mo><mrow><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>X</mi></msub><mo stretchy="false">)</mo></mrow><mo>⟶</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo>,</mo><msub><mi class="ltx_font_mathcaligraphic">𝒪</mi><mi>Y</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+<div id="S2.p4" class="ltx_para">
+<p class="ltx_p">With these definitions, schemes of course form a category. However, frequently one wishes to work in a slightly different category, such as the category of “complex schemes”, that is, schemes obtained from complex algebras. However, these schemes will have strange automorphisms obtained from automorphisms of the complex numbers. In order to prevent this problem, we often look at another category.</p>
+</div>
+<div id="S2.p5" class="ltx_para">
+<p class="ltx_p">Fix a scheme <math id="S2.p5.m1" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math>. Then a <em class="ltx_emph ltx_font_italic">scheme over <math id="S2.p5.m2" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math></em> is defined to be a scheme <math id="S2.p5.m3" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> together with a morphism of schemes <math id="S2.p5.m4" class="ltx_Math" alttext="X\longrightarrow Y" display="inline"><mrow><mi>X</mi><mo>⟶</mo><mi>Y</mi></mrow></math>, called the structure morphism of <math id="S2.p5.m5" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math>. A morphism <math id="S2.p5.m6" class="ltx_Math" alttext="X\to X^{\prime}" display="inline"><mrow><mi>X</mi><mo>→</mo><msup><mi>X</mi><mo>′</mo></msup></mrow></math> of schemes over <math id="S2.p5.m7" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> is a morphism <math id="S2.p5.m8" class="ltx_Math" alttext="X\to X^{\prime}" display="inline"><mrow><mi>X</mi><mo>→</mo><msup><mi>X</mi><mo>′</mo></msup></mrow></math> which makes the following diagram commute:</p>
+<table id="S2.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex1.m1" class="ltx_Math" alttext="\xymatrix{X\ar[rr]\ar[dr]&amp;&amp;X^{\prime}\ar[dl]\\
+&amp;Y&amp;}" display="block"><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\xymatrix</mtext></merror><mo>⁢</mo><mi>X</mi><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\ar</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>r</mi><mo>⁢</mo><mi>r</mi></mrow><mo stretchy="false">]</mo></mrow><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\ar</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>d</mi><mo>⁢</mo><mi>r</mi></mrow><mo stretchy="false">]</mo></mrow><mo>⁢</mo><mi mathvariant="normal">&amp;</mi><mo>⁢</mo><mi mathvariant="normal">&amp;</mi><mo>⁢</mo><msup><mi>X</mi><mo>′</mo></msup><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\ar</mtext></merror><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mrow><mi>d</mi><mo>⁢</mo><mi>l</mi></mrow><mo stretchy="false">]</mo></mrow><mo>⁢</mo><mi mathvariant="normal">&amp;</mi><mo>⁢</mo><mi>Y</mi><mo>⁢</mo><mi mathvariant="normal">&amp;</mi></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">The resulting category is called the category of schemes over <math id="S2.p5.m9" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math>, and is sometimes denoted <math id="S2.p5.m10" class="ltx_Math" alttext="\text{Sch}/Y" display="inline"><mrow><mtext>Sch</mtext><mo>/</mo><mi>Y</mi></mrow></math>. Frequently, <math id="S2.p5.m11" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> will be the spectrum of a ring (or especially a field) <math id="S2.p5.m12" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>, and in this case we will also call this the category of schemes over <math id="S2.p5.m13" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> (rather than schemes over <math id="S2.p5.m14" class="ltx_Math" alttext="\operatorname{Spec}R" display="inline"><mrow><mi>Spec</mi><mo>⁡</mo><mi>R</mi></mrow></math>).</p>
+</div>
+<div id="S2.p6" class="ltx_para">
+<p class="ltx_p">Observe that this resolves the problem of automorphisms of the complex numbers leading to automorphisms of schemes over <math id="S2.p6.m1" class="ltx_Math" alttext="\mathbb{C}" display="inline"><mi>ℂ</mi></math>.</p>
+</div>
+<div id="S2.p7" class="ltx_para">
+<p class="ltx_p">If <math id="S2.p7.m1" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> is not simply the spectrum of a field (perhaps it is a curve or some more general scheme) then one should interpret this as saying that <math id="S2.p7.m2" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> is a family of schemes; for each point of <math id="S2.p7.m3" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math>, we have a scheme, namely the fiber of <math id="S2.p7.m4" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> over that point of <math id="S2.p7.m5" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math>.</p>
+</div>
+<div id="S2.p8" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Note:</span> Some authors, notably Mumford and Grothendieck, require that a scheme be separated as well (and use the term <em class="ltx_emph ltx_font_italic">prescheme</em> to describe a scheme that is not separated), but we will not impose this requirement.</p>
+</div>
+<div id="S2.p9" class="ltx_para">
+<p class="ltx_p">For many problems, the points of the underlying topological space of a scheme do not represent what we want to work with. For example, if we take the coordinate ring <math id="S2.p9.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> of a variety over an algebraically closed field <math id="S2.p9.m2" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>, <math id="S2.p9.m3" class="ltx_Math" alttext="\operatorname{Spec}R" display="inline"><mrow><mi>Spec</mi><mo>⁡</mo><mi>R</mi></mrow></math> (as a scheme over <math id="S2.p9.m4" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>) behaves very much like the variety in question, but there are “extra” points in the underlying topological space: for every irreducible closed subset, we have a point whose closure is the whole subset. Such a point is called a <em class="ltx_emph ltx_font_italic">generic point</em>. As a result, we have a more elaborate definition for a point on a scheme.</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+<div id="S2.p10" class="ltx_para">
+<p class="ltx_p">Fix a scheme <math id="S2.p10.m1" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math>. Then an <em class="ltx_emph ltx_font_italic"><math id="S2.p10.m2" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math>-point on a scheme</em> <math id="S2.p10.m3" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> is a morphism <math id="S2.p10.m4" class="ltx_Math" alttext="S\to X" display="inline"><mrow><mi>S</mi><mo>→</mo><mi>X</mi></mrow></math>. If <math id="S2.p10.m5" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> is a scheme over <math id="S2.p10.m6" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math>, then this morphism is expected to be a <math id="S2.p10.m7" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math>-morphism. The functor <math id="S2.p10.m8" class="ltx_Math" alttext="S\mapsto\operatorname{Hom}(S,X)" display="inline"><mrow><mi>S</mi><mo>↦</mo><mrow><mi>Hom</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo>,</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> is called the <em class="ltx_emph ltx_font_italic">functor of points</em> on <math id="S2.p10.m9" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math>. The set of <math id="S2.p10.m10" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math>-points on <math id="S2.p10.m11" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> is denoted <math id="S2.p10.m12" class="ltx_Math" alttext="X(S)" display="inline"><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow></math>. If <math id="S2.p10.m13" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is a ring, then <math id="S2.p10.m14" class="ltx_Math" alttext="X(\operatorname{Spec}R)" display="inline"><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>Spec</mi><mo>⁡</mo><mi>R</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math> is often written <math id="S2.p10.m15" class="ltx_Math" alttext="X(R)" display="inline"><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow></math>. Thus, for example, the complex points on <math id="S2.p10.m16" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> might be written <math id="S2.p10.m17" class="ltx_Math" alttext="X(\mathbb{C})" display="inline"><mrow><mi>X</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℂ</mi><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+</div>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3 </span>Examples</h2>
+
+<div id="S3.p1" class="ltx_para">
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p">Every affine scheme is clearly a scheme as well. In particular, <math id="I1.i1.p1.m1" class="ltx_Math" alttext="\operatorname{Spec}(R)" display="inline"><mrow><mi>Spec</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>R</mi><mo stretchy="false">)</mo></mrow></mrow></math> is a scheme for any commutative ring <math id="I1.i1.p1.m2" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p">Every variety can be interpreted as a scheme. An affine variety corresponds to the prime spectrum of its coordinate ring, and a projective variety has an open cover by affine pieces each of which is an affine variety, and hence an affine scheme.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="S4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">4 </span>References</h2>
+
+<div id="S4.p1" class="ltx_para">
+<p class="ltx_p">See the bibliography for algebraic geometry (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/BibliographyForAlgebraicGeometry</span>). Hartshorne’s book, <em class="ltx_emph ltx_font_italic">Algebraic Geometry</em>, is an excellent reference for these ideas.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_t">Title</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">scheme</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Canonical name</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Scheme</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Date of creation</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 12:48:17</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified on</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 12:48:17</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Owner</td>
+<td class="ltx_td ltx_align_left ltx_border_r">djao (24)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified by</td>
+<td class="ltx_td ltx_align_left ltx_border_r">djao (24)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Numerical id</td>
+<td class="ltx_td ltx_align_left ltx_border_r">16</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Author</td>
+<td class="ltx_td ltx_align_left ltx_border_r">djao (24)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Entry type</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 14A15</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">PrimeSpectrum</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Variety</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">AlgebraicGeometry</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">LocallyRingedSpace</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">affine scheme</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">morphism of schemes</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">point on a scheme</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">functor of points</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">structure morphism</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">generic point</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 17:57:11 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

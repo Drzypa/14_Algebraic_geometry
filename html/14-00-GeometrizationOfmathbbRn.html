@@ -1,0 +1,278 @@
+<!DOCTYPE html><html>
+<head>
+<title>geometrization of ℝ^n</title>
+<!--Generated on Fri Feb  9 17:55:57 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">geometrization of <math id="m1" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math>
+</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Note: this entry is being rewritten in response to the discussion ”</span><span class="ltx_text ltx_font_typewriter">http://planetmath.org/?op=getmsg&amp;id=6329</span><span class="ltx_text ltx_font_bold">euclidean space has no origin” to make it more useful.</span></p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p"><math id="p2.m1" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math>, the set of <math id="p2.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>-tuplets of elements of <math id="p2.m3" class="ltx_Math" alttext="\mathbb{R}" display="inline"><mi>ℝ</mi></math> can be made into a geometric space in several ways by imposing various geometric structures on it. In this entry, we shall explore four such structures.</p>
+</div>
+<section id="S0.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">0.1 </span><math id="S0.SS1.m1" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math> as an affine space</h3>
+
+<div id="S0.SS1.p1" class="ltx_para">
+<p class="ltx_p">To make <math id="S0.SS1.p1.m1" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math> into an affine space, we will specify two functions, <math id="S0.SS1.p1.m2" class="ltx_Math" alttext="D\colon\mathbb{R}\times\mathbb{R}^{n}\times\mathbb{R}^{n}\to\mathbb{R}^{n}" display="inline"><mrow><mi>D</mi><mo>:</mo><mrow><mrow><mi>ℝ</mi><mo>×</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo>×</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><mo>→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow></math> and <math id="S0.SS1.p1.m3" class="ltx_Math" alttext="T\colon\mathbb{R}^{n}\times\mathbb{R}^{n}\times\mathbb{R}^{n}\to\mathbb{R}^{n}" display="inline"><mrow><mi>T</mi><mo>:</mo><mrow><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo>×</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo>×</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><mo>→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow></math> as follows:</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="D\left(s,\begin{pmatrix}a_{1},\ldots,a_{n}\end{pmatrix},\begin{pmatrix}b_{1},%
+\ldots,b_{n}\end{pmatrix}\right)=\begin{pmatrix}(1-s)a_{1}+sb_{1},\ldots,(1-s)%
+a_{n}+sb_{n}\end{pmatrix}" display="block"><mrow><mrow><mi>D</mi><mo>⁢</mo><mrow><mo>(</mo><mi>s</mi><mo>,</mo><mrow><mo>(</mo><mtable displaystyle="true"><mtr><mtd columnalign="center"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mtd></mtr></mtable><mo>)</mo></mrow><mo>,</mo><mrow><mo>(</mo><mtable displaystyle="true"><mtr><mtd columnalign="center"><mrow><msub><mi>b</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>b</mi><mi>n</mi></msub></mrow></mtd></mtr></mtable><mo>)</mo></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mtable displaystyle="true"><mtr><mtd columnalign="center"><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>s</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mn>1</mn></msub></mrow><mo>+</mo><mrow><mi>s</mi><mo>⁢</mo><msub><mi>b</mi><mn>1</mn></msub></mrow></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>-</mo><mi>s</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><mo>+</mo><mrow><mi>s</mi><mo>⁢</mo><msub><mi>b</mi><mi>n</mi></msub></mrow></mrow></mrow></mtd></mtr></mtable><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="T\left(\begin{pmatrix}a_{1},\ldots,a_{n}\end{pmatrix},\begin{pmatrix}b_{1},%
+\ldots,b_{n}\end{pmatrix},\begin{pmatrix}c_{1},\ldots,c_{n}\end{pmatrix}\right%
+)=\begin{pmatrix}b_{1}+c_{1}-a_{1},\ldots,b_{n}+c_{n}-a_{n}\end{pmatrix}" display="block"><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mo>(</mo><mtable displaystyle="true"><mtr><mtd columnalign="center"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mtd></mtr></mtable><mo>)</mo></mrow><mo>,</mo><mrow><mo>(</mo><mtable displaystyle="true"><mtr><mtd columnalign="center"><mrow><msub><mi>b</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>b</mi><mi>n</mi></msub></mrow></mtd></mtr></mtable><mo>)</mo></mrow><mo>,</mo><mrow><mo>(</mo><mtable displaystyle="true"><mtr><mtd columnalign="center"><mrow><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>c</mi><mi>n</mi></msub></mrow></mtd></mtr></mtable><mo>)</mo></mrow><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mtable displaystyle="true"><mtr><mtd columnalign="center"><mrow><mrow><mrow><msub><mi>b</mi><mn>1</mn></msub><mo>+</mo><msub><mi>c</mi><mn>1</mn></msub></mrow><mo>-</mo><msub><mi>a</mi><mn>1</mn></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mrow><msub><mi>b</mi><mi>n</mi></msub><mo>+</mo><msub><mi>c</mi><mi>n</mi></msub></mrow><mo>-</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mrow></mtd></mtr></mtable><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Intuitively, <math id="S0.SS1.p1.m4" class="ltx_Math" alttext="D(s,p,q)" display="inline"><mrow><mi>D</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo>,</mo><mi>p</mi><mo>,</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow></math> is the point to which <math id="S0.SS1.p1.m5" class="ltx_Math" alttext="q" display="inline"><mi>q</mi></math> is mapped under dilating space by a factor <math id="S0.SS1.p1.m6" class="ltx_Math" alttext="s" display="inline"><mi>s</mi></math> about the point <math id="S0.SS1.p1.m7" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> and <math id="S0.SS1.p1.m8" class="ltx_Math" alttext="T(p,q,r)" display="inline"><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>,</mo><mi>q</mi><mo>,</mo><mi>r</mi><mo stretchy="false">)</mo></mrow></mrow></math> is the point which completes the parallelogram with vertices <math id="S0.SS1.p1.m9" class="ltx_Math" alttext="p,q,r" display="inline"><mrow><mi>p</mi><mo>,</mo><mi>q</mi><mo>,</mo><mi>r</mi></mrow></math>.</p>
+</div>
+</section>
+<section id="S0.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">0.2 </span><math id="S0.SS2.m1" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math> as a Euclidean space</h3>
+
+<div id="S0.SS2.p1" class="ltx_para">
+<p class="ltx_p">In order to make <math id="S0.SS2.p1.m1" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math> into a Euclidean space, we specify a distance function <math id="S0.SS2.p1.m2" class="ltx_Math" alttext="d\colon\mathbb{R}^{n}\times\mathbb{R}^{n}\to\mathbb{R}" display="inline"><mrow><mi>d</mi><mo>:</mo><mrow><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo>×</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><mo>→</mo><mi>ℝ</mi></mrow></mrow></math> as follows:</p>
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="d\left(\begin{pmatrix}a_{1},\ldots,a_{n}\end{pmatrix},\begin{pmatrix}b_{1},%
+\ldots,b_{n}\end{pmatrix}\right)=\sqrt{(a_{1}-b_{1})^{2}+\cdots+(a_{n}-b_{n})^%
+{2}}" display="block"><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo>(</mo><mrow><mo>(</mo><mtable displaystyle="true"><mtr><mtd columnalign="center"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mtd></mtr></mtable><mo>)</mo></mrow><mo>,</mo><mrow><mo>(</mo><mtable displaystyle="true"><mtr><mtd columnalign="center"><mrow><msub><mi>b</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>b</mi><mi>n</mi></msub></mrow></mtd></mtr></mtable><mo>)</mo></mrow><mo>)</mo></mrow></mrow><mo>=</mo><msqrt><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>-</mo><msub><mi>b</mi><mn>1</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>-</mo><msub><mi>b</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">This function is also known as a metric, but one needs to be careful with the term ”metric” because it is sometimes also used to refer to an inner product.</p>
+</div>
+</section>
+<section id="S0.SS3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">0.3 </span><math id="S0.SS3.m1" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math> as vector space</h3>
+
+<div id="S0.SS3.p1" class="ltx_para">
+<p class="ltx_p">In order to make <math id="S0.SS3.p1.m1" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math> into a vector space, we specify two maps: the addition map <math id="S0.SS3.p1.m2" class="ltx_Math" alttext="+\colon\mathbb{R}^{n}\times\mathbb{R}^{n}\to\mathbb{R}^{n}" display="inline"><mrow><mo>+</mo><mo>:</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo>×</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo>→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></math> and the scalar product map <math id="S0.SS3.p1.m3" class="ltx_Math" alttext="\times\colon\mathbb{R}\times\mathbb{R}^{n}\to\mathbb{R}^{n}" display="inline"><mrow><mo>×</mo><mo>:</mo><mi>ℝ</mi><mo>×</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo>→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></math>. These maps are defined as follows:</p>
+<table id="S0.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="\begin{pmatrix}a_{1},\ldots,a_{n}\end{pmatrix}+\begin{pmatrix}b_{1},\ldots,b_{%
+n}\end{pmatrix}=\begin{pmatrix}a_{1}+b_{1},\ldots,a_{n}+b_{n}\end{pmatrix}" display="block"><mrow><mrow><mrow><mo>(</mo><mtable displaystyle="true"><mtr><mtd columnalign="center"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mtd></mtr></mtable><mo>)</mo></mrow><mo>+</mo><mrow><mo>(</mo><mtable displaystyle="true"><mtr><mtd columnalign="center"><mrow><msub><mi>b</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>b</mi><mi>n</mi></msub></mrow></mtd></mtr></mtable><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mtable displaystyle="true"><mtr><mtd columnalign="center"><mrow><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>+</mo><msub><mi>b</mi><mn>1</mn></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>+</mo><msub><mi>b</mi><mi>n</mi></msub></mrow></mrow></mtd></mtr></mtable><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<table id="S0.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex5.m1" class="ltx_Math" alttext="c\times\begin{pmatrix}a_{1},\ldots,a_{n}\end{pmatrix}=\begin{pmatrix}ca_{1},%
+\ldots,ca_{n}\end{pmatrix}" display="block"><mrow><mrow><mi>c</mi><mo>×</mo><mrow><mo>(</mo><mtable displaystyle="true"><mtr><mtd columnalign="center"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mtd></mtr></mtable><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mtable displaystyle="true"><mtr><mtd columnalign="center"><mrow><mrow><mi>c</mi><mo>⁢</mo><msub><mi>a</mi><mn>1</mn></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>c</mi><mo>⁢</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mrow></mtd></mtr></mtable><mo>)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</section>
+<section id="S0.SS4" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">0.4 </span><math id="S0.SS4.m1" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math> as an inner product space</h3>
+
+<div id="S0.SS4.p1" class="ltx_para">
+<p class="ltx_p">In order to make <math id="S0.SS4.p1.m1" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math> into an inner product space we specify, in addition to the addition map and the scalar product map, another map, namely the inner product map, <math id="S0.SS4.p1.m2" class="ltx_Math" alttext="\cdot\colon\mathbb{R}^{n}\times\mathbb{R}^{n}\to\mathbb{R}" display="inline"><mrow><mo>⋅</mo><mo>:</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo>×</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo>→</mo><mi>ℝ</mi></mrow></math>, which is defined as follows:</p>
+<table id="S0.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex6.m1" class="ltx_Math" alttext="\begin{pmatrix}a_{1},\ldots,a_{n}\end{pmatrix}\cdot\begin{pmatrix}b_{1},\ldots%
+,b_{n}\end{pmatrix}=a_{1}b_{1}+\ldots+a_{n}b_{n}" display="block"><mrow><mrow><mrow><mo>(</mo><mtable displaystyle="true"><mtr><mtd columnalign="center"><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub></mrow></mtd></mtr></mtable><mo>)</mo></mrow><mo>⋅</mo><mrow><mo>(</mo><mtable displaystyle="true"><mtr><mtd columnalign="center"><mrow><msub><mi>b</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>b</mi><mi>n</mi></msub></mrow></mtd></mtr></mtable><mo>)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>b</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">…</mi><mo>+</mo><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>⁢</mo><msub><mi>b</mi><mi>n</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</section>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Relations between structures</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p class="ltx_p">Some of these geometries impose more structure on our space than others. Affine geometry imposes the least structure and inner product space imposes the most. The situation may be summarized in the following diagram, where the arrows mean that we can get from one geometry to the next by imposing more structure:</p>
+<table id="S1.Ex7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex7.m1" class="ltx_Math" alttext="\begin{matrix}&amp;&amp;\hbox{Affine space}&amp;&amp;\\
+&amp;\swarrow&amp;&amp;\searrow&amp;\\
+\hbox{Euclidean space}&amp;&amp;&amp;&amp;\hbox{Vector Space}\\
+&amp;\searrow&amp;&amp;\swarrow&amp;\\
+&amp;&amp;\hbox{Inner product space}&amp;&amp;\\
+\end{matrix}" display="block"><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><mi></mi></mtd><mtd columnalign="center"><mi></mi></mtd><mtd columnalign="center"><mtext>Affine space</mtext></mtd><mtd columnalign="center"><mi></mi></mtd><mtd columnalign="center"><mi></mi></mtd></mtr><mtr><mtd columnalign="center"><mi></mi></mtd><mtd columnalign="center"><mo>↙</mo></mtd><mtd columnalign="center"><mi></mi></mtd><mtd columnalign="center"><mo>↘</mo></mtd><mtd columnalign="center"><mi></mi></mtd></mtr><mtr><mtd columnalign="center"><mtext>Euclidean space</mtext></mtd><mtd columnalign="center"><mi></mi></mtd><mtd columnalign="center"><mi></mi></mtd><mtd columnalign="center"><mi></mi></mtd><mtd columnalign="center"><mtext>Vector Space</mtext></mtd></mtr><mtr><mtd columnalign="center"><mi></mi></mtd><mtd columnalign="center"><mo>↘</mo></mtd><mtd columnalign="center"><mi></mi></mtd><mtd columnalign="center"><mo>↙</mo></mtd><mtd columnalign="center"><mi></mi></mtd></mtr><mtr><mtd columnalign="center"><mi></mi></mtd><mtd columnalign="center"><mi></mi></mtd><mtd columnalign="center"><mtext>Inner product space</mtext></mtd><mtd columnalign="center"><mi></mi></mtd><mtd columnalign="center"><mi></mi></mtd></mtr></mtable></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span>Symmetry</h2>
+
+<div id="S2.p1" class="ltx_para">
+<p class="ltx_p">The four geometric structures described above may be characterized in
+terms of the symmetry groups which preserve the structures in question.
+These groups happen to be Lie groups and are as follows:</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">1.</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p">The symmetry group is <math id="I1.i1.p1.m1" class="ltx_Math" alttext="IGL(n,\mathbb{R})" display="inline"><mrow><mi>I</mi><mo>⁢</mo><mi>G</mi><mo>⁢</mo><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, the set of all
+inhomogeneous linear transformations. (Here and in the next item,
+”inhomogeneous” means that translations are included in the
+transformation group.)</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">2.</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p">The symmetry group is <math id="I1.i2.p1.m1" class="ltx_Math" alttext="IO(n,\mathbb{R})" display="inline"><mrow><mi>I</mi><mo>⁢</mo><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, the set of all
+inhomogeneous orthogonal transformations. These include rotations,
+translations, and reflections.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">3.</span> 
+<div id="I1.i3.p1" class="ltx_para">
+<p class="ltx_p">The symmetry group is <math id="I1.i3.p1.m1" class="ltx_Math" alttext="GL(n,\mathbb{R})" display="inline"><mrow><mi>G</mi><mo>⁢</mo><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, the set of all
+homogeneous linear transformations.</p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">4.</span> 
+<div id="I1.i4.p1" class="ltx_para">
+<p class="ltx_p">The symmetry group is <math id="I1.i4.p1.m1" class="ltx_Math" alttext="O(n,\mathbb{R})" display="inline"><mrow><mi>O</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo>,</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, the set of all
+homogeneous orthogonal transformations.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="S2.p2" class="ltx_para">
+<p class="ltx_p">These different groups act differently on the same underlying space and hence we have different invariants. These invariants may be described in algebraic and in geometric terms.</p>
+</div>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3 </span>Generalizations</h2>
+
+<div id="S3.p1" class="ltx_para">
+<p class="ltx_p">Although we presented considered <math id="S3.p1.m1" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math>, most of these constructions also work more generally. In this section, we shall discuss under what conditions we can use the same constructions to impose geometric structure on <math id="S3.p1.m2" class="ltx_Math" alttext="\mathbb{K}^{n}" display="inline"><msup><mi>𝕂</mi><mi>n</mi></msup></math> when <math id="S3.p1.m3" class="ltx_Math" alttext="\mathbb{K}" display="inline"><mi>𝕂</mi></math> is a algebraic system.</p>
+</div>
+</section>
+<section id="S4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">4 </span>Abuses of language</h2>
+
+<div id="S4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Below is the old entry, which will be erased as soon as it has been supplanted by the new entry.</span></p>
+</div>
+<div id="S4.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Affine space</span> of dimension <math id="S4.p2.m1" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math> over a field <math id="S4.p2.m2" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> is <math id="S4.p2.m3" class="ltx_Math" alttext="k^{n}" display="inline"><msup><mi>k</mi><mi>n</mi></msup></math>, the set of <span class="ltx_text ltx_font_typewriter">http://planetmath.org/node/6617<math id="S4.p2.m4" class="ltx_Math" alttext="n" display="inline"><mi mathvariant="normal">n</mi></math></span>-tuplets of elements of <math id="S4.p2.m5" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>. The reason that the finite dimensional vector space <math id="S4.p2.m6" class="ltx_Math" alttext="k^{n}" display="inline"><msup><mi>k</mi><mi>n</mi></msup></math> has such a special name “affine space” is because it is acted upon by the set of affine transformations, which are transforms of the form</p>
+<table id="S4.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex8.m1" class="ltx_Math" alttext="\left(\begin{matrix}x_{1}\\
+\vdots\\
+x_{n}\end{matrix}\right)\mapsto\left(\begin{matrix}m_{11}&amp;\cdots&amp;m_{1n}\\
+\vdots&amp;\ddots&amp;\vdots\\
+m_{n1}&amp;\cdots&amp;m_{nn}\end{matrix}\right)\left(\begin{matrix}x_{1}\\
+\vdots\\
+x_{n}\end{matrix}\right)+\left(\begin{matrix}v_{1}\\
+\vdots\\
+v_{n}\end{matrix}\right)" display="block"><mrow><mrow><mo>(</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><msub><mi>x</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd columnalign="center"><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd columnalign="center"><msub><mi>x</mi><mi>n</mi></msub></mtd></mtr></mtable><mo>)</mo></mrow><mo>↦</mo><mrow><mrow><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><msub><mi>m</mi><mn>11</mn></msub></mtd><mtd columnalign="center"><mi mathvariant="normal">⋯</mi></mtd><mtd columnalign="center"><msub><mi>m</mi><mrow><mn>1</mn><mo>⁢</mo><mi>n</mi></mrow></msub></mtd></mtr><mtr><mtd columnalign="center"><mi mathvariant="normal">⋮</mi></mtd><mtd columnalign="center"><mi mathvariant="normal">⋱</mi></mtd><mtd columnalign="center"><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd columnalign="center"><msub><mi>m</mi><mrow><mi>n</mi><mo>⁢</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="center"><mi mathvariant="normal">⋯</mi></mtd><mtd columnalign="center"><msub><mi>m</mi><mrow><mi>n</mi><mo>⁢</mo><mi>n</mi></mrow></msub></mtd></mtr></mtable><mo>)</mo></mrow><mo>⁢</mo><mrow><mo>(</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><msub><mi>x</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd columnalign="center"><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd columnalign="center"><msub><mi>x</mi><mi>n</mi></msub></mtd></mtr></mtable><mo>)</mo></mrow></mrow><mo>+</mo><mrow><mo>(</mo><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="center"><msub><mi>v</mi><mn>1</mn></msub></mtd></mtr><mtr><mtd columnalign="center"><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd columnalign="center"><msub><mi>v</mi><mi>n</mi></msub></mtd></mtr></mtable><mo>)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and hence is the natural setting for affine geometry. (For more information on affine geometry, please see section 1.1.2 of the <span class="ltx_text ltx_font_typewriter">http://planetmath.org/node/3824</span>topic entry on geometry.) It is worth mentioning that the name “affine space” is used primarily in geometry and in commutative algebra. (In algebra, one does not concern oneself with affine transforms and simply uses the term “affine space” as synonym for “vector space”).
+</p>
+<table class="ltx_tabular ltx_align_right ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">geometrization of <math id="S4.p2.m7" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math>
+</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">GeometrizationOfmathbbRn</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 12:03:50</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 12:03:50</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">29</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Topic</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 14-00</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">AffineTransformation</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 17:55:57 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

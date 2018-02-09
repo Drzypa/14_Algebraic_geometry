@@ -1,0 +1,163 @@
+<!DOCTYPE html><html>
+<head>
+<title>algebraic sets and polynomial ideals</title>
+<!--Generated on Fri Feb  9 17:56:16 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">algebraic sets and polynomial ideals</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">Suppose <math id="p1.m1" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> is a field. Let <math id="p1.m2" class="ltx_Math" alttext="\mathbb{A}^{n}_{k}" display="inline"><msubsup><mi>𝔸</mi><mi>k</mi><mi>n</mi></msubsup></math> denote affine <math id="p1.m3" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>-space over <math id="p1.m4" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>.
+<br class="ltx_break">For <math id="p1.m5" class="ltx_Math" alttext="S\subseteq k[x_{1},\ldots,x_{n}]" display="inline"><mrow><mi>S</mi><mo>⊆</mo><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">]</mo></mrow></mrow></mrow></math>, define <math id="p1.m6" class="ltx_Math" alttext="V(S)" display="inline"><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow></math>, the <span class="ltx_text ltx_font_italic">zero set of <math id="p1.m7" class="ltx_Math" alttext="S" display="inline"><mi>S</mi></math></span>, by</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="V(S)=\{(a_{1},\ldots,a_{n})\in k^{n}\mid f(a_{1},\ldots,a_{n})=0\text{ for all%
+ }f\in S\}" display="block"><mrow><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>S</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>k</mi><mi>n</mi></msup></mrow><mo>∣</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mtext> for all </mtext><mo>⁢</mo><mi>f</mi></mrow><mo>∈</mo><mi>S</mi></mrow><mo stretchy="false">}</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">We say that <math id="p1.m8" class="ltx_Math" alttext="Y\subseteq\mathbb{A}^{n}_{k}" display="inline"><mrow><mi>Y</mi><mo>⊆</mo><msubsup><mi>𝔸</mi><mi>k</mi><mi>n</mi></msubsup></mrow></math> is an (affine) <span class="ltx_text ltx_font_italic">algebraic set</span> if there exists <math id="p1.m9" class="ltx_Math" alttext="T\subseteq k[x_{1},\ldots,x_{n}]" display="inline"><mrow><mi>T</mi><mo>⊆</mo><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">]</mo></mrow></mrow></mrow></math> such that <math id="p1.m10" class="ltx_Math" alttext="Y=V(T)" display="inline"><mrow><mi>Y</mi><mo>=</mo><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. Taking these subsets of <math id="p1.m11" class="ltx_Math" alttext="\mathbb{A}^{n}_{k}" display="inline"><msubsup><mi>𝔸</mi><mi>k</mi><mi>n</mi></msubsup></math> as a definition of the closed sets of a topology induces the Zariski topology over <math id="p1.m12" class="ltx_Math" alttext="\mathbb{A}^{n}_{k}" display="inline"><msubsup><mi>𝔸</mi><mi>k</mi><mi>n</mi></msubsup></math>.
+<br class="ltx_break">For <math id="p1.m13" class="ltx_Math" alttext="Y\subseteq\mathbb{A}^{n}_{k}" display="inline"><mrow><mi>Y</mi><mo>⊆</mo><msubsup><mi>𝔸</mi><mi>k</mi><mi>n</mi></msubsup></mrow></math>, define the <span class="ltx_text ltx_font_italic">deal of <math id="p1.m14" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> in <math id="p1.m15" class="ltx_Math" alttext="k[x_{1},\ldots,x_{n}]" display="inline"><mrow><mi>k</mi><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">[</mo><msub><mi>x</mi><mn mathvariant="normal">1</mn></msub><mo mathvariant="normal">,</mo><mi mathvariant="normal">…</mi><mo mathvariant="normal">,</mo><msub><mi>x</mi><mi>n</mi></msub><mo mathvariant="normal" stretchy="false">]</mo></mrow></mrow></math></span> by</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="I(Y)=\{f\in k[x_{1},\ldots,x_{n}]\mid f(P)=0\text{ for all }P\in Y\}." display="block"><mrow><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>f</mi><mo>∈</mo><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">]</mo></mrow></mrow></mrow><mo>∣</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>P</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mn>0</mn><mo>⁢</mo><mtext> for all </mtext><mo>⁢</mo><mi>P</mi></mrow><mo>∈</mo><mi>Y</mi></mrow><mo stretchy="false">}</mo></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">It is easily shown that <math id="p1.m16" class="ltx_Math" alttext="I(Y)" display="inline"><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></math> is an ideal of <math id="p1.m17" class="ltx_Math" alttext="k[x_{1},\ldots,x_{n}]" display="inline"><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">]</mo></mrow></mrow></math>.
+<br class="ltx_break">Thus we have defined a function <math id="p1.m18" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> mapping from subsets of <math id="p1.m19" class="ltx_Math" alttext="k[x_{1},\ldots,x_{n}]" display="inline"><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">]</mo></mrow></mrow></math> to algebraic sets in <math id="p1.m20" class="ltx_Math" alttext="\mathbb{A}^{n}_{k}" display="inline"><msubsup><mi>𝔸</mi><mi>k</mi><mi>n</mi></msubsup></math>, and a function <math id="p1.m21" class="ltx_Math" alttext="I" display="inline"><mi>I</mi></math> mapping from subsets of <math id="p1.m22" class="ltx_Math" alttext="\mathbb{A}^{n}" display="inline"><msup><mi>𝔸</mi><mi>n</mi></msup></math> to ideals of <math id="p1.m23" class="ltx_Math" alttext="k[x_{1},\ldots,x_{n}]" display="inline"><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">]</mo></mrow></mrow></math>.
+<br class="ltx_break">We remark that the theory of algebraic sets presented herein is most cleanly stated over an algebraically closed field. For example, over such a field, the above have the following properties:</p>
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">1.</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="S_{1}\subseteq S_{2}\subseteq k[x_{1},\ldots,x_{n}]" display="inline"><mrow><msub><mi>S</mi><mn>1</mn></msub><mo>⊆</mo><msub><mi>S</mi><mn>2</mn></msub><mo>⊆</mo><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">]</mo></mrow></mrow></mrow></math> implies
+<math id="I1.i1.p1.m2" class="ltx_Math" alttext="V(S_{1})\supseteq V(S_{2})" display="inline"><mrow><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>S</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>⊇</mo><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>S</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">2.</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><math id="I1.i2.p1.m1" class="ltx_Math" alttext="Y_{1}\subseteq Y_{2}\subseteq\mathbb{A}_{k}^{n}" display="inline"><mrow><msub><mi>Y</mi><mn>1</mn></msub><mo>⊆</mo><msub><mi>Y</mi><mn>2</mn></msub><mo>⊆</mo><msubsup><mi>𝔸</mi><mi>k</mi><mi>n</mi></msubsup></mrow></math> implies
+<math id="I1.i2.p1.m2" class="ltx_Math" alttext="I(Y_{1})\supseteq I(Y_{2})" display="inline"><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>Y</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>⊇</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>Y</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">3.</span> 
+<div id="I1.i3.p1" class="ltx_para">
+<p class="ltx_p">For any ideal <math id="I1.i3.p1.m1" class="ltx_Math" alttext="\mathfrak{a}\subset k[x_{1},\ldots,x_{n}]" display="inline"><mrow><mi>𝔞</mi><mo>⊂</mo><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">]</mo></mrow></mrow></mrow></math>,
+<math id="I1.i3.p1.m2" class="ltx_Math" alttext="I(V(\mathfrak{a}))=\operatorname{Rad}(\mathfrak{a})" display="inline"><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝔞</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>Rad</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>𝔞</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">4.</span> 
+<div id="I1.i4.p1" class="ltx_para">
+<p class="ltx_p">For any <math id="I1.i4.p1.m1" class="ltx_Math" alttext="Y\subset\mathbb{A}^{n}_{k}" display="inline"><mrow><mi>Y</mi><mo>⊂</mo><msubsup><mi>𝔸</mi><mi>k</mi><mi>n</mi></msubsup></mrow></math>, <math id="I1.i4.p1.m2" class="ltx_Math" alttext="V(I(Y))=\overline{Y}" display="inline"><mrow><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mover accent="true"><mi>Y</mi><mo>¯</mo></mover></mrow></math>, the closure
+of <math id="I1.i4.p1.m3" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> in the Zariski topology.</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">From the above, we see that there is a 1-1 correspondence between algebraic sets in <math id="p2.m1" class="ltx_Math" alttext="\mathbb{A}^{n}_{k}" display="inline"><msubsup><mi>𝔸</mi><mi>k</mi><mi>n</mi></msubsup></math> and radical ideals of <math id="p2.m2" class="ltx_Math" alttext="k[x_{1},\ldots,x_{n}]" display="inline"><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">]</mo></mrow></mrow></math>. Furthermore, an algebraic set <math id="p2.m3" class="ltx_Math" alttext="Y\subseteq\mathbb{A}^{n}_{k}" display="inline"><mrow><mi>Y</mi><mo>⊆</mo><msubsup><mi>𝔸</mi><mi>k</mi><mi>n</mi></msubsup></mrow></math> is an affine variety if and only if <math id="p2.m4" class="ltx_Math" alttext="I(Y)" display="inline"><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow></mrow></math> is a prime ideal. As an example of how things can go wrong, the radical ideals <math id="p2.m5" class="ltx_Math" alttext="(1)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math> and <math id="p2.m6" class="ltx_Math" alttext="(x^{2}+1)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></math> in <math id="p2.m7" class="ltx_Math" alttext="\mathbb{R}[x]" display="inline"><mrow><mi>ℝ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>x</mi><mo stretchy="false">]</mo></mrow></mrow></math> define the same zero locus (the empty set) inside of <math id="p2.m8" class="ltx_Math" alttext="\mathbb{R}" display="inline"><mi>ℝ</mi></math>, but are not the same ideal, and hence there is no such 1-1 correspondence.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_t">Title</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">algebraic sets and polynomial ideals</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Canonical name</td>
+<td class="ltx_td ltx_align_left ltx_border_r">AlgebraicSetsAndPolynomialIdeals</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Date of creation</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 13:05:40</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified on</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 13:05:40</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Owner</td>
+<td class="ltx_td ltx_align_left ltx_border_r">mathcam (2727)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified by</td>
+<td class="ltx_td ltx_align_left ltx_border_r">mathcam (2727)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Numerical id</td>
+<td class="ltx_td ltx_align_left ltx_border_r">16</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Author</td>
+<td class="ltx_td ltx_align_left ltx_border_r">mathcam (2727)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Entry type</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 14A10</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Synonym</td>
+<td class="ltx_td ltx_align_left ltx_border_r">vanishing set</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Ideal</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">HilbertsNullstellensatz</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">RadicalOfAnIdeal</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">zero set</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">algebraic set</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">ideal of an algebraic set</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">affine algebraic set</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 17:56:16 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

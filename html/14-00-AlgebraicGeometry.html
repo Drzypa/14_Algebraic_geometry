@@ -1,0 +1,254 @@
+<!DOCTYPE html><html>
+<head>
+<title>algebraic geometry</title>
+<!--Generated on Fri Feb  9 17:55:45 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">algebraic geometry</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<div class="ltx_pagination ltx_role_newpage"></div>
+</div>
+<section id="Sx1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Introduction</h2>
+
+<div id="Sx1.p1" class="ltx_para">
+<p class="ltx_p">Algebraic geometry is the study of algebraic objects using geometrical tools. By algebraic objects, we mean objects such as the collection of solutions to a list of polynomial equations in some ring. Of course, if the ring is the complex numbers, we can apply the highly succesful theories of complex analysis and complex manifolds to address the problems; many powerful tools are available; de Rham cohomology, singular homology, Hodge theory, spectral sequences and many others. We also have at our disposal all the tools of real differential geometry: partitions of unity, curvature, tangent spaces, as well as all the tools of point-set topology. However, if one wishes to use a different ring, perhaps the rational numbers, the integers, or a finite field, none of this theory can be applied directly.</p>
+</div>
+<div id="Sx1.p2" class="ltx_para">
+<p class="ltx_p">Algebraic geometry defines the basic objects and constructs tools closely analogous to all these tools. They are generally used to study the algebraic analogs of geometric objects: curves defined over the rational numbers rather than the complex numbers, for example. However, the tools that have been developed are so general they can sometimes be used to view a purely algebraic problem in a geometric light. For example, the properties of number fields are very closely parallelled by the properties of nonsingular curves, particularly over finite fields. Techniques from algebraic geometry offer the potential of recognizing and taking advantage of this essential similarity. However, most results in algebraic geometry rely on difficult results in commutative algebra, so attacking a purely algebraic problem with these techniques usually amounts to reducing one algebraic problem to another. This can be useful, especially when it allows to apply one’s geometric intuition to purely algebraic problems. For example, many properties will hold for a ring if and only if they hold for the localization of that ring at every prime ideal. From a geometric point of view, this amounts to saying that the property holds for a space if and only if it holds for every point in the space.</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+<section id="Sx2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">History</h2>
+
+<div id="Sx2.p1" class="ltx_para">
+<p class="ltx_p">Algebraic geometry has been through several revolutionary changes. Classically, equations were studied by themselves, using a variety of techniques. Perhaps a good example is the Fermat equation, <math id="Sx2.p1.m1" class="ltx_Math" alttext="x^{n}+y^{n}=z^{n}" display="inline"><mrow><mrow><msup><mi>x</mi><mi>n</mi></msup><mo>+</mo><msup><mi>y</mi><mi>n</mi></msup></mrow><mo>=</mo><msup><mi>z</mi><mi>n</mi></msup></mrow></math>. Using an assortment of techniques, the nonexistence of nontrivial integer solutions was proven for various exponents. This approach is not able to take advantage of many modern tools such as homological algebra.</p>
+</div>
+<div id="Sx2.p2" class="ltx_para">
+<p class="ltx_p">Such an equation (under certain conditions) of course defines a complex manifold; significant geometrical tools then become available, but they (seem to) tell the mathematician very little about integer solutions or solutions in a finite field. It was realized that one could define an object very like a complex manifold by replacing the notion of “analytic map” with polynomials. The objects so defined are called varieties. This allows one to work over fields of arbitrary characteristic. With sufficient care, some of the tools of complex geometry can be carried over. This formulation is not really adequate for working with non-algebraically closed fields or with rings.</p>
+</div>
+<div id="Sx2.p3" class="ltx_para">
+<p class="ltx_p">In the mid-20th century, Grothendieck and his school found the correct tool for formalizing the theory of varieties into a form that can deal with more general ground fields, rings, and families of algebraic objects in a unified way. The formalism of schemes is an extremely general and powerful tool for addressing a large variety of problems in algebraic geometry. Schemes generalize varieties: once one has the tools of schemes, a variety is defined to be a noetherian integral separated scheme of finite type over an algebraically closed field.</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+<section id="Sx3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Fundamentals</h2>
+
+<div id="Sx3.p1" class="ltx_para">
+<p class="ltx_p">Classically, one defines an analytic structure on a topological manifold by specifying a family of coordinate charts (homeomorphisms from a neighborhood to <math id="Sx3.p1.m1" class="ltx_Math" alttext="\mathbb{C}^{n}" display="inline"><msup><mi>ℂ</mi><mi>n</mi></msup></math>) that are suitably compatible. Unfortunately, the only natural definition for “neighborhood” on an algebraic object uses the Zariski topology, in which every open set is dense (in an irreducible object). So it is extremely rare that an algebraic object has a neighborhood which is isomorphic to affine space. However, an alternative way of defining an analytic structure on a manifold is to describe all the holomorphic functions on the manifold. It is not sufficient to describe the global functions, since a compact complex manifold only has constants as its global holomorphic functions; one describes the holomorphic functions on any open set <math id="Sx3.p1.m2" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math>. Of course one can always restrict an analytic function to a smaller open set; if all the restrictions of a function are zero, the function must be zero; and if we have a collection of holomorphic functions on different open sets that agree on the overlaps, then they can be pieced together to give a holomorphic function on a union of the open sets. These conditions, abstracted away from their context, form the definition of a sheaf.</p>
+</div>
+<div id="Sx3.p2" class="ltx_para">
+<p class="ltx_p">Sheaves are a fundamental kind of object in algebraic geometry. They serve to describe locally defined objects, and they can tell when they can be patched together. In particular, a scheme is a topological space with an associated sheaf, the structure sheaf, which defines which functions of sheaves are considered morphisms in the category of schemes. Schemes also have a defining feature analogous to the “locally Euclidean” condition on manifolds: they must locally look like the prime spectrum of a ring. Essentially this condition allows one to address local questions on schemes by turning to commutative algebra. Global questions need new theory, analogous to the global theories of complex analysis, differential geometry, and algebraic topology.</p>
+</div>
+<div id="Sx3.p3" class="ltx_para">
+<p class="ltx_p">Many questions, such as Fermat’s Last Theorem, are concerned with points on curves, surfaces or other algebraic objects. When dealing with manifolds, a point is simply a point on the underlying topological space. When dealing with schemes, one often wants a point on a scheme that is in a particular field or ring. The underlying topological space cannot carry this level of detail, and in fact the underlying topological space of a scheme <math id="Sx3.p3.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> is somewhat odd at first sight: for each irreducible closed subset <math id="Sx3.p3.m2" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> (for example, a curve on a surface) the underlying topological space of <math id="Sx3.p3.m3" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> has a generic point whose closure is <math id="Sx3.p3.m4" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math>. So we use a different definition of a point on a scheme.</p>
+</div>
+<div id="Sx3.p4" class="ltx_para">
+<p class="ltx_p">In the topological category, we could define a point on <math id="Sx3.p4.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> as a continuous function from a one-point space to <math id="Sx3.p4.m2" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math>. Clearly, once we fix a one-point space, there is a natural bijection between functions of this sort and points of <math id="Sx3.p4.m3" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math>. Similarly, if <math id="Sx3.p4.m4" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> is a field, we define points on a scheme <math id="Sx3.p4.m5" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> to be morphisms from the prime spectrum of <math id="Sx3.p4.m6" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> (which is a one-point space) to <math id="Sx3.p4.m7" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math>. Then all the generic points and strange behaviour appear as points over other fields — for example, generic points appear as points over function fields. If one is interested in points on a scheme <math id="Sx3.p4.m8" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> with coordinates in some ring <math id="Sx3.p4.m9" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>, we can simply define them to be morphisms from the prime spectrum of <math id="Sx3.p4.m10" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> to <math id="Sx3.p4.m11" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math>. If we take <math id="Sx3.p4.m12" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> to be <math id="Sx3.p4.m13" class="ltx_Math" alttext="k[\epsilon]/\left&lt;\epsilon^{2}\right&gt;" display="inline"><mrow><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>ϵ</mi><mo stretchy="false">]</mo></mrow></mrow><mo>/</mo><mrow><mo>⟨</mo><msup><mi>ϵ</mi><mn>2</mn></msup><mo>⟩</mo></mrow></mrow></math>, then <math id="Sx3.p4.m14" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>-points turn out to be tangent vectors on <math id="Sx3.p4.m15" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math>.</p>
+</div>
+<div id="Sx3.p5" class="ltx_para">
+<p class="ltx_p">Schemes also allow the treatment of families of varieties or schemes, even when the characteristic of the objects in the family may vary. The way this is done is by studying not simply schemes themselves but morphisms of schemes. In particular, one fixes a “base scheme” <math id="Sx3.p5.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> and looks at the arrow category of morphisms <math id="Sx3.p5.m2" class="ltx_Math" alttext="Y\to X" display="inline"><mrow><mi>Y</mi><mo>→</mo><mi>X</mi></mrow></math>, called “schemes over <math id="Sx3.p5.m3" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math>”. On the one hand, this allows one to fix a base field for all one’s schemes and consider only morphisms that fix the base field; on the other, if <math id="Sx3.p5.m4" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> is a more complicated schemes, the fibers of the morphism can be viewed as members of a family indexed by points of <math id="Sx3.p5.m5" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math>. The condition that the family be continuous can be expressed by requiring that <math id="Sx3.p5.m6" class="ltx_Math" alttext="Y\to X" display="inline"><mrow><mi>Y</mi><mo>→</mo><mi>X</mi></mrow></math> be a flat morphism; in this situation many cohomological invariants are guaranteed to be constant in the family.</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+<section id="Sx4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Cohomology</h2>
+
+<div id="Sx4.p1" class="ltx_para">
+<p class="ltx_p">Cohomology has proven to be an essential tool in the study of complex manifolds and other “nice” spaces. The general rule is that topological properties of interest are found to be determined by the values of cohomological invariants of the topological space. It has therefore been a goal of algebraic geometers to provide a suitable cohomology theory for schemes.</p>
+</div>
+<div id="Sx4.p2" class="ltx_para">
+<p class="ltx_p">The simplest (although not very simple) kind of cohomology for schemes is sheaf cohomology. These cohomology functors associate abelian groups to sheaves on a scheme; one can view them as cohomology with coefficients in a scheme. However, the Zariski topology is very coarse. While one can compute the appropriate cohomology groups for a quasi-coherent sheaf or for the group scheme <math id="Sx4.p2.m1" class="ltx_Math" alttext="\mathbb{G}_{m}" display="inline"><msub><mi>𝔾</mi><mi>m</mi></msub></math>, it is too coarse to compute the “true” cohomology groups with constant coefficients. In fact, on most schemes encountered in practice, constant sheaves have zero cohomology groups. This is a problem, as in the complex category, cohomology with constant coefficients (in fact, usually with integer coefficients) determines most of the cohomological invariants that are of interest, such as the Betti numbers.</p>
+</div>
+<div id="Sx4.p3" class="ltx_para">
+<p class="ltx_p">In order to address these problems (and specifically to attack the Weil conjectures), Grothendieck and his school introduced new cohomology theories. Their key insight was that the problem with sheaf cohomology comes from the fact that Zariski open sets are “too big”, that the induced topology is “too coarse”. For example, two nonisomorphic nonsingular curves do not have any isomorphic open subsets, in sharp contrast to complex manifolds, which are covered with neighborhoods isomorphic to a neighborhood in <math id="Sx4.p3.m1" class="ltx_Math" alttext="\mathbb{C}^{n}" display="inline"><msup><mi>ℂ</mi><mi>n</mi></msup></math>. Their solution was to introduce the notion of a site, generalizing the notion of a topology. A site allows the definition of sheaves and the evaluation of their derived functors, yielding cohomology groups.</p>
+</div>
+<div id="Sx4.p4" class="ltx_para">
+<p class="ltx_p">If the site is chosen to have “open sets” consisting of étale morphisms of finite type to the scheme of interest, one obtains the étale site. This site is “finer” than the Zariski topology (which can be made into a site). The cohomology groups obtained from the étale site are able to evaluate the “true” cohomology groups for a finite constant sheaf. By taking a projective limit, one can obtain cohomology groups with <math id="Sx4.p4.m1" class="ltx_Math" alttext="l" display="inline"><mi>l</mi></math>-adic (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/PAdicIntegers</span>) coefficients. These groups were central to Deligne’s proof of the Weil conjectures, and in principle they allow many valuable computations. In practice, they can be difficult to work with.</p>
+</div>
+<div id="Sx4.p5" class="ltx_para">
+<p class="ltx_p">Both to broaden the applicability of cohomological techniques and to make cohomology groups more computable, many other kinds of cohomology have been introduced. Examples include crystalline cohomology, Monsky-Washnitzer cohomology, and others.</p>
+</div>
+<div id="Sx4.p6" class="ltx_para">
+<p class="ltx_p">Computations in cohomology generally use the same tools as computations in cohomology in algebraic topology: spectral sequences, excision, the Mayer-Vietoris sequence, and so on, with the exception that trivial facts about one-point topological spaces are replaced with difficult algebraic facts (this observation is essentially due to Milne, in his book <em class="ltx_emph ltx_font_italic">Étale Cohomology</em>).
+</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+<section id="Sx5" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">GAGA principle</h2>
+
+<div id="Sx5.p1" class="ltx_para">
+<p class="ltx_p">Correspondence between compact complex manifolds and proper algebraic varieties over <math id="Sx5.p1.m1" class="ltx_Math" alttext="\overline{\mathbb{Q}}" display="inline"><mover accent="true"><mi>ℚ</mi><mo>¯</mo></mover></math>. General principle that the algebraic category can only deal effectively with “finite” objects.</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+<section id="Sx6" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Disciplines in algebraic geometry</h2>
+
+<section id="Sx6.SSx1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">Birational geometry</h3>
+
+<div id="Sx6.SSx1.p1" class="ltx_para">
+<p class="ltx_p">The category of schemes has a natural notion of isomorphism, and many problems are interested in the isomorphism class of an object. However, in some situations, one would like to simplify the problem. There is a notion of “birational map” between varieties; in essence this is a map that need only be defined on a dense subset, and has an “inverse” map of the same sort. Such maps need not be well-behaved on points, but they do have well-defined behaviour on the sheaf of rational functions on a scheme. This notion is one way to address singularities of a scheme, since singularities have essentially no effect on the birational behaviour of a scheme. It also provides a way to obtain a coarser initial classification of a scheme if one is really interested in its isomorphism class.</p>
+</div>
+</section>
+<section id="Sx6.SSx2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">Curves</h3>
+
+<div id="Sx6.SSx2.p1" class="ltx_para">
+<p class="ltx_p">A curve is a scheme of dimension one that satisfies certain “niceness” conditions (which vary between authors; usually they are noetherian integral and separated). Such schemes can be studied in very broad generality; one can treat on the same footing curves over the complex numbers and curves over a finite field. In particular, much of the theory of Riemann surfaces can be rewritten in algebraic terms and applied to arbitrary algebraic curves: ramified coverings, deck transformations, and so on.</p>
+</div>
+<div id="Sx6.SSx2.p2" class="ltx_para">
+<p class="ltx_p">Riemann-Roch; Dedekind domains, number fields and curves; unique nonsingular curve in each birational equivalence class; initial classification by genus; Jacobian; modular curve; elliptic curves; connection to modular forms; Shimura-Taniyama.</p>
+</div>
+</section>
+<section id="Sx6.SSx3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">Algebraic groups</h3>
+
+<div id="Sx6.SSx3.p1" class="ltx_para">
+<p class="ltx_p">Lie groups are an extremely interesting family of objects to study; they describe symmetry groups of real objects and have sufficient internal structure to have very interesting properties. They can be generalized to allow one to work over arbitrary fields; of course this requires the replacement of the notion of derivative with some suitable algebraic notion. Algebraic groups are essentially matrix group schemes, and as such allow the tools of algebraic geometry to be applied to their study.</p>
+</div>
+<div id="Sx6.SSx3.p2" class="ltx_para">
+<p class="ltx_p">Group schemes as group machines; linear groups; generalizing Lie groups; representation theory; relevance to number theory; Langlands program.</p>
+</div>
+</section>
+<section id="Sx6.SSx4" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">Abelian varieties</h3>
+
+<div id="Sx6.SSx4.p1" class="ltx_para">
+<p class="ltx_p">Ons specialized area of the study of group schemes is the study of abelian schemes and abelian varieties. An abelian scheme is a proper group scheme; this implies that it is projective and abelian. An abelian variety is simply an abelian scheme that is a variety. Over the complex numbers, every abelian variety is <math id="Sx6.SSx4.p1.m1" class="ltx_Math" alttext="\mathbb{C}^{g}/\Lambda" display="inline"><mrow><msup><mi>ℂ</mi><mi>g</mi></msup><mo>/</mo><mi mathvariant="normal">Λ</mi></mrow></math> for some lattice <math id="Sx6.SSx4.p1.m2" class="ltx_Math" alttext="\Lambda" display="inline"><mi mathvariant="normal">Λ</mi></math> of real dimension <math id="Sx6.SSx4.p1.m3" class="ltx_Math" alttext="2g" display="inline"><mrow><mn>2</mn><mo>⁢</mo><mi>g</mi></mrow></math>. Over other fields, of course, the story is more complicated.</p>
+</div>
+<div id="Sx6.SSx4.p2" class="ltx_para">
+<p class="ltx_p">Abelian varieties are of interest for several reasons. First of all, they generalize elliptic curves; the study of elliptic curves has led to great advances in many fields of mathematics. Second, the Jacobian of a curve is an abelian variety sharing many properties of the curve, so that by analyzing the Jacobian one may hope to describe curves more clearly. Not every abelian variety is a Jacobian, but, for example, if one can find a curve lying on an abelian variety, there is a canonical homomorphism from the Jacobian of that curve to the abelian variety.</p>
+</div>
+<div id="Sx6.SSx4.p3" class="ltx_para">
+<p class="ltx_p">Abelian varieties (with some extra data, such as a principal polarization and possibly a level strucutre) can be classified up to isomorphism by a scheme. More precisely, the classification of abelian varieties with suitable extra structure is a moduli problem, and there is an associated moduli space. With sufficient extra structure, this is a fine moduli space, so that every point on the moduli space corresponds to a single abelian variety with extra structure. Curves on the moduli space correspond to families of abelian varieties. If the extra structure is just a principal polarization and some level structure, then the moduli space is the Siegel moduli space; over the complex numbers, this appears as a quotient of a space of matrices. If the extra structure also includes an embedding of the ring of integers of a totally real number field into the endomorphism ring of the abelian variety, one obtains the Hilbert moduli space. Sections of a certain line bundle correspond to Hilbert modular forms. Hilbert modular forms are in some sense a generalization of modular forms to higher dimensions; Hilbert suggested that their study would help develop a theory of multivariate complex functions. In the end, one needed such a theory to obtain any progress at all in their study; it now seems that to carry their study further the machinery of algebraic geometry is needed. Particular areas of current research include <math id="Sx6.SSx4.p3.m1" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>-adic Hilbert modular forms and Hilbert modular forms modulo <math id="Sx6.SSx4.p3.m2" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>.</p>
+</div>
+</section>
+<section id="Sx6.SSx5" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">Arithmetic algebraic geometry</h3>
+
+<div id="Sx6.SSx5.p1" class="ltx_para">
+<p class="ltx_p">Study of arithmetical problems (Galois theory, number fields, <math id="Sx6.SSx5.p1.m1" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>-adic objects, <math id="Sx6.SSx5.p1.m2" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math> and <math id="Sx6.SSx5.p1.m3" class="ltx_Math" alttext="\zeta" display="inline"><mi>ζ</mi></math> functions of varieties and representations) using algebraic geometry.</p>
+</div>
+</section>
+<section id="Sx6.SSx6" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">Computational aspects</h3>
+
+<div id="Sx6.SSx6.p1" class="ltx_para">
+<p class="ltx_p">Since a scheme over a ring <math id="Sx6.SSx6.p1.m1" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> is always covered by <math id="Sx6.SSx6.p1.m2" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>-algebras, many computations with schemes can be translated into computations in <math id="Sx6.SSx6.p1.m3" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math>-algebras. For suitable rings <math id="Sx6.SSx6.p1.m4" class="ltx_Math" alttext="R" display="inline"><mi>R</mi></math> and algebras <math id="Sx6.SSx6.p1.m5" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math>, these can be done using Gröbner basis methods, allowing explicit computations of various properties of schemes. For example, the computer algebra system  is designed to explicitly calculate properties of singularities on schemes. It can compute, for example, explicit projective resolutions for finitely-generated modules over suitable rings.</p>
+</div>
+<div class="ltx_pagination ltx_role_newpage"></div>
+</section>
+</section>
+<section id="Sx7" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">References</h2>
+
+<div id="Sx7.p1" class="ltx_para">
+<p class="ltx_p">See the annotated bibliography for algebraic geometry.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_t">Title</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">algebraic geometry</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Canonical name</td>
+<td class="ltx_td ltx_align_left ltx_border_r">AlgebraicGeometry</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Date of creation</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 14:16:19</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified on</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 14:16:19</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Owner</td>
+<td class="ltx_td ltx_align_left ltx_border_r">archibal (4430)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified by</td>
+<td class="ltx_td ltx_align_left ltx_border_r">archibal (4430)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Numerical id</td>
+<td class="ltx_td ltx_align_left ltx_border_r">14</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Author</td>
+<td class="ltx_td ltx_align_left ltx_border_r">archibal (4430)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Entry type</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Topic</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 14-00</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Ring</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Polynomial</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">ProjectiveVariety</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">AffineVariety</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Scheme</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">ProjectiveCurve</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">PolynomialRing</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">AlgebraicTopology</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">OverviewOfTheContentOfPlanetMath</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 17:55:45 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

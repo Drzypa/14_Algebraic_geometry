@@ -1,0 +1,190 @@
+<!DOCTYPE html><html>
+<head>
+<title>sheaf</title>
+<!--Generated on Fri Feb  9 17:57:55 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">sheaf</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<div id="Thmdefn1" class="ltx_theorem ltx_theorem_defn">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Definition 1</span>.</h6>
+<div id="Thmdefn1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Let <math id="Thmdefn1.p1.m1" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> be a category, and let <math id="Thmdefn1.p1.m2" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> be another category. Then a <em class="ltx_emph ltx_font_upright">presheaf on <math id="Thmdefn1.p1.m3" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math></em> is a contravariant functor <math id="Thmdefn1.p1.m4" class="ltx_Math" alttext="F:T\to C" display="inline"><mrow><mi>F</mi><mo mathvariant="normal">:</mo><mrow><mi>T</mi><mo mathvariant="normal">→</mo><mi>C</mi></mrow></mrow></math>. If <math id="Thmdefn1.p1.m5" class="ltx_Math" alttext="U\overset{i}{\to}V" display="inline"><mrow><mi>U</mi><mo mathvariant="italic">⁢</mo><mover accent="true"><mo mathvariant="normal">→</mo><mo>𝑖</mo></mover><mo mathvariant="italic">⁢</mo><mi>V</mi></mrow></math> is a morphism in <math id="Thmdefn1.p1.m6" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math>, we call <math id="Thmdefn1.p1.m7" class="ltx_Math" alttext="F(i):F(V)\to F(U)" display="inline"><mrow><mrow><mi>F</mi><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>i</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><mo mathvariant="normal">:</mo><mrow><mrow><mi>F</mi><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>V</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><mo mathvariant="normal">→</mo><mrow><mi>F</mi><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>U</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow></mrow></mrow></math> the <em class="ltx_emph ltx_font_upright">restriction map</em> obtained from <math id="Thmdefn1.p1.m8" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math>. A <em class="ltx_emph ltx_font_upright">morphism of presheaves</em> is a natural transformation.</span></p>
+</div>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">To understand this definition, and what it has to do with the more familiar definition of a presheaf (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/Sheaf</span>), let <math id="p2.m1" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> be a site. Then a presheaf maps the “open sets” to objects in <math id="p2.m2" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> and provides restriction maps whenever the underlying “open sets” have an “inclusion”. Of course, on a site, there may be many non-isomorphic inclusions.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">In practice, to avoid set-theoretic difficulties, one usually fixes a universe <math id="p3.m1" class="ltx_Math" alttext="\mathcal{U}" display="inline"><mi class="ltx_font_mathcaligraphic">𝒰</mi></math> and then requires <math id="p3.m2" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> to be a small (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/Small</span>) category.</p>
+</div>
+<div id="Thmrem1" class="ltx_theorem ltx_theorem_rem">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Remark 1</span>.</h6>
+<div id="Thmrem1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">If <math id="Thmrem1.p1.m1" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> is a small category and <math id="Thmrem1.p1.m2" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is a <math id="Thmrem1.p1.m3" class="ltx_Math" alttext="\mathcal{U}" display="inline"><mi class="ltx_font_mathcaligraphic" mathvariant="normal">U</mi></math>-category, then presheaves on <math id="Thmrem1.p1.m4" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> form a category.</span></p>
+</div>
+<div id="Thmrem1.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">If <math id="Thmrem1.p2.m1" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> is not small, that is if the isomorphism classes of objects do not form a <math id="Thmrem1.p2.m2" class="ltx_Math" alttext="\mathcal{U}" display="inline"><mi class="ltx_font_mathcaligraphic" mathvariant="normal">U</mi></math>-set, then (normally) there are as many functors as subsets of <math id="Thmrem1.p2.m3" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math>, which leads to the resulting category failing to be a <math id="Thmrem1.p2.m4" class="ltx_Math" alttext="\mathcal{U}" display="inline"><mi class="ltx_font_mathcaligraphic" mathvariant="normal">U</mi></math>-category. If one removes the various qualifications in terms of universes, this means that there are too many functors: Russell’s paradox arises. If one uses universes, and qualifies everything in sight appropriately, a problem remains: there are too many functors from sets to sets to be allowed. While your answer is described in terms of sets, they are too big to be inside the universe of discourse. This problem underlies the set-theoretic problems with direct limits.</span></p>
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Let <math id="p4.m1" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math> be a site, and suppose either <math id="p4.m2" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is an abelian category or <math id="p4.m3" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is the category of sets.</p>
+</div>
+<div id="Thmdefn2" class="ltx_theorem ltx_theorem_defn">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Definition 2</span>.</h6>
+<div id="Thmdefn2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Let <math id="Thmdefn2.p1.m1" class="ltx_Math" alttext="F\colon T\to C" display="inline"><mrow><mi>F</mi><mo mathvariant="normal">:</mo><mrow><mi>T</mi><mo mathvariant="normal">→</mo><mi>C</mi></mrow></mrow></math> be a presheaf. Then <math id="Thmdefn2.p1.m2" class="ltx_Math" alttext="F" display="inline"><mi>F</mi></math> is a <em class="ltx_emph ltx_font_upright">sheaf</em> if for every covering <math id="Thmdefn2.p1.m3" class="ltx_Math" alttext="{U_{i}\to U}" display="inline"><mrow><msub><mi>U</mi><mi>i</mi></msub><mo mathvariant="normal">→</mo><mi>U</mi></mrow></math> in <math id="Thmdefn2.p1.m4" class="ltx_Math" alttext="T" display="inline"><mi>T</mi></math>, the products <math id="Thmdefn2.p1.m5" class="ltx_Math" alttext="\prod_{U_{i}}F(U_{i})" display="inline"><mrow><msub><mo largeop="true" mathvariant="normal" symmetric="true">∏</mo><msub><mi>U</mi><mi>i</mi></msub></msub><mrow><mi>F</mi><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><msub><mi>U</mi><mi>i</mi></msub><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow></mrow></math> and <math id="Thmdefn2.p1.m6" class="ltx_Math" alttext="\prod_{U_{i}\times_{U}U_{j}}F(U_{i}\times_{U}U_{j})" display="inline"><mrow><msub><mo largeop="true" mathvariant="normal" symmetric="true">∏</mo><mrow><msub><mi>U</mi><mi>i</mi></msub><msub><mo mathvariant="normal">×</mo><mi>U</mi></msub><msub><mi>U</mi><mi>j</mi></msub></mrow></msub><mrow><mi>F</mi><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mrow><msub><mi>U</mi><mi>i</mi></msub><msub><mo mathvariant="normal">×</mo><mi>U</mi></msub><msub><mi>U</mi><mi>j</mi></msub></mrow><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow></mrow></math> exist, and the sequence
+</span></p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="F(U)\to\prod_{U_{i}}F(U_{i})\rightrightarrows\prod_{U_{i}\times_{U}U_{j}}F(U_{%
+i}\times_{U}U_{j})" display="block"><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><msub><mi>U</mi><mi>i</mi></msub></munder><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>U</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>⇉</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mrow><msub><mi>U</mi><mi>i</mi></msub><msub><mo>×</mo><mi>U</mi></msub><msub><mi>U</mi><mi>j</mi></msub></mrow></munder><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>U</mi><mi>i</mi></msub><msub><mo>×</mo><mi>U</mi></msub><msub><mi>U</mi><mi>j</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">is exact.</span></p>
+</div>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">This “exactness” really needs explaining. First of all, for every <math id="p5.m1" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math>, we have a morphism <math id="p5.m2" class="ltx_Math" alttext="F(U)\to F(U_{i})" display="inline"><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>U</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math> obtained from the covering. The map on the left (call it <math id="p5.m3" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>) is the product of all these maps. Second, for each pair <math id="p5.m4" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math> and <math id="p5.m5" class="ltx_Math" alttext="j" display="inline"><mi>j</mi></math>, we have a morphism <math id="p5.m6" class="ltx_Math" alttext="g_{1}\colon F(U_{i})\to F(U_{i}\times_{U}U_{j})" display="inline"><mrow><msub><mi>g</mi><mn>1</mn></msub><mo>:</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>U</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>U</mi><mi>i</mi></msub><msub><mo>×</mo><mi>U</mi></msub><msub><mi>U</mi><mi>j</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math> and a morphism <math id="p5.m7" class="ltx_Math" alttext="g_{2}\colon F(U_{j})\to F(U_{i}\times_{U}U_{j})" display="inline"><mrow><msub><mi>g</mi><mn>2</mn></msub><mo>:</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>U</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>U</mi><mi>i</mi></msub><msub><mo>×</mo><mi>U</mi></msub><msub><mi>U</mi><mi>j</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math> obtained from the two projection maps of the fibred product. The two maps on the right-hand side are obtained as products of all the <math id="p5.m8" class="ltx_Math" alttext="g_{1}" display="inline"><msub><mi>g</mi><mn>1</mn></msub></math> and <math id="p5.m9" class="ltx_Math" alttext="g_{2}" display="inline"><msub><mi>g</mi><mn>2</mn></msub></math> respectively.</p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">If <math id="p6.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is the category of sets, then the exactness condition requires that the left-hand map is injective and that the two right-hand maps agree exactly on its image.</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">If <math id="p7.m1" class="ltx_Math" alttext="C" display="inline"><mi>C</mi></math> is an abelian category, then the kernel of the left-hand map should be zero, and the kernel of the difference of the two right-hand maps should be its image. Perhaps this would be clearer if the diagram added a “<math id="p7.m2" class="ltx_Math" alttext="0\to" display="inline"><mrow><mn>0</mn><mo>→</mo><mi></mi></mrow></math>” on the left, but this usage is very standard.</p>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">This definition of a sheaf is the motivation for the definition of a site: a site captures precisely those features of a topological space that are required to form sheaves. The category of sheaves on a topological space is an example of a topos; the original definition of a topos was “a category equivalent to the category of sheaves on a site”, although the concept was generalized in later work. The motivation was that while a site may be badly behaved and pose set-theoretic difficulties, the topos associated to it is generally better behaved.</p>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">The category of sheaves on a site has a long list of nice properties; among them is “has enough injectives”, so that derived functors can be extracted and cohomology calculated. This is how, for example, étale cohomology is obtained.</p>
+</div>
+<section id="bib" class="ltx_bibliography">
+<h2 class="ltx_title ltx_title_bibliography">References</h2>
+
+<ul class="ltx_biblist">
+      
+<li id="bib.bib1" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">1</span>
+        
+<span class="ltx_bibblock">Grothendieck et al., <em class="ltx_emph ltx_font_italic">Séminaires en Gèometrie Algèbrique 4</em>, tomes 1, 2, and 3, available on the web at
+<span class="ltx_text ltx_font_typewriter">http://www.math.mcgill.ca/ archibal/SGA/SGA.html</span>http://www.math.mcgill.ca/ archibal/SGA/SGA.html
+
+</span>
+      </li>
+    
+</ul>
+</section>
+<div id="p10" class="ltx_para ltx_align_right">
+<table class="ltx_tabular ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_t">Title</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">sheaf</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Canonical name</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Sheaf1</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Date of creation</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 14:12:47</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified on</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 14:12:47</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Owner</td>
+<td class="ltx_td ltx_align_left ltx_border_r">archibal (4430)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified by</td>
+<td class="ltx_td ltx_align_left ltx_border_r">archibal (4430)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Numerical id</td>
+<td class="ltx_td ltx_align_left ltx_border_r">9</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Author</td>
+<td class="ltx_td ltx_align_left ltx_border_r">archibal (4430)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Entry type</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 14F20</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 18F10</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 18F20</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Synonym</td>
+<td class="ltx_td ltx_align_left ltx_border_r">sheaves</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Sheaf</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Site</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Sheafification2</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">NaturalTransformation</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">FundamentalGroupoid2</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">presheaf</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">presheaves</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 17:57:55 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

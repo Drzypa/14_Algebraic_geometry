@@ -1,0 +1,251 @@
+<!DOCTYPE html><html>
+<head>
+<title>L-series of an elliptic curve</title>
+<!--Generated on Fri Feb  9 17:58:53 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">L-series of an elliptic curve</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">Let <math id="p1.m1" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math> be an elliptic curve over <math id="p1.m2" class="ltx_Math" alttext="\mathbb{Q}" display="inline"><mi>ℚ</mi></math> with Weierstrass
+equation:</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="y^{2}+a_{1}xy+a_{3}y=x^{3}+a_{2}x^{2}+a_{4}x+a_{6}" display="block"><mrow><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><msub><mi>a</mi><mn>3</mn></msub><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>+</mo><mrow><msub><mi>a</mi><mn>4</mn></msub><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><msub><mi>a</mi><mn>6</mn></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">with coefficients <math id="p1.m3" class="ltx_Math" alttext="a_{i}\in\mathbb{Z}" display="inline"><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>∈</mo><mi>ℤ</mi></mrow></math>. For <math id="p1.m4" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> a prime in
+<math id="p1.m5" class="ltx_Math" alttext="\mathbb{Z}" display="inline"><mi>ℤ</mi></math>, define <math id="p1.m6" class="ltx_Math" alttext="N_{p}" display="inline"><msub><mi>N</mi><mi>p</mi></msub></math> as the number of points in the
+reduction of the curve modulo <math id="p1.m7" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, this is, the number of points in:</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="\{O\}\cup\{(x,y)\in{\mathbb{F}_{p}}^{2}\colon y^{2}+a_{1}xy+a_{3}y-x^{3}-a_{2}%
+x^{2}-a_{4}x-a_{6}\equiv 0\ mod\ p\}" display="block"><mrow><mrow><mo stretchy="false">{</mo><mi>O</mi><mo stretchy="false">}</mo></mrow><mo>∪</mo><mrow><mo stretchy="false">{</mo><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><mmultiscripts><mi>𝔽</mi><mi>p</mi><none></none><none></none><mn>2</mn></mmultiscripts></mrow><mo>:</mo><mrow><mrow><mrow><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>⁢</mo><mi>x</mi><mo>⁢</mo><mi>y</mi></mrow><mo>+</mo><mrow><msub><mi>a</mi><mn>3</mn></msub><mo>⁢</mo><mi>y</mi></mrow></mrow><mo>-</mo><msup><mi>x</mi><mn>3</mn></msup><mo>-</mo><mrow><msub><mi>a</mi><mn>2</mn></msub><mo>⁢</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><mo>-</mo><mrow><msub><mi>a</mi><mn>4</mn></msub><mo>⁢</mo><mi>x</mi></mrow><mo>-</mo><msub><mi>a</mi><mn>6</mn></msub></mrow><mo>≡</mo><mrow><mpadded width="+5pt"><mn>0</mn></mpadded><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mpadded width="+5pt"><mi>d</mi></mpadded><mo>⁢</mo><mi>p</mi></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="p1.m8" class="ltx_Math" alttext="O" display="inline"><mi>O</mi></math> is the point at infinity. Also, let <math id="p1.m9" class="ltx_Math" alttext="a_{p}=p+1-N_{p}" display="inline"><mrow><msub><mi>a</mi><mi>p</mi></msub><mo>=</mo><mrow><mrow><mi>p</mi><mo>+</mo><mn>1</mn></mrow><mo>-</mo><msub><mi>N</mi><mi>p</mi></msub></mrow></mrow></math>. We define the <em class="ltx_emph ltx_font_italic">local part at <math id="p1.m10" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> of
+the L-series</em> to be:</p>
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="L_{p}(T)=\begin{cases}1-a_{p}T+pT^{2}\text{, if $E$ has good reduction at $p$}%
+,\\
+1-T\text{, if $E$ has split multiplicative reduction at $p$},\\
+1+T\text{, if $E$ has non-split multiplicative reduction at $p$},\\
+1\text{, if $E$ has additive reduction at $p$}.\end{cases}" display="block"><mrow><mrow><msub><mi>L</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><mrow><mrow><mn>1</mn><mo>-</mo><mrow><msub><mi>a</mi><mi>p</mi></msub><mo>⁢</mo><mi>T</mi></mrow></mrow><mo>+</mo><mrow><mi>p</mi><mo>⁢</mo><msup><mi>T</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mtext>, if </mtext><mi>E</mi><mtext> has good reduction at </mtext><mi>p</mi></mrow></mrow></mrow><mo>,</mo></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mrow><mn>1</mn><mo>-</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mtext>, if </mtext><mi>E</mi><mtext> has split multiplicative reduction at </mtext><mi>p</mi></mrow></mrow></mrow><mo>,</mo></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mrow><mn>1</mn><mo>+</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mtext>, if </mtext><mi>E</mi><mtext> has non-split multiplicative reduction at </mtext><mi>p</mi></mrow></mrow></mrow><mo>,</mo></mrow></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mrow><mrow><mn>1</mn><mo>⁢</mo><mrow><mtext>, if </mtext><mi>E</mi><mtext> has additive reduction at </mtext><mi>p</mi></mrow></mrow><mo>.</mo></mrow></mtd><mtd></mtd></mtr></mtable></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="Thmdefnx1" class="ltx_theorem ltx_theorem_defn">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Definition</span>.</h6>
+<div id="Thmdefnx1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">The L-series of the elliptic curve <math id="Thmdefnx1.p1.m1" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math> is defined to
+be:
+</span></p>
+<table id="S0.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="L(E,s)=\prod_{p}\frac{1}{L_{p}(p^{-s})}" display="block"><mrow><mrow><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∏</mo><mi>p</mi></munder><mfrac><mn>1</mn><mrow><msub><mi>L</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>p</mi><mrow><mo>-</mo><mi>s</mi></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">where the product is over all primes.</span></p>
+</div>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Note: The product converges and gives an analytic function for all
+<math id="p2.m1" class="ltx_Math" alttext="Re(s)&gt;3/2" display="inline"><mrow><mrow><mi>R</mi><mo>⁢</mo><mi>e</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mrow><mn>3</mn><mo>/</mo><mn>2</mn></mrow></mrow></math>. This follows from the fact that <math id="p2.m2" class="ltx_Math" alttext="\mid a_{p}\mid\leq 2\sqrt{p}" display="inline"><mrow><mrow><mo>∣</mo><msub><mi>a</mi><mi>p</mi></msub><mo>∣</mo></mrow><mo>≤</mo><mrow><mn>2</mn><mo>⁢</mo><msqrt><mi>p</mi></msqrt></mrow></mrow></math>. However, far more is true:</p>
+</div>
+<div id="Thmthmx1" class="ltx_theorem ltx_theorem_thm">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Theorem</span> (Taylor, Wiles).</h6>
+<div id="Thmthmx1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">The L-series <math id="Thmthmx1.p1.m1" class="ltx_Math" alttext="L(E,s)" display="inline"><mrow><mi>L</mi><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>E</mi><mo mathvariant="normal">,</mo><mi>s</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow></math> has an analytic continuation to the entire
+complex plane, and it satisfies the following functional equation.
+Define</span></p>
+<table id="S0.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex5.m1" class="ltx_Math" alttext="\Lambda(E,s)=({N_{E/\mathbb{Q}}})^{s/2}(2\pi)^{-s}\Gamma(s)L(E,s)" display="block"><mrow><mrow><mi mathvariant="normal">Λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><msub><mi>N</mi><mrow><mi>E</mi><mo>/</mo><mi>ℚ</mi></mrow></msub><mo stretchy="false">)</mo></mrow><mrow><mi>s</mi><mo>/</mo><mn>2</mn></mrow></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>π</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mo>-</mo><mi>s</mi></mrow></msup><mo>⁢</mo><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>s</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>L</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">where <math id="Thmthmx1.p1.m2" class="ltx_Math" alttext="{N_{E}/\mathbb{Q}}" display="inline"><mrow><msub><mi>N</mi><mi>E</mi></msub><mo mathvariant="normal">/</mo><mi mathvariant="normal">Q</mi></mrow></math> is the conductor of <math id="Thmthmx1.p1.m3" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math> and <math id="Thmthmx1.p1.m4" class="ltx_Math" alttext="\Gamma" display="inline"><mi mathvariant="normal">Γ</mi></math> is
+the Gamma function. Then:</span></p>
+<table id="S0.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex6.m1" class="ltx_Math" alttext="\Lambda(E,s)=w\Lambda(E,2-s)\quad with\ w=\pm 1" display="block"><mrow><mrow><mrow><mi mathvariant="normal">Λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>s</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>w</mi><mo>⁢</mo><mi mathvariant="normal">Λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mrow><mn>2</mn><mo>-</mo><mi>s</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mrow><mi>w</mi><mo>⁢</mo><mi>i</mi><mo>⁢</mo><mi>t</mi><mo>⁢</mo><mpadded width="+5pt"><mi>h</mi></mpadded><mo>⁢</mo><mi>w</mi></mrow><mo>=</mo><mrow><mo>±</mo><mn>1</mn></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">The number <math id="p3.m1" class="ltx_Math" alttext="w" display="inline"><mi>w</mi></math> above is usually called the <em class="ltx_emph ltx_font_italic">root number</em> of
+<math id="p3.m2" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math>, and it has an important conjectural meaning (see Birch and
+Swinnerton-Dyer conjecture).</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">This result was known for elliptic curves having complex
+multiplication (Deuring, Weil) until the general result was
+finally proven.
+</p>
+</div>
+<section id="bib" class="ltx_bibliography">
+<h2 class="ltx_title ltx_title_bibliography">References</h2>
+
+<ul class="ltx_biblist">
+      
+<li id="bib.bib1" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">1</span>
+        
+<span class="ltx_bibblock"> James Milne, <span class="ltx_text ltx_font_italic">Elliptic Curves</span>, <span class="ltx_text ltx_font_typewriter">http://www.jmilne.org/math/CourseNotes/math679.html</span>online course
+notes.
+
+</span>
+      </li>
+      
+<li id="bib.bib2" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">2</span>
+        
+<span class="ltx_bibblock"> Joseph H. Silverman, <span class="ltx_text ltx_font_italic">The Arithmetic of Elliptic Curves</span>. Springer-Verlag, New York, 1986.
+
+</span>
+      </li>
+      
+<li id="bib.bib3" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">3</span>
+        
+<span class="ltx_bibblock"> Joseph H. Silverman, <span class="ltx_text ltx_font_italic">Advanced Topics in
+the Arithmetic of Elliptic Curves</span>. Springer-Verlag, New York,
+1994.
+
+</span>
+      </li>
+      
+<li id="bib.bib4" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">4</span>
+        
+<span class="ltx_bibblock"> Goro Shimura, <span class="ltx_text ltx_font_italic">Introduction to the
+Arithmetic Theory of Automorphic Functions</span>. Princeton University
+Press, Princeton, New Jersey, 1971.
+
+</span>
+      </li>
+    
+</ul>
+</section>
+<div id="p5" class="ltx_para ltx_align_right">
+<table class="ltx_tabular ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_t">Title</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">L-series of an elliptic curve</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Canonical name</td>
+<td class="ltx_td ltx_align_left ltx_border_r">LseriesOfAnEllipticCurve</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Date of creation</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 13:49:43</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified on</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 13:49:43</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Owner</td>
+<td class="ltx_td ltx_align_left ltx_border_r">alozano (2414)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified by</td>
+<td class="ltx_td ltx_align_left ltx_border_r">alozano (2414)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Numerical id</td>
+<td class="ltx_td ltx_align_left ltx_border_r">8</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Author</td>
+<td class="ltx_td ltx_align_left ltx_border_r">alozano (2414)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Entry type</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 14H52</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Synonym</td>
+<td class="ltx_td ltx_align_left ltx_border_r">L-function of an elliptic curve</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">EllipticCurve</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">DirichletLSeries</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">ConductorOfAnEllipticCurve</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">HassesBoundForEllipticCurvesOverFiniteFields</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">ArithmeticOfEllipticCurves</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">L-series of an elliptic curve</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">local part of the L-series</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">root number</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 17:58:53 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

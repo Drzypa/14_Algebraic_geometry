@@ -1,0 +1,152 @@
+<!DOCTYPE html><html>
+<head>
+<title>finite morphism</title>
+<!--Generated on Fri Feb  9 17:56:27 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">finite morphism</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<section id="Sx1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Affine schemes</h2>
+
+<div id="Sx1.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="Sx1.p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> and <math id="Sx1.p1.m2" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> be affine schemes, so that <math id="Sx1.p1.m3" class="ltx_Math" alttext="X=\operatorname{Spec}A" display="inline"><mrow><mi>X</mi><mo>=</mo><mrow><mi>Spec</mi><mo>⁡</mo><mi>A</mi></mrow></mrow></math> and <math id="Sx1.p1.m4" class="ltx_Math" alttext="Y=\operatorname{Spec}B" display="inline"><mrow><mi>Y</mi><mo>=</mo><mrow><mi>Spec</mi><mo>⁡</mo><mi>B</mi></mrow></mrow></math>. Let <math id="Sx1.p1.m5" class="ltx_Math" alttext="f\colon X\to Y" display="inline"><mrow><mi>f</mi><mo>:</mo><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow></mrow></math> be a morphism, so that it induces a
+homomorphism of rings <math id="Sx1.p1.m6" class="ltx_Math" alttext="g\colon B\to A" display="inline"><mrow><mi>g</mi><mo>:</mo><mrow><mi>B</mi><mo>→</mo><mi>A</mi></mrow></mrow></math>.</p>
+</div>
+<div id="Sx1.p2" class="ltx_para">
+<p class="ltx_p">The homomorphism <math id="Sx1.p2.m1" class="ltx_Math" alttext="g" display="inline"><mi>g</mi></math> makes <math id="Sx1.p2.m2" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> into a <math id="Sx1.p2.m3" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math>-algebra. If <math id="Sx1.p2.m4" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> is
+finitely-generated as a <math id="Sx1.p2.m5" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math>-algebra, then <math id="Sx1.p2.m6" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is said to be a morphism
+of <em class="ltx_emph ltx_font_italic">finite type</em>.</p>
+</div>
+<div id="Sx1.p3" class="ltx_para">
+<p class="ltx_p">If <math id="Sx1.p3.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> is in fact finitely generated as a <math id="Sx1.p3.m2" class="ltx_Math" alttext="B" display="inline"><mi>B</mi></math>-module, then <math id="Sx1.p3.m3" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is said
+to be a <em class="ltx_emph ltx_font_italic">finite</em> morphism.</p>
+</div>
+<div id="Sx1.p4" class="ltx_para">
+<p class="ltx_p">For example, if <math id="Sx1.p4.m1" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> is a field, the scheme <math id="Sx1.p4.m2" class="ltx_Math" alttext="\mathbb{A}^{n}(k)" display="inline"><mrow><msup><mi>𝔸</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mrow></math> has a
+natural morphism to <math id="Sx1.p4.m3" class="ltx_Math" alttext="\operatorname{Spec}k" display="inline"><mrow><mi>Spec</mi><mo>⁡</mo><mi>k</mi></mrow></math> induced by the ring homomorphism <math id="Sx1.p4.m4" class="ltx_Math" alttext="k\to k[X_{1},\ldots,X_{n}]" display="inline"><mrow><mi>k</mi><mo>→</mo><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>n</mi></msub><mo stretchy="false">]</mo></mrow></mrow></mrow></math>. This is a morphism of finite type, but if <math id="Sx1.p4.m5" class="ltx_Math" alttext="n&gt;0" display="inline"><mrow><mi>n</mi><mo>&gt;</mo><mn>0</mn></mrow></math>
+then it is not a finite morphism.</p>
+</div>
+<div id="Sx1.p5" class="ltx_para">
+<p class="ltx_p">On the other hand, if we take the affine scheme <math id="Sx1.p5.m1" class="ltx_Math" alttext="\operatorname{Spec}k[X,Y]/\left&lt;Y^{2}-X^{3}-X\right&gt;" display="inline"><mrow><mrow><mrow><mi>Spec</mi><mo>⁡</mo><mi>k</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">]</mo></mrow></mrow><mo>/</mo><mrow><mo>⟨</mo><mrow><msup><mi>Y</mi><mn>2</mn></msup><mo>-</mo><msup><mi>X</mi><mn>3</mn></msup><mo>-</mo><mi>X</mi></mrow><mo>⟩</mo></mrow></mrow></math>, it has a natural morphism to
+<math id="Sx1.p5.m2" class="ltx_Math" alttext="\mathbb{A}^{1}" display="inline"><msup><mi>𝔸</mi><mn>1</mn></msup></math> given by the ring homomorphism <math id="Sx1.p5.m3" class="ltx_Math" alttext="k[X]\to k[X,Y]/\left&lt;Y^{2}-X^{3}-X\right&gt;" display="inline"><mrow><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo stretchy="false">]</mo></mrow></mrow><mo>→</mo><mrow><mrow><mi>k</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">]</mo></mrow></mrow><mo>/</mo><mrow><mo>⟨</mo><mrow><msup><mi>Y</mi><mn>2</mn></msup><mo>-</mo><msup><mi>X</mi><mn>3</mn></msup><mo>-</mo><mi>X</mi></mrow><mo>⟩</mo></mrow></mrow></mrow></math>. Then this morphism is a finite
+morphism. As a morphism of schemes, we see that every fiber is finite.</p>
+</div>
+</section>
+<section id="Sx2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">General schemes</h2>
+
+<div id="Sx2.p1" class="ltx_para">
+<p class="ltx_p">Now, let <math id="Sx2.p1.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> and <math id="Sx2.p1.m2" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> be arbitrary schemes, and let <math id="Sx2.p1.m3" class="ltx_Math" alttext="f\colon X\to Y" display="inline"><mrow><mi>f</mi><mo>:</mo><mrow><mi>X</mi><mo>→</mo><mi>Y</mi></mrow></mrow></math>
+be a morphism. We say that <math id="Sx2.p1.m4" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is of <em class="ltx_emph ltx_font_italic">finite type</em> if there exist an
+open cover of <math id="Sx2.p1.m5" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> by affine schemes <math id="Sx2.p1.m6" class="ltx_Math" alttext="\{U_{i}\}" display="inline"><mrow><mo stretchy="false">{</mo><msub><mi>U</mi><mi>i</mi></msub><mo stretchy="false">}</mo></mrow></math> and a finite open cover
+of each <math id="Sx2.p1.m7" class="ltx_Math" alttext="U_{i}" display="inline"><msub><mi>U</mi><mi>i</mi></msub></math> by affine schemes <math id="Sx2.p1.m8" class="ltx_Math" alttext="\{V_{ij}\}" display="inline"><mrow><mo stretchy="false">{</mo><msub><mi>V</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo stretchy="false">}</mo></mrow></math> such that <math id="Sx2.p1.m9" class="ltx_Math" alttext="f|_{V_{ij}}" display="inline"><msub><mrow><mi>f</mi><mo fence="true" stretchy="false">|</mo></mrow><msub><mi>V</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></msub></math>
+is a morphism of finite type for every <math id="Sx2.p1.m10" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math> and <math id="Sx2.p1.m11" class="ltx_Math" alttext="j" display="inline"><mi>j</mi></math>. We say that <math id="Sx2.p1.m12" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>
+is <em class="ltx_emph ltx_font_italic">finite</em> if there exists an open cover of <math id="Sx2.p1.m13" class="ltx_Math" alttext="Y" display="inline"><mi>Y</mi></math> by affine
+schemes <math id="Sx2.p1.m14" class="ltx_Math" alttext="\{U_{i}\}" display="inline"><mrow><mo stretchy="false">{</mo><msub><mi>U</mi><mi>i</mi></msub><mo stretchy="false">}</mo></mrow></math> such that each inverse image, <math id="Sx2.p1.m15" class="ltx_Math" alttext="V_{i}=f^{-1}(U_{i})" display="inline"><mrow><msub><mi>V</mi><mi>i</mi></msub><mo>=</mo><mrow><msup><mi>f</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>U</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></math> is
+itself affine, and such that <math id="Sx2.p1.m16" class="ltx_Math" alttext="f|_{V_{i}}" display="inline"><msub><mrow><mi>f</mi><mo fence="true" stretchy="false">|</mo></mrow><msub><mi>V</mi><mi>i</mi></msub></msub></math> is a finite morphism of affine
+schemes.</p>
+</div>
+<section id="Sx2.SS0.SSS0.Px1" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Example.</h3>
+
+<div id="Sx2.SS0.SSS0.Px1.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="Sx2.SS0.SSS0.Px1.p1.m1" class="ltx_Math" alttext="X=\mathbb{P}^{1}(k)" display="inline"><mrow><mi>X</mi><mo>=</mo><mrow><msup><mi>ℙ</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> and <math id="Sx2.SS0.SSS0.Px1.p1.m2" class="ltx_Math" alttext="Y=\operatorname{Spec}k" display="inline"><mrow><mi>Y</mi><mo>=</mo><mrow><mi>Spec</mi><mo>⁡</mo><mi>k</mi></mrow></mrow></math>.
+We cover <math id="Sx2.SS0.SSS0.Px1.p1.m3" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> by two copies of <math id="Sx2.SS0.SSS0.Px1.p1.m4" class="ltx_Math" alttext="\mathbb{A}^{1}" display="inline"><msup><mi>𝔸</mi><mn>1</mn></msup></math> and consider the natural
+morphisms from each of these copies to <math id="Sx2.SS0.SSS0.Px1.p1.m5" class="ltx_Math" alttext="\operatorname{Spec}k" display="inline"><mrow><mi>Spec</mi><mo>⁡</mo><mi>k</mi></mrow></math>. Both of these
+affine morphisms are of finite type, but are not finite. The covering
+morphisms patch together to give a morphism from <math id="Sx2.SS0.SSS0.Px1.p1.m6" class="ltx_Math" alttext="\mathbb{P}^{1}" display="inline"><msup><mi>ℙ</mi><mn>1</mn></msup></math> to
+<math id="Sx2.SS0.SSS0.Px1.p1.m7" class="ltx_Math" alttext="\operatorname{Spec}k" display="inline"><mrow><mi>Spec</mi><mo>⁡</mo><mi>k</mi></mrow></math>. The overall morphism is of finite type, but again is not
+finite.</p>
+</div>
+</section>
+</section>
+<section id="Sx3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">References.</h2>
+
+<div id="Sx3.p1" class="ltx_para">
+<p class="ltx_p">D. Eisenbud and J. Harris, <span class="ltx_text ltx_font_italic">The Geometry of Schemes</span>, Springer.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">finite morphism</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">FiniteMorphism</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 12:51:47</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 12:51:47</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rmilson (146)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rmilson (146)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">9</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rmilson (146)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 14A10</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 14-00</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 14A15</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Defines</th>
+<td class="ltx_td ltx_align_left ltx_border_r">affine morphism</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Defines</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">finite type</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Fri Feb  9 17:56:27 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
