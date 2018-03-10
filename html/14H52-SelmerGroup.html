@@ -18,18 +18,18 @@
 
 <div id="p1" class="ltx_para">
 <br class="ltx_break">
-<p class="ltx_p">Given an elliptic curve <math id="p1.m1" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math> we can define two very interesting and
-important groups, the <em class="ltx_emph ltx_font_italic">Selmer group</em> and the
+<p class="ltx_p">Given an <a class="nnexus_concepts" href="javascript:void(0)" onclick="this.nextSibling.style.display='inline'">elliptic curve</a><sup style="display: none;"><a class="nnexus_concept" href="http://mathworld.wolfram.com/EllipticCurve.html"><img src="http://mathworld.wolfram.com/favicon_mathworld.png" alt="Mathworld"></img></a><a class="nnexus_concept" href="http://planetmath.org/ellipticcurve"><img src="http://planetmath.org/sites/default/files/fab-favicon.ico" alt="Planetmath"></img></a></sup> <math id="p1.m1" class="ltx_Math" alttext="E" display="inline"><mi>E</mi></math> we can define two very interesting and
+important groups, the <em class="ltx_emph ltx_font_italic"><a class="nnexus_concepts" href="javascript:void(0)" onclick="this.nextSibling.style.display='inline'">Selmer group</a><sup style="display: none;"><a class="nnexus_concept" href="http://mathworld.wolfram.com/SelmerGroup.html"><img src="http://mathworld.wolfram.com/favicon_mathworld.png" alt="Mathworld"></img></a><a class="nnexus_concept" href="http://planetmath.org/selmergroup"><img src="http://planetmath.org/sites/default/files/fab-favicon.ico" alt="Planetmath"></img></a></sup></em> and the
 <em class="ltx_emph ltx_font_italic">Tate-Shafarevich group</em>, which together provide a measure of
-the failure of the Hasse principle for elliptic curves, by
+the failure of the <a class="nnexus_concepts" href="javascript:void(0)" onclick="this.nextSibling.style.display='inline'">Hasse principle</a><sup style="display: none;"><a class="nnexus_concept" href="http://mathworld.wolfram.com/HassePrinciple.html"><img src="http://mathworld.wolfram.com/favicon_mathworld.png" alt="Mathworld"></img></a><a class="nnexus_concept" href="http://planetmath.org/hasseprinciple"><img src="http://planetmath.org/sites/default/files/fab-favicon.ico" alt="Planetmath"></img></a></sup> for elliptic curves, by
 measuring whether the curve is everywhere locally soluble. Here we
 present the construction of these groups.</p>
 </div>
 <div id="p2" class="ltx_para">
 <p class="ltx_p">Let <math id="p2.m1" class="ltx_Math" alttext="E,E^{\prime}" display="inline"><mrow><mi>E</mi><mo>,</mo><msup><mi>E</mi><mo>′</mo></msup></mrow></math> be elliptic curves defined over <math id="p2.m2" class="ltx_Math" alttext="\mathbb{Q}" display="inline"><mi>ℚ</mi></math> and let
-<math id="p2.m3" class="ltx_Math" alttext="\bar{\mathbb{Q}}" display="inline"><mover accent="true"><mi>ℚ</mi><mo stretchy="false">¯</mo></mover></math> be an algebraic closure of <math id="p2.m4" class="ltx_Math" alttext="\mathbb{Q}" display="inline"><mi>ℚ</mi></math>. Let
-<math id="p2.m5" class="ltx_Math" alttext="\phi\colon E\to E^{\prime}" display="inline"><mrow><mi>ϕ</mi><mo>:</mo><mrow><mi>E</mi><mo>→</mo><msup><mi>E</mi><mo>′</mo></msup></mrow></mrow></math> be an non-constant isogeny (for example, we
-can let <math id="p2.m6" class="ltx_Math" alttext="E=E^{\prime}" display="inline"><mrow><mi>E</mi><mo>=</mo><msup><mi>E</mi><mo>′</mo></msup></mrow></math> and think of <math id="p2.m7" class="ltx_Math" alttext="\phi" display="inline"><mi>ϕ</mi></math> as being the “multiplication
+<math id="p2.m3" class="ltx_Math" alttext="\bar{\mathbb{Q}}" display="inline"><mover accent="true"><mi>ℚ</mi><mo stretchy="false">¯</mo></mover></math> be an <a class="nnexus_concepts" href="javascript:void(0)" onclick="this.nextSibling.style.display='inline'">algebraic closure</a><sup style="display: none;"><a class="nnexus_concept" href="http://mathworld.wolfram.com/AlgebraicClosure.html"><img src="http://mathworld.wolfram.com/favicon_mathworld.png" alt="Mathworld"></img></a><a class="nnexus_concept" href="http://planetmath.org/algebraicallyclosed"><img src="http://planetmath.org/sites/default/files/fab-favicon.ico" alt="Planetmath"></img></a></sup> of <math id="p2.m4" class="ltx_Math" alttext="\mathbb{Q}" display="inline"><mi>ℚ</mi></math>. Let
+<math id="p2.m5" class="ltx_Math" alttext="\phi\colon E\to E^{\prime}" display="inline"><mrow><mi>ϕ</mi><mo>:</mo><mrow><mi>E</mi><mo>→</mo><msup><mi>E</mi><mo>′</mo></msup></mrow></mrow></math> be an non-constant <a class="nnexus_concepts" href="javascript:void(0)" onclick="this.nextSibling.style.display='inline'">isogeny</a><sup style="display: none;"><a class="nnexus_concept" href="http://mathworld.wolfram.com/Isogeny.html"><img src="http://mathworld.wolfram.com/favicon_mathworld.png" alt="Mathworld"></img></a><a class="nnexus_concept" href="http://planetmath.org/isogeny"><img src="http://planetmath.org/sites/default/files/fab-favicon.ico" alt="Planetmath"></img></a></sup> (for example, we
+can let <math id="p2.m6" class="ltx_Math" alttext="E=E^{\prime}" display="inline"><mrow><mi>E</mi><mo>=</mo><msup><mi>E</mi><mo>′</mo></msup></mrow></math> and think of <math id="p2.m7" class="ltx_Math" alttext="\phi" display="inline"><mi>ϕ</mi></math> as being the “<a class="nnexus_concept" href="http://planetmath.org/multiplication">multiplication</a>
 by <math id="p2.m8" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>” map, <math id="p2.m9" class="ltx_Math" alttext="[n]\colon E\to E" display="inline"><mrow><mrow><mo stretchy="false">[</mo><mi>n</mi><mo stretchy="false">]</mo></mrow><mo>:</mo><mrow><mi>E</mi><mo>→</mo><mi>E</mi></mrow></mrow></math>). The following standard result
 asserts that <math id="p2.m10" class="ltx_Math" alttext="\phi" display="inline"><mi>ϕ</mi></math> is surjective over <math id="p2.m11" class="ltx_Math" alttext="\bar{\mathbb{Q}}" display="inline"><mover accent="true"><mi>ℚ</mi><mo stretchy="false">¯</mo></mover></math>:</p>
 </div>
@@ -47,8 +47,8 @@ asserts that <math id="p2.m10" class="ltx_Math" alttext="\phi" display="inline">
 <td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
 </tr>
 </table>
-<p class="ltx_p"><span class="ltx_text ltx_font_italic">be a morphism (or
-algebraic map) of curves. Then <math id="Thmthm1.p1.m3" class="ltx_Math" alttext="\psi" display="inline"><mi>ψ</mi></math> is either constant or
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">be a <a class="nnexus_concepts" href="javascript:void(0)" onclick="this.nextSibling.style.display='inline'">morphism</a><sup style="display: none;"><a class="nnexus_concept" href="http://mathworld.wolfram.com/Morphism.html"><img src="http://mathworld.wolfram.com/favicon_mathworld.png" alt="Mathworld"></img></a><a class="nnexus_concept" href="http://planetmath.org/category"><img src="http://planetmath.org/sites/default/files/fab-favicon.ico" alt="Planetmath"></img></a></sup> (or
+<a class="nnexus_concept" href="http://planetmath.org/algebraicmap">algebraic map</a>) of curves. Then <math id="Thmthm1.p1.m3" class="ltx_Math" alttext="\psi" display="inline"><mi>ψ</mi></math> is either constant or
 surjective.</span></p>
 </div>
 </div>
@@ -62,7 +62,7 @@ surjective.</span></p>
 <div id="p4" class="ltx_para">
 <p class="ltx_p">Since <math id="p4.m1" class="ltx_Math" alttext="\phi\colon E(\bar{\mathbb{Q}})\to E^{\prime}(\bar{\mathbb{Q}})" display="inline"><mrow><mi>ϕ</mi><mo>:</mo><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>ℚ</mi><mo stretchy="false">¯</mo></mover><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><msup><mi>E</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>ℚ</mi><mo stretchy="false">¯</mo></mover><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math> is
 non-constant, it must be surjective and we obtain the following
-exact sequence:</p>
+<a class="nnexus_concepts" href="javascript:void(0)" onclick="this.nextSibling.style.display='inline'">exact sequence</a><sup style="display: none;"><a class="nnexus_concept" href="http://planetmath.org/exactsequencetheoreminc3category"><img src="http://planetmath.org/sites/default/files/fab-favicon.ico" alt="Planetmath"></img></a><a class="nnexus_concept" href="http://planetmath.org/exactsequence1"><img src="http://planetmath.org/sites/default/files/fab-favicon.ico" alt="Planetmath"></img></a><a class="nnexus_concept" href="http://planetmath.org/regularcategory"><img src="http://planetmath.org/sites/default/files/fab-favicon.ico" alt="Planetmath"></img></a></sup>:</p>
 </div>
 <div id="p5" class="ltx_para">
 <table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
@@ -78,11 +78,11 @@ exact sequence:</p>
 <div id="p6" class="ltx_para">
 <p class="ltx_p">where <math id="p6.m1" class="ltx_Math" alttext="E(\bar{\mathbb{Q}})[\phi]=\operatorname{Ker}\phi" display="inline"><mrow><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>ℚ</mi><mo stretchy="false">¯</mo></mover><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>ϕ</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mi>Ker</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow></math>. Let
 <math id="p6.m2" class="ltx_Math" alttext="G=\operatorname{Gal}({\bar{\mathbb{Q}}/\mathbb{Q}})" display="inline"><mrow><mi>G</mi><mo>=</mo><mrow><mi>Gal</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mover accent="true"><mi>ℚ</mi><mo stretchy="false">¯</mo></mover><mo>/</mo><mi>ℚ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, the
-absolute Galois group of <math id="p6.m3" class="ltx_Math" alttext="\mathbb{Q}" display="inline"><mi>ℚ</mi></math>, and consider the
-<math id="p6.m4" class="ltx_Math" alttext="i^{th}" display="inline"><msup><mi>i</mi><mrow><mi>t</mi><mo>⁢</mo><mi>h</mi></mrow></msup></math>-cohomology group <math id="p6.m5" class="ltx_Math" alttext="H^{i}(G,E(\bar{\mathbb{Q}}))" display="inline"><mrow><msup><mi>H</mi><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo>,</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>ℚ</mi><mo stretchy="false">¯</mo></mover><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math> (we
-abbreviate by <math id="p6.m6" class="ltx_Math" alttext="H^{i}(G,E)" display="inline"><mrow><msup><mi>H</mi><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo>,</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow></math>). Using equation <math id="p6.m7" class="ltx_Math" alttext="(1)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math> we obtain the
-following long exact sequence (see Proposition 1 in group
-cohomology):</p>
+<a class="nnexus_concept" href="http://planetmath.org/absolutegaloisgroup">absolute Galois group</a> of <math id="p6.m3" class="ltx_Math" alttext="\mathbb{Q}" display="inline"><mi>ℚ</mi></math>, and consider the
+<math id="p6.m4" class="ltx_Math" alttext="i^{th}" display="inline"><msup><mi>i</mi><mrow><mi>t</mi><mo>⁢</mo><mi>h</mi></mrow></msup></math>-<a class="nnexus_concepts" href="javascript:void(0)" onclick="this.nextSibling.style.display='inline'">cohomology group</a><sup style="display: none;"><a class="nnexus_concept" href="http://planetmath.org/derivationofcohomologygrouptheoremforconnectedcwcomplexes"><img src="http://planetmath.org/sites/default/files/fab-favicon.ico" alt="Planetmath"></img></a><a class="nnexus_concept" href="http://planetmath.org/omegaspectrum"><img src="http://planetmath.org/sites/default/files/fab-favicon.ico" alt="Planetmath"></img></a></sup> <math id="p6.m5" class="ltx_Math" alttext="H^{i}(G,E(\bar{\mathbb{Q}}))" display="inline"><mrow><msup><mi>H</mi><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo>,</mo><mrow><mi>E</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>ℚ</mi><mo stretchy="false">¯</mo></mover><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math> (we
+abbreviate by <math id="p6.m6" class="ltx_Math" alttext="H^{i}(G,E)" display="inline"><mrow><msup><mi>H</mi><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo>,</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow></math>). Using <a class="nnexus_concept" href="http://planetmath.org/equation">equation</a> <math id="p6.m7" class="ltx_Math" alttext="(1)" display="inline"><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></math> we obtain the
+following <a class="nnexus_concept" href="http://mathworld.wolfram.com/LongExactSequence.html">long exact sequence</a> (see <a class="nnexus_concept" href="http://planetmath.org/lemma">Proposition</a> 1 in <a class="nnexus_concepts" href="javascript:void(0)" onclick="this.nextSibling.style.display='inline'">group
+cohomology</a><sup style="display: none;"><a class="nnexus_concept" href="http://mathworld.wolfram.com/GroupCohomology.html"><img src="http://mathworld.wolfram.com/favicon_mathworld.png" alt="Mathworld"></img></a><a class="nnexus_concept" href="http://planetmath.org/groupcohomologytopologicaldefinition"><img src="http://planetmath.org/sites/default/files/fab-favicon.ico" alt="Planetmath"></img></a><a class="nnexus_concept" href="http://planetmath.org/groupcohomology"><img src="http://planetmath.org/sites/default/files/fab-favicon.ico" alt="Planetmath"></img></a></sup>):</p>
 <table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
 
 <tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
@@ -129,9 +129,9 @@ cohomology):</p>
 </div>
 <div id="p9" class="ltx_para">
 <p class="ltx_p">We could repeat the same procedure but this time for <math id="p9.m1" class="ltx_Math" alttext="E,E^{\prime}" display="inline"><mrow><mi>E</mi><mo>,</mo><msup><mi>E</mi><mo>′</mo></msup></mrow></math>
-defined over <math id="p9.m2" class="ltx_Math" alttext="\mathbb{Q}_{p}" display="inline"><msub><mi>ℚ</mi><mi>p</mi></msub></math>,for some prime number <math id="p9.m3" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, and obtain
-a similar exact sequence but with coefficients in <math id="p9.m4" class="ltx_Math" alttext="\mathbb{Q}_{p}" display="inline"><msub><mi>ℚ</mi><mi>p</mi></msub></math>
-which relates to the original in the following commutative diagram
+defined over <math id="p9.m2" class="ltx_Math" alttext="\mathbb{Q}_{p}" display="inline"><msub><mi>ℚ</mi><mi>p</mi></msub></math>,for some <a class="nnexus_concepts" href="javascript:void(0)" onclick="this.nextSibling.style.display='inline'">prime number</a><sup style="display: none;"><a class="nnexus_concept" href="http://mathworld.wolfram.com/PrimeNumber.html"><img src="http://mathworld.wolfram.com/favicon_mathworld.png" alt="Mathworld"></img></a><a class="nnexus_concept" href="http://planetmath.org/prime"><img src="http://planetmath.org/sites/default/files/fab-favicon.ico" alt="Planetmath"></img></a></sup> <math id="p9.m3" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, and obtain
+a similar exact sequence but with <a class="nnexus_concept" href="http://planetmath.org/polynomial">coefficients</a> in <math id="p9.m4" class="ltx_Math" alttext="\mathbb{Q}_{p}" display="inline"><msub><mi>ℚ</mi><mi>p</mi></msub></math>
+which relates to the original in the following <a class="nnexus_concepts" href="javascript:void(0)" onclick="this.nextSibling.style.display='inline'">commutative diagram</a><sup style="display: none;"><a class="nnexus_concept" href="http://mathworld.wolfram.com/CommutativeDiagram.html"><img src="http://mathworld.wolfram.com/favicon_mathworld.png" alt="Mathworld"></img></a><a class="nnexus_concept" href="http://planetmath.org/commutativediagram"><img src="http://planetmath.org/sites/default/files/fab-favicon.ico" alt="Planetmath"></img></a></sup>
 (here <math id="p9.m5" class="ltx_Math" alttext="G_{p}=\operatorname{Gal}({\bar{\mathbb{Q}_{p}}/\mathbb{Q}_{p}})" display="inline"><mrow><msub><mi>G</mi><mi>p</mi></msub><mo>=</mo><mrow><mi>Gal</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mover accent="true"><msub><mi>ℚ</mi><mi>p</mi></msub><mo stretchy="false">¯</mo></mover><mo>/</mo><msub><mi>ℚ</mi><mi>p</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>):</p>
 <table id="A0.EGx1" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
 
@@ -177,7 +177,7 @@ from some element in <math id="p9.m14" class="ltx_Math" alttext="E(\mathbb{Q}_{p
 </p>
 </div>
 <div id="p10" class="ltx_para">
-<p class="ltx_p">Finally, by imitation of the definition of the Selmer group, we
+<p class="ltx_p">Finally, by imitation of the <a class="nnexus_concept" href="http://planetmath.org/definition">definition</a> of the Selmer group, we
 define the <em class="ltx_emph ltx_font_italic">Tate-Shafarevich group</em>:</p>
 <table id="S0.Ex11" class="ltx_equation ltx_eqn_table">
 
@@ -201,7 +201,7 @@ this group is finite.</p>
 <li id="bib.bib1" class="ltx_bibitem">
         <span class="ltx_bibtag ltx_role_refnum">1</span>
         
-<span class="ltx_bibblock"> J.P. Serre, <span class="ltx_text ltx_font_italic">Galois Cohomology</span>,
+<span class="ltx_bibblock"> J.P. Serre, <span class="ltx_text ltx_font_italic"><a class="nnexus_concept" href="http://planetmath.org/galoisrepresentation">Galois Cohomology</a></span>,
 Springer-Verlag, New York.
 
 </span>
@@ -219,7 +219,7 @@ notes.
 <li id="bib.bib3" class="ltx_bibitem">
         <span class="ltx_bibtag ltx_role_refnum">3</span>
         
-<span class="ltx_bibblock"> Joseph H. Silverman, <span class="ltx_text ltx_font_italic">The Arithmetic of Elliptic Curves</span>. Springer-Verlag, New York, 1986.
+<span class="ltx_bibblock"> Joseph H. Silverman, <span class="ltx_text ltx_font_italic">The <a class="nnexus_concept" href="http://planetmath.org/thearithmeticofellipticcurves">Arithmetic of Elliptic Curves</a></span>. Springer-Verlag, New York, 1986.
 
 </span>
       </li>
@@ -227,7 +227,7 @@ notes.
 <li id="bib.bib4" class="ltx_bibitem">
         <span class="ltx_bibtag ltx_role_refnum">4</span>
         
-<span class="ltx_bibblock"> R. Hartshorne, <span class="ltx_text ltx_font_italic">Algebraic Geometry</span>,
+<span class="ltx_bibblock"> R. Hartshorne, <span class="ltx_text ltx_font_italic"><a class="nnexus_concepts" href="javascript:void(0)" onclick="this.nextSibling.style.display='inline'">Algebraic Geometry</a><sup style="display: none;"><a class="nnexus_concept" href="http://mathworld.wolfram.com/AlgebraicGeometry.html"><img src="http://mathworld.wolfram.com/favicon_mathworld.png" alt="Mathworld"></img></a><a class="nnexus_concept" href="http://planetmath.org/algebraicgeometry"><img src="http://planetmath.org/sites/default/files/fab-favicon.ico" alt="Planetmath"></img></a><a class="nnexus_concept" href="http://planetmath.org/topicsinalgebraictopology"><img src="http://planetmath.org/sites/default/files/fab-favicon.ico" alt="Planetmath"></img></a><a class="nnexus_concept" href="http://planetmath.org/mscclassificationofobjectsarticlessearch"><img src="http://planetmath.org/sites/default/files/fab-favicon.ico" alt="Planetmath"></img></a></sup></span>,
 Springer-Verlag, 1977.
 
 </span>
@@ -243,7 +243,7 @@ Springer-Verlag, 1977.
 <td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">Selmer group</td>
 </tr>
 <tr class="ltx_tr">
-<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l"><a class="nnexus_concept" href="http://planetmath.org/canonical">Canonical</a> name</th>
 <td class="ltx_td ltx_align_left ltx_border_r">SelmerGroup</td>
 </tr>
 <tr class="ltx_tr">
